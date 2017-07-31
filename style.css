@@ -1,0 +1,231 @@
+/* #ec3645 */
+
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.em {
+    font-family: 'Pinyon Script', sans-serif;
+}
+
+a {
+    color: #ec3645;
+}
+
+a:hover {
+    color: #ec3645;
+}
+
+section {
+    position: relative;
+    color: #1b1b1b;
+    padding: 3rem;
+    border-bottom: 1px dashed #ababab;
+}
+
+section small {
+    font-family: 'Pinyon Script', sans-serif;
+    color: #ec3645;
+    margin-bottom: -40px;
+    font-size: 80px;
+    display: block;
+    text-transform: none;
+}
+
+section h2 {
+    color: #1b1b1b;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+/**********************************************************************************************************************/
+/* INTRO */
+/**********************************************************************************************************************/
+
+#header {
+    position: relative;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+#intro {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+}
+
+#intro i {
+    font-size: 2rem;
+    padding: 0 .5rem;
+    color: #ccc;
+}
+
+#intro i:hover {
+    color: #ec3645;
+}
+
+#go-down {
+    position: absolute;
+    color: #ec3645;
+    font-weight:bold;
+    bottom: 10px;
+    left: calc(50% - 15px);
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    animation: GoDown 1s linear infinite;
+}
+
+@keyframes GoDown {
+    0% {
+        bottom: 10px;
+    }
+    50% {
+        bottom: 20px;
+    }
+    100% {
+        bottom: 10px;
+    }
+}
+
+/**********************************************************************************************************************/
+/* VISION */
+/**********************************************************************************************************************/
+
+#map {
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#monday-content {
+    position: relative;
+    z-index: 2;
+    background: rgba(255, 255, 255, .7);
+    margin: -3rem;
+    padding: 3rem;
+}
+
+#monday p {
+    width: 50%;
+    margin: 0 auto;
+}
+
+/**********************************************************************************************************************/
+/* SPECIAL EVENTS */
+/**********************************************************************************************************************/
+
+#special-events .card {
+    width: 228px;
+    display: inline-block;
+    margin: .2rem;
+}
+
+#special-events .cards-container {
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+}
+
+#special-events .cards-container h3 {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+#special-events .cards-container p {
+    font-size: .8rem;
+    margin: .2rem;
+}
+
+#special-events .cards-container a {
+    font-size: 10px;
+    float: right;
+    margin-bottom: 5px;
+}
+
+#special-events .cards-container img {
+    height: 114px;
+    width: 100%;
+    display: block;
+}
+
+#special-events .card-block {
+    padding: .8rem;
+}
+
+/**********************************************************************************************************************/
+/* GAMES */
+/**********************************************************************************************************************/
+
+#games {
+    text-align: center;
+}
+
+#games small {
+    margin-bottom: -60px;
+}
+
+#games h2 {
+    font-size: 8rem;
+}
+
+#games h3 {
+    margin-top: -40px;
+    text-transform: uppercase;
+    font-size: 25px;
+    color: lightgray;
+    margin-bottom: 2rem;
+}
+
+/**********************************************************************************************************************/
+/* STAFF */
+/**********************************************************************************************************************/
+
+
+#staff {
+    text-align: center;
+}
+
+#staff img {
+    margin: 1rem;
+    border-radius: 100%;
+    width: 100px;
+    filter: grayscale(100%);
+}
+
+/**********************************************************************************************************************/
+/* JOIN */
+/**********************************************************************************************************************/
+
+#join ul {
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+}
+
+/**********************************************************************************************************************/
+/* FOOTER */
+/**********************************************************************************************************************/
+
+
+footer {
+    background: #1b1b1b;
+    color: white;
+    padding: 1rem;
+}
+
+footer p {
+    text-align: right;
+    margin-bottom: 0;
+    font-size: 10px;
+}
