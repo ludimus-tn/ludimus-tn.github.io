@@ -1,10 +1,11 @@
 <html>
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>ludimus</title>
 
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Pinyon+Script" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Pinyon+Script|Roboto+Condensed" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
@@ -24,25 +25,48 @@
         <span id="go-down">⌄</span>
     </section>
 
-    <section id="monday">
-        <div id="map"></div>
-        <div id="monday-content">
-            <h2><small>La nostra</small>Vision</h2>
+    <section id="ludimus">
+        <div>
+            <h2><small>chi siamo</small>Ludimus</h2>
 
-            <p>
-                Diffondere la cultura del gioco da tavolo a <strong>Trento</strong> per mezzo di serate gioco.
-                <br>
-                Ci troviamo <strong>tutti i lunedì</strong> al <a href="https://goo.gl/maps/MyHyLKRdzQs">Simposio</a>.
+            <p class="centered-text">
+                Siamo un’associazione senza scopo di lucro che diffonde la cultura del
+                <strong>gioco da tavolo</strong> tramite serate ludiche settimanali aperte a tutti.
             </p>
             <br>
             <p class="text-center">
-                <a href="https://www.facebook.com/pg/ludimusTN/events/">Visualizza i prossimi eventi ⇢</a>
+                <a href="https://www.facebook.com/pg/ludimusTN/events/">Prossimi eventi ⇢</a>
+            </p>
+        </div>
+    </section>
+
+    <section id="monday">
+        <div id="map"></div>
+        <div id="monday-content">
+            <h2><small>cosa facciamo</small>Serate settimanali</h2>
+
+            <p class="centered-text">
+                Ci troviamo ogni <strong>lunedì</strong> a partire dalle 19.00 presso <a href="https://www.facebook.com/Il-Simposio-Bar-Ristorante-162813970411602">il Simposio</a>.
+                <br>
+                Durante le serate potrete approfittare del <strong>menù convenzionato</strong>.
+            </p>
+
+            <br>
+            <p class="text-center">
+                <a href="https://goo.gl/maps/MyHyLKRdzQs" target="_blank">Come arrivare ⇢</a>
             </p>
         </div>
     </section>
 
     <section id="special-events">
-        <h2><small>Le nostre</small>Serate speciali</h2>
+        <h2><small>molto altro</small>Eventi speciali</h2>
+
+        <p class="centered-text">
+            Durante l’anno organizziamo eventi con altre associazioni, presentazioni con autori, tornei...
+            <br>
+            La lista dei ricordi continua ad allungarsi.
+        </p>
+        <br>
 
         <div class="cards-container">
             <div class="card">
@@ -101,14 +125,6 @@
                     <a href="https://www.facebook.com/events/102520500382657" target="_blank">Dettagli ⇢</a>
                 </div>
             </div>
-            <!--<div class="card">-->
-                <!--<img class="card-img-top" src="./img/ala.jpg" alt="ala" />-->
-                <!--<div class="card-block">-->
-                    <!--<h3 class="card-title">ala</h3>-->
-                    <!--<p class="card-text">Presenta all'oratorio di Ala per festa</p>-->
-                    <!--<a href="https://www.facebook.com/events/135525813665981" target="_blank">Dettagli ⇢</a>-->
-                <!--</div>-->
-            <!--</div>-->
             <div class="card">
                 <img class="card-img-top" src="img/serate/pergine.jpg" alt="pergine" />
                 <div class="card-block">
@@ -122,13 +138,13 @@
 
         <p class="text-center">
             Vuoi organizzare qualcosa con noi?<br>
-            <a href="mailto:ludimustrento@gmail.com">Inviaci un'email ⇢</a>
+            <a href="mailto:ludimustrento@gmail.com">Contattaci ⇢</a>
         </p>
     </section>
 
     <section id="games">
-        <h2><small>I nostri</small> 253</h2>
-        <h3>giochi da tavola</h3>
+        <h2><small>i nostri</small> 253</h2>
+        <h3>giochi da tavolo</h3>
 
         <p class="text-center">
             Curioso?<br>
@@ -137,33 +153,61 @@
     </section>
 
     <section id="staff">
-        <h2><small>I nostri</small> Organizzatori</h2>
+        <h2><small>le nostre facce</small>La squadra</h2>
 
-        <img src="./img/staff/tia.jpg" alt="Mattia Larentis">
-        <img src="./img/staff/ste.jpg" alt="Stefano Parmesan">
-        <img src="./img/staff/rik.jpg" alt="Riccardo Longo">
-        <img src="./img/staff/masno.jpg" alt="Davide Gadenz">
-        <img src="./img/staff/war.png" alt="Alessio Guerrieri">
-        <img src="./img/staff/sofy.png" alt="Sofia Ruele">
-        <img src="./img/staff/leo.jpg" alt="Leonardo Bertè">
+        <div class="staff-image">
+            <img src="./img/staff/tia.jpg" alt="Mattia Larentis">
+            <div><span>Mattia</span></div>
+        </div>
+
+        <div class="staff-image">
+            <img src="./img/staff/ste.jpg" alt="Stefano Parmesan">
+            <div><span>Stefano</span></div>
+        </div>
+
+        <div class="staff-image">
+            <img src="./img/staff/rik.jpg" alt="Riccardo Longo">
+            <div><span>Riccardo</span></div>
+        </div>
+
+        <div class="staff-image">
+            <img src="./img/staff/masno.jpg" alt="Davide Gadenz">
+            <div><span>Davide</span></div>
+        </div>
+
+        <div class="staff-image">
+            <img src="./img/staff/war.png" alt="Alessio Guerrieri">
+            <div><span>Alessio</span></div>
+        </div>
+
+        <div class="staff-image">
+            <img src="./img/staff/sofy.png" alt="Sofia Ruele">
+            <div><span>Sofia</span></div>
+        </div>
+
+        <div class="staff-image">
+            <img src="./img/staff/leo.jpg" alt="Leonardo Bertè">
+            <div><span>Leonardo</span></div>
+        </div>
+
     </section>
 
     <section id="join">
-        <h2><small>Il nostro</small> tesseramento</h2>
+        <h2><small>come aiutarci</small> tesseramento</h2>
 
         <ul>
-            <li>Poter dire di aver supportato l’associazione più ludica di Trento;</li>
-            <li>Poter avere la maglietta;</li>
-            <li>Poter avere uno sconto del 10% sull'acquisto di qualsiasi gioco;</li>
-            <li>Poter avere uno sconto del 10% al Simposio (tutti i giorni!);</li>
-            <li>Poter prendere giochi in prestito;</li>
-            <li>Poter scegliere con noi i prossimi acquisti che Ludimus farà;</li>
-            <li>Poter contare su di noi se volete comprare dei giochi online e risparmiare così le spese di spedizione.</li>
+            <li><img src="./img/meeple.svg" /> Ottenere splendidi gadget targati Ludimus</li>
+            <li><img src="./img/meeple.svg" /> Sconto del 10% sull’acquisto di qualsiasi gioco</li>
+            <li><img src="./img/meeple.svg" /> Sconto del 10% al Simposio (tutti i giorni!)</li>
+            <li><img src="./img/meeple.svg" /> Prendere in prestito i giochi dell’associazione</li>
+            <li><img src="./img/meeple.svg" /> Partecipare a eventi esclusivi</li>
+            <li><img src="./img/meeple.svg" /> Partecipare alla scelta dei prossimi acquisti di Ludimus</li>
+            <li><img src="./img/meeple.svg" /> Acquisti collettivi per ammortizzare i costi di spedizione</li>
         </ul>
 
         <p class="text-center">
-            La tassa d’iscrizione è di 15 euro. Interessato/a?<br>
-            <a href="mailto:ludimustrento@gmail.com">Inviaci un'email ⇢</a>
+            La quota d’iscrizione è di 15 euro. Interessato/a?<br>
+            <a href="mailto:ludimustrento@gmail.com">Contattaci ⇢</a>
         </p>
     </section>
 
@@ -177,7 +221,10 @@
 
             var map = new google.maps.Map(document.getElementById('map'), {
                 zoom: 15,
-                center: simposio
+                center: simposio,
+                mapTypeControl: false,
+                zoomControl: false,
+                streetViewControl: false
             });
             var marker = new google.maps.Marker({
                 position: simposio,
