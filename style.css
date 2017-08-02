@@ -43,8 +43,6 @@ section h2 {
     margin-bottom: 1.5rem;
     font-weight: bold;
     line-height: 70px;
-    word-wrap: break-word;
-    word-break: break-all;
 }
 
 .centered-text {
