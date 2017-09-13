@@ -76,6 +76,26 @@ section h2 {
     text-align: center;
     display: flex;
     align-items: center;
+    overflow: hidden;
+}
+
+#bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, .8);
+}
+
+#header > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    min-height: 100%;
+    min-width: 100%;
 }
 
 #intro {
@@ -87,7 +107,7 @@ section h2 {
 #intro i {
     font-size: 2rem;
     padding: 0 .5rem;
-    color: #ccc;
+    color: #ababab;
 }
 
 #intro i:hover {
@@ -207,7 +227,7 @@ section h2 {
 #games h3 {
     text-transform: uppercase;
     font-size: 25px;
-    color: lightgray;
+    color: #ababab;
     margin-bottom: 2rem;
 }
 
