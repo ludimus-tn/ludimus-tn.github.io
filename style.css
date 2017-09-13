@@ -126,6 +126,10 @@ section h2 {
     animation: GoDown 1s linear infinite;
 }
 
+#go-down:hover {
+    text-decoration: none;
+}
+
 @keyframes GoDown {
     0% {
         bottom: 10px;
