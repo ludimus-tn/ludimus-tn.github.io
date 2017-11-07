@@ -27,6 +27,11 @@ GAMES_WITHOUT_MD = {
     12956,   # futurisiko
 }
 
+HIDDEN_GAMES = {
+    67492,   # battles-westeros
+    463,     # magic-gathering
+}
+
 BASE_ITEM = """
 <div class="card">
     <img class="card-img-top" src="{image}" />
@@ -63,22 +68,17 @@ with open('./base/index.html') as base_index_tmpl, \
         open('./games.html', 'w') as output_games:
 
     input_data = json.loads(''.join(data.readlines()))
-
-    for line in base_index_tmpl:
-        output_index.write(line.replace('{{ number_of_games }}', str(len(input_data.get('items', [])))))
-
-    for line in base_games_tmpl:
-        if line.strip() != '{{ games }}':
-            output_games.write(line.replace('{{ number_of_games }}', str(len(input_data.get('items', [])))))
-        else:
-            break
+    item_to_print = []
 
     for item in input_data.get('items', []):
+        if item['idBGG'] in HIDDEN_GAMES:
+            continue
+
         image = item['image'].replace('.jpg', '_md.jpg').replace('.png', '_md.png')
         if item['idBGG'] in GAMES_WITHOUT_MD:
             image = item['image'].replace('.jpg', '_t.jpg').replace('.png', '_t.png')
 
-        item_with_template = BASE_ITEM.format(
+        item_to_print.append(BASE_ITEM.format(
             name=item['nomeGioco'],
             image=image,
             link='https://boardgamegeek.com/boardgame/{}/-'.format(item['idBGG']),
@@ -86,8 +86,19 @@ with open('./base/index.html') as base_index_tmpl, \
             players=item['numGiocatori'].replace('Min:', 'da ').replace(' - Max:', ' a '),
             time=item['durata'],
             weight='{0:0.1f}'.format(item['pesoMedio']),
-        )
-        output_games.write(item_with_template)
+        ))
+
+    for line in base_index_tmpl:
+        output_index.write(line.replace('{{ number_of_games }}', str(len(item_to_print))))
+
+    for line in base_games_tmpl:
+        if line.strip() != '{{ games }}':
+            output_games.write(line.replace('{{ number_of_games }}', str(len(item_to_print))))
+        else:
+            break
+
+    for item in item_to_print:
+        output_games.write(item)
 
     for line in base_games_tmpl:
         output_games.write(line)
