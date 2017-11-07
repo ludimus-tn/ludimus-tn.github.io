@@ -164,45 +164,45 @@ section h2 {
 }
 
 /**********************************************************************************************************************/
-/* SPECIAL EVENTS */
+/* SPECIAL EVENTS & GAMES */
 /**********************************************************************************************************************/
 
-#special-events .card {
+#special-events .card, #games .card {
     width: 228px;
     display: inline-block;
     margin: .2rem;
 }
 
-#special-events .cards-container {
+#special-events .cards-container, #games .cards-container {
     text-align: center;
     width: 80%;
     margin: 0 auto;
     margin-bottom: 2rem;
 }
 
-#special-events .cards-container h3 {
+#special-events .cards-container h3, #games .cards-container h3 {
     margin: 0;
     font-size: 1.2rem;
 }
 
-#special-events .cards-container p {
+#special-events .cards-container p, #games .cards-container p {
     font-size: .8rem;
     margin: .2rem;
 }
 
-#special-events .cards-container a {
+#special-events .cards-container a, #games .cards-container a {
     font-size: 10px;
     float: right;
     margin-bottom: 5px;
 }
 
-#special-events .cards-container img {
+#special-events .cards-container img, #games .cards-container img {
     height: 114px;
     width: 100%;
     display: block;
 }
 
-#special-events .card-block {
+#special-events .card-block, #games .card-block {
     padding: .8rem;
 }
 
@@ -213,22 +213,22 @@ section h2 {
 }
 
 /**********************************************************************************************************************/
-/* GAMES */
+/* OUR GAMES */
 /**********************************************************************************************************************/
 
-#games {
+.big-title {
     text-align: center;
 }
 
-#games small {
+.big-title small {
     margin-bottom: 18px;
 }
 
-#games h2 {
+.big-title h2 {
     font-size: 8rem;
 }
 
-#games h3 {
+.big-title h3 {
     text-transform: uppercase;
     font-size: 25px;
     color: #ababab;
@@ -236,11 +236,11 @@ section h2 {
 }
 
 @media (max-width: 992px) {
-    #games small {
+    .big-title small {
         margin-bottom: 38px;
     }
 
-    #games h2 {
+    .big-title h2 {
         margin-bottom: 2rem;
     }
 }
@@ -329,4 +329,61 @@ footer p {
     text-align: right;
     margin-bottom: 0;
     font-size: 10px;
+}
+
+/**********************************************************************************************************************/
+/* GAMES */
+/**********************************************************************************************************************/
+
+#games .card img {
+    height: auto !important;
+}
+
+#games .card .list-group-item {
+    padding-top: .3em !important;
+    padding-bottom: .3em !important;
+    font-size: .8em !important;
+}
+
+#games .cards-container {
+    width: 1000px;
+}
+
+#games .card-columns {
+    column-gap: .5rem;
+    columns: 4;
+}
+
+#games .card {
+    width: 100%;
+}
+
+@media (max-width: 1284px) {
+    #games .cards-container {
+        width: 750px;
+    }
+
+    #games .card-columns {
+        columns: 3;
+    }
+}
+
+@media (max-width: 886px) {
+    #games .cards-container {
+        width: 500px;
+    }
+
+    #games .card-columns {
+        columns: 2;
+    }
+}
+
+@media (max-width: 621px) {
+    #games .cards-container {
+        width: 250px;
+    }
+
+    #games .card-columns {
+        columns: 1;
+    }
 }
