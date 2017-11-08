@@ -11,7 +11,8 @@ name = {
     'nostalgiaz': 'Mattia',
     'melachel': 'Stefano',
     'hina00': 'Sofia',
-    'Leouz': 'Leonardo'
+    'Leouz': 'Leonardo',
+    'ResN91': 'Andrea'
 }
 
 bgg = BoardGameGeek()
@@ -27,19 +28,18 @@ def create_line(pair):
     id, owners = pair
     try:
         game = bgg.game(game_id=id)
-        print("YES")
+        print(game.name)
     except:
+        print(" ---Retrying")
         time.sleep(5)
         try:
             game = bgg.game(game_id=id)            
-            print("   YES")
+            print(game.name)
         except:
             print("Could not download {}".format(id))
             return False
     if game.expansion:
         return None
-    if id == 102548:
-        import pdb; pdb.set_trace()
     fields = {
         'idBGG': id,
         'rankBGG': game.boardgame_rank,
