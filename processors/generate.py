@@ -1,5 +1,7 @@
 import json
 import os
+import hashlib
+
 
 GAMES_WITHOUT_MD = {
     102548,  # dungeon-fighter
@@ -65,7 +67,8 @@ with open('./base/index.html') as base_index_tmpl, \
         open('./base/games.html') as base_games_tmpl, \
         open('./processors/games.json') as data, \
         open('./index.html', 'w') as output_index, \
-        open('./games.html', 'w') as output_games:
+        open('./games.html', 'w') as output_games, \
+        open('./style.css') as style:
 
     input_data = json.loads(''.join(data.readlines()))
     item_to_print = []
@@ -88,11 +91,20 @@ with open('./base/index.html') as base_index_tmpl, \
             weight='{0:0.1f}'.format(item['pesoMedio']),
         ))
 
+    style_hash = hashlib.md5(style.read().encode('utf-8')).hexdigest()
+
     for line in base_index_tmpl:
-        output_index.write(line.replace('{{ number_of_games }}', str(len(item_to_print))))
+        if '{{ number_of_games }}' in line:
+            output_index.write(line.replace('{{ number_of_games }}', str(len(item_to_print))))
+        elif '{{ hash }}' in line:
+            output_index.write(line.replace('{{ hash }}', style_hash))
+        else:
+            output_index.write(line)
 
     for line in base_games_tmpl:
-        if line.strip() != '{{ games }}':
+        if '{{ hash }}' in line:
+            output_games.write(line.replace('{{ hash }}', style_hash))
+        elif line.strip() != '{{ games }}':
             output_games.write(line.replace('{{ number_of_games }}', str(len(item_to_print))))
         else:
             break
