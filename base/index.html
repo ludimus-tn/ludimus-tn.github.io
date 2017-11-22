@@ -31,6 +31,7 @@
     </section>
 
     <section id="ludimus">
+        <div id="awesome"></div>
         <div>
             <h2><small>chi siamo</small>Ludimus</h2>
 
@@ -170,6 +171,21 @@
         </p>
     </section>
 
+    <section id="instagram">
+        <h2><small>instagram</small>Qualche foto</h2>
+
+        <p class="centered-text">
+            Le ultime 4 foto presenti su <a href="http://instagram.com/ludimustrento" target="_blank">@ludimustrento</a>!
+        </p>
+        <br>
+
+        <div id="instagram-photos" class="cards-container"></div>
+
+        <p class="text-center">
+            <a href="http://instagram.com/ludimustrento" target="_blank">Seguici su instagram ⇢</a>
+        </p>
+    </section>
+
     <section id="our-games">
         <div class="big-title">
             <h2><small>i nostri</small> {{ number_of_games }}</h2>
@@ -269,5 +285,24 @@
         }
     </script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDL3E8pZkDlbq5DTC7on1R3dlQF9iL1n30&callback=initMap"></script>
+    <script src="/static/js/instafeed.min.js"></script>
+    <script>
+        var feed = new Instafeed({
+            accessToken: '6431223467.1677ed0.497a3fb534224faabb7630d4f0bc6e93',
+            clientId: 'f22d3e48a2c74c5ca51de31e6a499f19',
+            get: 'user',
+            userId: 6431223467,
+            target: 'instagram-photos',
+            sortBy: 'most-recent',
+            limit: 4,
+            resolution: 'low_resolution',
+            template: '<div class="card">' +
+                '<a href="{{link}}" target="_blank">' +
+                    '<img class="card-img-top" src="{{image}}" />' +
+                '</a>' +
+            '</div>'
+        });
+        feed.run();
+    </script>
 </body>
 </html>

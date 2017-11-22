@@ -176,13 +176,13 @@ section h2 {
 /* SPECIAL EVENTS & GAMES */
 /**********************************************************************************************************************/
 
-#special-events .card, #games .card {
+#special-events .card, #games .card, #instagram .card {
     width: 228px;
     display: inline-block;
     margin: .2rem;
 }
 
-#special-events .cards-container, #games .cards-container {
+#special-events .cards-container, #games .cards-container , #instagram .cards-container {
     text-align: center;
     width: 80%;
     margin: 0 auto;
@@ -211,7 +211,7 @@ section h2 {
     display: block;
 }
 
-#special-events .card-block, #games .card-block {
+#special-events .card-block, #games .card-block, #instagram .card-block {
     padding: .8rem;
 }
 
