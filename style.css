@@ -396,3 +396,70 @@ footer p {
         columns: 1;
     }
 }
+
+/**********************************************************************************************************************/
+/* BLOG */
+/**********************************************************************************************************************/
+
+.blog-post {
+    padding: 0;
+    max-width: 750px;
+    margin: 0 auto;
+    line-height: 1.6;
+    /*padding-top: 0;*/
+}
+
+.blog-post h1 {
+    font-weight: bold;
+    margin-bottom: .5em;
+    text-transform: uppercase;
+    font-size: 5em;
+    line-height: .8em;
+}
+
+.blog-post h3 {
+    margin-top: 1.5em;
+    margin-bottom: .5em;
+    font-weight: bold;
+}
+
+.blog-post h1, .blog-post h3 {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.blog-post-writer {
+    text-align: center;
+    border-bottom: 0;
+}
+
+.blog-post-writer__images {
+    margin-bottom: 10px;
+}
+
+.blog-post-writer__images img {
+    width: 100px;
+    border-radius: 100%;
+    filter: grayscale(100%);
+}
+
+.blog-post-writer__images img + img {
+    margin-left: -25px;
+}
+
+@media (max-width: 1284px) {
+    .blog-post {
+        width: 750px;
+    }
+}
+
+@media (max-width: 886px) {
+    .blog-post {
+        width: 500px;
+    }
+}
+
+@media (max-width: 621px) {
+    .blog-post {
+        width: 250px;
+    }
+}
