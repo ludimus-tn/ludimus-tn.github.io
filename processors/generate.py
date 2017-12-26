@@ -42,6 +42,7 @@ HIDDEN_GAMES = {
 
 boardgame_tmpl = '\n'.join(open('./layouts/partials/boardgame.html').readlines())
 google_analytics = '\n'.join(open('./layouts/partials/google-analytics.html').readlines())
+footer = '\n'.join(open('./layouts/partials/footer.html').readlines())
 style_hash = hashlib.md5(open('./style.css').read().encode('utf-8')).hexdigest()
 input_data = json.loads(''.join(open('./processors/games.json').readlines()))
 
@@ -76,6 +77,8 @@ with open('./layouts/index.html') as base_index_tmpl, \
             output_index.write(line.replace('{{ hash }}', style_hash))
         elif '{{ google_analytics }}' in line:
             output_index.write(line.replace('{{ google_analytics }}', google_analytics))
+        elif '{{ footer }}' in line:
+            output_index.write(line.replace('{{ footer }}', footer))
         elif '{{ blog_post }}' in line:
             for post in glob.glob('./layouts/blog/*'):
                 file_name = post.replace('./layouts/blog/', '')
@@ -98,6 +101,8 @@ with open('./layouts/games.html') as base_games_tmpl, \
             output_games.write(line.replace('{{ number_of_games }}', str(len(item_to_print))))
         elif '{{ google_analytics }}' in line:
             output_games.write(line.replace('{{ google_analytics }}', google_analytics))
+        elif '{{ footer }}' in line:
+            output_games.write(line.replace('{{ footer }}', footer))
         else:
             output_games.write(line)
 
@@ -114,5 +119,7 @@ for post in posts:
                 output_post.write(line.replace('{{ hash }}', style_hash))
             elif '{{ google_analytics }}' in line:
                 output_post.write(line.replace('{{ google_analytics }}', google_analytics))
+            elif '{{ footer }}' in line:
+                output_post.write(line.replace('{{ footer }}', footer))
             else:
                 output_post.write(line)

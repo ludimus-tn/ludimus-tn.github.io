@@ -343,9 +343,13 @@ footer {
 }
 
 footer p {
-    text-align: right;
     margin-bottom: 0;
     font-size: 10px;
+    display: inline-block;
+    float: right;
+    height: 22px;
+    line-height: 22px;
+
 }
 
 /**********************************************************************************************************************/
