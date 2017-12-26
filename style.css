@@ -23,6 +23,10 @@ section {
     border-bottom: 1px dashed #ababab;
 }
 
+section:last-of-type {
+    border-bottom: 0;
+}
+
 section small {
     font-family: 'Raleway', sans-serif;
     color: #ec3645;
@@ -402,11 +406,10 @@ footer p {
 /**********************************************************************************************************************/
 
 .blog-post {
-    padding: 0;
-    max-width: 750px;
+    padding: 3rem;
+    max-width: 60%;
     margin: 0 auto;
     line-height: 1.6;
-    /*padding-top: 0;*/
 }
 
 .blog-post h1 {
@@ -429,7 +432,6 @@ footer p {
 
 .blog-post-writer {
     text-align: center;
-    border-bottom: 0;
 }
 
 .blog-post-writer__images {
@@ -446,20 +448,14 @@ footer p {
     margin-left: -25px;
 }
 
-@media (max-width: 1284px) {
-    .blog-post {
-        width: 750px;
-    }
-}
-
 @media (max-width: 886px) {
     .blog-post {
-        width: 500px;
+        max-width: 80%;
     }
 }
 
 @media (max-width: 621px) {
     .blog-post {
-        width: 250px;
+        max-width: 100%;
     }
 }

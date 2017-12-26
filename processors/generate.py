@@ -1,3 +1,4 @@
+import glob
 import json
 import os
 import hashlib
@@ -114,3 +115,15 @@ with open('./base/index.html') as base_index_tmpl, \
 
     for line in base_games_tmpl:
         output_games.write(line)
+
+    posts = glob.glob('./base/blog/*')
+    for post in posts:
+        post_name = post.rsplit('/', 1)[1]
+        with open(post) as post_tmpl, \
+            open('./blog/{}'.format(post_name), 'w+') as output_post:
+
+            for line in post_tmpl:
+                if '{{ hash }}' in line:
+                    output_post.write(line.replace('{{ hash }}', style_hash))
+                else:
+                    output_post.write(line)
