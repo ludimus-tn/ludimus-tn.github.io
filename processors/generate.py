@@ -28,6 +28,11 @@ GAMES_WITHOUT_MD = {
     136888,  # bruges
     154509,  # kingsport-festival
     12956,   # futurisiko
+    1234,    # once-upon-time-storytelling-card-game
+    26859,   # kragmortha
+    12747,   # scarabeo
+    124856,  # anno-domini-penne-e-pennelli
+    1931,    # anti-monopoly
 }
 
 HIDDEN_GAMES = {
@@ -36,36 +41,32 @@ HIDDEN_GAMES = {
 }
 
 BASE_ITEM = ''.join(open('./layouts/partials/boardgame.html').readlines())
+style_hash = hashlib.md5(open('./style.css').read().encode('utf-8')).hexdigest()
+input_data = json.loads(''.join(open('./processors/games.json').readlines()))
+
+item_to_print = []
+
+for item in input_data.get('items', []):
+    if item['idBGG'] in HIDDEN_GAMES:
+        continue
+
+    image = item['image'].replace('.jpg', '_md.jpg').replace('.png', '_md.png')
+    if item['idBGG'] in GAMES_WITHOUT_MD:
+        image = item['image'].replace('.jpg', '_t.jpg').replace('.png', '_t.png')
+
+    item_to_print.append(BASE_ITEM.format(
+        name=item['nomeGioco'],
+        image=image,
+        link='https://boardgamegeek.com/boardgame/{}/-'.format(item['idBGG']),
+        vote='{0:0.1f}'.format(item['votoMedio']),
+        players=item['numGiocatori'].replace('Min:', 'da ').replace(' - Max:', ' a '),
+        time=item['durata'],
+        weight='{0:0.1f}'.format(item['pesoMedio']),
+    ))
+
 
 with open('./layouts/index.html') as base_index_tmpl, \
-        open('./layouts/games.html') as base_games_tmpl, \
-        open('./processors/games.json') as data, \
-        open('./index.html', 'w') as output_index, \
-        open('./games.html', 'w') as output_games, \
-        open('./style.css') as style:
-
-    input_data = json.loads(''.join(data.readlines()))
-    item_to_print = []
-
-    for item in input_data.get('items', []):
-        if item['idBGG'] in HIDDEN_GAMES:
-            continue
-
-        image = item['image'].replace('.jpg', '_md.jpg').replace('.png', '_md.png')
-        if item['idBGG'] in GAMES_WITHOUT_MD:
-            image = item['image'].replace('.jpg', '_t.jpg').replace('.png', '_t.png')
-
-        item_to_print.append(BASE_ITEM.format(
-            name=item['nomeGioco'],
-            image=image,
-            link='https://boardgamegeek.com/boardgame/{}/-'.format(item['idBGG']),
-            vote='{0:0.1f}'.format(item['votoMedio']),
-            players=item['numGiocatori'].replace('Min:', 'da ').replace(' - Max:', ' a '),
-            time=item['durata'],
-            weight='{0:0.1f}'.format(item['pesoMedio']),
-        ))
-
-    style_hash = hashlib.md5(style.read().encode('utf-8')).hexdigest()
+        open('./index.html', 'w') as output_index:
 
     for line in base_index_tmpl:
         if '{{ number_of_games }}' in line:
@@ -80,28 +81,29 @@ with open('./layouts/index.html') as base_index_tmpl, \
         else:
             output_index.write(line)
 
+with open('./layouts/games.html') as base_games_tmpl, \
+        open('./games.html', 'w') as output_games:
+
     for line in base_games_tmpl:
         if '{{ hash }}' in line:
             output_games.write(line.replace('{{ hash }}', style_hash))
-        elif line.strip() != '{{ games }}':
+        elif '{{ games }}' in line:
+            for item in item_to_print:
+                output_games.write(item)
+        elif '{{ number_of_games }}' in line:
             output_games.write(line.replace('{{ number_of_games }}', str(len(item_to_print))))
         else:
-            break
+            output_games.write(line)
 
-    for item in item_to_print:
-        output_games.write(item)
+posts = glob.glob('./layouts/blog/*')
+for post in posts:
+    post_name = post.rsplit('/', 1)[1]
 
-    for line in base_games_tmpl:
-        output_games.write(line)
+    with open(post) as post_tmpl, \
+        open('./blog/{}'.format(post_name), 'w+') as output_post:
 
-    posts = glob.glob('./layouts/blog/*')
-    for post in posts:
-        post_name = post.rsplit('/', 1)[1]
-        with open(post) as post_tmpl, \
-            open('./blog/{}'.format(post_name), 'w+') as output_post:
-
-            for line in post_tmpl:
-                if '{{ hash }}' in line:
-                    output_post.write(line.replace('{{ hash }}', style_hash))
-                else:
-                    output_post.write(line)
+        for line in post_tmpl:
+            if '{{ hash }}' in line:
+                output_post.write(line.replace('{{ hash }}', style_hash))
+            else:
+                output_post.write(line)
