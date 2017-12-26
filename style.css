@@ -315,6 +315,10 @@ section h2 {
     padding: 0;
 }
 
+#blog ul {
+    margin-top: 2em !important;
+}
+
 #join img, #blog img {
     height: 0.5rem;
     transform: rotate(15deg);
