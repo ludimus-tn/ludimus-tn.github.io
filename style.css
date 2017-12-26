@@ -304,10 +304,10 @@ section h2 {
 }
 
 /**********************************************************************************************************************/
-/* JOIN */
+/* JOIN & BLOG */
 /**********************************************************************************************************************/
 
-#join ul {
+#join ul, #blog ul {
     width: 50%;
     margin: 0 auto;
     margin-bottom: 2rem;
@@ -315,7 +315,7 @@ section h2 {
     padding: 0;
 }
 
-#join img {
+#join img, #blog img {
     height: 0.5rem;
     transform: rotate(15deg);
     margin-bottom: 3px;
@@ -323,7 +323,7 @@ section h2 {
 }
 
 @media (max-width: 992px) {
-    #join ul {
+    #join ul, #blog ul {
         width: 90%;
     }
 }

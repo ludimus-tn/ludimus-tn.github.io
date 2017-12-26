@@ -99,6 +99,11 @@ with open('./base/index.html') as base_index_tmpl, \
             output_index.write(line.replace('{{ number_of_games }}', str(len(item_to_print))))
         elif '{{ hash }}' in line:
             output_index.write(line.replace('{{ hash }}', style_hash))
+        elif '{{ blog_post }}' in line:
+            for post in glob.glob('./base/blog/*'):
+                title = post[23:].replace('.html', '').replace('-', ' ').title()
+                link = post[7:]
+                output_index.write('<li><img src="../img/meeple.svg" /> <a href="{}">{}</a></li>'.format(link, title))
         else:
             output_index.write(line)
 
