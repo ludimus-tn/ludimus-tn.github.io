@@ -421,9 +421,9 @@ footer p {
 }
 
 .blog-post img {
-    float: left;
-    padding: 0 .5em .5em 0;
-    height: 250px;
+    display: block;
+    width: 100%;
+    margin-bottom: 1em;
 }
 
 .blog-post h1 {
@@ -435,6 +435,7 @@ footer p {
 }
 
 .blog-post h3 {
+    text-align: center;
     margin-top: 1.5em;
     margin-bottom: .5em;
     font-weight: bold;
