@@ -64,8 +64,8 @@ BASE_ITEM = """
 </div>
 """
 
-with open('./base/index.html') as base_index_tmpl, \
-        open('./base/games.html') as base_games_tmpl, \
+with open('./layouts/index.html') as base_index_tmpl, \
+        open('./layouts/games.html') as base_games_tmpl, \
         open('./processors/games.json') as data, \
         open('./index.html', 'w') as output_index, \
         open('./games.html', 'w') as output_games, \
@@ -100,10 +100,10 @@ with open('./base/index.html') as base_index_tmpl, \
         elif '{{ hash }}' in line:
             output_index.write(line.replace('{{ hash }}', style_hash))
         elif '{{ blog_post }}' in line:
-            for post in glob.glob('./base/blog/*'):
-                title = post[23:].replace('.html', '').replace('-', ' ').title()
-                link = post[7:]
-                output_index.write('<li><img src="../img/meeple.svg" /> <a href="{}">{}</a></li>'.format(link, title))
+            for post in glob.glob('./layouts/blog/*'):
+                file_name = post.replace('./layouts/blog/', '')
+                title = file_name[10:].replace('.html', '').replace('-', ' ').title()
+                output_index.write('<li><img src="../img/meeple.svg" /> <a href="/blog/{}">{}</a></li>'.format(file_name, title))
         else:
             output_index.write(line)
 
@@ -121,7 +121,7 @@ with open('./base/index.html') as base_index_tmpl, \
     for line in base_games_tmpl:
         output_games.write(line)
 
-    posts = glob.glob('./base/blog/*')
+    posts = glob.glob('./layouts/blog/*')
     for post in posts:
         post_name = post.rsplit('/', 1)[1]
         with open(post) as post_tmpl, \
