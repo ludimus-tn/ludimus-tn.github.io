@@ -80,10 +80,14 @@ with open('./layouts/index.html') as base_index_tmpl, \
         elif '{{ footer }}' in line:
             output_index.write(line.replace('{{ footer }}', footer))
         elif '{{ blog_post }}' in line:
-            for post in glob.glob('./layouts/blog/*'):
+            for post in sorted(glob.glob('./layouts/blog/*')):
                 file_name = post.replace('./layouts/blog/', '')
                 title = file_name[10:].replace('.html', '').replace('-', ' ').title()
-                output_index.write('<li><img src="../static/img/meeple.svg" /> <a href="/blog/{}">{}</a></li>'.format(file_name, title))
+                output_index.write(
+                    '<li><img src="../static/img/meeple.svg" /> <a href="/blog/{}">{}</a></li>\n'.format(
+                        file_name, title
+                    )
+                )
         else:
             output_index.write(line)
 
