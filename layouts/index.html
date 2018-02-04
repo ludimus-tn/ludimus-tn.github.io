@@ -23,7 +23,7 @@
         <div id="intro">
             <h1 style="display: none;">ludimus</h1>
             <img src="../static/img/logo.svg" alt="ludimus">
-            <p>Eventi ludici gratuiti. A <strong>Trento</strong>. Ogni <strong>lunedì</strong>.</p>
+            <p>Eventi ludici <strong>gratuiti</strong>. A <strong>Trento</strong> e a <strong>Rovereto</strong>.</p>
 
             <a href="https://www.facebook.com/pg/ludimusTN/" target="_blank"><i class="fa fa-fw fa-facebook"></i></a>
             <a href="https://t.me/ludimus" target="_blank"><i class="fa fa-fw fa-paper-plane"></i></a>
@@ -54,14 +54,17 @@
             <h2><small>cosa facciamo</small>Serate settimanali</h2>
 
             <p class="centered-text">
-                Ci troviamo ogni <strong>lunedì</strong> a partire dalle 19.00 presso <a href="https://www.facebook.com/Il-Simposio-Bar-Ristorante-162813970411602" target="_blank">il Simposio</a>.
+                Ogni <strong>lunedì</strong>, a partire dalle 19.00, a <strong>Trento</strong> presso <a href="https://www.facebook.com/Il-Simposio-Bar-Ristorante-162813970411602" target="_blank">il Simposio</a>.
+                <br>
+                <a href="https://goo.gl/maps/MyHyLKRdzQs" target="_blank">Come arrivare ⇢</a>
+                <br>
+                <br>
+                Ogni due <strong>mercoledì</strong>, a partire dalle 19.00, a <strong>Rovereto</strong> presso <a href="https://www.facebook.com/smartlabrovereto/" target="_blank">Smart Lab</a>.
+                <br>
+                <a href="https://goo.gl/maps/MyHyLKRdzQs" target="_blank">Come arrivare ⇢</a>
+                <br>
                 <br>
                 Durante le serate potrete approfittare del <strong>menù convenzionato</strong>.
-            </p>
-
-            <br>
-            <p class="text-center">
-                <a href="https://goo.gl/maps/MyHyLKRdzQs" target="_blank">Come arrivare ⇢</a>
             </p>
         </div>
     </section>
@@ -163,6 +166,14 @@
                     <h3 class="card-title">PopLar</h3>
                     <p class="card-text">Partecipazione all'edizione del 2017 di PopLar</p>
                     <a href="https://www.facebook.com/events/357446291339756/" target="_blank">Dettagli ⇢</a>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="../static/img/serate/smartlab.jpg" alt="smart lab" />
+                <div class="card-block">
+                    <h3 class="card-title">Smart Lab</h3>
+                    <p class="card-text">Organizzazione serata speciale a Rovereto</p>
+                    <a href="https://www.facebook.com/events/131480317522576/" target="_blank">Dettagli ⇢</a>
                 </div>
             </div>
         </div>
@@ -274,17 +285,24 @@
 
     <script type="text/javascript">
         function initMap() {
-            var simposio = {lat: 46.0679888, lng: 11.1188979};
+            var simposio = {lat: 46.0679888, lng: 11.1188979},
+                smartlab = {lat: 45.9046541, lng: 11.0407505};
 
             var map = new google.maps.Map(document.getElementById('map'), {
-                zoom: 15,
-                center: simposio,
+                zoom: 10,
+                center: {lat: 45.997919, lng: 11.113590},
                 mapTypeControl: false,
                 zoomControl: false,
                 streetViewControl: false
             });
-            var marker = new google.maps.Marker({
+
+            new google.maps.Marker({
                 position: simposio,
+                map: map
+            });
+
+            new google.maps.Marker({
+                position: smartlab,
                 map: map
             });
 
@@ -305,7 +323,7 @@
             userId: 6431223467,
             target: 'instagram-photos',
             sortBy: 'most-recent',
-            limit: 4,
+            limit: 12,
             resolution: 'low_resolution',
             template: '<div class="card">' +
                 '<a href="{{link}}" target="_blank">' +
