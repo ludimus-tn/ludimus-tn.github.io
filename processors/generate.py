@@ -41,6 +41,7 @@ HIDDEN_GAMES = {
 }
 
 boardgame_tmpl = '\n'.join(open('./layouts/partials/boardgame.html').readlines())
+serata_speciale_tmpl = '\n'.join(open('./layouts/partials/serata-speciale.html').readlines())
 google_analytics = '\n'.join(open('./layouts/partials/google-analytics.html').readlines())
 footer = '\n'.join(open('./layouts/partials/footer.html').readlines())
 style_hash = hashlib.md5(open('./style.css').read().encode('utf-8')).hexdigest()
@@ -66,6 +67,16 @@ for item in input_data.get('items', []):
         weight='{0:0.1f}'.format(item['pesoMedio']),
     ))
 
+serate_speciali = []
+
+for serata in sorted(glob.glob('./layouts/serate_speciali/*'), reverse=True):
+    with open(serata) as fin:
+        data = {
+           k.split(': ')[0]: k.split(': ')[1].strip() for k in fin.readlines()
+        }
+        the_date = serata.rsplit('/', 1)[-1].split('-')[0]
+        data['date'] = '{}/{}/{}'.format(the_date[6:8], the_date[4:6], the_date[0:4])
+        serate_speciali.append(serata_speciale_tmpl.format(**data))
 
 with open('./layouts/index.html') as base_index_tmpl, \
         open('./index.html', 'w') as output_index:
@@ -73,6 +84,9 @@ with open('./layouts/index.html') as base_index_tmpl, \
     for line in base_index_tmpl:
         if '{{ number_of_games }}' in line:
             output_index.write(line.replace('{{ number_of_games }}', str(len(item_to_print))))
+        elif '{{ serate_speciali }}' in line:
+            for serata in serate_speciali:
+                output_index.write(serata)
         elif '{{ hash }}' in line:
             output_index.write(line.replace('{{ hash }}', style_hash))
         elif '{{ google_analytics }}' in line:

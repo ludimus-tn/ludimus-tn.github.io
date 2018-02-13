@@ -203,6 +203,12 @@ section h2 {
     margin: .2rem;
 }
 
+#special-events .cards-container .event-date {
+    font-size: 10px;
+    float: left;
+    margin-bottom: 5px;
+}
+
 #special-events .cards-container a, #games .cards-container a {
     font-size: 10px;
     float: right;
