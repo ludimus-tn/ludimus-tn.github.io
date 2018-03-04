@@ -12,10 +12,11 @@ name = {
     'melachel': 'Stefano',
     'hina00': 'Sofia',
     'Leouz': 'Leonardo',
-    'ResN91': 'Andrea'
+    'ResN91': 'Andrea',
+    'Sambaita': 'Samantha'
 }
 
-bgg = BoardGameGeek()
+bgg = BoardGameGeek(retries=10)
 
 header = [
     "Id", "BGG rank", "Name", "Url", "Playing time", "Players", "Rating", "Users rated", "Weight", "NumOwners",
@@ -59,7 +60,16 @@ def create_line(pair):
 dic = {}
 for user in name:
     print(user)
-    hislist = bgg.collection(user_name=user)
+    c = 0
+    found = False
+    while not found and c<5:
+        try:
+            hislist = bgg.collection(user_name=user)
+            found = True
+        except:
+            pass
+    if not found:
+        exit(1)
     for item in hislist:
         if item.owned:
             dic[item.id] = dic.get(item.id,[]) + [user]
