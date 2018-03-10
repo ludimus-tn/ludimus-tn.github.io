@@ -186,7 +186,7 @@ section h2 {
     margin: .2rem;
 }
 
-#special-events .cards-container, #games .cards-container , #instagram .cards-container {
+#special-events .cards-container, #games .cards-container, #instagram .cards-container, #staff .cards-container {
     text-align: center;
     width: 80%;
     margin: 0 auto;
