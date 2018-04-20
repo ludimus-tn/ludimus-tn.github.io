@@ -432,6 +432,13 @@ footer p {
     margin-bottom: 1em;
 }
 
+.center-img img {
+    display: block;
+    width: 30%;
+    margin-bottom: 1em;
+}
+
+
 .blog-post h1 {
     font-weight: bold;
     margin-bottom: .5em;
