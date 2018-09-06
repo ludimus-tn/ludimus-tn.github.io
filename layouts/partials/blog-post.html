@@ -1,0 +1,42 @@
+<html>
+<head>
+    {{ google_analytics }}
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>{{ blog_post_title }}</title>
+
+    <meta property="og:image" content="{{ blog_post_og }}" />
+    <meta property="og:image:secure_url" content="{{ blog_post_og }}" />
+    <meta property="og:image:type" content="image/jpg" />
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto+Condensed|Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
+          crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+          crossorigin="anonymous">
+    <link rel="stylesheet" href="../style.css?t={{ hash }}">
+
+    <link rel="icon" type="image/png" href=".././static/img/favicon/favicon-32x32.png" sizes="32x32"/>
+    <link rel="icon" type="image/png" href=".././static/img/favicon/favicon-16x16.png" sizes="16x16"/>
+</head>
+<body>
+
+<a href="/"><img class="go-back" src="../static/img/logo.svg" alt="ludimus"></a>
+
+<section class="blog-post">
+   {{ blog_post_body }}
+</section>
+
+<section class="blog-post-writer">
+    <div class="blog-post-writer__images">
+        <img src="../static/img/staff/{{ blog_post_author_img }}">
+    </div>
+    <h5>{{ blog_post_author }}</h5>
+</section>
+
+{{ footer }}
+
+</body>
+</html>

@@ -2,7 +2,7 @@ import glob
 import json
 import os
 import hashlib
-
+import markdown2
 
 GAMES_WITHOUT_MD = {
     102548,  # dungeon-fighter
@@ -46,6 +46,7 @@ google_analytics = '\n'.join(open('./layouts/partials/google-analytics.html').re
 footer = '\n'.join(open('./layouts/partials/footer.html').readlines())
 style_hash = hashlib.md5(open('./style.css').read().encode('utf-8')).hexdigest()
 input_data = json.loads(''.join(open('./processors/games.json').readlines()))
+blog_post_tmpl = open('./layouts/partials/blog-post.html').readlines()
 
 item_to_print = []
 
@@ -96,7 +97,9 @@ with open('./layouts/index.html') as base_index_tmpl, \
         elif '{{ blog_post }}' in line:
             for post in sorted(glob.glob('./layouts/blog/*')):
                 file_name = post.replace('./layouts/blog/', '')
-                title = file_name[10:].replace('.html', '').replace('-', ' ').title()
+                title = file_name[10:].replace('.html', '').replace('.md', '').replace('-', ' ').title()
+                file_name = file_name.replace('.md', '.html')
+
                 output_index.write(
                     '<li><img src="../static/img/meeple.svg" /> <a href="/blog/{}">{}</a></li>\n'.format(
                         file_name, title
@@ -129,15 +132,61 @@ posts = glob.glob('./layouts/blog/*')
 for post in posts:
     post_name = post.rsplit('/', 1)[1]
 
-    with open(post) as post_tmpl, \
-            open('./blog/{}'.format(post_name), 'w+') as output_post:
+    if post.endswith('.html'):
+        with open(post) as post_tmpl, \
+                open('./blog/{}'.format(post_name), 'w+') as output_post:
 
-        for line in post_tmpl:
-            if '{{ hash }}' in line:
-                output_post.write(line.replace('{{ hash }}', style_hash))
-            elif '{{ google_analytics }}' in line:
-                output_post.write(line.replace('{{ google_analytics }}', google_analytics))
-            elif '{{ footer }}' in line:
-                output_post.write(line.replace('{{ footer }}', footer))
-            else:
-                output_post.write(line)
+            for line in post_tmpl:
+                if '{{ hash }}' in line:
+                    output_post.write(line.replace('{{ hash }}', style_hash))
+                elif '{{ google_analytics }}' in line:
+                    output_post.write(line.replace('{{ google_analytics }}', google_analytics))
+                elif '{{ footer }}' in line:
+                    output_post.write(line.replace('{{ footer }}', footer))
+                else:
+                    output_post.write(line)
+    else:
+        with open(post) as post_tmpl, \
+                open('./blog/{}'.format(post_name.replace('.md', '.html')), 'w+') as output_post:
+
+            post_body = post_tmpl.readlines()
+
+            title = None
+            author = None
+            author_img = None
+            og_image = None
+            post_blog_body = []
+
+            for line in post_body:
+                if 'blog_post_title: ' in line:
+                    title = line.replace('blog_post_title: ', '').strip()
+                elif 'blog_post_author: ' in line:
+                    author = line.replace('blog_post_author: ', '').strip()
+                elif 'blog_post_author_img: ' in line:
+                    author_img = line.replace('blog_post_author_img: ', '').strip()
+                elif 'blog_post_og: ' in line:
+                    og_image = line.replace('blog_post_og: ', '').strip()
+                else:
+                    post_blog_body.append(line)
+
+            for line in blog_post_tmpl:
+                if '{{ hash }}' in line:
+                    output_post.write(line.replace('{{ hash }}', style_hash))
+                elif '{{ google_analytics }}' in line:
+                    output_post.write(line.replace('{{ google_analytics }}', google_analytics))
+                elif '{{ footer }}' in line:
+                    output_post.write(line.replace('{{ footer }}', footer))
+                elif '{{ blog_post_title }}' in line:
+                    output_post.write(line.replace('{{ blog_post_title }}', title))
+                elif '{{ blog_post_body }}' in line:
+                    output_post.write(line.replace('{{ blog_post_body }}', markdown2.markdown('\n'.join(post_blog_body))))
+                elif '{{ blog_post_author_img }}' in line:
+                    output_post.write(line.replace('{{ blog_post_author_img }}', author_img))
+                elif '{{ blog_post_author }}' in line:
+                    output_post.write(line.replace('{{ blog_post_author }}', author))
+                elif '{{ blog_post_og }}' in line:
+                    output_post.write(line.replace('{{ blog_post_og }}', og_image))
+                else:
+                    output_post.write(line)
+
+
