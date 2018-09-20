@@ -7,9 +7,12 @@
     <title>ludimus</title>
     <meta property="og:image" content="https://dl.dropbox.com/s/83rbvtvzos9rapo/logo.png" />
 
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto+Condensed|Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto+Condensed|Raleway|Roboto+Mono" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
     <link rel="stylesheet" href="./style.css?t={{ hash }}">
 
     <link rel="icon" type="image/png" href="../static/img/favicon/favicon-32x32.png" sizes="32x32" />
@@ -17,189 +20,79 @@
 </head>
 <body>
     <section id="header">
-        <img src="../static/img/wall.jpg" alt="ludimus wall" />
-        <div id="bg"></div>
-
         <div id="intro">
             <h1 style="display: none;">ludimus</h1>
             <img src="../static/img/logo.svg" alt="ludimus">
-            <p>Eventi ludici <strong>gratuiti</strong>. A <strong>Trento</strong> e a <strong>Rovereto</strong>.</p>
+            <p>Eventi ludici <strong>gratuiti</strong>. In <strong>Trentino</strong>.</p>
 
             <a href="https://www.facebook.com/pg/ludimusTN/" target="_blank"><i class="fa fa-fw fa-facebook"></i></a>
+            <a href="https://www.instagram.com/ludimustrento/" target="_blank"><i class="fa fa-fw fa-instagram"></i></a>
             <a href="https://t.me/ludimus" target="_blank"><i class="fa fa-fw fa-paper-plane"></i></a>
         </div>
 
-        <a id="go-down" href="#ludimus">⌄</a>
+        <a id="go-down" href="#numbers">⌄</a>
     </section>
 
-    <section id="ludimus">
-        <div id="awesome"></div>
-        <div>
-            <h2><small>chi siamo</small>Ludimus</h2>
+    <section id="numbers">
+        <div class="row">
+            <div class="col">
+                <h3>ISCRITTI</h3>
+                <p>200+</p>
+                <a href="#join">Manchi solo te ⇢</a>
+            </div>
+            <div class="col">
+                <h3>GIOCHI</h3>
+                <p>{{ number_of_games }}</p>
+                <a href="/games.html">Curiosa pure ⇢</a>
+            </div>
+            <div class="col">
+                <h3>EVENTI</h3>
+                <p>100+</p>
+                <a href="https://www.facebook.com/ludimusTN/events" target="_blank">Dove trovarci ⇢</a>
+            </div>
+        </div>
+    </section>
 
-            <p class="centered-text">
-                Siamo un’associazione senza scopo di lucro che diffonde la cultura del
-                <strong>gioco da tavolo</strong>.
-            </p>
-            <br>
-            <p class="text-center">
-                <a href="https://www.facebook.com/pg/ludimusTN/events/" target="_blank">Prossimi eventi ⇢</a>
-            </p>
+    <section id="instagram">
+        <div id="instagram-photos" class="grid"></div>
+    </section>
+
+    <section id="blog" class="slick-slider">
+        <blockquote>Si può scoprire di più su una persona in un’ora di gioco che in un anno di conversazione.</blockquote>
+
+        <div class="blog-items">
+            {{ blog_post }}
         </div>
     </section>
 
     <section id="monday">
         <div id="map"></div>
         <div id="monday-content">
-            <h2><small>cosa facciamo</small>Serate settimanali</h2>
 
             <p class="centered-text">
-                Ogni <strong>lunedì</strong>, a partire dalle 19.00, a <strong>Trento</strong> presso <a href="https://www.facebook.com/Il-Simposio-Bar-Ristorante-162813970411602" target="_blank">il Simposio</a>.
+                Ogni <strong>lunedì</strong>, a <strong>Trento</strong> presso <a href="https://www.facebook.com/Il-Simposio-Bar-Ristorante-162813970411602" target="_blank">il Simposio</a>.
                 <br>
                 <a href="https://goo.gl/maps/MyHyLKRdzQs" target="_blank">Come arrivare ⇢</a>
                 <br>
                 <br>
-                Ogni due <strong>mercoledì</strong>, a partire dalle 19.00, a <strong>Rovereto</strong> presso <a href="https://www.facebook.com/smartlabrovereto/" target="_blank">Smart Lab</a>.
+                Ogni due <strong>giovedì</strong>, a <strong>Rovereto</strong> presso <a href="https://www.facebook.com/smartlabrovereto/" target="_blank">Smart Lab</a>.
                 <br>
                 <a href="https://goo.gl/maps/12R3EDBMK1G2" target="_blank">Come arrivare ⇢</a>
-                <br>
-                <br>
-                Durante le serate potrete approfittare del <strong>menù convenzionato</strong>.
             </p>
         </div>
-    </section>
-
-    <section id="special-events">
-        <h2><small>molto altro</small>Eventi speciali</h2>
-
-        <p class="centered-text">
-            Durante l’anno organizziamo eventi con altre associazioni, presentazioni con autori, tornei...
-            <br>
-            La lista dei ricordi continua ad allungarsi.
-        </p>
-        <br>
-
-        <div class="cards-container">
-            {{ serate_speciali }}
-        </div>
-
-        <p class="text-center">
-            Vuoi organizzare qualcosa con noi?<br>
-            <a href="mailto:ludimustrento@gmail.com">Contattaci ⇢</a>
-        </p>
-    </section>
-
-    <section id="blog">
-        <h2><small>blog</small>qualche articolo</h2>
-        <p class="centered-text">
-            La passione dei giochi da tavolo non ci lascia mai!<br>
-            Non riusciamo a smettere di parlarne:
-        </p>
-        <ul>
-            {{ blog_post }}
-        </ul>
-    </section>
-
-    <section id="instagram">
-        <h2><small>instagram</small>Qualche foto</h2>
-
-        <p class="centered-text">
-            Le ultime foto presenti su <a href="http://instagram.com/ludimustrento" target="_blank">@ludimustrento</a>!
-        </p>
-        <br>
-
-        <div id="instagram-photos" class="cards-container"></div>
-
-        <p class="text-center">
-            <a href="http://instagram.com/ludimustrento" target="_blank">Seguici su instagram ⇢</a>
-        </p>
-    </section>
-
-    <section id="our-games">
-        <div class="big-title">
-            <h2><small>i nostri</small> {{ number_of_games }}</h2>
-            <h3>giochi da tavolo</h3>
-        </div>
-
-        <p class="text-center">
-            Curioso?<br>
-            <a href="/games.html">Dacci un'occhiata ⇢</a>
-        </p>
-    </section>
-
-    <section id="staff">
-        <h2><small>le nostre facce</small>La squadra</h2>
-
-        <div class="cards-container">
-            <div class="staff-image">
-                <img src="../static/img/staff/tia.jpg" alt="Mattia Larentis">
-                <div><span>Mattia</span></div>
-            </div>
-
-            <div class="staff-image">
-                <img src="../static/img/staff/ste.jpg" alt="Stefano Parmesan">
-                <div><span>Stefano</span></div>
-            </div>
-
-            <div class="staff-image">
-                <img src="../static/img/staff/rik.jpg" alt="Riccardo Longo">
-                <div><span>Riccardo</span></div>
-            </div>
-
-            <div class="staff-image">
-                <img src="../static/img/staff/masno.jpg" alt="Davide Gadenz">
-                <div><span>Davide</span></div>
-            </div>
-
-            <div class="staff-image">
-                <img src="../static/img/staff/war.png" alt="Alessio Guerrieri">
-                <div><span>Alessio</span></div>
-            </div>
-
-            <div class="staff-image">
-                <img src="../static/img/staff/sofy.png" alt="Sofia Ruele">
-                <div><span>Sofia</span></div>
-            </div>
-
-            <div class="staff-image">
-                <img src="../static/img/staff/leo.jpg" alt="Leonardo Bertè">
-                <div><span>Leonardo</span></div>
-            </div>
-
-            <div class="staff-image">
-                <img src="../static/img/staff/sam.jpg" alt="Samantha Baita">
-                <div><span>Sam</span></div>
-            </div>
-
-            <div class="staff-image">
-                <img src="../static/img/staff/tex.png" alt="Andrea Tessadri">
-                <div><span>Andrea</span></div>
-            </div>
-
-            <div class="staff-image">
-                <img src="../static/img/staff/pitt.jpg" alt="Michele Pittoni">
-                <div><span>Michele</span></div>
-            </div>
-
-            <div class="staff-image">
-                <img src="../static/img/staff/marco.png" alt="Marco Magnani">
-                <div><span>Marco</span></div>
-            </div>
-        </div>
-	
     </section>
 
     <section id="join">
         <h2><small>come aiutarci</small> tesseramento</h2>
 
         <ul>
-            <li><img src="../static/img/meeple.svg" /> Ottenere splendidi gadget targati Ludimus</li>
-            <li><img src="../static/img/meeple.svg" /> Sconto del 15% sull’acquisto di qualsiasi gioco</li>
-            <li><img src="../static/img/meeple.svg" /> Grandi sconti al Simposio (tutti i giorni!)</li>
+            <li><img src="../static/img/meeple.svg" /> Sconti fino al 30% sull’acquisto di qualsiasi gioco</li>
+            <li><img src="../static/img/meeple.svg" /> Grandi sconti al Simposio e in SmartLab!</li>
             <li><img src="../static/img/meeple.svg" /> Prendere in prestito i giochi dell’associazione</li>
-            <li><img src="../static/img/meeple.svg" /> Partecipare a eventi esclusivi</li>
-            <li><img src="../static/img/meeple.svg" /> Partecipare alla scelta dei prossimi acquisti di Ludimus</li>
             <li><img src="../static/img/meeple.svg" /> Acquisti collettivi per ammortizzare i costi di spedizione</li>
+            <li><img src="../static/img/meeple.svg" /> Partecipare alla scelta dei prossimi acquisti di Ludimus</li>
+            <li><img src="../static/img/meeple.svg" /> Ottenere splendidi gadget targati Ludimus</li>
+            <li><img src="../static/img/meeple.svg" /> Partecipare a eventi esclusivi</li>
         </ul>
 
         <p class="text-center">
@@ -209,6 +102,38 @@
     </section>
 
     {{ footer }}
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script>
+        $('.blog-items').slick({
+            focusOnSelect: false,
+            responsive: [
+                {
+                    breakpoint: 5000,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+            ]
+        });
+    </script>
 
     <script type="text/javascript">
         function initMap() {
@@ -243,22 +168,28 @@
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDL3E8pZkDlbq5DTC7on1R3dlQF9iL1n30&callback=initMap"></script>
     <script src="/static/js/instafeed.min.js"></script>
     <script>
-        var feed = new Instafeed({
+        var feedBig = new Instafeed({
             accessToken: '6431223467.1677ed0.497a3fb534224faabb7630d4f0bc6e93',
             clientId: 'f22d3e48a2c74c5ca51de31e6a499f19',
             get: 'user',
             userId: 6431223467,
             target: 'instagram-photos',
             sortBy: 'most-recent',
-            limit: 12,
-            resolution: 'low_resolution',
-            template: '<div class="card">' +
-                '<a href="{{link}}" target="_blank">' +
-                    '<img class="card-img-top" src="{{image}}" />' +
-                '</a>' +
+            limit: 5,
+            resolution: 'standard_resolution',
+            template: '<div class="grid__item">' +
+            '    <div class="content">' +
+            '        <div class="content-inside">' +
+            '            <a href="{{link}}" target="_blank">' +
+            '                <img class="card-img-top" src="{{image}}" />' +
+            '                <i class="fa fa-instagram"></i>' +
+            '            </a>'+
+            '        </div>' +
+            '    </div>' +
             '</div>'
         });
-        feed.run();
+        feedBig.run();
     </script>
+
 </body>
 </html>

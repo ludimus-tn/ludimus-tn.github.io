@@ -20,7 +20,6 @@ section {
     position: relative;
     color: #1b1b1b;
     padding: 3rem;
-    border-bottom: 1px dashed #ababab;
 }
 
 section:last-of-type {
@@ -90,15 +89,7 @@ section h2 {
     display: flex;
     align-items: center;
     overflow: hidden;
-}
-
-#bg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(255, 255, 255, .8);
+    border-bottom: 1px dashed #ababab;
 }
 
 #header > img {
@@ -156,6 +147,34 @@ section h2 {
 }
 
 /**********************************************************************************************************************/
+/* numbers */
+/**********************************************************************************************************************/
+
+#numbers h3 {
+    text-align: center;
+    font-family: "Roboto Condensed", sans-serif;
+    margin-bottom: -1rem;
+}
+
+#numbers p {
+    font-size: 6em;
+    text-align: center;
+    font-family: "Roboto Mono", monospace;
+    margin-bottom: -1rem;
+}
+
+#numbers a {
+    text-align: center;
+    display: block;
+}
+
+@media (max-width: 621px) {
+    #numbers a {
+        margin-bottom: 2rem;
+    }
+}
+
+/**********************************************************************************************************************/
 /* VISION */
 /**********************************************************************************************************************/
 
@@ -173,63 +192,134 @@ section h2 {
     z-index: 2;
     background: rgba(255, 255, 255, .7);
     margin: -3rem;
-    padding: 3rem;
+    padding: 6rem;
+    font-size: 1.5rem;
 }
 
 /**********************************************************************************************************************/
 /* SPECIAL EVENTS & GAMES */
 /**********************************************************************************************************************/
 
-#special-events .card, #games .card, #instagram .card {
+#special-events .card, #games .card, #instagram-photos-small .card {
     width: 228px;
     display: inline-block;
     margin: .2rem;
 }
 
-#special-events .cards-container, #games .cards-container, #instagram .cards-container, #staff .cards-container {
+#games .cards-container {
     text-align: center;
     width: 80%;
     margin: 0 auto;
     margin-bottom: 2rem;
 }
 
-#special-events .cards-container h3, #games .cards-container h3 {
+#instagram {
+    padding: 0;
+}
+
+#instagram .card {
+    position: relative;
+}
+
+#instagram-photos-big .fa-instagram, #instagram-photos-small .fa-instagram {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    color: white;
+}
+
+#games .cards-container h3 {
     margin: 0;
     font-size: 1.2rem;
 }
 
-#special-events .cards-container p, #games .cards-container p {
+#games .cards-container p {
     font-size: .8rem;
     margin: .2rem;
 }
 
-#special-events .cards-container .event-date {
-    font-size: 10px;
-    float: left;
-    margin-bottom: 5px;
-}
-
-#special-events .cards-container a, #games .cards-container a {
+#games .cards-container a {
     font-size: 10px;
     float: right;
     margin-bottom: 5px;
 }
 
-#special-events .cards-container img, #games .cards-container img {
+#games .cards-container img {
     height: 114px;
     width: 100%;
     display: block;
 }
 
-#special-events .card-block, #games .card-block, #instagram .card-block {
+#games .card-block, #instagram .card-block {
     padding: .8rem;
 }
 
+/**********************************************************************************************************************/
+/* INSTAGRAM */
+/**********************************************************************************************************************/
+
+#instagram .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+
 @media (max-width: 992px) {
-    #special-events .cards-container {
-        width: 90%;
+    #instagram .grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
     }
 }
+
+#instagram .grid__item {
+    position: relative;
+    width: 100%;
+    border: 1px solid #ccc;
+    overflow: hidden;
+}
+
+#instagram .grid__item .fa-instagram {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    color: white;
+}
+
+#instagram .grid__item img {
+    transform: scale(1);
+    transition: transform 400ms ease-out;
+}
+
+#instagram .grid__item img:hover {
+    transform: scale(1.15);
+}
+
+#instagram .grid__item:nth-child(1) {
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+}
+
+#instagram .grid__item:nth-child(2) {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+}
+
+#instagram .grid__item:nth-child(3) {
+    grid-column: 4 / 5;
+    grid-row: 1 / 2;
+}
+
+#instagram .grid__item:nth-child(4) {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+}
+
+#instagram .grid__item:nth-child(5) {
+    grid-column: 4 / 5;
+    grid-row: 2 / 3;
+}
+
 
 /**********************************************************************************************************************/
 /* OUR GAMES */
@@ -272,48 +362,135 @@ section h2 {
     text-align: center;
 }
 
+#staff .cards-container {
+    margin-bottom: 1rem;
+}
+
 #staff .staff-image {
-    position: relative;
     display: inline-block;
-    padding: 1rem;
-}
-
-#staff .staff-image div {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    text-align: center;
-    display: none;
-    background: rgba(236, 54, 69, .5);
-    border-radius: 100%;
-    margin: 1rem;
-    height: 100px;
-    line-height: 100px;
-    vertical-align: middle;
-}
-
-#staff .staff-image:hover div {
-    display: block;
-}
-
-#staff .staff-image span {
-    color: white;
-    font-weight: bold;
+    padding: 0 .5rem;
 }
 
 #staff .staff-image img {
     border-radius: 100%;
-    width: 100px;
+    width: 50px;
     filter: grayscale(100%);
 }
 
+@media (max-width: 621px) {
+    #staff .staff-image {
+        margin-bottom: 1rem;
+    }
+}
+
 /**********************************************************************************************************************/
-/* JOIN & BLOG */
+/* BLOG */
 /**********************************************************************************************************************/
 
-#join ul, #blog ul {
+#blog {
+    padding-bottom: 0;
+}
+
+#blog .slick-slider .slick-arrow::before {
+    color: #ec3645;
+}
+
+#blog .blog-items > div {
+    height: 250px;
+}
+
+#blog .blog-items .slick-slide {
+    position: relative;
+    border: 1px dashed #ababab;
+    padding: 16px;
+    margin: 16px;
+}
+
+#blog .blog-post-writer__images {
+    position: absolute;
+    bottom: 16px;
+    margin-bottom: 16px;
+    right: 16px;
+}
+
+#blog .blog-post-writer__images img {
+    width: 50px;
+    height: 50px;
+    float: right;
+}
+
+#blog h4 {
+    font-weight: bold;
+    margin-bottom: .5em;
+    text-transform: uppercase;
+    font-size: 2.5em;
+    line-height: .9em;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: black;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+#blog .slick-slide > img {
+    filter: blur(4px) opacity(33%);
+    z-index: -1;
+    max-height: 100%;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 100%;
+    padding: 20%;
+}
+
+#blog blockquote {
+    font-weight: 100;
+    font-size: 2rem;
+    max-width: 575px;
+    line-height: 1.4;
+    position: relative;
+    margin: 3rem auto;
+    padding: .5rem;
+}
+
+#blog blockquote:before,
+#blog blockquote:after {
+    position: absolute;
+    color: rgba(236, 54, 69, .5);
+    font-size: 8rem;
+    width: 4rem;
+    height: 4rem;
+}
+
+#blog blockquote:before {
+    content: '“';
+    left: -5rem;
+    top: -2rem;
+}
+
+#blog blockquote:after {
+    content: '”';
+    right: -5rem;
+    bottom: 1rem;
+}
+
+@media (max-width: 621px) {
+    #blog blockquote:before,
+    #blog blockquote:after {
+        content: '';
+    }
+}
+
+/**********************************************************************************************************************/
+/* JOIN */
+/**********************************************************************************************************************/
+
+#join ul {
     width: 50%;
     margin: 0 auto;
     margin-bottom: 2rem;
@@ -321,11 +498,7 @@ section h2 {
     padding: 0;
 }
 
-#blog ul {
-    margin-top: 2em !important;
-}
-
-#join img, #blog img {
+#join img {
     height: 0.5rem;
     transform: rotate(15deg);
     margin-bottom: 3px;
@@ -333,7 +506,7 @@ section h2 {
 }
 
 @media (max-width: 992px) {
-    #join ul, #blog ul {
+    #join ul {
         width: 90%;
     }
 }

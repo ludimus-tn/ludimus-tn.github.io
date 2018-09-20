@@ -3,6 +3,8 @@ import json
 import os
 import hashlib
 import markdown2
+import re
+
 
 GAMES_WITHOUT_MD = {
     102548,  # dungeon-fighter
@@ -43,7 +45,7 @@ HIDDEN_GAMES = {
 boardgame_tmpl = '\n'.join(open('./layouts/partials/boardgame.html').readlines())
 serata_speciale_tmpl = '\n'.join(open('./layouts/partials/serata-speciale.html').readlines())
 google_analytics = '\n'.join(open('./layouts/partials/google-analytics.html').readlines())
-footer = '\n'.join(open('./layouts/partials/footer.html').readlines())
+footer = ''.join(open('./layouts/partials/footer.html').readlines())
 style_hash = hashlib.md5(open('./style.css').read().encode('utf-8')).hexdigest()
 input_data = json.loads(''.join(open('./processors/games.json').readlines()))
 blog_post_tmpl = open('./layouts/partials/blog-post.html').readlines()
@@ -95,15 +97,41 @@ with open('./layouts/index.html') as base_index_tmpl, \
         elif '{{ footer }}' in line:
             output_index.write(line.replace('{{ footer }}', footer))
         elif '{{ blog_post }}' in line:
-            for post in sorted(glob.glob('./layouts/blog/*')):
+            for post in sorted(glob.glob('./layouts/blog/*'), reverse=True):
                 file_name = post.replace('./layouts/blog/', '')
                 title = file_name[10:].replace('.html', '').replace('.md', '').replace('-', ' ').title()
-                file_name = file_name.replace('.md', '.html')
+                file_url = file_name.replace('.md', '.html')
+
+                if file_name.endswith('.html'):
+                    with open(post) as post_tmpl:
+                        for line in post_tmpl:
+                            if '../static/img/staff/' in line:
+                                tmp = line.replace('<img src="../static/img/staff/', '')
+                                img_name, other = tmp.split('.')
+                                author_img = (img_name + '.' + other[:3]).strip()
+                                continue
+                            if 'og:image"' in line:
+                                og_image = line.replace('<meta property="og:image" content="', '').replace('" />', '').replace('"/>', '')
+                                continue
+                else:
+                    with open(post) as post_tmpl:
+                        for line in post_tmpl:
+                            if 'blog_post_author_img: ' in line:
+                                author_img = line.replace('blog_post_author_img: ', '')
+                                continue
+                            if 'blog_post_og: ' in line:
+                                og_image = line.replace('blog_post_og: ', '')
 
                 output_index.write(
-                    '<li><img src="../static/img/meeple.svg" /> <a href="/blog/{}">{}</a></li>\n'.format(
-                        file_name, title
-                    )
+                    '<a href="/blog/{}">' \
+                    '<img src="{}"/>' \
+                    '<h4>{}</h4>' \
+                    '''
+                        <div class="blog-post-writer__images">
+                            <img src="../static/img/staff/{}">
+                        </div>
+                    '''\
+                    '</a>\n'.format(file_url, og_image, title, author_img)
                 )
         else:
             output_index.write(line)
