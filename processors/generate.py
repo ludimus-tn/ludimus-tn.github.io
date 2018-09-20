@@ -104,8 +104,9 @@ with open('./layouts/index.html') as base_index_tmpl, \
 
                 if file_name.endswith('.html'):
                     with open(post) as post_tmpl:
+                        author_img = None
                         for line in post_tmpl:
-                            if '../static/img/staff/' in line:
+                            if '../static/img/staff/' in line and author_img is None:
                                 tmp = line.replace('<img src="../static/img/staff/', '')
                                 img_name, other = tmp.split('.')
                                 author_img = (img_name + '.' + other[:3]).strip()
