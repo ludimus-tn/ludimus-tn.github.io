@@ -122,16 +122,19 @@ with open('./layouts/index.html') as base_index_tmpl, \
                             if 'blog_post_og: ' in line:
                                 og_image = line.replace('blog_post_og: ', '')
 
+                post_date_tmp = file_url[:10].split('-')
+                post_date = '{}/{}/{}'.format(post_date_tmp[2], post_date_tmp[1], post_date_tmp[0])
                 output_index.write(
                     '<a href="/blog/{}">' \
                     '<img src="{}"/>' \
                     '<h4>{}</h4>' \
                     '''
+                        <em class="post-date">{}</em>
                         <div class="blog-post-writer__images">
                             <img src="../static/img/staff/{}">
                         </div>
                     '''\
-                    '</a>\n'.format(file_url, og_image, title, author_img)
+                    '</a>\n'.format(file_url, og_image, title, post_date, author_img)
                 )
         else:
             output_index.write(line)

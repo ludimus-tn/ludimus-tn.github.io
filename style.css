@@ -597,6 +597,7 @@ footer p {
     max-width: 60%;
     margin: 0 auto;
     line-height: 1.6;
+    border-bottom: 1px dashed #ababab;
 }
 
 .blog-post img {
@@ -629,6 +630,14 @@ footer p {
 
 .blog-post h1, .blog-post h3 {
     font-family: 'Roboto Condensed', sans-serif;
+}
+
+em.post-date {
+    position: absolute;
+    left: 16px;
+    bottom: 25px;
+    color: #ababab;
+    font-size: .8rem;
 }
 
 .blog-post-writer {
