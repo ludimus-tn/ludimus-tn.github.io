@@ -126,7 +126,7 @@ with open('./layouts/index.html') as base_index_tmpl, \
                 post_date = '{}/{}/{}'.format(post_date_tmp[2], post_date_tmp[1], post_date_tmp[0])
                 output_index.write(
                     '<a href="/blog/{}">' \
-                    '<img src="{}"/>' \
+                    '<img src="{}?t=1"/>' \
                     '<h4>{}</h4>' \
                     '''
                         <em class="post-date">{}</em>
