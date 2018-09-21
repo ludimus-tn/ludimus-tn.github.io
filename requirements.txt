@@ -1,1 +1,2 @@
 boardgamegeek==0.13.2
+markdown2==2.3.5
