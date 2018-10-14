@@ -160,6 +160,17 @@ with open('./layouts/games.html') as base_games_tmpl, \
             output_games.write(line)
 
 
+with open('./layouts/informative.html') as base_games_tmpl, \
+        open('./informative.html', 'w') as output_games:
+    for line in base_games_tmpl:
+        if '{{ google_analytics }}' in line:
+            output_games.write(line.replace('{{ google_analytics }}', google_analytics))
+        elif '{{ footer }}' in line:
+            output_games.write(line.replace('{{ footer }}', footer))
+        else:
+            output_games.write(line)
+            
+
 posts = glob.glob('./layouts/blog/*')
 for post in posts:
     post_name = post.rsplit('/', 1)[1]
