@@ -1,7 +1,7 @@
 blog_post_title: Un Mazzo di Carte
 blog_post_author: Alessio
 blog_post_author_img: war.png
-blog_post_og: https://ludimus.it/static/img/blog/youtube/og.png
+blog_post_og: https://ludimus.it/static/img/blog/carte/og.png
 
 #Un Mazzo di Carte
 Storicamente, i giochi si dividevano in due grandi **tipologie**: giochi **con** componente casuale e giochi **senza** componente casuale. 
