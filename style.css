@@ -674,6 +674,44 @@ em.post-date {
 /* LEAGUE */
 /**********************************************************************************************************************/
 
+.league__header {
+    border-bottom: 1px dashed #ababab;
+}
+
+.league__header button {
+    border-radius: 0;
+    font-weight: 900;
+}
+
+.league__ranking {
+    border-bottom: 1px dashed #ababab;
+}
+
+.league__ranking h4 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    margin-bottom: 2rem;
+}
+
+.league__ranking table {
+    max-width: 70%;
+    margin: auto;
+}
+
+@media (max-width: 886px) {
+    .league__ranking table {
+        max-width: 100%;
+    }
+}
+
+.league__prizes h4 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    margin-bottom: 2rem;
+}
+
 .league__rules {
     text-align: center;
     margin-bottom: 0 auto;
