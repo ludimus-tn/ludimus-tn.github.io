@@ -171,17 +171,27 @@ with open('./layouts/informative.html') as base_games_tmpl, \
         else:
             output_games.write(line)
 
-with open('./layouts/league.html') as base_games_tmpl, \
-        open('./league.html', 'w') as output_games:
-    for line in base_games_tmpl:
+with open('./layouts/league.html') as base_league_tmpl, \
+        open('./league.html', 'w') as output_league:
+    for line in base_league_tmpl:
         if '{{ google_analytics }}' in line:
-            output_games.write(line.replace('{{ google_analytics }}', google_analytics))
+            output_league.write(line.replace('{{ google_analytics }}', google_analytics))
         elif '{{ league_ranking }}' in line:
-            output_games.write(line.replace('{{ league_ranking }}', league_ranking))
+            output_league.write(line.replace('{{ league_ranking }}', league_ranking))
         elif '{{ footer }}' in line:
-            output_games.write(line.replace('{{ footer }}', footer))
+            output_league.write(line.replace('{{ footer }}', footer))
         else:
-            output_games.write(line)
+            output_league.write(line)
+
+with open('./layouts/league_rules.html') as base_league_tmpl, \
+        open('./league_rules.html', 'w') as output_league:
+    for line in base_league_tmpl:
+        if '{{ google_analytics }}' in line:
+            output_league.write(line.replace('{{ google_analytics }}', google_analytics))
+        elif '{{ footer }}' in line:
+            output_league.write(line.replace('{{ footer }}', footer))
+        else:
+            output_league.write(line)
             
 
 posts = glob.glob('./layouts/blog/*')
