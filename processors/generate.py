@@ -42,11 +42,14 @@ HIDDEN_GAMES = {
     463,     # magic-gathering
 }
 
+markdowner = markdown2.Markdown()
+
 boardgame_tmpl = '\n'.join(open('./layouts/partials/boardgame.html').readlines())
 serata_speciale_tmpl = '\n'.join(open('./layouts/partials/serata-speciale.html').readlines())
 google_analytics = '\n'.join(open('./layouts/partials/google-analytics.html').readlines())
 footer = ''.join(open('./layouts/partials/footer.html').readlines())
 league_ranking = ''.join(open('./layouts/partials/league-ranking.html').readlines())
+league_rules = ''.join(markdowner.convert(open('./static/docs/league/2019-Regolamento.md').read().encode('utf-8')))
 style_hash = hashlib.md5(open('./style.css').read().encode('utf-8')).hexdigest()
 input_data = json.loads(''.join(open('./processors/games.json').readlines()))
 blog_post_tmpl = open('./layouts/partials/blog-post.html').readlines()
@@ -188,6 +191,8 @@ with open('./layouts/league_rules.html') as base_league_tmpl, \
     for line in base_league_tmpl:
         if '{{ google_analytics }}' in line:
             output_league.write(line.replace('{{ google_analytics }}', google_analytics))
+        elif '{{ league_rules }}' in line: 
+            output_league.write(line.replace('{{ league_rules }}', league_rules))
         elif '{{ footer }}' in line:
             output_league.write(line.replace('{{ footer }}', footer))
         else:
