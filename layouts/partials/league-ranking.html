@@ -1,0 +1,91 @@
+<!-- <script src="https://cdn.jsdelivr.net/npm/vue"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+<div id="ranking">
+  <div class="table-responsive">
+    <table class="table table-hover">
+      <thead class="thead-light">
+        <tr>
+          <th scope="col">Posizione</th>
+          <th scope="col">Partecipante</th>
+          <th scope="col">Partite registrate</th>
+          <th scope="col">Jolly utilizzati</th>
+          <th scope="col">Punteggio</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr
+          v-for="item in items"
+          :key="item.partecipant">
+            <th scope="row" v-if="item.position === 1">🥇</th>
+            <th scope="row" v-if="item.position === 2">🥈</th>
+            <th scope="row" v-if="item.position === 3">🥉</th>
+            <th scope="row" v-if="item.position > 3">{{ item.position }}°</th>
+            <td>{{ item.name }} {{ item.lastname }}</td>
+            <td>{{ item.registered_matches }}</td>
+            <td>{{ item.used_jolly }}</td>
+            <td>{{ item.points }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<script>
+  new Vue({
+    el: '#ranking',
+    data: {
+      items: [
+        {
+          position: 1,
+          name: 'primo',
+          registered_matches: '3',
+          used_jolly: '1',
+          points: 100
+        },
+        {
+          position: 3,
+          name: 'nome',
+          lastname: 'cognome',
+          registered_matches: '3',
+          used_jolly: '1',
+          points: 100
+        },
+        {
+          position: 4,
+          name: 'nome',
+          lastname: 'cognome',
+          registered_matches: '3',
+          used_jolly: '1',
+          points: 100
+        },
+        {
+          position: 2,
+          name: 'nome',
+          lastname: 'cognome',
+          registered_matches: '3',
+          used_jolly: '1',
+          points: 100
+        },
+        {
+          position: 5,
+          name: 'nome',
+          lastname: 'cognome',
+          registered_matches: '3',
+          used_jolly: '1',
+          points: 100
+        },
+        {
+          position: 6,
+          name: 'nome',
+          lastname: 'cognome',
+          registered_matches: '3',
+          used_jolly: '1',
+          points: 100
+        }
+      ]
+    }
+  })
+</script>
+
+
