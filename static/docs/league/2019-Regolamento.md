@@ -1,5 +1,4 @@
-# REGOLAMENTO
-
+#### REGOLAMENTO
 1. La partecipazione alla lega è **riservata ai soci** di Ludimus ETS.
 2. Per partecipare basta iscriversi durante un qualsiasi evento organizzato da Ludimus prima della fine del mese di marzo 2019 fornendo nome, cognome e numero di tessera.
 3. Chi è iscritto alla lega, durante ogni serata prevista (*vedi calendario*) può accumulare punti giocando ai giochi validi per la lega in quella data. I giochi selezionati da Ludimus sono dieci: Azul, Ticket to Ride, Rise of Augustus, Concordia, Nome in Codice, Hanabi, Patchwork, Biblios, 7 Wonders e Carcassonne.
