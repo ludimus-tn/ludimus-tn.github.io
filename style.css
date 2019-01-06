@@ -674,6 +674,31 @@ em.post-date {
 /* LEAGUE */
 /**********************************************************************************************************************/
 
+#league {
+    margin: 0;
+    padding: 0;
+}
+
+#league h4 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+#league h5 {
+    font-size: 1.8rem;
+    text-transform: capitalize;
+    color: #ababab;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+#league li {
+    margin-bottom: .75rem;
+}
+
 .league__header {
     border-bottom: 1px dashed #ababab;
 }
@@ -687,13 +712,6 @@ em.post-date {
     border-bottom: 1px dashed #ababab;
 }
 
-.league__ranking h4 {
-    font-size: 2rem;
-    text-transform: uppercase;
-    font-weight: 900;
-    margin-bottom: 2rem;
-}
-
 .league__ranking table {
     max-width: 70%;
     margin: auto;
@@ -705,6 +723,13 @@ em.post-date {
     }
 }
 
+@media (max-width: 992px) {
+    #league h5 {
+        font-size: 1.3rem;
+        line-height: 25px;
+    }
+}
+
 .league__prizes h4 {
     font-size: 2rem;
     text-transform: uppercase;
@@ -712,7 +737,10 @@ em.post-date {
     margin-bottom: 2rem;
 }
 
+.league__points {
+    border-bottom: 1px dashed #ababab;
+}
+
 .league__rules {
-    text-align: center;
     margin-bottom: 0 auto;
 }
