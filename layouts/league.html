@@ -1,70 +1,85 @@
 <html>
 
   <head>
-    {{ google_analytics }}
+	{{ google_analytics }}
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>ludimus - league 2019</title>
-    <meta property="og:image" content="https://dl.dropbox.com/s/83rbvtvzos9rapo/logo.png" />
+	<title>ludimus - league 2019</title>
+	<meta property="og:image" content="https://dl.dropbox.com/s/83rbvtvzos9rapo/logo.png" />
 
 
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto+Condensed|Raleway|Roboto+Mono" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
-      crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-      crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto+Condensed|Raleway|Roboto+Mono" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
+	  crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+	  crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
 
-    <link rel="stylesheet" href="./style.css?t={{ hash }}">
+	<link rel="stylesheet" href="./style.css?t={{ hash }}">
 
-    <link rel="icon" type="image/png" href="../static/img/favicon/favicon-32x32.png" sizes="32x32" />
-    <link rel="icon" type="image/png" href="../static/img/favicon/favicon-16x16.png" sizes="16x16" />
+	<link rel="icon" type="image/png" href="../static/img/favicon/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="../static/img/favicon/favicon-16x16.png" sizes="16x16" />
+
   </head>
 
   <body>
 
-    <a href="/"><img class="go-back" src="../static/img/logo.svg" alt="ludimus"></a>
+	<a href="/"><img class="go-back" src="../static/img/logo.svg" alt="ludimus"></a>
 
-    <section class="league__header">
-      <div>
-        <h2>Ludimus League 2019</h2>
-      </div>
-      <p class="centered-text">
-        La Ludimus League 2019 è un torneo che si terrà nei mesi di <strong>gennaio, febbraio e marzo 2019</strong>.
-      </p>
-      <br>
-      <p class="centered-text">
-        Ci saranno <strong>15 appuntamenti</strong> tra Trento e Rovereto, nei quali potrete giocare ai giochi selezionati 
-        e concorrere ai nostri ambiti <strong>premi</strong>.
-      </p>
-      <br>
-      <p class="centered-text"> 
-        <a href="static/docs/league/Calendario.pdf"> <strong>Scopri il calendario e i giochi selezionati</strong> </a>
-      </p>
-    </section>
-    <hr>
-    <section class="league__rules">
-      <div class="container">
-        <div class="row">
-          <div class="col">
-            <h4>Regolamento</h4>
-            <i>(Coming Soon)</i>
-          </div>
-          <div class="col">
-            <h4>Tabelle punteggi</h4>
-            <i>(Coming Soon)</i>
-          </div>
-        </div>
-      </div> 
-    </section>
-    <section class="league__prizes">
-      
-    </section>
-
-    {{ footer }}
+	<section id="league">
+		<section class="league__header">
+			<div>
+				<h2>Ludimus League 2019</h2>
+			</div>
+			<p class="centered-text">
+				La Ludimus League 2019 è un torneo che si terrà nei mesi di <strong>gennaio, febbraio e marzo 2019</strong>.
+			</p>
+			<br>
+			<p class="centered-text">
+				Ci saranno <strong>15 appuntamenti</strong> tra Trento e Rovereto, nei quali potrete giocare ai giochi selezionati
+				e concorrere ai nostri ambiti <strong>premi</strong>.
+			</p>
+			<br>
+			<p class="centered-text">
+				<a href="static/docs/league/2019-Calendario.pdf"> <strong>Scopri il calendario e i giochi selezionati ⇢</strong> </a>
+				<!-- <button type="button" class="btn btn-outline-danger">Scopri ⇢</button> -->
+			</p>
+		</section>
+		
+		<section class="league__prizes">
+			<div>
+				<h4 class="centered-text">Premi</h4>
+				<div class="container">
+					<div class="row">
+						<div class="col-md-4">
+							<p>Ingresso a Modena Play 2019</p>
+						</div>
+						<div class="col-md-4">
+							<p>Buono sconto di € per le tue consumazioni al Simposio</p>
+						</div>
+						<div class="col-md-4">
+							<p>Tazza Ludimus</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<section class="league__ranking">
+			<div class="centered-text">
+				<h4>Classifica</h4>
+			</div>
+		
+			{{ league_ranking }}
+		
+		</section>
+		
+	</section>
+	
+	{{ footer }}
 
   </body>
 

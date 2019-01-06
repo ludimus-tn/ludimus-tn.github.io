@@ -29,31 +29,39 @@
 
     <a href="/"><img class="go-back" src="../static/img/logo.svg" alt="ludimus"></a>
 
-    <section class="league__header">
-      <div>
-        <h2>Ludimus League 2019</h2>
-        <br>
-        <h4>Regolamenti e punteggi</h4>
-      </div>
-      <p class="centered-text">
-        La Ludimus League 2019 è un torneo che si terrà nei mesi di <strong>gennaio, febbraio e marzo 2019</strong>.
-      </p>
-      <br>
-    </section>
-
-    <section class="league__rules">
-      <div class="container">
-        <div class="row">
-          <div class="col">
-            <h4>Regolamento</h4>
-            <i>(Coming Soon)</i>
-          </div>
-          <div class="col">
-            <h4>Tabelle punteggi</h4>
-            <i>(Coming Soon)</i>
-          </div>
+    <section id="league">
+      <section class="league__header">
+        <div class="centered-text">
+          <h2>Ludimus League 2019</h2>
+          <h5>Regolamenti e punteggi</h5>
         </div>
-      </div>
+        <p class="centered-text">
+          La Ludimus League 2019 è un torneo che si terrà nei mesi di <strong>gennaio, febbraio e marzo 2019</strong>.
+        </p>
+        <br>
+      </section>
+      
+      <section class="league__points">
+        <div class="centered-text">
+          <h4>Giochi e tabelle punteggi</h4>
+          <p>
+            Per la Ludimus League 2019 sono stati selezionati <strong>10 giochi</strong>: <i>8 giochi individuali</i>, dove
+            chi
+            arriva primo prende più punti degli avversari, e <i>2 giochi collaborativi</i> in cui i componenti della stessa
+            squadra
+            ottengono lo stesso ammontare di punti.
+          </p>
+          <p>
+            Se siete curiosi di scoprire quali sono i giochi selezionati e punti che vengono assegnati, allora continuate a
+            leggere:
+        </div>
+      </section>
+      
+      <section class="league__rules">
+        <div class="container">
+          {{ league_rules }}
+        </div>
+      </section>
     </section>
 
 

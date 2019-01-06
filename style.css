@@ -710,6 +710,7 @@ em.post-date {
 
 .league__ranking {
     border-bottom: 1px dashed #ababab;
+    margin-bottom: 2rem;
 }
 
 .league__ranking table {
@@ -728,6 +729,10 @@ em.post-date {
         font-size: 1.3rem;
         line-height: 25px;
     }
+}
+
+.league__prizes {
+    border-bottom: 1px dashed #ababab;
 }
 
 .league__prizes h4 {
