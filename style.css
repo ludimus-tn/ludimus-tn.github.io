@@ -766,7 +766,7 @@ em.post-date {
     color: #ababab;
 }
 
-.league__points img {
+.league__points > img {
     height: 200px;
     margin: auto;
     margin-bottom: 1rem;
