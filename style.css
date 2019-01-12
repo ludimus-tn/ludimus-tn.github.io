@@ -742,8 +742,15 @@ em.post-date {
     margin-bottom: 2rem;
 }
 
-.league__points {
-    border-bottom: 1px dashed #ababab;
+.league__points hr {
+    margin-bottom: 2rem;
+    color: #ababab;
+}
+
+.league__points img {
+    height: 200px;
+    margin: auto;
+    margin-bottom: 1rem;
 }
 
 .league__rules {
