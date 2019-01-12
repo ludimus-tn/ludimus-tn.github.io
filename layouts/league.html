@@ -1,70 +1,131 @@
 <html>
 
   <head>
-    {{ google_analytics }}
+	{{ google_analytics }}
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>ludimus - league 2019</title>
-    <meta property="og:image" content="https://dl.dropbox.com/s/83rbvtvzos9rapo/logo.png" />
+	<title>ludimus - league 2019</title>
+	<meta property="og:image" content="https://dl.dropbox.com/s/83rbvtvzos9rapo/logo.png" />
 
 
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto+Condensed|Raleway|Roboto+Mono" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
-      crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-      crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto+Condensed|Raleway|Roboto+Mono" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
+	  crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+	  crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
 
-    <link rel="stylesheet" href="./style.css?t={{ hash }}">
+	<link rel="stylesheet" href="./style.css?t={{ hash }}">
 
-    <link rel="icon" type="image/png" href="../static/img/favicon/favicon-32x32.png" sizes="32x32" />
-    <link rel="icon" type="image/png" href="../static/img/favicon/favicon-16x16.png" sizes="16x16" />
+	<link rel="icon" type="image/png" href="../static/img/favicon/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="../static/img/favicon/favicon-16x16.png" sizes="16x16" />
+
   </head>
 
   <body>
 
-    <a href="/"><img class="go-back" src="../static/img/logo.svg" alt="ludimus"></a>
+	<a href="/"><img class="go-back" src="../static/img/logo.svg" alt="ludimus"></a>
 
-    <section class="league__header">
-      <div>
-        <h2>Ludimus League 2019</h2>
-      </div>
-      <p class="centered-text">
-        La Ludimus League 2019 è un torneo che si terrà nei mesi di <strong>gennaio, febbraio e marzo 2019</strong>.
-      </p>
-      <br>
-      <p class="centered-text">
-        Ci saranno <strong>15 appuntamenti</strong> tra Trento e Rovereto, nei quali potrete giocare ai giochi selezionati 
-        e concorrere ai nostri ambiti <strong>premi</strong>.
-      </p>
-      <br>
-      <p class="centered-text"> 
-        <a href="static/docs/league/Calendario.pdf"> <strong>Scopri il calendario e i giochi selezionati</strong> </a>
-      </p>
-    </section>
-    <hr>
-    <section class="league__rules">
-      <div class="container">
-        <div class="row">
-          <div class="col">
-            <h4>Regolamento</h4>
-            <i>(Coming Soon)</i>
-          </div>
-          <div class="col">
-            <h4>Tabelle punteggi</h4>
-            <i>(Coming Soon)</i>
-          </div>
-        </div>
-      </div> 
-    </section>
-    <section class="league__prizes">
-      
-    </section>
+	<section id="league">
+		<section class="league__header">
+			<div>
+				<h2>Ludimus League 2019</h2>
+			</div>
+			<p class="centered-text">
+				La Ludimus League 2019 è un torneo che si terrà nei mesi di <strong>gennaio, febbraio e marzo 2019</strong>.
+			</p>
+			<br>
+			<p class="centered-text">
+				Ci saranno <strong>15 appuntamenti</strong> tra Trento e Rovereto, nei quali potrete giocare ai giochi selezionati
+				e concorrere ai nostri ambiti <strong>premi</strong>.
+			</p>
+			<br>
+			<p class="centered-text">
+				<a href="/league_rules.html"> <strong>Scopri i giochi selezionati ⇢</strong> </a>
+			</p>
+		</section>
+		
+		<section class="league__prizes">
+			<h4 class="centered-text">Premi</h4>
+			<div class="container">
+				<div class="card-deck">
+					<div class="card text-center">
+						<div class="card-body">
+							<div class="card-title"><h2>🥇</h2></div>
+							<h5 class="card-title">Modena Play 2019 + Buono 10€</h5>
+							<div class="card-text">Buono per partecipare gratuitamente alla fiera Modena Play 2019 + buono 10€ spendibile presso il Simposio Bar Ristorante</div>
+						</div>
+					</div>
+					<div class="card text-center">
+						<div class="card-body">
+							<div class="card-title"><h2>🥈</h2></div>
+							<h5 class="card-title">Tazza Ludimus + Buono 10€</h5>
+							<div class="card-text">Tazza Ludimus + buono 10€ spendibile presso il Simposio Bar Ristorante</div>
+						</div>
+					</div>
+					<div class="card text-center">
+						<div class="card-body">
+							<div class="card-title"><h2>🥉</h2></div>
+							<h5 class="card-title">Buono 10€</h5>
+							<div class="card-text">Buono 10€ spendibile presso il Simposio Bar Ristorante</div>
+						</div>
+					</div>
+				</div>
+				<div class="centered-text">
+					<h3>Tutti possono vincere!</h3>
+					<p>
+						Alla fine del torneo tutti i partecipanti, <i>esclusi i tre primi classificati</i>, parteciperanno automaticamente
+						alla <strong>lotteria di fine
+							Ludimus League</strong> che assegnerà <strong>due magliette Ludimus</strong>
+					</p>
+					<br>
+					<p class="centered-text">
+						<a href="/league_rules.html#league_rules"> <strong>Leggi il regolamento ⇢</strong> </a>
+					</p>
+				</div>
+			</div>
+		</section>
 
-    {{ footer }}
+		<section class="legue__calendar">
+			<h4>Calendario</h4>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6">
+						<h5>Trento</h5>
+						<p><strong>21/01</strong> ‒ <a href="/league_rules.html#azul">Azul</a> e <a href="/league_rules.html#ticket_to_ride">Ticket to Ride</a></p>
+						<p><strong>28/01</strong> ‒ <a href="/league_rules.html#ticket_to_ride">Ticket to Ride</a> e <a href="/league_rules.html#augustus">Augustus</a></p>
+						<p><strong>04/02</strong> ‒ <a href="/league_rules.html#augustus">Augustus</a> e <a href="/league_rules.html#nome_in_codice">Nome in Codice</a></p>
+						<p><strong>11/02</strong> ‒ <a href="/league_rules.html#nome_in_codice">Nome in Codice</a> e <a href="/league_rules.html#7wonders">7 Wonders</a></p>
+						<p><strong>18/02</strong> ‒ <a href="/league_rules.html#7wonders">7 Wonders</a> e <a href="/league_rules.html#concordia">Concordia</a></p>
+						<p><strong>25/02</strong> ‒ <a href="/league_rules.html#concordia">Concordia</a> e <a href="/league_rules.html#hanabi">Hanabi</a></p>
+						<p><strong>04/03</strong> ‒ <a href="/league_rules.html#hanabi">Hanabi</a> e <a href="/league_rules.html#carcassonne">Carcassonne</a></p>
+						<p><strong>11/03</strong> ‒ <a href="/league_rules.html#carcassonne">Carcassonne</a> e <a href="/league_rules.html#patchwork">Patchwork</a></p>
+						<p><strong>18/03</strong> ‒ <a href="/league_rules.html#patchwork">Patchwork</a> e <a href="/league_rules.html#biblios">Biblios</a></p>
+						<p><strong>25/03</strong> ‒ <a href="/league_rules.html#biblios">Biblios</a> e <a href="/league_rules.html#azul">Azul</a></p>
+					</div>
+					<div class="col-md-6">
+						<h5>Rovereto</h5>
+						<p><strong>31/01</strong> ‒ <a href="/league_rules.html#biblios">BIblios</a>, <a href="/league_rules.html#concordia">Concordia</a>, <a href="/league_rules.html#hanabi">Hanabi</a>
+							e <a href="/league_rules.html#patchwork">Patchwork</a></p>
+						<p><strong>14/02</strong> ‒ <a href="/league_rules.html#carcassonne">Carcassonne</a>, <a href="/league_rules.html#concordia">Concordia</a>, <a href="/league_rules.html#hanabi">Hanabi</a>
+							e <a href="/league_rules.html#patchwork">Patchwork</a></p>
+						<p><strong>28/02</strong> ‒ <a href="/league_rules.html#augustus">Augustus</a>, <a href="/league_rules.html#azul">Azul</a>, <a href="/league_rules.html#biblios">Biblios</a>
+							e <a href="/league_rules.html#carcassonne">Carcassonne</a></p>
+						<p><strong>14/03</strong> ‒ <a href="/league_rules.html#7wonders">7 Wonders</a>, <a href="/league_rules.html#azul">Azul</a>, <a href="/league_rules.html#nome_in_codice">Nome
+								in Codice</a> e <a href="/league_rules.html#ticket_to_ride">Ticket to Ride</a></p>
+						<p><strong>28/03</strong> ‒ <a href="/league_rules.html#7wonders">7 Wonders</a>, <a href="/league_rules.html#augustus">Augustus</a>, <a href="/league_rules.html#nome_in_codice">Nome
+								in Codice</a> e <a href="/league_rules.html#ticket_to_ride">Ticket to Ride</a></p>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+	</section>
+	
+	{{ footer }}
 
   </body>
 

@@ -674,7 +674,101 @@ em.post-date {
 /* LEAGUE */
 /**********************************************************************************************************************/
 
-.league__rules {
+#league {
+    margin: 0;
+    padding: 0;
+}
+
+#league h4 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    margin-bottom: 2rem;
     text-align: center;
+}
+
+#league h5 {
+    font-size: 1.8rem;
+    text-transform: capitalize;
+    color: #ababab;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+#league li {
+    margin-bottom: .75rem;
+}
+
+.league__header {
+    border-bottom: 1px dashed #ababab;
+}
+
+.league__header button {
+    border-radius: 0;
+    font-weight: 900;
+}
+
+.league__ranking {
+    border-bottom: 1px dashed #ababab;
+    margin-bottom: 2rem;
+}
+
+.league__ranking table {
+    max-width: 70%;
+    margin: auto;
+}
+
+@media (max-width: 886px) {
+    .league__ranking table {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 992px) {
+    #league h5 {
+        font-size: 1.3rem;
+        line-height: 25px;
+    }
+}
+
+.league__prizes {
+    border-bottom: 1px dashed #ababab;
+}
+
+.league__prizes h4 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    margin-bottom: 2rem;
+}
+
+.league__prizes .card {
+    border-radius: 0;
+    border-style: dashed;
+}
+
+.league__prizes h3 {
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+#league .league__prizes .card h5 {
+    color: #1b1b1b;
+    font-weight: 600;
+}
+
+.league__points hr {
+    margin-bottom: 2rem;
+    color: #ababab;
+}
+
+.league__points img {
+    height: 200px;
+    margin: auto;
+    margin-bottom: 1rem;
+}
+
+.league__rules {
     margin-bottom: 0 auto;
+    border: #ababab dashed 1px;
 }
