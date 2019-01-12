@@ -785,6 +785,12 @@ em.post-date {
     border: 1px solid #cecece;
 }
 
+.league__points table.table-bordered > tbody > tr > th > img{
+    height: auto;
+    width: 1rem;
+    margin: 0;
+}
+
 .league__rules {
     margin-bottom: 0 auto;
     border: #ababab dashed 1px;
