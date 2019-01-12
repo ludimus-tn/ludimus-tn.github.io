@@ -768,6 +768,19 @@ em.post-date {
     margin-bottom: 1rem;
 }
 
+.league__points table.table-bordered{
+    border: 1px solid #cecece;
+  }
+.league__points table.table-bordered > thead > tr > th{
+    border: 1px solid #cecece;
+}
+.league__points table.table-bordered > tbody > tr > td{
+    border: 1px solid #cecece;
+}
+.league__points table.table-bordered > tbody > tr > th{
+    border: 1px solid #cecece;
+}
+
 .league__rules {
     margin-bottom: 0 auto;
     border: #ababab dashed 1px;
