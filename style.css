@@ -757,6 +757,10 @@ em.post-date {
     font-weight: 600;
 }
 
+#league_games h4 {
+    margin-bottom: 0;
+}
+
 .league__points hr {
     margin-bottom: 2rem;
     color: #ababab;
