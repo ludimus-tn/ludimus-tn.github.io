@@ -742,6 +742,21 @@ em.post-date {
     margin-bottom: 2rem;
 }
 
+.league__prizes .card {
+    border-radius: 0;
+    border-style: dashed;
+}
+
+.league__prizes h3 {
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+#league .league__prizes .card h5 {
+    color: #1b1b1b;
+    font-weight: 600;
+}
+
 .league__points hr {
     margin-bottom: 2rem;
     color: #ababab;
@@ -755,4 +770,5 @@ em.post-date {
 
 .league__rules {
     margin-bottom: 0 auto;
+    border: #ababab dashed 1px;
 }
