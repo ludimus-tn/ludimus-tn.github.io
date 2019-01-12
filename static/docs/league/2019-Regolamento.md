@@ -1,10 +1,10 @@
 #### REGOLAMENTO
 1. La partecipazione alla lega è **riservata ai soci** di Ludimus ETS.
 2. Per partecipare basta iscriversi durante un qualsiasi evento organizzato da Ludimus prima della fine del mese di marzo 2019 fornendo *nome*, *cognome* e *numero di tessera*.
-3. Chi è iscritto alla lega, durante ogni serata prevista (*vedi calendario*) può **accumulare punti giocando ai giochi validi per la lega in quella data**. I giochi selezionati da Ludimus sono dieci: Azul, Ticket to Ride, Rise of Augustus, Concordia, Nome in Codice, Hanabi, Patchwork, Biblios, 7 Wonders e Carcassonne.
-4. Ogni partita giocata viene registrata ed i partecipanti vengono premiati con un certo numero di **punti** che dipende dal gioco e dal risultato ottenuto (*vedi tabelle*) e che permette di stilare una classifica che verrà aggiornata ad ogni appuntamento. Alla registrazione delle partite sono applicate le seguenti **limitazioni**:
+3. Chi è iscritto alla lega, durante ogni serata prevista ([*vedi calendario*](/league.html#calendar)) può **accumulare punti giocando ai giochi validi per la lega in quella data**. I giochi selezionati da Ludimus sono dieci: Azul, Ticket to Ride: Europe, Rise of Augustus, Concordia, Nome in Codice, Hanabi, Patchwork, Biblios, 7 Wonders e Carcassonne.
+4. Ogni partita giocata viene registrata ed i partecipanti vengono premiati con un certo numero di **punti** che dipende dal gioco e dal risultato ottenuto ([*vedi tabelle*](#league_games)) e che permette di stilare una classifica che verrà aggiornata ad ogni appuntamento. Alla registrazione delle partite sono applicate le seguenti **limitazioni**:
   * per **ogni gioco** ogni partecipante può registrare solo **una partita**;
-  * possono essere registrate solamente partite ai **giochi validi per la serata in corso** (*vedi calendario*);
+  * possono essere registrate solamente partite ai **giochi validi per la serata in corso** ([*vedi calendario*](/league.html#calendar));
   * ogni partecipante ha a disposizione un totale di **tre jolly** per poter registrare una partita extra di un gioco già registrato o una partita ad un gioco al di fuori della serata in cui è stato programmato;
   * i jolly possono essere **usati a discrezione del partecipante** durante qualsiasi serata della lega, sia uno che più alla volta, fino all’esaurimento dei tre totali disponibili;
   * ai fini della classifica finale **sarà considerato solo il miglior punteggio ottenuto per ogni gioco selezionato**, anche se (sfruttando i jolly) saranno stati registrati più punteggi; quindi il risultato finale sarà ottenuto sommando non più di 10 punteggi (uno per gioco).
