@@ -1,91 +1,58 @@
-<!-- <script src="https://cdn.jsdelivr.net/npm/vue"></script> -->
-<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+      <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
-<div id="ranking">
-  <div class="table-responsive">
-    <table class="table table-hover">
-      <thead class="thead-light">
-        <tr>
-          <th scope="col">Posizione</th>
-          <th scope="col">Partecipante</th>
-          <th scope="col">Partite registrate</th>
-          <th scope="col">Jolly utilizzati</th>
-          <th scope="col">Punteggio</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr
-          v-for="item in items"
-          :key="item.partecipant">
-            <th scope="row" v-if="item.position === 1">🥇</th>
-            <th scope="row" v-if="item.position === 2">🥈</th>
-            <th scope="row" v-if="item.position === 3">🥉</th>
-            <th scope="row" v-if="item.position > 3">{{ item.position }}°</th>
-            <td>{{ item.name }} {{ item.lastname }}</td>
-            <td>{{ item.registered_matches }}</td>
-            <td>{{ item.used_jolly }}</td>
-            <td>{{ item.points }}</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-</div>
+      <div id="rank">
+        <div v-if="loading">
+          <h3 class="centered-text" style="color: darkgrey;">
+              <div class="spinner">
+                <div class="bounce1"></div>
+                <div class="bounce2"></div>
+                <div class="bounce3"></div>
+              </div>
+          </h3>
+        </div>
+        <div v-else class="table-responsive">
+          <table class="table table-hover" v-if="partecipants">
+            <thead class="thead-light">
+              <tr>
+                <th scope="col">Posizione</th>
+                <th scope="col">Partecipante</th>
+                <th scope="col">Partite registrate</th>
+                <th scope="col">Jolly utilizzati</th>
+                <th scope="col">Punteggio</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr v-for="partecipant in partecipants" :key="partecipants.position">
+                <th scope="row">{{ partecipant.position }}°</th>
+                <td>{{ partecipant.name }} {{ partecipant.lastName }}</td>
+                <td>{{ partecipant.matches }}</td>
+                <td>{{ partecipant.jolly }}</td>
+                <td>{{ partecipant.points }}</td>
+              </tr>
+            </tbody>
+          </table>
+          <p class="centered-text" style="color: darkgrey;" v-else><i>Qui troverai la classifica del campionato</i></p>
+        </div>
+      </div>
 
-<script>
-  new Vue({
-    el: '#ranking',
-    data: {
-      items: [
-        {
-          position: 1,
-          name: 'primo',
-          registered_matches: '3',
-          used_jolly: '1',
-          points: 100
-        },
-        {
-          position: 3,
-          name: 'nome',
-          lastname: 'cognome',
-          registered_matches: '3',
-          used_jolly: '1',
-          points: 100
-        },
-        {
-          position: 4,
-          name: 'nome',
-          lastname: 'cognome',
-          registered_matches: '3',
-          used_jolly: '1',
-          points: 100
-        },
-        {
-          position: 2,
-          name: 'nome',
-          lastname: 'cognome',
-          registered_matches: '3',
-          used_jolly: '1',
-          points: 100
-        },
-        {
-          position: 5,
-          name: 'nome',
-          lastname: 'cognome',
-          registered_matches: '3',
-          used_jolly: '1',
-          points: 100
-        },
-        {
-          position: 6,
-          name: 'nome',
-          lastname: 'cognome',
-          registered_matches: '3',
-          used_jolly: '1',
-          points: 100
-        }
-      ]
-    }
-  })
-</script>
-
-
+      <script>
+        var app = new Vue({
+          el: '#rank',
+          data: {
+            partecipants: [],
+            loading: true
+          },
+          mounted() {
+            axios
+              .get('https://script.google.com/macros/s/AKfycby0Gq1G7Rzbl2-RRyMA6OOJIOcRfZShhI4rR7kZ5ktzSGk2xCBr/exec')
+              .then(response => {
+                this.partecipants = response.data.partecipants
+              })
+              .catch(error => {
+                console.error(error)
+              })
+              .finally(() => this.loading = false)
+          }
+        })
+      </script>
