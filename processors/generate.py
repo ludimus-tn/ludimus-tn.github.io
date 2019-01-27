@@ -6,37 +6,6 @@ import markdown2
 import re
 
 
-GAMES_WITHOUT_MD = {
-    102548,  # dungeon-fighter
-    197551,  # hall-fame
-    161995,  # hexemonia
-    11336,   # magor-magician
-    136143,  # squillo
-    205359,  # star-wars-destiny
-    121408,  # trains
-    35761,   # sylla
-    171668,  # grizzled
-    169302,  # warage-enascentia
-    53953,   # thunderstone
-    21790,   # thurn-and-taxis
-    71836,   # onirim
-    84876,   # castles-burgundy
-    24850,   # templaria
-    189628,  # tesseract
-    28143,   # race-galaxy
-    167400,  # ashes-rise-phoenixborn
-    154883,  # si-oscuro-signore-seconda-edizione
-    161261,  # bim-bum-bam
-    136888,  # bruges
-    154509,  # kingsport-festival
-    12956,   # futurisiko
-    1234,    # once-upon-time-storytelling-card-game
-    26859,   # kragmortha
-    12747,   # scarabeo
-    124856,  # anno-domini-penne-e-pennelli
-    1931,    # anti-monopoly
-}
-
 HIDDEN_GAMES = {
     67492,   # battles-westeros
     463,     # magic-gathering
@@ -56,14 +25,11 @@ blog_post_tmpl = open('./layouts/partials/blog-post.html').readlines()
 
 item_to_print = []
 
-for item in input_data.get('items', []):
+for item in sorted(input_data.get('items', []), key=lambda x: x.get('votoMedio', 0), reverse=True):
     if item['idBGG'] in HIDDEN_GAMES:
         continue
 
-    image = item['image'].replace('.jpg', '_md.jpg').replace('.png', '_md.png')
-    if item['idBGG'] in GAMES_WITHOUT_MD:
-        image = item['image'].replace('.jpg', '_t.jpg').replace('.png', '_t.png')
-
+    image = item['thumbnail']
     item_to_print.append(boardgame_tmpl.format(
         name=item['nomeGioco'],
         image=image,
@@ -259,5 +225,3 @@ for post in posts:
                     output_post.write(line.replace('{{ blog_post_og }}', og_image))
                 else:
                     output_post.write(line)
-
-

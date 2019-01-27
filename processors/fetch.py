@@ -2,6 +2,10 @@ import csv
 import time
 from boardgamegeek import BoardGameGeek
 import json
+import diskcache as dc
+import progressbar
+
+cache = dc.Cache('tmp')
 
 name = {
     'Ludimus': 'Ludimus',
@@ -18,29 +22,24 @@ name = {
 
 bgg = BoardGameGeek(retries=10)
 
-header = [
-    "Id", "BGG rank", "Name", "Url", "Playing time", "Players", "Rating", "Users rated", "Weight", "NumOwners",
-    "Owners", "Image"
-]
-
 
 def create_line(pair):
-    time.sleep(1)
     id, owners = pair
+
+    if cache.get(id, default=False):
+        return json.loads(cache[id])
+
     try:
         game = bgg.game(game_id=id)
-        print(game.name)
     except:
-        print(" ---Retrying")
-        time.sleep(5)
+        time.sleep(1)
         try:
-            game = bgg.game(game_id=id)            
-            print(game.name)
+            game = bgg.game(game_id=id)
         except:
-            print("Could not download {}".format(id))
-            return False
+            return None
     if game.expansion:
         return None
+
     fields = {
         'idBGG': id,
         'rankBGG': game.boardgame_rank,
@@ -54,12 +53,14 @@ def create_line(pair):
         'annoPubblicazione': game.year,
         'durata': game.playing_time,
         'image': game.image,
+        'thumbnail': game.thumbnail,
     }
+    cache[id] = json.dumps(fields)
     return fields
 
 dic = {}
 for user in name:
-    print(user)
+    print('Fetching collection of', user)
     c = 0
     found = False
     while not found and c<5:
@@ -74,8 +75,17 @@ for user in name:
         if item.owned:
             dic[item.id] = dic.get(item.id,[]) + [user]
 
-ready = [create_line(game) for game in dic.items()]
+print('Fetching all the games!')
+ready = []
+total_count = len(dic.keys())
+count = 0
+with progressbar.ProgressBar(max_value=total_count) as bar:
+    for game in dic.items():
+        count += 1
+        bar.update(count)
+        ready.append(create_line(game))
+
 filtered = [game for game in ready if game]
 
 with open('./processors/games.json', 'w') as fw:
-    fw.write(json.dumps({'items': filtered}, indent=True))
+    fw.write(json.dumps({'items': sorted(filtered, key=lambda x: x['idBGG'])}, indent=True))
