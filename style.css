@@ -213,6 +213,10 @@ section h2 {
     margin-bottom: 2rem;
 }
 
+#games .badge-light {
+    background: #fff;
+}
+
 #instagram {
     padding: 0;
 }
@@ -230,7 +234,7 @@ section h2 {
 
 #games .cards-container h3 {
     margin: 0;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 #games .cards-container p {
@@ -551,7 +555,7 @@ footer p {
 
 #games .card-columns {
     column-gap: .5rem;
-    columns: 4;
+    columns: 5;
 }
 
 #games .card {
@@ -564,7 +568,7 @@ footer p {
     }
 
     #games .card-columns {
-        columns: 3;
+        columns: 4;
     }
 }
 
@@ -574,7 +578,7 @@ footer p {
     }
 
     #games .card-columns {
-        columns: 2;
+        columns: 3;
     }
 }
 
