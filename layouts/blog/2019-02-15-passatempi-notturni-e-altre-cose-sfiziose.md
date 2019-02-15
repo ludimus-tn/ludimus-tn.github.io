@@ -1,7 +1,7 @@
 blog_post_title: Passatempi notturni e altre cose sfiziose
 blog_post_author: Andrea
 blog_post_author_img: tex.png
-blog_post_og: https://ludimus.it/static/img/blog/passatempi/og.png
+blog_post_og: https://ludimus.it/static/img/blog/passatempi/og.jpg
 
 #Passatempi notturni e altre cose sfiziose
 ###Cinquina Ludica soft per il post-cena
