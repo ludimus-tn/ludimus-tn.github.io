@@ -216,7 +216,7 @@ for post in posts:
                 elif '{{ blog_post_title }}' in line:
                     output_post.write(line.replace('{{ blog_post_title }}', title))
                 elif '{{ blog_post_body }}' in line:
-                    output_post.write(line.replace('{{ blog_post_body }}', markdown2.markdown('\n'.join(post_blog_body))))
+                    output_post.write(line.replace('{{ blog_post_body }}', markdown2.markdown(''.join(post_blog_body), extras={'break-on-newline': True})))
                 elif '{{ blog_post_author_img }}' in line:
                     output_post.write(line.replace('{{ blog_post_author_img }}', author_img))
                 elif '{{ blog_post_author }}' in line:
