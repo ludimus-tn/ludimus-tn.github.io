@@ -1,4 +1,5 @@
 blog_post_title: Gli Accessori di cui Non Posso Fare a Meno
+blog_post_description: Tutte le volte che aprite la scatola del vostro gioco preferito, le carte e le tesserine vi assaltano in massa? Siete stufi di portarvi in giro a mano il vostro carico da 12 german? Ludimus sa cosa fare
 blog_post_author: Davide
 blog_post_author_img: masno.jpg
 blog_post_og: https://ludimus.it/static/img/og/accessori.jpg

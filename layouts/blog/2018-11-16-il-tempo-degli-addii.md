@@ -1,4 +1,5 @@
 blog_post_title: Il Tempo degli Addii
+blog_post_abstract: Il troppo storpia. Troppi giochi, troppe scelte, troppo tempo perso a capire cosa intavolare. Non sarebbe meglio selezionare cosa vi piace? Quali sono i titoli più adatti a voi?
 blog_post_author: Andrea
 blog_post_author_img: tex.png
 blog_post_og: https://ludimus.it/static/img/blog/addii/og.png

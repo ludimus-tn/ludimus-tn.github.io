@@ -1,4 +1,5 @@
 blog_post_title: Passatempi notturni e altre cose sfiziose
+blog_post_abstract: Siete stanchi, avete anche mangiato troppo, proprio non riuscite a pensare. Volete qualcosa di insensato e immediato per concludere la serata, ma non avete idee. Perché non un bel party game?
 blog_post_author: Andrea
 blog_post_author_img: tex.png
 blog_post_og: https://ludimus.it/static/img/blog/passatempi/og.jpg
