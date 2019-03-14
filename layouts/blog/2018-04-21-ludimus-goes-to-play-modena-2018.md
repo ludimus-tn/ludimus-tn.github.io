@@ -2,7 +2,7 @@ blog_post_title: Ludimus Goes to Play Modena 2018
 blog_post_abstract: Nuovo anno, nuova avventura. Seguiteci mentre affrontiamo le folle di ludopati durante la nostra gita al Play Modena – Edizione 2018
 blog_post_author: Andrea
 blog_post_author_img: tex.png
-blog_post_og: https://ludimus.it/static/img/blog/og/2018-04-21-ludimus-goes-to-play-modena-2018
+blog_post_og: https://ludimus.it/static/img/blog/og/2018-04-21-ludimus-goes-to-play-modena-2018.png
 
 #Ludimus Goes to Play Modena 2018
 

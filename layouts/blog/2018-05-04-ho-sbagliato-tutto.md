@@ -2,7 +2,7 @@ blog_post_title: Ho Sbagliato Tutto
 blog_post_abstract: “Bisogna saper perdere”, dicevano. Ed è vero: chi non è pronto 	a perdere, non è pronto a giocare. E forse, è proprio perdere che ci permette di crescere
 blog_post_author: Alessio
 blog_post_author_img: war.png
-blog_post_og: https://ludimus.it/static/img/blog/og/2018-05-04-ho-sbagliato-tutto
+blog_post_og: https://ludimus.it/static/img/blog/og/2018-05-04-ho-sbagliato-tutto.png
 
 #Ho Sbagliato Tutto
 

@@ -2,7 +2,7 @@ blog_post_title: Un Mazzo di Carte
 blog_post_abstract: Il migliore amico del giocatore da tavolo è il suo mazzetto di carte. Questo articolo lo dedichiamo a tutti quelli che si appassionano alla vista di un deck o di una pila degli scarti
 blog_post_author: Alessio
 blog_post_author_img: war.png
-blog_post_og: https://ludimus.it/static/img/blog/carte/og.jpg
+blog_post_og: https://ludimus.it/static/img/blog/og/2018-12-15-un-mazzo-di-carte.png
 
 #Un Mazzo di Carte
 Storicamente, i giochi si dividevano in due grandi **tipologie**: giochi **con** componente casuale e giochi **senza** componente casuale. 

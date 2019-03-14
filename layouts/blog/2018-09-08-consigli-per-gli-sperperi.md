@@ -2,7 +2,7 @@ blog_post_title: Consigli per gli Sperperi
 blog_post_abstract: Un buon hobbysta sa sempre come massimizzare i propri guadagni ludici! Per tutti quelli che tra di voi hanno sempre desiderato qualche dritta su come racimolare qualche gioco in più per la propria collezione
 blog_post_author: Andrea
 blog_post_author_img: tex.png
-blog_post_og: https://ludimus.it/static/img/og/pig.jpg
+blog_post_og: https://ludimus.it/static/img/blog/og/2018-09-08-consigli-per-gli-sperperi.png
 
 #Consigli per gli Sperperi
 ### Ovvero: perché organizzarsi per gli acquisti vale la spesa

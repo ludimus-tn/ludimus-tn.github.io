@@ -2,7 +2,7 @@ blog_post_title: Top 10 Designer di Giochi da Tavolo
 blog_post_abstract: Ogni media che si rispetti ha la sua rosa di mostri sacri e grandi maestri. E perché per i giochi da tavolo dovrebbe essere diverso?
 blog_post_author: Davide
 blog_post_author_img: masno.jpg
-blog_post_og: https://ludimus.it/static/img/blog/top10.jpg
+blog_post_og: https://ludimus.it/static/img/blog/og/2019-01-27-top-10-designer.png
 #Top 10 Designer di Giochi da Tavolo
 ###(secondo me)
 

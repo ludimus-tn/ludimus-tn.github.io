@@ -2,7 +2,7 @@ blog_post_title: Notte Prima di Modena Play
 blog_post_abstract: Svelti! Siete pronti per il Play? Avete già preso tutto quello che serve? Occhio a non farvi cogliere impreparati
 blog_post_author: Sofia
 blog_post_author_img: sofy.png
-blog_post_og: https://ludimus.it/static/img/blog/og/2018-04-05-notte-prima-di-modena-play
+blog_post_og: https://ludimus.it/static/img/blog/og/2018-04-05-notte-prima-di-modena-play.png
 
 #Notte Prima di Modena Play
 ###Rapido vademecum per non arrivare impreparati

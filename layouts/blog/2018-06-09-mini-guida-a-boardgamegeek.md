@@ -2,7 +2,7 @@ blog_post_title: Miniguida a Boardgamegeek
 blog_post_abstract: Tra tutti quanti, un sito in particolare è punto di riferimento assoluto per tutti gli appassionati. Perciò, venite con noi: lo esploreremo insieme
 blog_post_author: Riccardo
 blog_post_author_img: rik.jpg
-blog_post_og: https://ludimus.it/static/img/blog/og/2018-06-09-mini-guida-a-boardgamegeek
+blog_post_og: https://ludimus.it/static/img/blog/og/2018-06-09-mini-guida-a-boardgamegeek.png
 
 #Miniguida a Boardgamegeek
 ###Viaggio attraverso il sito che ha fatto la storia dei giochi da tavolo

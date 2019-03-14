@@ -2,7 +2,7 @@ blog_post_title: Uno...Due...Tre...Lucca!
 blog_post_abstract: Mancano solo due settimane a Lucca Comics & Games! Siete emozionati quanto noi? Per prepararci al grande evento abbiamo pensato di pubblicare alcune informazioni su questa edizione 2018, per chi non ci è mai stato e per chi ci va da una vita! 
 blog_post_author: Stefano
 blog_post_author_img: ste.jpg
-blog_post_og: https://ludimus.it/static/img/blog/lucca18/og.jpg
+blog_post_og: https://ludimus.it/static/img/blog/og/2018-10-19-uno-due-tre-lucca.png
 
 #Uno… Due… Tre… Lucca 2018!
 ###Preparatevi: manca poco!

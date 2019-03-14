@@ -2,7 +2,7 @@ blog_post_title: Pillole Ludimus per Modena Play
 blog_post_abstract: La grande fiera dedicata ai giochi da tavolo apre i battenti anche per l'anno 2018, con tutte le sue novità e i suoi appuntamenti. Ecco cosa non dovete perdere
 blog_post_author: Davide
 blog_post_author_img: masno.jpg
-blog_post_og: https://ludimus.it/static/img/blog/og/2018-03-23-pillole-ludimus-per-modena-play
+blog_post_og: https://ludimus.it/static/img/blog/og/2018-03-23-pillole-ludimus-per-modena-play.png
 
 #Pillole Ludimus per Modena Play
 

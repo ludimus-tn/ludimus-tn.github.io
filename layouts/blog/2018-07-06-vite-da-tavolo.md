@@ -2,7 +2,7 @@ blog_post_title: Vite da Tavolo
 blog_post_abstract: Qualche volta anche a noi prende la nostalgia. E quando la nostalgia ci assale, diventiamo introspettivi: in questo articolo, esploriamo la domanda fondamentale che ogni appassionato di giochi da tavolo dovrebbe porsi: "perché giocare?"
 blog_post_author: Tex
 blog_post_author_img: tex.png
-blog_post_og: https://ludimus.it/static/img/blog/og/2018-07-06-vite-da-tavolo
+blog_post_og: https://ludimus.it/static/img/blog/og/2018-07-06-vite-da-tavolo.png
 
 #Vite da Tavolo
 ###Riflessioni sulla fantasia, sulle regole del gioco e sulla voglia eterna di fuggire

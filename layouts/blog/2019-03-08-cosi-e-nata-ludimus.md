@@ -2,7 +2,7 @@ blog_post_title: Così è nata Ludimus
 blog_post_abstract: Frammenti, ricordi. Progetti e pensieri. Così è nata la nostra 	associazione: da un'idea nata durante un viaggio in macchina
 blog_post_author: Mattia
 blog_post_author_img: tia.jpg
-blog_post_og: https://ludimus.it/static/img/blog/cosi.jpg
+blog_post_og: https://ludimus.it/static/img/blog/og/2019-03-08-cosi-e-nata-ludimus.png
 
 #Così È Nata Ludimus
 ###Dal Diario di un Fondatore

@@ -2,7 +2,7 @@ blog_post_title: Viaggio nei Legacy
 blog_post_abstract: “Bisogna saper perdere”, dicevano. Ed è vero: chi non è pronto 	a perdere, non è pronto a giocare. E forse, è proprio perdere che ci permette di crescere
 blog_post_author: Alessio
 blog_post_author_img: war.png
-blog_post_og: https://ludimus.it/static/img/blog/og/2018-07-27-viaggio-nei-legacy
+blog_post_og: https://ludimus.it/static/img/blog/og/2018-07-27-viaggio-nei-legacy.png
 
 #Rompere è bello: un viaggio nei Legacy 
 

@@ -2,7 +2,7 @@ blog_post_title: Spiel Des Jahres 2018
 blog_post_abstract: Grande fremito per gli Oscar del gioco da tavolo. Chi vincerà quest'anno? Nell'attesa, tutte le categorie in gara e i finalisti
 blog_post_author: Davide
 blog_post_author_img: masno.jpg
-blog_post_og: https://ludimus.it/static/img/blog/og/2018-05-19-spiel-des-jahres-2018
+blog_post_og: https://ludimus.it/static/img/blog/og/2018-05-19-spiel-des-jahres-2018.png
 
 #Spiel Des Jahres 2018
 

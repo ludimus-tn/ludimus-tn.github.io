@@ -2,7 +2,7 @@ blog_post_title: Enciclopedia Minima della Scienza Ludica
 blog_post_abstract: Non vogliamo per forza davi a bere che qui dentro ci sia tutto quello che serve sapere su come sono fatti i giochi da tavolo, ma con questo articolo ci andiamo molto vicino
 blog_post_author: Andrea
 blog_post_author_img: tex.png
-blog_post_og: https://ludimus.it/static/img/blog/og/2018-03-10-enciclopedia-minima-della-scienza-ludica
+blog_post_og: https://ludimus.it/static/img/blog/og/2018-03-10-enciclopedia-minima-della-scienza-ludica.png
 
 #Enciclopedia Minima della Scienza Ludica
 ###Una guida onnicomprensiva di tutto lo Scibile da Tavolo, più o meno

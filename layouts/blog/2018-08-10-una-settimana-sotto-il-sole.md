@@ -2,7 +2,7 @@ blog_post_title: Una Settimana Sotto il Sole
 blog_post_abstract: Quando arriva la bella stagione, arriva anche il momento di far prendere un po' d'aria ai nostri giochi preferiti. Se anche voi non volete separarvene nemmeno in spiaggia, abbiamo qualche buon 	consiglio
 blog_post_author: Tex
 blog_post_author_img: tex.png
-blog_post_og: https://ludimus.it/static/img/blog/og/2018-08-10-una-settimana-sotto-il-sole
+blog_post_og: https://ludimus.it/static/img/blog/og/2018-08-10-una-settimana-sotto-il-sole.png
 
 #Una Settimana Sotto il Sole
 ###Sette giochi per chi rischia l'insolazione

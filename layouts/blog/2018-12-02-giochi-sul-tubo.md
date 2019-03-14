@@ -2,7 +2,7 @@ blog_post_title: Giochi sul Tubo
 blog_post_abstract: Centinaia di canali TV, serie infinite su Netflix, montagne di video pirata sulla Rete... e ancora niente che parli di giochi! Se siete disperati per qualche canale ludico, perché non cercare su YouTube?
 blog_post_author: Emanuele
 blog_post_author_img: ema.png
-blog_post_og: https://ludimus.it/static/img/blog/youtube/og.jpg
+blog_post_og: https://ludimus.it/static/img/blog/og/2018-12-02-giochi-sul-tubo.png
 
 #Giochi sul Tubo
 ###I canali italiani che tutti i giocatori dovrebbero conoscere
