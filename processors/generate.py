@@ -14,7 +14,6 @@ HIDDEN_GAMES = {
 markdowner = markdown2.Markdown()
 
 boardgame_tmpl = '\n'.join(open('./layouts/partials/boardgame.html').readlines())
-serata_speciale_tmpl = '\n'.join(open('./layouts/partials/serata-speciale.html').readlines())
 google_analytics = '\n'.join(open('./layouts/partials/google-analytics.html').readlines())
 footer = ''.join(open('./layouts/partials/footer.html').readlines())
 league_ranking = ''.join(open('./layouts/partials/league-ranking.html').readlines())
@@ -22,15 +21,15 @@ league_rules = ''.join(markdowner.convert(open('./static/docs/league/2019-Regola
 style_hash = hashlib.md5(open('./style.css').read().encode('utf-8')).hexdigest()
 input_data = json.loads(''.join(open('./processors/games.json').readlines()))
 blog_post_tmpl = open('./layouts/partials/blog-post.html').readlines()
+blog_preview_tmpl = open('./layouts/partials/blog-preview.html').readlines()
 
-item_to_print = []
-
+board_games = []
 for item in sorted(input_data.get('items', []), key=lambda x: x.get('votoMedio', 0), reverse=True):
     if item['idBGG'] in HIDDEN_GAMES:
         continue
 
     image = item['thumbnail']
-    item_to_print.append(boardgame_tmpl.format(
+    board_games.append(boardgame_tmpl.format(
         name=item['nomeGioco'],
         image=image,
         link='https://boardgamegeek.com/boardgame/{}/-'.format(item['idBGG']),
@@ -40,23 +39,16 @@ for item in sorted(input_data.get('items', []), key=lambda x: x.get('votoMedio',
         weight='{0:0.1f}'.format(item['pesoMedio']),
     ))
 
-serate_speciali = []
-
-for serata in sorted(glob.glob('./layouts/serate_speciali/*'), reverse=True):
-    with open(serata) as fin:
-        data = {
-           k.split(': ')[0]: k.split(': ')[1].strip() for k in fin.readlines()
-        }
-        the_date = serata.rsplit('/', 1)[-1].split('-')[0]
-        data['date'] = '{}/{}/{}'.format(the_date[6:8], the_date[4:6], the_date[0:4])
-        serate_speciali.append(serata_speciale_tmpl.format(**data))
+###############################################################################
+## Homepage
+###############################################################################
 
 with open('./layouts/index.html') as base_index_tmpl, \
         open('./index.html', 'w') as output_index:
 
     for line in base_index_tmpl:
         if '{{ number_of_games }}' in line:
-            output_index.write(line.replace('{{ number_of_games }}', str(len(item_to_print))))
+            output_index.write(line.replace('{{ number_of_games }}', str(len(board_games))))
         elif '{{ serate_speciali }}' in line:
             for serata in serate_speciali:
                 output_index.write(serata)
@@ -72,44 +64,36 @@ with open('./layouts/index.html') as base_index_tmpl, \
                 title = file_name[10:].replace('.html', '').replace('.md', '').replace('-', ' ').title()
                 file_url = file_name.replace('.md', '.html')
 
-                if file_name.endswith('.html'):
-                    with open(post) as post_tmpl:
-                        author_img = None
-                        for line in post_tmpl:
-                            if '../static/img/staff/' in line and author_img is None:
-                                tmp = line.replace('<img src="../static/img/staff/', '')
-                                img_name, other = tmp.split('.')
-                                author_img = (img_name + '.' + other[:3]).strip()
-                                continue
-                            if 'og:image"' in line:
-                                og_image = line.replace('<meta property="og:image" content="', '').replace('" />', '').replace('"/>', '')
-                                continue
-                else:
-                    with open(post) as post_tmpl:
-                        for line in post_tmpl:
-                            if 'blog_post_author_img: ' in line:
-                                author_img = line.replace('blog_post_author_img: ', '')
-                                continue
-                            if 'blog_post_og: ' in line:
-                                og_image = line.replace('blog_post_og: ', '')
+                with open(post) as post_tmpl:
+                    for line in post_tmpl:
+                        if 'blog_post_author_img: ' in line:
+                            author_img = line.replace('blog_post_author_img: ', '')
+                            continue
+                        if 'blog_post_og: ' in line:
+                            og_image = line.replace('blog_post_og: ', '')
 
                 post_date_tmp = file_url[:10].split('-')
                 post_date = '{}/{}/{}'.format(post_date_tmp[2], post_date_tmp[1], post_date_tmp[0])
-                output_index.write(
-                    '<a href="/blog/{}">' \
-                    '<img src="{}?t=1"/>' \
-                    '<h4>{}</h4>' \
-                    '''
-                        <em class="post-date">{}</em>
-                        <div class="blog-post-writer__images">
-                            <img src="../static/img/staff/{}">
-                        </div>
-                    '''\
-                    '</a>\n'.format(file_url, og_image, title, post_date, author_img)
-                )
+
+                for blog_line in blog_preview_tmpl:
+                    if '{{ blog_url }}' in blog_line:
+                        output_index.write(blog_line.replace('{{ blog_url }}', file_url))
+                    elif '{{ image_url }}' in blog_line:
+                        output_index.write(blog_line.replace('{{ image_url }}', og_image.replace('https://ludimus.it/', '../')))
+                    elif '{{ title }}' in blog_line:
+                        output_index.write(blog_line.replace('{{ title }}', title))
+                    elif '{{ date }}' in blog_line:
+                        output_index.write(blog_line.replace('{{ date }}', post_date))
+                    elif '{{ author_img }}' in blog_line:
+                        output_index.write(blog_line.replace('{{ author_img }}', author_img))
+                    else:
+                        output_index.write(blog_line)    
         else:
             output_index.write(line)
 
+###############################################################################
+## Games
+###############################################################################
 
 with open('./layouts/games.html') as base_games_tmpl, \
         open('./games.html', 'w') as output_games:
@@ -118,10 +102,10 @@ with open('./layouts/games.html') as base_games_tmpl, \
         if '{{ hash }}' in line:
             output_games.write(line.replace('{{ hash }}', style_hash))
         elif '{{ games }}' in line:
-            for item in item_to_print:
+            for item in board_games:
                 output_games.write(item)
         elif '{{ number_of_games }}' in line:
-            output_games.write(line.replace('{{ number_of_games }}', str(len(item_to_print))))
+            output_games.write(line.replace('{{ number_of_games }}', str(len(board_games))))
         elif '{{ google_analytics }}' in line:
             output_games.write(line.replace('{{ google_analytics }}', google_analytics))
         elif '{{ footer }}' in line:
@@ -129,6 +113,9 @@ with open('./layouts/games.html') as base_games_tmpl, \
         else:
             output_games.write(line)
 
+###############################################################################
+## Informative
+###############################################################################
 
 with open('./layouts/informative.html') as base_games_tmpl, \
         open('./informative.html', 'w') as output_games:
@@ -139,6 +126,10 @@ with open('./layouts/informative.html') as base_games_tmpl, \
             output_games.write(line.replace('{{ footer }}', footer))
         else:
             output_games.write(line)
+
+###############################################################################
+## League
+###############################################################################
 
 with open('./layouts/league.html') as base_league_tmpl, \
         open('./league.html', 'w') as output_league:
@@ -152,6 +143,10 @@ with open('./layouts/league.html') as base_league_tmpl, \
         else:
             output_league.write(line)
 
+###############################################################################
+## League Rules
+###############################################################################
+
 with open('./layouts/league_rules.html') as base_league_tmpl, \
         open('./league_rules.html', 'w') as output_league:
     for line in base_league_tmpl:
@@ -164,64 +159,55 @@ with open('./layouts/league_rules.html') as base_league_tmpl, \
         else:
             output_league.write(line)
             
+###############################################################################
+## BLOG
+###############################################################################
 
 posts = glob.glob('./layouts/blog/*')
 for post in posts:
     post_name = post.rsplit('/', 1)[1]
 
-    if post.endswith('.html'):
-        with open(post) as post_tmpl, \
-                open('./blog/{}'.format(post_name), 'w+') as output_post:
+    with open(post) as post_tmpl, \
+            open('./blog/{}'.format(post_name.replace('.md', '.html')), 'w+') as output_post:
 
-            for line in post_tmpl:
-                if '{{ hash }}' in line:
-                    output_post.write(line.replace('{{ hash }}', style_hash))
-                elif '{{ google_analytics }}' in line:
-                    output_post.write(line.replace('{{ google_analytics }}', google_analytics))
-                elif '{{ footer }}' in line:
-                    output_post.write(line.replace('{{ footer }}', footer))
-                else:
-                    output_post.write(line)
-    else:
-        with open(post) as post_tmpl, \
-                open('./blog/{}'.format(post_name.replace('.md', '.html')), 'w+') as output_post:
+        post_body = post_tmpl.readlines()
 
-            post_body = post_tmpl.readlines()
+        title = None
+        author = None
+        author_img = None
+        og_image = None
+        post_blog_body = []
 
-            title = None
-            author = None
-            author_img = None
-            og_image = None
-            post_blog_body = []
+        for line in post_body:
+            if 'blog_post_title: ' in line:
+                title = line.replace('blog_post_title: ', '').strip()
+            elif 'blog_post_abstract: ' in line:
+                continue  # we don't care about it right now!
+            elif 'blog_post_author: ' in line:
+                author = line.replace('blog_post_author: ', '').strip()
+            elif 'blog_post_author_img: ' in line:
+                author_img = line.replace('blog_post_author_img: ', '').strip()
+            elif 'blog_post_og: ' in line:
+                og_image = line.replace('blog_post_og: ', '').strip()
+            else:
+                post_blog_body.append(line)
 
-            for line in post_body:
-                if 'blog_post_title: ' in line:
-                    title = line.replace('blog_post_title: ', '').strip()
-                elif 'blog_post_author: ' in line:
-                    author = line.replace('blog_post_author: ', '').strip()
-                elif 'blog_post_author_img: ' in line:
-                    author_img = line.replace('blog_post_author_img: ', '').strip()
-                elif 'blog_post_og: ' in line:
-                    og_image = line.replace('blog_post_og: ', '').strip()
-                else:
-                    post_blog_body.append(line)
-
-            for line in blog_post_tmpl:
-                if '{{ hash }}' in line:
-                    output_post.write(line.replace('{{ hash }}', style_hash))
-                elif '{{ google_analytics }}' in line:
-                    output_post.write(line.replace('{{ google_analytics }}', google_analytics))
-                elif '{{ footer }}' in line:
-                    output_post.write(line.replace('{{ footer }}', footer))
-                elif '{{ blog_post_title }}' in line:
-                    output_post.write(line.replace('{{ blog_post_title }}', title))
-                elif '{{ blog_post_body }}' in line:
-                    output_post.write(line.replace('{{ blog_post_body }}', markdown2.markdown(''.join(post_blog_body), extras={'break-on-newline': True})))
-                elif '{{ blog_post_author_img }}' in line:
-                    output_post.write(line.replace('{{ blog_post_author_img }}', author_img))
-                elif '{{ blog_post_author }}' in line:
-                    output_post.write(line.replace('{{ blog_post_author }}', author))
-                elif '{{ blog_post_og }}' in line:
-                    output_post.write(line.replace('{{ blog_post_og }}', og_image))
-                else:
-                    output_post.write(line)
+        for line in blog_post_tmpl:
+            if '{{ hash }}' in line:
+                output_post.write(line.replace('{{ hash }}', style_hash))
+            elif '{{ google_analytics }}' in line:
+                output_post.write(line.replace('{{ google_analytics }}', google_analytics))
+            elif '{{ footer }}' in line:
+                output_post.write(line.replace('{{ footer }}', footer))
+            elif '{{ blog_post_title }}' in line:
+                output_post.write(line.replace('{{ blog_post_title }}', title))
+            elif '{{ blog_post_body }}' in line:
+                output_post.write(line.replace('{{ blog_post_body }}', markdown2.markdown(''.join(post_blog_body), extras={'break-on-newline': True})))
+            elif '{{ blog_post_author_img }}' in line:
+                output_post.write(line.replace('{{ blog_post_author_img }}', author_img))
+            elif '{{ blog_post_author }}' in line:
+                output_post.write(line.replace('{{ blog_post_author }}', author))
+            elif '{{ blog_post_og }}' in line:
+                output_post.write(line.replace('{{ blog_post_og }}', og_image))
+            else:
+                output_post.write(line)
