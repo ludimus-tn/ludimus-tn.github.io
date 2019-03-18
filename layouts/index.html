@@ -169,15 +169,24 @@
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDL3E8pZkDlbq5DTC7on1R3dlQF9iL1n30&callback=initMap"></script>
     <script src="/static/js/instafeed.min.js"></script>
     <script>
-        var feedBig = new Instafeed({
+        var rendered = 0,
+            feedBig = new Instafeed({
             accessToken: '6431223467.1677ed0.497a3fb534224faabb7630d4f0bc6e93',
             clientId: 'f22d3e48a2c74c5ca51de31e6a499f19',
             get: 'user',
             userId: 6431223467,
             target: 'instagram-photos',
             sortBy: 'most-recent',
-            limit: 5,
+            limit: 20,
             resolution: 'standard_resolution',
+            filter: function (image) {
+                console.log(image.tags) 
+                if (image.tags.length === 0) {
+                    return false;
+                }
+            
+                return image.tags.indexOf('ludimusleague') < 0;
+            },
             template: '<div class="grid__item">' +
             '    <div class="content">' +
             '        <div class="content-inside">' +
