@@ -27,7 +27,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
 
-    <link rel="stylesheet" href="./style.css?t=a73702c8421b5b8cf4a09954517fe7f9">
+    <link rel="stylesheet" href="./style.css?t=7a20a317454eb174f0c980eec134f249">
 
     <link rel="icon" type="image/png" href="../static/img/favicon/favicon-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="../static/img/favicon/favicon-16x16.png" sizes="16x16" />
@@ -489,7 +489,6 @@
             limit: 20,
             resolution: 'standard_resolution',
             filter: function (image) {
-                console.log(image.tags) 
                 if (image.tags.length === 0) {
                     return false;
                 }
