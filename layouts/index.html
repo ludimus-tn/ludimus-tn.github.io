@@ -61,18 +61,22 @@
         <div id="instagram-photos" class="grid"></div>
     </section>
 
-    <section id="blog" class="slick-slider">
-        <blockquote>Si può scoprire di più su una persona in un’ora di gioco che in un anno di conversazione.</blockquote>
-
+    <section id="blog">
         <div class="blog-items">
-            {{ blog_post }}
+            <div class="cards-container">
+                <div class="row">
+                    {{ blog_post }} 
+                </div>
+            </div>
+        </div>
+        <div class="text-center read-more"> 
+            <a href="javascript:showBlogPosts();">Carica altri post ⇢</a>
         </div>
     </section>
 
     <section id="monday">
         <div id="map"></div>
         <div id="monday-content">
-
             <p class="centered-text">
                 Ogni <strong>lunedì</strong>, a <strong>Trento</strong> presso <a href="https://www.facebook.com/Il-Simposio-Bar-Ristorante-162813970411602" target="_blank">il Simposio</a>.
                 <br>
@@ -105,36 +109,6 @@
     {{ footer }}
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
-    <script>
-        $('.blog-items').slick({
-            focusOnSelect: false,
-            responsive: [
-                {
-                    breakpoint: 5000,
-                    settings: {
-                        slidesToShow: 3,
-                        slidesToScroll: 1
-                    }
-                },
-                {
-                    breakpoint: 992,
-                    settings: {
-                        slidesToShow: 2,
-                        slidesToScroll: 1
-                    }
-                },
-                {
-                    breakpoint: 768,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1
-                    }
-                }
-            ]
-        });
-    </script>
 
     <script type="text/javascript">
         function initMap() {
@@ -165,6 +139,50 @@
                 map.setCenter(center);
             });
         }
+    </script>
+    <script>
+        function equal_cols(el, toAdd) {
+            var h = 0;
+            $(el).each(function(){
+                $(this).css({'height':'auto'});
+                if($(this).outerHeight() > h)
+                {
+                    h = $(this).outerHeight();
+                }
+            });
+            $(el).each(function(){
+                $(this).css({'height':h + toAdd});
+            });
+        }
+
+        function getBootstrapBreakpoint() {
+            var w = $(document).innerWidth();
+            return (w < 768) ? 'xs' : ((w < 992) ? 'sm' : ((w < 1200) ? 'md' : 'lg'));
+        }
+
+        function showBlogPosts() {
+            $('#blog .row>div').css({'display': 'block'});
+            $('#blog .read-more').css({'display': 'none'});
+        }
+
+        $(document).ready(function(){
+            equal_cols('#blog .blog-preview .card', 60);
+
+            var breakpoint = getBootstrapBreakpoint(),
+                cols = 3;
+
+            if (breakpoint === 'lg') {
+                cols = 5;
+            } else if (breakpoint === 'md') {
+                cols = 5;
+            } else if (breakpoint === 'sm') {
+                cols = 4;
+            }
+
+            $('#blog .row>div:nth-child(n+' + cols + ')').css({'display': 'none'});
+        });
+        
+
     </script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDL3E8pZkDlbq5DTC7on1R3dlQF9iL1n30&callback=initMap"></script>
     <script src="/static/js/instafeed.min.js"></script>

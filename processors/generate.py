@@ -71,10 +71,15 @@ with open('./layouts/index.html') as base_index_tmpl, \
                             continue
                         if 'blog_post_og: ' in line:
                             og_image = line.replace('blog_post_og: ', '')
+                            continue
+                        if 'blog_post_abstract: ' in line:
+                            abstract = line.replace('blog_post_abstract: ', '')
+                            continue
 
                 post_date_tmp = file_url[:10].split('-')
                 post_date = '{}/{}/{}'.format(post_date_tmp[2], post_date_tmp[1], post_date_tmp[0])
 
+                output_index.write('<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">')    
                 for blog_line in blog_preview_tmpl:
                     if '{{ blog_url }}' in blog_line:
                         output_index.write(blog_line.replace('{{ blog_url }}', file_url))
@@ -86,8 +91,12 @@ with open('./layouts/index.html') as base_index_tmpl, \
                         output_index.write(blog_line.replace('{{ date }}', post_date))
                     elif '{{ author_img }}' in blog_line:
                         output_index.write(blog_line.replace('{{ author_img }}', author_img))
+                    elif '{{ abstract }}' in blog_line:
+                        output_index.write(blog_line.replace('{{ abstract }}', abstract))
                     else:
                         output_index.write(blog_line)    
+                output_index.write('</div>')    
+
         else:
             output_index.write(line)
 
