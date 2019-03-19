@@ -27,7 +27,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
 
-    <link rel="stylesheet" href="./style.css?t=a3ccf955542879458ece0ade08cf3988">
+    <link rel="stylesheet" href="./style.css?t=e26ef344c3a5824e0880d0a52c55803a">
 
     <link rel="icon" type="image/png" href="../static/img/favicon/favicon-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="../static/img/favicon/favicon-16x16.png" sizes="16x16" />
@@ -607,19 +607,21 @@
         </div>
     </section>
 
-    <section id="monday">
-        <div id="map"></div>
-        <div id="monday-content">
-            <p class="centered-text">
+    <section id="serate">
+        <div class="row">
+            <div class="col-md-6 col-lg-4 offset-lg-2">
+                <img src="../static/img/hp/trento.png" alt="Ludimus Trento" />
                 Ogni <strong>lunedì</strong>, a <strong>Trento</strong> presso <a href="https://www.facebook.com/Il-Simposio-Bar-Ristorante-162813970411602" target="_blank">il Simposio</a>.
                 <br>
                 <a href="https://goo.gl/maps/MyHyLKRdzQs" target="_blank">Come arrivare ⇢</a>
-                <br>
-                <br>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <img src="../static/img/hp/rovereto.png" alt="Ludimus Rovereto" />
                 Ogni due <strong>giovedì</strong>, a <strong>Rovereto</strong> presso <a href="https://www.facebook.com/smartlabrovereto/" target="_blank">Smart Lab</a>.
                 <br>
                 <a href="https://goo.gl/maps/12R3EDBMK1G2" target="_blank">Come arrivare ⇢</a>
-            </p>
+
+            </div>
         </div>
     </section>
 
@@ -705,36 +707,6 @@
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 
-    <script type="text/javascript">
-        function initMap() {
-            var simposio = {lat: 46.0679888, lng: 11.1188979},
-                smartlab = {lat: 45.9046541, lng: 11.0407505};
-
-            var map = new google.maps.Map(document.getElementById('map'), {
-                zoom: 10,
-                center: {lat: 45.997919, lng: 11.113590},
-                mapTypeControl: false,
-                zoomControl: false,
-                streetViewControl: false
-            });
-
-            new google.maps.Marker({
-                position: simposio,
-                map: map
-            });
-
-            new google.maps.Marker({
-                position: smartlab,
-                map: map
-            });
-
-            google.maps.event.addDomListener(window, "resize", function() {
-                var center = map.getCenter();
-                google.maps.event.trigger(map, "resize");
-                map.setCenter(center);
-            });
-        }
-    </script>
     <script>
         function equal_cols(el, toAdd) {
             var h = 0;
