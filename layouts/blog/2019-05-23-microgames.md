@@ -2,7 +2,7 @@ blog_post_title: Microgames
 blog_post_abstract: Giochi sempre più piccoli, sempre più minimali, ma con grandi contenuti! Per chi vuole poter trasportare i propri giochi o ha semplicemente finito lo spazio a casa.
 blog_post_author: Alessio
 blog_post_author_img: war.png
-blog_post_og: https://ludimus.it/static/img/blog/microgames/og.png
+blog_post_og: https://ludimus.it/static/img/blog/microgames/og.jpg
 
 # Microgames
 ###Non tutti i grandi giochi sono giochi grandi
