@@ -20,7 +20,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>ludimus - league 2019</title>
+	<title>ludimus - league 2019-20</title>
 	<meta property="og:image" content="https://dl.dropbox.com/s/83rbvtvzos9rapo/logo.png" />
 
 
@@ -46,10 +46,10 @@
 	<section id="league">
 		<section class="league__header">
 			<div>
-				<h2>Ludimus League 2019</h2>
+				<h2>Ludimus League 2019-20</h2>
 			</div>
 			<p class="centered-text">
-				La Ludimus League 2019 è un campionato che si terrà nei mesi di <strong>gennaio, febbraio e marzo 2019</strong>.
+				La Ludimus League 2019 è un campionato che si terrà a partire da <strong>settembre 2019</strong>.
 			</p>
 			<br>
 			<p class="centered-text">
@@ -78,7 +78,7 @@
     </h3>
   </div>
   <div v-else class="table-responsive">
-    <table class="table table-hover" v-if="partecipants">
+    <table class="table table-hover table-striped" v-if="partecipants">
       <thead class="thead-light">
         <tr>
           <th scope="col">Posizione</th>
@@ -86,6 +86,24 @@
           <th scope="col">Partite registrate</th>
           <th scope="col">Jolly utilizzati</th>
           <th scope="col">Punteggio</th>
+          <th scope="col" v-show="!areGamesVisible">
+            <a @click="setGameVisibility" style="text-decoration: underline; color: #ec3645; cursor: pointer;">Mostra dettaglio giochi</a>
+          </th>
+          <th scope="col" v-show="areGamesVisible">7 Wonders Duel</th>
+          <th scope="col" v-show="areGamesVisible">Azul</th>
+          <th scope="col" v-show="areGamesVisible">Biblios</th>
+          <th scope="col" v-show="areGamesVisible">Carcassonne</th>
+          <th scope="col" v-show="areGamesVisible">Catan</th>
+          <th scope="col" v-show="areGamesVisible">Coloretto</th>
+          <th scope="col" v-show="areGamesVisible">Dixit</th>
+          <th scope="col" v-show="areGamesVisible">Kingdomino</th>
+          <th scope="col" v-show="areGamesVisible">Nome in Codice</th>
+          <th scope="col" v-show="areGamesVisible">Orleans</th>
+          <th scope="col" v-show="areGamesVisible">Pandemia</th>
+          <th scope="col" v-show="areGamesVisible">Pozioni Esplosive</th>
+          <th scope="col" v-show="areGamesVisible">Quadropolis</th>
+          <th scope="col" v-show="areGamesVisible">Santorini</th>
+          <th scope="col" v-show="areGamesVisible">Ticket to Ride</th>
         </tr>
       </thead>
       <tbody>
@@ -97,6 +115,22 @@
           <td>{{ partecipant.matches }}</td>
           <td>{{ partecipant.jolly }}</td>
           <td>{{ partecipant.points }}</td>
+          <td v-show="!areGamesVisible"></td>
+          <td v-show="areGamesVisible">{{ setGameAsPlayed(partecipant.wondersDuel) }}</td>
+          <td v-show="areGamesVisible">{{ setGameAsPlayed(partecipant.azul) }}</td>
+          <td v-show="areGamesVisible">{{ setGameAsPlayed(partecipant.biblios) }}</td>
+          <td v-show="areGamesVisible">{{ setGameAsPlayed(partecipant.carcassonne) }}</td>
+          <td v-show="areGamesVisible">{{ setGameAsPlayed(partecipant.catan) }}</td>
+          <td v-show="areGamesVisible">{{ setGameAsPlayed(partecipant.coloretto) }}</td>
+          <td v-show="areGamesVisible">{{ setGameAsPlayed(partecipant.dixit) }}</td>
+          <td v-show="areGamesVisible">{{ setGameAsPlayed(partecipant.kingdomino) }}</td>
+          <td v-show="areGamesVisible">{{ setGameAsPlayed(partecipant.nomeInCodice) }}</td>
+          <td v-show="areGamesVisible">{{ setGameAsPlayed(partecipant.orleans) }}</td>
+          <td v-show="areGamesVisible">{{ setGameAsPlayed(partecipant.pandemia) }}</td>
+          <td v-show="areGamesVisible">{{ setGameAsPlayed(partecipant.pozioniEsplosive) }}</td>
+          <td v-show="areGamesVisible">{{ setGameAsPlayed(partecipant.quadropolis) }}</td>
+          <td v-show="areGamesVisible">{{ setGameAsPlayed(partecipant.santorini) }}</td>
+          <td v-show="areGamesVisible">{{ setGameAsPlayed(partecipant.ticketToRide) }}</td>
         </tr>
       </tbody>
     </table>
@@ -108,15 +142,17 @@
     el: "#rank",
     data: {
       partecipants: [],
-      loading: true
+      loading: true,
+      areGamesVisible: false
     },
     mounted() {
       axios
         .get(
-          "https://script.google.com/macros/s/AKfycby0Gq1G7Rzbl2-RRyMA6OOJIOcRfZShhI4rR7kZ5ktzSGk2xCBr/exec"
+          "https://script.google.com/macros/s/AKfycbyhMbmkrZ3UozK2PZv1BIHaa2HGpxxg6n-1ynmGWRoIi-35JQo/exec"
         )
         .then(response => {
           this.partecipants = response.data.partecipants;
+          console.log(this.partecipants)
         })
         .catch(error => {
           console.error(error);
@@ -128,6 +164,16 @@
         letter = data.split('', 1)
         firstLetter = letter[0] + '.'
         return firstLetter
+      },
+      setGameAsPlayed(points) {
+        if (points === 0) {
+          return "-"
+        } else {
+          return points
+        }
+      },
+      setGameVisibility() {
+        return this.areGamesVisible = !this.areGamesVisible
       }
     }
   })
