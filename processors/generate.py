@@ -156,8 +156,8 @@ with open('./layouts/league.html') as base_league_tmpl, \
 ## League Rules
 ###############################################################################
 
-with open('./layouts/league_rules.html') as base_league_tmpl, \
-        open('./league_rules.html', 'w') as output_league:
+with open('./layouts/league-rules.html') as base_league_tmpl, \
+        open('./league-rules.html', 'w') as output_league:
     for line in base_league_tmpl:
         if '{{ google_analytics }}' in line:
             output_league.write(line.replace('{{ google_analytics }}', google_analytics))
