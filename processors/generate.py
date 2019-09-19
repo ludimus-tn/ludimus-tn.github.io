@@ -4,6 +4,7 @@ import os
 import hashlib
 import markdown2
 import re
+from random import shuffle
 
 
 HIDDEN_GAMES = {
@@ -39,6 +40,47 @@ for item in sorted(input_data.get('items', []), key=lambda x: x.get('votoMedio',
         weight='{0:0.1f}'.format(item['pesoMedio']),
     ))
 
+blog_file_to_tmpl = {}
+for post in sorted(glob.glob('./layouts/blog/*')):
+    file_name = post.replace('./layouts/blog/', '')
+    title = file_name[10:].replace('.html', '').replace('.md', '').replace('-', ' ').title()
+    file_url = file_name.replace('.md', '.html')
+
+    with open(post) as post_tmpl:
+        for line in post_tmpl:
+            if 'blog_post_author_img: ' in line:
+                author_img = line.replace('blog_post_author_img: ', '')
+                continue
+            if 'blog_post_og: ' in line:
+                og_image = line.replace('blog_post_og: ', '')
+                continue
+            if 'blog_post_abstract: ' in line:
+                abstract = line.replace('blog_post_abstract: ', '')
+                continue
+
+    post_date_tmp = file_url[:10].split('-')
+    post_date = '{}/{}/{}'.format(post_date_tmp[2], post_date_tmp[1], post_date_tmp[0])
+
+    output_blog_tmpl = ''
+    output_blog_tmpl += '<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" style="display: none;">'
+    for blog_line in blog_preview_tmpl:
+        if '{{ blog_url }}' in blog_line:
+            output_blog_tmpl += blog_line.replace('{{ blog_url }}', file_url)
+        elif '{{ image_url }}' in blog_line:
+            output_blog_tmpl += blog_line.replace('{{ image_url }}', og_image.replace('https://ludimus.it/', '../'))
+        elif '{{ title }}' in blog_line:
+            output_blog_tmpl += blog_line.replace('{{ title }}', title)
+        elif '{{ date }}' in blog_line:
+            output_blog_tmpl += blog_line.replace('{{ date }}', post_date)
+        elif '{{ author_img }}' in blog_line:
+            output_blog_tmpl += blog_line.replace('{{ author_img }}', author_img)
+        elif '{{ abstract }}' in blog_line:
+            output_blog_tmpl += blog_line.replace('{{ abstract }}', abstract)
+        else:
+            output_blog_tmpl += blog_line
+    output_blog_tmpl += '</div>'
+    blog_file_to_tmpl[post] = output_blog_tmpl
+
 ###############################################################################
 ## Homepage
 ###############################################################################
@@ -60,42 +102,7 @@ with open('./layouts/index.html') as base_index_tmpl, \
             output_index.write(line.replace('{{ footer }}', footer))
         elif '{{ blog_post }}' in line:
             for post in sorted(glob.glob('./layouts/blog/*'), reverse=True):
-                file_name = post.replace('./layouts/blog/', '')
-                title = file_name[10:].replace('.html', '').replace('.md', '').replace('-', ' ').title()
-                file_url = file_name.replace('.md', '.html')
-
-                with open(post) as post_tmpl:
-                    for line in post_tmpl:
-                        if 'blog_post_author_img: ' in line:
-                            author_img = line.replace('blog_post_author_img: ', '')
-                            continue
-                        if 'blog_post_og: ' in line:
-                            og_image = line.replace('blog_post_og: ', '')
-                            continue
-                        if 'blog_post_abstract: ' in line:
-                            abstract = line.replace('blog_post_abstract: ', '')
-                            continue
-
-                post_date_tmp = file_url[:10].split('-')
-                post_date = '{}/{}/{}'.format(post_date_tmp[2], post_date_tmp[1], post_date_tmp[0])
-
-                output_index.write('<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">')    
-                for blog_line in blog_preview_tmpl:
-                    if '{{ blog_url }}' in blog_line:
-                        output_index.write(blog_line.replace('{{ blog_url }}', file_url))
-                    elif '{{ image_url }}' in blog_line:
-                        output_index.write(blog_line.replace('{{ image_url }}', og_image.replace('https://ludimus.it/', '../')))
-                    elif '{{ title }}' in blog_line:
-                        output_index.write(blog_line.replace('{{ title }}', title))
-                    elif '{{ date }}' in blog_line:
-                        output_index.write(blog_line.replace('{{ date }}', post_date))
-                    elif '{{ author_img }}' in blog_line:
-                        output_index.write(blog_line.replace('{{ author_img }}', author_img))
-                    elif '{{ abstract }}' in blog_line:
-                        output_index.write(blog_line.replace('{{ abstract }}', abstract))
-                    else:
-                        output_index.write(blog_line)    
-                output_index.write('</div>')    
+                output_index.write(blog_file_to_tmpl[post])
 
         else:
             output_index.write(line)
@@ -186,6 +193,7 @@ for post in posts:
         author_img = None
         og_image = None
         post_blog_body = []
+        read_more = []
 
         for line in post_body:
             if 'blog_post_title: ' in line:
@@ -218,5 +226,11 @@ for post in posts:
                 output_post.write(line.replace('{{ blog_post_author }}', author))
             elif '{{ blog_post_og }}' in line:
                 output_post.write(line.replace('{{ blog_post_og }}', og_image))
+            elif '{{ blog_post_read_more }}' in line:
+                post_blogs_links = glob.glob('./layouts/blog/*')
+                shuffle(post_blogs_links)
+                read_more_files = post_blogs_links[:4]
+                for post in read_more_files:
+                    output_post.write(blog_file_to_tmpl[post])
             else:
                 output_post.write(line)

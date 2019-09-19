@@ -573,8 +573,6 @@ footer p {
 
 .blog-post {
     padding: 3rem;
-    max-width: 60%;
-    margin: 0 auto;
     line-height: 1.6;
     border-bottom: 1px dashed #ababab;
 }
@@ -621,6 +619,11 @@ em.post-date {
 
 .blog-post-writer {
     text-align: center;
+    border-bottom: 1px dashed #ababab;
+}
+
+.blog-post-writer h5 {
+    margin: 0;
 }
 
 .blog-post-writer__images {
@@ -637,14 +640,19 @@ em.post-date {
     margin-left: -25px;
 }
 
+.blog-post, .blog-post-writer {
+    max-width: 60%;
+    margin: 0 auto;
+}
+
 @media (max-width: 886px) {
-    .blog-post {
+    .blog-post, .blog-post-writer {
         max-width: 80%;
     }
 }
 
 @media (max-width: 621px) {
-    .blog-post {
+    .blog-post, .blog-post-writer {
         max-width: 100%;
     }
 }
