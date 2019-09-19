@@ -36,7 +36,21 @@
     <h5>{{ blog_post_author }}</h5>
 </section>
 
+<section id="blog">
+    <h2>Leggi anche</h4>
+    <div class="blog-items">
+        <div class="cards-container">
+            <div class="row">
+                {{ blog_post_read_more }}
+            </div>
+        </div>
+    </div>
+</section>
+
 {{ footer }}
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="/static/js/blog.js"></script>
 
 </body>
 </html>
