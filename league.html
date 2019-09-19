@@ -78,63 +78,65 @@
       </div>
     </h3>
   </div>
-  <div v-else class="table-responsive">
-    <table class="table table-hover table-striped" v-if="partecipants">
-      <thead class="thead-light">
-        <tr>
-          <th scope="col">Posizione</th>
-          <th scope="col">Partecipante</th>
-          <th scope="col">Partite registrate</th>
-          <th scope="col">Jolly utilizzati</th>
-          <th scope="col">Punteggio</th>
-          <th scope="col" v-show="!areGamesVisible">
-            <a @click="setGameVisibility" style="text-decoration: underline; color: #ec3645; cursor: pointer;">Mostra dettaglio giochi</a>
-          </th>
-          <th scope="col" v-show="areGamesVisible">7 Wonders Duel</th>
-          <th scope="col" v-show="areGamesVisible">Azul</th>
-          <th scope="col" v-show="areGamesVisible">Biblios</th>
-          <th scope="col" v-show="areGamesVisible">Carcassonne</th>
-          <th scope="col" v-show="areGamesVisible">Catan</th>
-          <th scope="col" v-show="areGamesVisible">Coloretto</th>
-          <th scope="col" v-show="areGamesVisible">Dixit</th>
-          <th scope="col" v-show="areGamesVisible">Kingdomino</th>
-          <th scope="col" v-show="areGamesVisible">Nome in Codice</th>
-          <th scope="col" v-show="areGamesVisible">Orleans</th>
-          <th scope="col" v-show="areGamesVisible">Pandemia</th>
-          <th scope="col" v-show="areGamesVisible">Pozioni Esplosive</th>
-          <th scope="col" v-show="areGamesVisible">Quadropolis</th>
-          <th scope="col" v-show="areGamesVisible">Santorini</th>
-          <th scope="col" v-show="areGamesVisible">Ticket to Ride</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr v-for="partecipant in partecipants" :key="partecipants.position">
-          <th scope="row">{{ partecipant.position }}°</th>
-          <td>
-            {{ partecipant.name }} {{ getFirstLetter(partecipant.lastName) }}
-          </td>
-          <td>{{ partecipant.matches }}</td>
-          <td>{{ partecipant.jolly }}</td>
-          <td>{{ partecipant.points }}</td>
-          <td v-show="!areGamesVisible"></td>
-          <td v-show="areGamesVisible">{{ setGameAsPlayed(partecipant.wondersDuel) }}</td>
-          <td v-show="areGamesVisible">{{ setGameAsPlayed(partecipant.azul) }}</td>
-          <td v-show="areGamesVisible">{{ setGameAsPlayed(partecipant.biblios) }}</td>
-          <td v-show="areGamesVisible">{{ setGameAsPlayed(partecipant.carcassonne) }}</td>
-          <td v-show="areGamesVisible">{{ setGameAsPlayed(partecipant.catan) }}</td>
-          <td v-show="areGamesVisible">{{ setGameAsPlayed(partecipant.coloretto) }}</td>
-          <td v-show="areGamesVisible">{{ setGameAsPlayed(partecipant.dixit) }}</td>
-          <td v-show="areGamesVisible">{{ setGameAsPlayed(partecipant.kingdomino) }}</td>
-          <td v-show="areGamesVisible">{{ setGameAsPlayed(partecipant.nomeInCodice) }}</td>
-          <td v-show="areGamesVisible">{{ setGameAsPlayed(partecipant.orleans) }}</td>
-          <td v-show="areGamesVisible">{{ setGameAsPlayed(partecipant.pandemia) }}</td>
-          <td v-show="areGamesVisible">{{ setGameAsPlayed(partecipant.pozioniEsplosive) }}</td>
-          <td v-show="areGamesVisible">{{ setGameAsPlayed(partecipant.quadropolis) }}</td>
-          <td v-show="areGamesVisible">{{ setGameAsPlayed(partecipant.santorini) }}</td>
-          <td v-show="areGamesVisible">{{ setGameAsPlayed(partecipant.ticketToRide) }}</td>
-        </tr>
-      </tbody>
-    </table>
+  <div v-else>
+    <div class="centered-text">
+        <a @click="setGameVisibility" style="color: #ec3645; cursor: pointer;"><span v-if="!areGamesVisible"> Clicca per mostrare il dettaglio giochi ►</span><span v-if="areGamesVisible"> ◀︎ Nascondi dettaglio giochi</span></a>
+        <p></p>
+      </div>
+    <div class="table-responsive">
+      <table class="table table-hover table-striped" v-if="partecipants">
+          <thead class="thead-light">
+            <tr>
+              <th scope="col">Posizione</th>
+              <th scope="col">Partecipante</th>
+              <th scope="col">Partite registrate</th>
+              <th scope="col">Jolly utilizzati</th>
+              <th scope="col">Punteggio</th>
+              <th scope="col" v-show="areGamesVisible">7 Wonders Duel</th>
+              <th scope="col" v-show="areGamesVisible">Azul</th>
+              <th scope="col" v-show="areGamesVisible">Biblios</th>
+              <th scope="col" v-show="areGamesVisible">Carcassonne</th>
+              <th scope="col" v-show="areGamesVisible">Catan</th>
+              <th scope="col" v-show="areGamesVisible">Coloretto</th>
+              <th scope="col" v-show="areGamesVisible">Dixit</th>
+              <th scope="col" v-show="areGamesVisible">Kingdomino</th>
+              <th scope="col" v-show="areGamesVisible">Nome in Codice</th>
+              <th scope="col" v-show="areGamesVisible">Orleans</th>
+              <th scope="col" v-show="areGamesVisible">Pandemia</th>
+              <th scope="col" v-show="areGamesVisible">Pozioni Esplosive</th>
+              <th scope="col" v-show="areGamesVisible">Quadropolis</th>
+              <th scope="col" v-show="areGamesVisible">Santorini</th>
+              <th scope="col" v-show="areGamesVisible">Ticket to Ride</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr v-for="partecipant in partecipants" :key="partecipants.position">
+              <th scope="row">{{ partecipant.position }}°</th>
+              <td>
+                {{ partecipant.name }} {{ getFirstLetter(partecipant.lastName) }}
+              </td>
+              <td>{{ partecipant.matches }}</td>
+              <td>{{ partecipant.jolly }}</td>
+              <td>{{ partecipant.points }}</td>
+              <td v-show="areGamesVisible">{{ setGameAsPlayed(partecipant.wondersDuel) }}</td>
+              <td v-show="areGamesVisible">{{ setGameAsPlayed(partecipant.azul) }}</td>
+              <td v-show="areGamesVisible">{{ setGameAsPlayed(partecipant.biblios) }}</td>
+              <td v-show="areGamesVisible">{{ setGameAsPlayed(partecipant.carcassonne) }}</td>
+              <td v-show="areGamesVisible">{{ setGameAsPlayed(partecipant.catan) }}</td>
+              <td v-show="areGamesVisible">{{ setGameAsPlayed(partecipant.coloretto) }}</td>
+              <td v-show="areGamesVisible">{{ setGameAsPlayed(partecipant.dixit) }}</td>
+              <td v-show="areGamesVisible">{{ setGameAsPlayed(partecipant.kingdomino) }}</td>
+              <td v-show="areGamesVisible">{{ setGameAsPlayed(partecipant.nomeInCodice) }}</td>
+              <td v-show="areGamesVisible">{{ setGameAsPlayed(partecipant.orleans) }}</td>
+              <td v-show="areGamesVisible">{{ setGameAsPlayed(partecipant.pandemia) }}</td>
+              <td v-show="areGamesVisible">{{ setGameAsPlayed(partecipant.pozioniEsplosive) }}</td>
+              <td v-show="areGamesVisible">{{ setGameAsPlayed(partecipant.quadropolis) }}</td>
+              <td v-show="areGamesVisible">{{ setGameAsPlayed(partecipant.santorini) }}</td>
+              <td v-show="areGamesVisible">{{ setGameAsPlayed(partecipant.ticketToRide) }}</td>
+            </tr>
+          </tbody>
+      </table>
+    </div>
   </div>
 </div>
 
@@ -179,7 +181,6 @@
     }
   })
 </script>
-
 		</section>
 		
 		<section class="league__prizes" id="prizes">

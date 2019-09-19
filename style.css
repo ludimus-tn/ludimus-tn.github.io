@@ -701,8 +701,9 @@ em.post-date {
 }
 
 .league__ranking table {
-    max-width: 70%;
-    margin: auto;
+    max-width: 60%;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 @media (max-width: 886px) {
