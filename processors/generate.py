@@ -4,7 +4,7 @@ import os
 import hashlib
 import markdown2
 import re
-from random import shuffle
+from random import Random
 
 
 HIDDEN_GAMES = {
@@ -227,8 +227,8 @@ for post in posts:
             elif '{{ blog_post_og }}' in line:
                 output_post.write(line.replace('{{ blog_post_og }}', og_image))
             elif '{{ blog_post_read_more }}' in line:
-                post_blogs_links = glob.glob('./layouts/blog/*')
-                shuffle(post_blogs_links)
+                post_blogs_links = list(set(glob.glob('./layouts/blog/*')) - {post})
+                Random(post).shuffle(post_blogs_links)
                 read_more_files = post_blogs_links[:4]
                 for post in read_more_files:
                     output_post.write(blog_file_to_tmpl[post])
