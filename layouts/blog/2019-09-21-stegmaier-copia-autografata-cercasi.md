@@ -1,4 +1,4 @@
-blog_post_title: Le regole del gioco
+blog_post_title: Stegmaier, copia autografata cercasi
 blog_post_abstract: Fa sempre bene avere un idolo a cui riferirsi. Il mio è il solo, l'unico, Jamey Stegmaier.
 blog_post_author: Mattia
 blog_post_author_img: tia.jpg
