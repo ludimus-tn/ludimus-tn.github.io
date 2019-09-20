@@ -598,6 +598,19 @@ footer p {
     line-height: .8em;
 }
 
+@media (max-width: 886px) {
+    .blog-post h1 {
+        font-size: 4em;
+    }
+} 
+
+@media (max-width: 621px) {
+    .blog-post h1 {
+        font-size: 2.5em;
+        line-height: 1em;
+    }
+}
+
 .blog-post h3 {
     text-align: center;
     margin-top: 1.5em;

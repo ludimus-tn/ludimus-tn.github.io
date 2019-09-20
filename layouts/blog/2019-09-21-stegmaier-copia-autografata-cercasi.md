@@ -42,7 +42,7 @@ Creare la civiltà con una storia leggendaria non è semplice.
 **Creare la civiltà partendo dal nulla** lo è ancora di meno.
 Si va dal passato al futuro, incontrando eventi e persone reali, con l’unico scopo di essere migliori, i migliori di sempre. 
 Scienza, tecnologia, esplorazione e prodezza militare saranno i sentieri  che ogni giocatore dovrà calcare e imparare a conoscere per conquistare il potere tanto bramato e per fare quello che il caro Prof ha sempre voluto fare: tentare di conquistare il mondo.
-Abbellire la capitale, migliore le entrare, guadagnare successo e fare in modo che la propria storia venga raccontata nei secoli a venire… E tutto questo in solo 4 pagine di regolamento. 
+Abbellire la capitale, migliorare le entrare, guadagnare successo e fare in modo che la propria storia venga raccontata nei secoli a venire… E tutto questo in solo 4 pagine di regolamento. 
 
 
 ### Post scriptum
