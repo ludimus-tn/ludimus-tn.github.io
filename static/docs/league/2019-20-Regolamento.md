@@ -1,6 +1,6 @@
 #### REGOLAMENTO EDIZIONE 2019/2020
 1. La partecipazione alla league è **riservata ai soci** di Ludimus ETS.
-2. Per partecipare basta iscriversi durante un qualsiasi serata giochi organizzata da Ludimus nel periodo che va **dal 30 settembre 2019 al 26 marzo 2020** fornendo *nome*, *cognome* e *numero di tessera*.
+2. Per partecipare basta iscriversi durante una qualsiasi serata giochi organizzata da Ludimus nel periodo che va **dal 30 settembre 2019 al 26 marzo 2020** fornendo *nome*, *cognome* e *numero di tessera*.
 3. Chi è iscritto può **accumulare punti giocando ai giochi validi per la league** durante qualsiasi serata giochi Ludimus che si terrà nel periodo sopra detto. I giochi selezionati da Ludimus sono quindici: Azul, Ticket to Ride: Europe, Nome in Codice, Biblios, Carcassonne, 7 Wonders Duel, Santorini, Coloretto, Kingdomino, Quadropolis, Pozioni Esplosive, Pandemia, Catan, Orleans e Dixit.
   * Per motivi logistici, lo staff Ludimus **non può assicurare la presenza di tutti e quindici i giochi a ciascun evento**. Sarà fatto il possibile affinché più copie possibili siano presenti e tutti i giochi siano giocabili sia nelle serate di Ludimus a Trento che in quelle a Rovereto nel corso dei sei mesi della league;
   * Nel caso in cui un partecipante volesse giocare a un gioco specifico in una determinata serata, consigliamo di **contattare lo staff** qualche giorno prima tramite uno dei nostri canali (email, Facebook, Telegram, ecc.). Cercheremo di recuperare una copia;
