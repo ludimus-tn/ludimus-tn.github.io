@@ -1,0 +1,73 @@
+<html>
+
+<head>
+	{{ google_analytics }}
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>ludimus league 2019-20</title>
+	<meta property="og:image" content="https://dl.dropbox.com/s/83rbvtvzos9rapo/logo.png" />
+	<meta property="og:description" content="Ludimus League: il campionato di giochi da tavolo a Trento e Rovereto" />
+
+
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto+Condensed|Raleway|Roboto+Mono" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
+	  crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+	  crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
+	<link rel="stylesheet" href="./style.css?t={{ hash }}">
+
+	<link rel="icon" type="image/png" href="../static/img/favicon/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="../static/img/favicon/favicon-16x16.png" sizes="16x16" />
+
+</head>
+
+<body>
+
+	<section id="league__slideshow" class="league__slideshow">
+        <div>
+            Logo ludimus + scritta Ludimus League 2019
+        </div>
+
+		<div class="league__ranking" id="ranking">
+			<h4 class="centered-text">Classifica</h4>
+			{{ league_ranking }}
+        </div>
+        
+        <div>
+            Premio 1
+        </div>
+
+        <div>
+            Premio 2
+        </div>
+
+        <div>
+            Premio 3
+        </div>
+
+        <div>
+            Partecipa alla Ludimus League
+        </div>
+		
+    </section>
+    
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+          $('.league__slideshow').slick({
+            adaptiveHeight: true,
+            autoplay: false
+          });
+        });
+    </script>
+
+</body>
+</html>

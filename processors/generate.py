@@ -174,6 +174,20 @@ with open('./layouts/league-rules.html') as base_league_tmpl, \
             output_league.write(line.replace('{{ footer }}', footer))
         else:
             output_league.write(line)
+
+###############################################################################
+## League Slideshow
+###############################################################################
+
+with open('./layouts/league-slideshow.html') as base_league_tmpl, \
+        open('./league-slideshow.html', 'w') as output_league:
+    for line in base_league_tmpl:
+        if '{{ google_analytics }}' in line:
+            output_league.write(line.replace('{{ google_analytics }}', google_analytics))
+        elif '{{ league_ranking }}' in line: 
+            output_league.write(line.replace('{{ league_ranking }}', league_ranking))
+        else:
+            output_league.write(line)
             
 ###############################################################################
 ## BLOG
