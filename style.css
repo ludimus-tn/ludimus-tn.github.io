@@ -79,7 +79,9 @@ section h2 {
 }
 
 /**********************************************************************************************************************/
+
 /* INTRO */
+
 /**********************************************************************************************************************/
 
 #header {
@@ -92,7 +94,7 @@ section h2 {
     border-bottom: 1px dashed #ababab;
 }
 
-#header > img {
+#header>img {
     position: absolute;
     top: 0;
     left: 0;
@@ -147,7 +149,9 @@ section h2 {
 }
 
 /**********************************************************************************************************************/
+
 /* numbers */
+
 /**********************************************************************************************************************/
 
 #numbers h3 {
@@ -175,7 +179,9 @@ section h2 {
 }
 
 /**********************************************************************************************************************/
+
 /* SERATE */
+
 /**********************************************************************************************************************/
 
 #serate {
@@ -191,7 +197,9 @@ section h2 {
 }
 
 /**********************************************************************************************************************/
+
 /* BLOG & GAMES */
+
 /**********************************************************************************************************************/
 
 #blog {
@@ -208,8 +216,7 @@ section h2 {
     min-height: 350px;
 }
 
-#blog .cards-container, 
-#games .cards-container {
+#blog .cards-container, #games .cards-container {
     text-align: center;
     width: 80%;
     margin: 0 auto;
@@ -220,7 +227,7 @@ section h2 {
     margin-bottom: .5rem;
 }
 
-#blog .cards-container .row > div {
+#blog .cards-container .row>div {
     padding: 0 2.5px;
 }
 
@@ -228,8 +235,7 @@ section h2 {
     background: #fff;
 }
 
-#blog .cards-container h3,
-#games .cards-container h3 {
+#blog .cards-container h3, #games .cards-container h3 {
     margin: 0;
     font-size: 1rem;
 }
@@ -239,8 +245,7 @@ section h2 {
     font-family: "Roboto Mono", monospace;
 }
 
-#blog .cards-container p,
-#games .cards-container p {
+#blog .cards-container p, #games .cards-container p {
     font-size: .8rem;
 }
 
@@ -252,15 +257,13 @@ section h2 {
     margin: .2rem;
 }
 
-#blog .cards-container a,
-#games .cards-container a {
+#blog .cards-container a, #games .cards-container a {
     font-size: 10px;
     float: right;
     margin-bottom: 5px;
 }
 
-#blog .cards-container img,
-#games .cards-container img {
+#blog .cards-container img, #games .cards-container img {
     height: 114px;
     width: 100%;
     display: block;
@@ -288,8 +291,7 @@ section h2 {
     left: .8rem;
 }
 
-#blog .card-block,
-#games .card-block {
+#blog .card-block, #games .card-block {
     padding: .8rem;
 }
 
@@ -303,7 +305,9 @@ section h2 {
 }
 
 /**********************************************************************************************************************/
+
 /* INSTAGRAM */
+
 /**********************************************************************************************************************/
 
 #instagram {
@@ -312,7 +316,7 @@ section h2 {
 
 #instagram .grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
 }
 
@@ -326,7 +330,6 @@ section h2 {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
     }
-
     #instagram .grid__item:nth-child(1) {
         display: none;
     }
@@ -404,7 +407,9 @@ section h2 {
 }
 
 /**********************************************************************************************************************/
+
 /* OUR GAMES */
+
 /**********************************************************************************************************************/
 
 .big-title {
@@ -430,14 +435,15 @@ section h2 {
     .big-title small {
         margin-bottom: 38px;
     }
-
     .big-title h2 {
         margin-bottom: 2rem;
     }
 }
 
 /**********************************************************************************************************************/
+
 /* STAFF */
+
 /**********************************************************************************************************************/
 
 #staff {
@@ -466,7 +472,9 @@ section h2 {
 }
 
 /**********************************************************************************************************************/
+
 /* JOIN */
+
 /**********************************************************************************************************************/
 
 #join ul {
@@ -491,7 +499,9 @@ section h2 {
 }
 
 /**********************************************************************************************************************/
+
 /* FOOTER */
+
 /**********************************************************************************************************************/
 
 footer {
@@ -507,11 +517,12 @@ footer p {
     float: right;
     height: 22px;
     line-height: 22px;
-
 }
 
 /**********************************************************************************************************************/
+
 /* GAMES */
+
 /**********************************************************************************************************************/
 
 #games .card img {
@@ -541,7 +552,6 @@ footer p {
     #games .cards-container {
         width: 750px;
     }
-
     #games .card-columns {
         columns: 4;
     }
@@ -551,7 +561,6 @@ footer p {
     #games .cards-container {
         width: 500px;
     }
-
     #games .card-columns {
         columns: 3;
     }
@@ -561,14 +570,15 @@ footer p {
     #games .cards-container {
         width: 250px;
     }
-
     #games .card-columns {
         columns: 1;
     }
 }
 
 /**********************************************************************************************************************/
+
 /* BLOG POST */
+
 /**********************************************************************************************************************/
 
 .blog-post {
@@ -589,7 +599,6 @@ footer p {
     margin-bottom: 1em;
 }
 
-
 .blog-post h1 {
     font-weight: bold;
     margin-bottom: .5em;
@@ -602,7 +611,7 @@ footer p {
     .blog-post h1 {
         font-size: 4em;
     }
-} 
+}
 
 @media (max-width: 621px) {
     .blog-post h1 {
@@ -649,7 +658,7 @@ em.post-date {
     filter: grayscale(100%);
 }
 
-.blog-post-writer__images img + img {
+.blog-post-writer__images img+img {
     margin-left: -25px;
 }
 
@@ -671,7 +680,9 @@ em.post-date {
 }
 
 /**********************************************************************************************************************/
+
 /* LEAGUE */
+
 /**********************************************************************************************************************/
 
 #league {
@@ -767,22 +778,25 @@ em.post-date {
     color: #ababab;
 }
 
-.league__points > img {
+.league__points>img {
     height: 200px;
     margin: auto;
     margin-bottom: 1rem;
 }
 
-.league__points table.table-bordered{
-    border: 1px solid #cecece;
-  }
-.league__points table.table-bordered > thead > tr > th{
+.league__points table.table-bordered {
     border: 1px solid #cecece;
 }
-.league__points table.table-bordered > tbody > tr > td{
+
+.league__points table.table-bordered>thead>tr>th {
     border: 1px solid #cecece;
 }
-.league__points table.table-bordered > tbody > tr > th{
+
+.league__points table.table-bordered>tbody>tr>td {
+    border: 1px solid #cecece;
+}
+
+.league__points table.table-bordered>tbody>tr>th {
     border: 1px solid #cecece;
 }
 
@@ -792,52 +806,73 @@ em.post-date {
 }
 
 .spinner {
-  margin: 100px auto 0;
-  width: 70px;
-  text-align: center;
+    margin: 100px auto 0;
+    width: 70px;
+    text-align: center;
 }
 
-.spinner > div {
-  width: 1rem;
-  height: 1rem;
-  background-color: darkgrey;
-
-  border-radius: 100%;
-  display: inline-block;
-  -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
-  animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+.spinner>div {
+    width: 1rem;
+    height: 1rem;
+    background-color: darkgrey;
+    border-radius: 100%;
+    display: inline-block;
+    -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+    animation: sk-bouncedelay 1.4s infinite ease-in-out both;
 }
 
 .spinner .bounce1 {
-  -webkit-animation-delay: -0.32s;
-  animation-delay: -0.32s;
+    -webkit-animation-delay: -0.32s;
+    animation-delay: -0.32s;
 }
 
 .spinner .bounce2 {
-  -webkit-animation-delay: -0.16s;
-  animation-delay: -0.16s;
+    -webkit-animation-delay: -0.16s;
+    animation-delay: -0.16s;
 }
 
 @-webkit-keyframes sk-bouncedelay {
-  0%, 80%, 100% { -webkit-transform: scale(0) }
-  40% { -webkit-transform: scale(1.0) }
+    0%, 80%, 100% {
+        -webkit-transform: scale(0)
+    }
+    40% {
+        -webkit-transform: scale(1.0)
+    }
 }
 
 @keyframes sk-bouncedelay {
-  0%, 80%, 100% { 
-    -webkit-transform: scale(0);
-    transform: scale(0);
-  } 40% { 
-    -webkit-transform: scale(1.0);
-    transform: scale(1.0);
-  }
+    0%, 80%, 100% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+    40% {
+        -webkit-transform: scale(1.0);
+        transform: scale(1.0);
+    }
 }
 
+.league__slideshow .league-slide {
+    position: relative;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    align-content: center;
+    justify-items: center;
+    padding: 3rem;
+    border: #ec3645 10px solid;
+}
 
-/**********************************************************************************************************************/
-/* LEAGUE SLIDESHOW */
-/**********************************************************************************************************************/
+.league__slideshow .league-slide:nth-child(2) {
+    border: 0;
+}
 
-.league__slideshow {
+.league__slideshow .league-slide>.logo-img {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3rem;
+}
 
+.league__slideshow .league-slide h5 {
+    font-size: 1.5rem;
+    font-weight: 600;
 }

@@ -1,73 +1,207 @@
 <html>
 
 <head>
-	{{ google_analytics }}
+  {{ google_analytics }}
 
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>ludimus league 2019-20</title>
-	<meta property="og:image" content="https://dl.dropbox.com/s/83rbvtvzos9rapo/logo.png" />
-	<meta property="og:description" content="Ludimus League: il campionato di giochi da tavolo a Trento e Rovereto" />
+  <title>ludimus league 2019-20</title>
+  <meta property="og:image" content="https://dl.dropbox.com/s/83rbvtvzos9rapo/logo.png" />
+  <meta property="og:description" content="Ludimus League: il campionato di giochi da tavolo a Trento e Rovereto" />
 
 
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto+Condensed|Raleway|Roboto+Mono" rel="stylesheet">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
-	  crossorigin="anonymous">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-	  crossorigin="anonymous">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto+Condensed|Raleway|Roboto+Mono"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    crossorigin="anonymous">
 
-	<link rel="stylesheet" href="./style.css?t={{ hash }}">
+  <link rel="stylesheet" href="./style.css?t={{ hash }}">
 
-	<link rel="icon" type="image/png" href="../static/img/favicon/favicon-32x32.png" sizes="32x32" />
-    <link rel="icon" type="image/png" href="../static/img/favicon/favicon-16x16.png" sizes="16x16" />
+  <link rel="icon" type="image/png" href="../static/img/favicon/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="../static/img/favicon/favicon-16x16.png" sizes="16x16" />
 
 </head>
 
 <body>
 
-	<section id="league__slideshow" class="league__slideshow">
-        <div>
-            Logo ludimus + scritta Ludimus League 2019
-        </div>
-
-		<div class="league__ranking" id="ranking">
-			<h4 class="centered-text">Classifica</h4>
-			{{ league_ranking }}
-        </div>
-        
-        <div>
-            Premio 1
-        </div>
-
-        <div>
-            Premio 2
-        </div>
-
-        <div>
-            Premio 3
-        </div>
-
-        <div>
-            Partecipa alla Ludimus League
-        </div>
-		
+  <div class="league__slideshow" id="league__slideshow">
+    <section class="league-slide">
+      <img src="../static/img/logo.svg" alt="ludimus logo" class="logo-img">
+      <h2>Ludimus League 2019-2020</h2>
     </section>
-    
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
-    <script type="text/javascript">
-        $(document).ready(function(){
-          $('.league__slideshow').slick({
-            adaptiveHeight: true,
-            autoplay: false
-          });
-        });
-    </script>
+    <div class="league-slide">
+      <!-- Ranking slide -->
+      <section class="league__ranking" id="ranking">
+        <h2 class="centered-text">Classifica</h2>
+        {{ league_ranking }}
+      </section>
+    </div>
+
+    <div class="league-slide">
+      <!-- First prize slide -->
+      <section class="league__prizes">
+        <h2>Primo premio</h2>
+        <div class="container" style="margin-top: 4rem;">
+          <div class="card-deck">
+            <div class="container">
+              <div class="row">
+                <div class="card text-center" style="width: 100%;">
+                  <div class="card-image">
+                    <img src="../static/img/league/First.png" alt="Terzo premio Ludimus League Trento Rovereto"
+                      style="margin-right: auto; margin-left: auto;">
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Modena Play 2020</h5>
+                  </div>
+                </div>
+                <div class="card text-center" style="width: 100%;">
+                  <div class="card-image">
+                    <img src="../static/img/league/First.png" alt="Terzo premio Ludimus League Trento Rovereto"
+                      style="margin-right: auto; margin-left: auto;">
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">2 Biglietti Concerto</h5>
+                  </div>
+                </div>
+                <div class="card text-center" style="width: 100%;">
+                  <div class="card-image">
+                    <img src="../static/img/league/First.png" alt="Terzo premio Ludimus League Trento Rovereto"
+                      style="margin-right: auto; margin-left: auto;">
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Buono 10€ Simposio</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="league-slide">
+      <!-- Second prizes slide -->
+      <section class="league__prizes">
+        <h2>Secondo premio</h2>
+        <div class="container" style="margin-top: 4rem;">
+          <div class="card-deck">
+            <div class="container">
+              <div class="row">
+                <div class="card text-center" style="width: 100%;">
+                  <div class="card-image">
+                    <img src="../static/img/league/Second.png" alt="Terzo premio Ludimus League Trento Rovereto"
+                      style="margin-right: auto; margin-left: auto;">
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">15€ in giochi da tavolo</h5>
+                  </div>
+                </div>
+                <div class="card text-center" style="width: 100%;">
+                  <div class="card-image">
+                    <img src="../static/img/league/Second.png" alt="Terzo premio Ludimus League Trento Rovereto"
+                      style="margin-right: auto; margin-left: auto;">
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Buono 10€ Simposio</h5>
+                  </div>
+                </div>
+                <div class="card text-center" style="width: 100%;">
+                  <div class="card-image">
+                    <img src="../static/img/league/Second.png" alt="Terzo premio Ludimus League Trento Rovereto"
+                      style="margin-right: auto; margin-left: auto;">
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Buono 10€ Smart Lab Rovereto</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="league-slide">
+      <!-- Third prizes slide -->
+      <section class="league__prizes">
+        <h2 class="centered-text">Terzo premio</h2>
+        <div class="container" style="margin-top: 4rem;">
+          <div class="card-deck">
+            <div class="container">
+              <div class="row">
+                <div class="card text-center" style="width: 100%;">
+                  <div class="card-image">
+                    <img src="../static/img/league/Third.png" alt="Terzo premio Ludimus League Trento Rovereto"
+                      style="margin-right: auto; margin-left: auto;">
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Tazza Ludimus</h5>
+                  </div>
+                </div>
+                <div class="card text-center" style="width: 100%;">
+                  <div class="card-image">
+                    <img src="../static/img/league/Third.png" alt="Terzo premio Ludimus League Trento Rovereto"
+                      style="margin-right: auto; margin-left: auto;">
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Buono 10€ Simposio</h5>
+                  </div>
+                </div>
+                <div class="card text-center" style="width: 100%;">
+                  <div class="card-image">
+                    <img src="../static/img/league/Third.png" alt="Terzo premio Ludimus League Trento Rovereto"
+                      style="margin-right: auto; margin-left: auto;">
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Buono 10€ Smart Lab Rovereto</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <section class="league-slide">
+      <!-- Partecipate slide -->
+      <h2 style="margin-top: 20%;">Partecipa alla Ludimus League</h2>
+      <h4>Tutti i partecipanti possono vincere con la <strong>lotteria di fine league</strong>!</h4>
+    </section>
+
+  </div>
+
+  <script type="text/javascript">
+    let myIndex = 0;
+    carousel();
+    function carousel() {
+      let slides = document.getElementsByClassName("league-slide");
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      myIndex++;
+      if (myIndex > slides.length) {
+        myIndex = 1
+      }
+      slides[myIndex - 1].style.display = "block";
+      if (myIndex === 2) {
+        pageScroll();
+        setTimeout(carousel, 15000);
+      } else {
+        setTimeout(carousel, 5000);
+      }
+    }
+
+    function pageScroll() {
+      window.scrollBy(0, 1);
+      scrolldelay = setTimeout(pageScroll, 20);
+    }
+  </script>
 
 </body>
+
 </html>
