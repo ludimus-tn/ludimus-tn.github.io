@@ -759,6 +759,11 @@ em.post-date {
     border-style: dashed;
 }
 
+.league__prizes .card .card-image>img{
+    height: 160px;
+    margin: auto;
+}
+
 .league__prizes h3 {
     padding: 1rem;
     margin-top: 2rem;
@@ -893,4 +898,18 @@ em.post-date {
     bottom: 20px;
     transform: translate(-50%, -50%);
     margin: 0 auto;
+}
+
+.league__slideshow .league-slide>.prize-img {
+    display: block;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3rem;
+}
+
+.league-slide > .league__prizes > .prize-img {
+    margin-left: auto;
+    margin-right: auto;
+    height: 160px;
 }
