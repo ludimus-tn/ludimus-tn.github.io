@@ -135,7 +135,13 @@
       areGamesVisible: false
     },
     mounted() {
-      axios
+      this.getPartecipants()
+      this.fetchNewPartecipants()
+    },
+    destroy(){},
+    methods: {
+      getPartecipants() {
+        axios
         .get(
           "https://script.google.com/macros/s/AKfycbyhMbmkrZ3UozK2PZv1BIHaa2HGpxxg6n-1ynmGWRoIi-35JQo/exec"
         )
@@ -146,8 +152,7 @@
           console.error(error);
         })
         .finally(() => (this.loading = false));
-    },
-    methods: {
+      },
       getFirstLetter(data) {
         letter = data.split('', 1)
         firstLetter = letter[0] + '.'
@@ -162,6 +167,11 @@
       },
       setGameVisibility() {
         return this.areGamesVisible = !this.areGamesVisible
+      },
+      fetchNewPartecipants() {
+        setInterval(() => {
+          this.getPartecipants()
+        }, 60000)
       }
     }
   })
@@ -318,7 +328,7 @@
       slides[myIndex - 1].style.display = "block";
       if (myIndex === 2) {
         pageScroll();
-        setTimeout(carousel, 15000);
+        setTimeout(carousel, 10000);
       } else {
         setTimeout(carousel, 5000);
       }
@@ -326,7 +336,7 @@
 
     function pageScroll() {
       window.scrollBy(0, 1);
-      scrolldelay = setTimeout(pageScroll, 20);
+      scrolldelay = setTimeout(pageScroll, 30);
     }
   </script>
 

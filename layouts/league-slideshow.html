@@ -190,7 +190,7 @@
       slides[myIndex - 1].style.display = "block";
       if (myIndex === 2) {
         pageScroll();
-        setTimeout(carousel, 15000);
+        setTimeout(carousel, 10000);
       } else {
         setTimeout(carousel, 5000);
       }
@@ -198,7 +198,7 @@
 
     function pageScroll() {
       window.scrollBy(0, 1);
-      scrolldelay = setTimeout(pageScroll, 20);
+      scrolldelay = setTimeout(pageScroll, 30);
     }
   </script>
 

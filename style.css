@@ -725,7 +725,7 @@ em.post-date {
 }
 
 .league__ranking table {
-    max-width: 60%;
+    max-width: 80%;
     margin-right: auto;
     margin-left: auto;
 }
@@ -859,7 +859,6 @@ em.post-date {
     align-content: center;
     justify-items: center;
     padding: 3rem;
-    border: #ec3645 10px solid;
 }
 
 .league__slideshow .league-slide:nth-child(2) {

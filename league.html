@@ -149,7 +149,13 @@
       areGamesVisible: false
     },
     mounted() {
-      axios
+      this.getPartecipants()
+      this.fetchNewPartecipants()
+    },
+    destroy(){},
+    methods: {
+      getPartecipants() {
+        axios
         .get(
           "https://script.google.com/macros/s/AKfycbyhMbmkrZ3UozK2PZv1BIHaa2HGpxxg6n-1ynmGWRoIi-35JQo/exec"
         )
@@ -160,8 +166,7 @@
           console.error(error);
         })
         .finally(() => (this.loading = false));
-    },
-    methods: {
+      },
       getFirstLetter(data) {
         letter = data.split('', 1)
         firstLetter = letter[0] + '.'
@@ -176,6 +181,11 @@
       },
       setGameVisibility() {
         return this.areGamesVisible = !this.areGamesVisible
+      },
+      fetchNewPartecipants() {
+        setInterval(() => {
+          this.getPartecipants()
+        }, 60000)
       }
     }
   })
