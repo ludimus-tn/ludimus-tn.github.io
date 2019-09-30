@@ -168,7 +168,9 @@
       if (myIndex === 2) {
         pageScroll();
         setTimeout(carousel, 14000);
+        setTimeout(window.scrollTo(0,0), 14000);
       } else {
+        window.scrollTo(0,0);
         setTimeout(carousel, 7000);
       }
     }
