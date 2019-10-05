@@ -1,5 +1,5 @@
 blog_post_title: I Regolamenti non sono Legge
-blog_post_abstract: Fa sempre bene avere un idolo a cui riferirsi. Il mio è il solo, l'unico, Jamey Stegmaier.
+blog_post_abstract: Anche quando si gioca, conta di più la sostanza, che la forma. L'ho sempre sospettato, ma solo ora inizio a rendermene veramente conto.
 blog_post_author: Alessio
 blog_post_author_img: war.png
 blog_post_og: https://ludimus.it/static/img/blog/og/2019-10-05-i-regolamenti-non-sono-legge.jpg
