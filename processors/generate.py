@@ -188,6 +188,20 @@ with open('./layouts/league-slideshow.html') as base_league_tmpl, \
             output_league.write(line.replace('{{ league_ranking }}', league_ranking))
         else:
             output_league.write(line)
+
+###############################################################################
+## Escape Room
+###############################################################################
+
+with open('./layouts/escape-room.html') as base_escape_tmpl, \
+        open('./escape-room.html', 'w') as output_escape:
+    for line in base_escape_tmpl:
+        if '{{ google_analytics }}' in line:
+            output_escape.write(line.replace('{{ google_analytics }}', google_analytics))
+        elif '{{ footer }}' in line:
+            output_escape.write(line.replace('{{ footer }}', footer))
+        else:
+            output_escape.write(line)
             
 ###############################################################################
 ## BLOG
