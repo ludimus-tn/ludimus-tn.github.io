@@ -57,7 +57,7 @@ All’opposto, gli **_Equi Tonantes_** prediligono titoli festosi e chiassosi, a
 Ma tra tutte le specie, monadiche e sociali, è una sola quella dominante. **_L’Incallitus Ludimans_** che si destreggia sicuro davanti a qualsiasi titolo e che, malgrado il proliferare di novità sul mercato, brama sempre un confronto dongiovannesco con l’ultima uscita; estremamente altalenante nei suoi interessi ludici, il _Ludimans_ mantiene tuttavia una sua deontologia professionale, che lo porta a interagire con gli altri esemplari del suo bioma in maniera talvolta paritaria, talaltra tirannica. Da approcciare con estrema cautela, possibilmente frapponendo qualche fustella come distrazione.
 
 
-Tutte queste numerose e svariate specie  però accomunate da quell’**_adattamento evolutivo_** che le ha portate a sopravvivere sono(qualche volta a proliferare) nello stesso ambiente: il tavolo da gioco.
+Tutte queste numerose e svariate specie  però accomunate da quell’**_adattamento evolutivo_** che le ha portate a sopravvivere sono (qualche volta a proliferare) nello stesso ambiente: il tavolo da gioco.
 
 I vari esemplari si immergono in contesti oltremondani d’ogni sorta, dai mondi fantastici – eppure estremamente concreti, dove l’ambientazione si respira quasi fisicamente e talvolta perfino maltratta (tra zombie e sfighe sull’isola deserta di turno) – ai contesti più astratti e sofisticati, dove predomina invece la capacità di padroneggiare una consequenzialità logica di mosse che condurranno inesorabilmente alla supremazia. In tutti i casi, il nutrimento è assicurato dall’alta concentrazione di Ludimina nell’aria.
 
