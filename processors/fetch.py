@@ -9,15 +9,6 @@ cache = dc.Cache('tmp')
 
 name = {
     'Ludimus': 'Ludimus',
-    'Pufforrohk': 'Alessio',
-    'Masnonet': 'Davide',
-    'earendil02': 'Riccardo',
-    'nostalgiaz': 'Mattia',
-    'melachel': 'Stefano',
-    'hina00': 'Sofia',
-    'Leouz': 'Leonardo',
-    'ResN91': 'Andrea',
-    'Sambaita': 'Samantha'
 }
 
 bgg = BoardGameGeek(retries=10)
