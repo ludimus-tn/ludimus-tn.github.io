@@ -599,6 +599,14 @@ footer p {
     margin-bottom: 1em;
 }
 
+.blog-staff-img img {
+    border-radius: 100%;
+    width: 50px;
+    filter: grayscale(100%);
+    display: inline;
+    vertical-align: text-bottom;
+}
+
 .blog-post h1 {
     font-weight: bold;
     margin-bottom: .5em;
