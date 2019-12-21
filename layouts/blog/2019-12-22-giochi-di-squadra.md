@@ -1,0 +1,47 @@
+blog_post_title: Giochi di squadra, promesse solenni e pugnalate nella schiena
+blog_post_author: Andrea
+blog_post_author_img: tex.png
+blog_post_og: https://ludimus.it/static/img/blog/og/2019-12-22-giochi-di-squadra.jpg
+blog_post_abstract: Si può collaborare... o si può fingere di farlo fino all'ultimo secondo. Cinque giochi infidi da giocare bilanciando interessi comuni e obiettivi personali.
+
+#Giochi di squadra, promesse solenni e pugnalate nella schiena
+###5 giochi da giocare collaborando… o forse no
+**A Natale** mettiamo da parte i dadi rossi e i carri armati, e distribuiamo cartelle e numeri.
+Quando da fuori la finestra iniziano a intravedersi **i primi fiocchi** della stagione invernale, si mettono da parte tutte le competizioni e le rivalità coltivate sul tavolo di battaglia, e **ci si stringe la mano** in segno di tregua.
+Tra una fetta di panettone e un brindisi cordiale, **si ride e si scherza**, e non si pensa più a dover sopraffare gli altri giocatori. Li si guarda come propri pari e si pensa tutti un solo grande messaggio d'amicizia: “**a Natale, siamo tutti più buoni**”.
+E questo, cari amici miei carissimi, è male.
+Sì, _**male**_.
+Cosa pensate che succederà, una volta che la festa sarà finita?
+Esatto: devastazioni, sacrifici umani, cani e gatti che vivono insieme! **Masse isteriche**!
+Crogiolarsi nella falsa sicurezza delle decorazioni e delle canzoncine vi potrà forse portare un **sollievo momentaneo** dalla vostra lotta quotidiana per la supremazia, ma non fatevi ingannare: il mondo intorno a voi è **crudele**, e non appena abbasserete la guardia anche la vostra cara nonnina vi troverà un posto a concimare i vermi (guardatela come vi guarda già mentre vi serve il pandoro, **'sta vecchiaccia**).
+Ma noi non vi permetteremo di indulgere nei vostri bassi istinti! Ora che è arrivato il momento del bisogno, Ludimus ha da pensare al vostro **benestare**: per alleviarvi da tutta la dolcezza che la stagione invernale si porta dietro, per rammentarvi che la vostra natura di giocatore è quella di schiacciare i vostri avversari, e per evitarvi di buscare qualche brutta influenza al sapore di diabete.
+L'antidoto che vi prescriviamo è quindi **una bella dose di intrigo e di diabolico tradire**, così che possa compensare l'amore che avete nel cuore... E tutto ciò senza smettere di collaborare (così da non destare alcun sospetto).
+Ecco quindi una lista di **5 giochi semi-cooperativi o quasi** con cui potrete allenarvi a far credere agli altri di aver a cuore anche il loro benessere, per poi finalmente dimostrarvi una persona orribile all'ultimo secondo.
+E poi non dite non vi vogliamo bene.
+
+### #1: L’Isola del Tesoro
+![L'isola del tesoro](../static/img/blog/giochidisquadra/isola.jpg?t=1 "L'isola del tesoro")
+C'è stato un **ammutinamento** sull'isola! L'equipaggio di Long John Silver lo ha messo alle strette: confinato in una delle torri-prigione della colonia, è alla mercé dei suoi interrogatori, ed è costretto a dar loro indizi su dove si possa trovare il suo tesoro. Ma lo scaltro Silver sa qualcosa che i suoi uomini non sanno: che il peggior nemico di un pirata è la sua stessa avarizia... e che una delle catene che lo trattiene nella cella sta per rompersi...
+Questa la premessa de _L'Isola del Tesoro_, un gioco di **bluff sottili** e di **alleanze momentanee** in cui collaborare e rivelare quello che sapete sarebbe la scelta più semplice per tutti, ma nella consapevolezza che tenersi ben segrete le informazioni trovate è anche l'unico modo per spuntarla sugli altri.
+Passerete il vostro tempo esplorando la mappa dell'isola, prendendo misure e scavando sulla meravigliosa e variopinta **mappa** di gioco (senza dimenticarvi di fare uso di tutti i ghiottissimi strumenti che il gioco vi mette a disposizione)!
+Cercate solo di venire a patti con il vostro **pirata interiore** prima che il giocatore che interpreta Long John non ve la faccia da sotto il naso.
+
+### #2: Dead of Winter
+![Dead of Winter](../static/img/blog/giochidisquadra/deadofwinter.jpg?t=1 "Dead of Winter")
+**La fine è vicina**, e voi siete gli ultimi sopravvissuti di questo mondo dannato, dove i morti camminano e i vivi si nascondono. Come se non bastasse, **l'inverno** è alle porte e voi non avete modo di farvi fronte senza abbandonare il vostro rifugio per procurarvi cibo, armi e medicine. Non temete però: se collaborerete e manterrete i nervi saldi, riuscirete a spuntarla sulla morte che incombe su di voi... A meno che tra di voi non ci sia un **traditore**!
+_Dead of Winter_ è stato il **gioco-rivelazione** del 2014, ed ha saputo conquistarsi un grande stuolo di fan grazie alle sue dinamiche da horror psicologico e alla sottile paranoia che sa incutere in chi lo gioca. Questo perché ciascuno di voi deve allo stesso tempo collaborare per evitare che la colonia soccomba agli **zombi**, alla **fame** o alla **disperazione**, e cercare di lavorare per conseguire il proprio obiettivo finale: perché se è sì possibile perdere tutti insieme per malizia o negligenza, a _Dead of Winter_ vinceranno solamente coloro che sono stati abbastanza egoisti da perseguire i propri scopi... Anche a costo da sacrificare gli altri giocatori.
+
+### #3: New Angeles
+![New Angeles](../static/img/blog/giochidisquadra/newangeles.jpg?t=1 "New Angeles")
+Siete a capo di una delle **MegaCorporazioni** che governano _New Angeles_, la città più grande e ricca della Terra, i cui distretti si estendono per centinaia di chilometri in ogni direzione, fino a raggiungere la Luna (letteralmente, un Ascensore Spaziale connette il centro della metropoli con le colonie lunari), e questo vi rende automaticamente dei **giocatori**. Giocatori nel più complesso **gioco di potere** che il mondo abbia mai visto: alleanze momentanee, scambi di favore e corruzione, tutto per cercare di superare in potenza i vostri avversari e ottenere il controllo delle risorse della città. Ma attenti: le vostre azioni sono sotto l'occhio sempre vigile della popolazione, e qualcuno dei membri più radicali dei distretti urbani potrebbe **non essere d'accordo** col vostro modo di gestire la città. Sta a voi cercare di bilanciare i vostri interessi e quelli comuni, per non gettare la città nel caos e non indurre il governo degli Stati Uniti a riprendersi il controllo di _New Angeles_ (a meno che non fosse il vostro scopo sin dall'inizio).
+In questo gioco di commercio asimmetrico, scambio di risorse e obiettivi segreti niente è quello che sembra. Tutto può essere oggetto di trattativa, e ogni promessa può essere infranta. E ricordate: quello che conta non è essere i più ricchi e i più potenti in assoluto, ma essere più ricchi e potenti **dei vostri rivali**.
+
+### #4: Uno Studio in Smeraldo
+![Uno Studio in Smeraldo](../static/img/blog/giochidisquadra/studioinsmeraldo.jpg?t=1 "Uno Studio in Smeraldo")
+Qualcosa di **oscuro** si agita nelle capitali d'Europa. Alle soglie del ventesimo secolo, forze occulte tramano per il **controllo del mondo**, e grandi menti si affannano per svelarne i misteri. Che siate agenti al servizio dei Grandi Antichi o investigatori decisi a riportare il mondo alla normalità, dovrete fare in modo di gettarvi a capofitto nell'azione per portare la vostra fazione alla vittoria... O per meglio dire, per non lasciare che **l'incompetenza** dei vostri inopportuni compagni di squadra non vi trascini nell'abisso.
+In questo bizzarro _crossover_ tra il mondo reale, i miti di **Cthulhu** e le avventure di **Sherlock Holmes**, i giocatori sono divisi in due _team_ opposti, ma il gioco non è propriamente “di squadra”. Infatti, sebbene siate uniti dai vostri alleati dagli stessi nobili scopi e dallo stesso obiettivo di fondo (qualunque esso sia), soltanto uno di voi potrà spuntarla: il problema è che, se i vostri “amici” non saranno in grado di gestire bene i propri affari, l'impatto sulla vostra fazione sarà tale da togliervi punti preziosi. Ed è anche il caso che non riveliate chi siete in realtà: se i vostri nemici lo scoprissero, di certo affosserebbero voi e tutti i vostri simili (per poi rivoltarsi gli uni contro gli altri, ma ehi: da qualche parte bisogna pur cominciare).
+
+### #5: Archipelago
+![Archipelago](../static/img/blog/giochidisquadra/archipelago.jpg?t=1 "Archipelago!")
+“**Terra**!” grida la vedetta! All'orizzonte, spiagge cristalline e foreste incontaminate da reclamare per la Corona. Certo, forse i locali avranno qualcosa da ridire quando sbarcherete per portare loro la civiltà (in cambio giusto della loro totale sottomissione), ma voi avete i vostri amici dalla vostra. A patto che qualcuno non si riveli troppo **avido** per il proprio bene...
+In Archipelago, i giocatori sono **imperi** coloniali alle prese con un arcipelago inesplorato, e come tutti gli imperi coloniali il loro obiettivo consiste nel piegare alla propria volontà e nello sfruttare i locali per il proprio **tornaconto economico**. Nel farlo, dovranno seguire obiettivi segreti ben precisi, cercando di intuire cosa possano volere le altre potenze, ostacolandole, ma anche **collaborando** con loro quando la situazione si farà critica: certo, perché limitare la libertà di un popolo e sottoporlo ad angherie di ogni genere senza scatenare una sanguinolenta rivoluzione non cosa che si può fare senza l'aiuto di qualche amico compiacente. Ed è certo meglio rischiare di non essere il più ricco d'Europa che scatenare una guerra da cui **nessuno** può uscirne vincitore, no?
