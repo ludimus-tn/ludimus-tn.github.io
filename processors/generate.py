@@ -45,7 +45,6 @@ for post in sorted(glob.glob('./layouts/blog/*')):
     file_name = post.replace('./layouts/blog/', '')
     title = file_name[10:].replace('.html', '').replace('.md', '').replace('-', ' ').title()
     file_url = file_name.replace('.md', '.html')
-
     with open(post) as post_tmpl:
         for line in post_tmpl:
             if 'blog_post_author_img: ' in line:
