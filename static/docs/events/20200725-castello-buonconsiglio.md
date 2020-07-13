@@ -37,7 +37,8 @@ Vi invitiamo a leggere le seguenti informazioni sullo svolgimento dell'evento, i
 Questo evento è in collaborazione con Castello del Buonconsiglio. Monumenti e collezioni provinciali e Forchetta&Rastrello*
 
 Seguici su:
-Pagina Facebook: [Ludimus](https://www.facebook.com/ludimusTN/)
-Instagram: https://www.instagram.com/ludimustrento/
-Canale Telegram: https://t.me/ludimus
-Twitter: https://twitter.com/ludimustrento
+
+- Pagina Facebook: [Ludimus](https://www.facebook.com/ludimusTN/)
+- Instagram: https://www.instagram.com/ludimustrento/
+- Canale Telegram: https://t.me/ludimus
+- Twitter: https://twitter.com/ludimustrento
