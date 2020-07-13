@@ -21,6 +21,7 @@ league_ranking = ''.join(open('./layouts/partials/league-ranking.html').readline
 league_rules = ''.join(markdowner.convert(open('./static/docs/league/2019-20-Regolamento.md').read().encode('utf-8')))
 style_hash = hashlib.md5(open('./style.css').read().encode('utf-8')).hexdigest()
 input_data = json.loads(''.join(open('./processors/games.json').readlines()))
+buonconsiglio_event_details = ''.join(markdowner.convert(open('./static/docs/events/20200725-castello-buonconsiglio.md').read().encode('utf-8')))
 blog_post_tmpl = open('./layouts/partials/blog-post.html').readlines()
 blog_preview_tmpl = open('./layouts/partials/blog-preview.html').readlines()
 
@@ -187,6 +188,23 @@ with open('./layouts/league-slideshow.html') as base_league_tmpl, \
             output_league.write(line.replace('{{ league_ranking }}', league_ranking))
         else:
             output_league.write(line)
+
+
+###############################################################################
+## Event
+###############################################################################
+
+with open('./layouts/events/20200725-castello-buonconsiglio.html') as base_event_tmpl, \
+        open('./events/20200725-castello-buonconsiglio.html', 'w') as output_event:
+    for line in base_event_tmpl:
+        if '{{ google_analytics }}' in line:
+            output_event.write(line.replace('{{ google_analytics }}', google_analytics))
+        elif '{{ buonconsiglio_event_details }}' in line: 
+            output_event.write(line.replace('{{ buonconsiglio_event_details }}', buonconsiglio_event_details))
+        elif '{{ footer }}' in line:
+            output_event.write(line.replace('{{ footer }}', footer))
+        else:
+            output_event.write(line)
             
 ###############################################################################
 ## BLOG
