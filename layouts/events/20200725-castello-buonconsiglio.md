@@ -1,3 +1,7 @@
+event_title: Castello Buonconsiglio 27/07/2020
+event_description: con un evento all'aperto nel giardini del Castello del Buonconsiglio! 🏰
+event_og: https://ludimus.it/static/img/events/default.png
+
 **Ludimus** ritorna con un evento all'aperto nel giardini del Castello del Buonconsiglio! 🏰
 
 Quest'ultimo periodo ci ha messi tutti quanti alla prova, ma noi di Ludimus non abbiamo mai smesso di avere la passione per giochi da tavolo. Per questo, in collaborazione con il **Castello del Buonconsiglio**. Monumenti e collezioni provinciali abbiamo trovato un modo per poter organizzare un evento garantendo la sicurezza di tutti quanti.

@@ -21,7 +21,6 @@ league_ranking = ''.join(open('./layouts/partials/league-ranking.html').readline
 league_rules = ''.join(markdowner.convert(open('./static/docs/league/2019-20-Regolamento.md').read().encode('utf-8')))
 style_hash = hashlib.md5(open('./style.css').read().encode('utf-8')).hexdigest()
 input_data = json.loads(''.join(open('./processors/games.json').readlines()))
-buonconsiglio_event_details = ''.join(markdowner.convert(open('./static/docs/events/20200725-castello-buonconsiglio.md').read().encode('utf-8')))
 blog_post_tmpl = open('./layouts/partials/blog-post.html').readlines()
 blog_preview_tmpl = open('./layouts/partials/blog-preview.html').readlines()
 events_tmpl = open('./layouts/partials/event.html').readlines()
