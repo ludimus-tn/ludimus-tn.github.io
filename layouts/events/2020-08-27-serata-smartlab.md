@@ -1,7 +1,7 @@
-event_title: Serata Giochi a Rovereto
+event_title: Serata Giochi a Rovereto 27/08/2020
 event_og: https://ludimus.it/static/img/events/default_rovereto.png
 
-# Serata Giochi a Rovereto
+# Serata Giochi a Rovereto 27/08/2020
 
 ### Ludimus ritorna a Rovereto!
 
