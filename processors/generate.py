@@ -205,6 +205,21 @@ with open('./layouts/events/20200725-castello-buonconsiglio.html') as base_event
             output_event.write(line.replace('{{ footer }}', footer))
         else:
             output_event.write(line)
+
+
+###############################################################################
+## T-Shirt Requirements
+###############################################################################
+
+with open('./layouts/maglietta.html') as base_tshirt_tmpl, \
+        open('./maglietta.html', 'w') as output_event:
+    for line in base_tshirt_tmpl:
+        if '{{ google_analytics }}' in line:
+            output_event.write(line.replace('{{ google_analytics }}', google_analytics))
+        elif '{{ footer }}' in line:
+            output_event.write(line.replace('{{ footer }}', footer))
+        else:
+            output_event.write(line)
             
 ###############################################################################
 ## BLOG
