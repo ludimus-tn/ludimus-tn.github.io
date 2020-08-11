@@ -191,6 +191,20 @@ with open('./layouts/league-slideshow.html') as base_league_tmpl, \
             output_league.write(line)
 
 ###############################################################################
+## EVENTS
+###############################################################################
+
+with open('./layouts/events.html') as base_events_tmpl, \
+        open('./events.html', 'w') as output_events:
+    for line in base_events_tmpl:
+        if '{{ google_analytics }}' in line:
+            output_events.write(line.replace('{{ google_analytics }}', google_analytics))
+        elif '{{ footer }}' in line:
+            output_events.write(line.replace('{{ footer }}', footer))
+        else:
+            output_events.write(line)
+
+###############################################################################
 ## EVENT
 ###############################################################################
 
