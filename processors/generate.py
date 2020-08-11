@@ -24,6 +24,7 @@ input_data = json.loads(''.join(open('./processors/games.json').readlines()))
 buonconsiglio_event_details = ''.join(markdowner.convert(open('./static/docs/events/20200725-castello-buonconsiglio.md').read().encode('utf-8')))
 blog_post_tmpl = open('./layouts/partials/blog-post.html').readlines()
 blog_preview_tmpl = open('./layouts/partials/blog-preview.html').readlines()
+events_tmpl = open('./layouts/partials/event.html').readlines()
 
 board_games = []
 for item in sorted(input_data.get('items', []), key=lambda x: x.get('votoMedio', 0), reverse=True):
@@ -189,22 +190,55 @@ with open('./layouts/league-slideshow.html') as base_league_tmpl, \
         else:
             output_league.write(line)
 
-
 ###############################################################################
-## Event
+## EVENT
 ###############################################################################
 
-with open('./layouts/events/20200725-castello-buonconsiglio.html') as base_event_tmpl, \
-        open('./events/20200725-castello-buonconsiglio.html', 'w') as output_event:
-    for line in base_event_tmpl:
-        if '{{ google_analytics }}' in line:
-            output_event.write(line.replace('{{ google_analytics }}', google_analytics))
-        elif '{{ buonconsiglio_event_details }}' in line: 
-            output_event.write(line.replace('{{ buonconsiglio_event_details }}', buonconsiglio_event_details))
-        elif '{{ footer }}' in line:
-            output_event.write(line.replace('{{ footer }}', footer))
-        else:
-            output_event.write(line)
+events = glob.glob('./layouts/events/*')
+for event in events:
+    event_name = event.rsplit('/', 1)[1]
+
+    with open(event) as event_tmpl, \
+            open('./events/{}'.format(event_name.replace('.md', '.html')), 'w+') as output_event:
+
+        event_body = event_tmpl.readlines()
+
+        title = None
+        description = None
+        og_image = None
+        date = None
+        place = None
+        content = []
+
+        for line in event_body:
+            if 'event_title: ' in line:
+                title = line.replace('event_title: ', '').strip()
+            elif 'event_description: ' in line:
+                description = line.replace('event_description: ', '').strip()
+            elif 'event_date: ' in line:
+                date = line.replace('event_date: ', '').strip()
+            elif 'event_place: ' in line:
+                place = line.replace('event_place: ', '').strip()
+            elif 'event_og: ' in line:
+                og_image = line.replace('event_og: ', '').strip()
+            else:
+                content.append(line)
+
+        for line in events_tmpl:
+            if '{{ hash }}' in line:
+                output_event.write(line.replace('{{ hash }}', style_hash))
+            elif '{{ google_analytics }}' in line:
+                output_event.write(line.replace('{{ google_analytics }}', google_analytics))
+            elif '{{ footer }}' in line:
+                output_event.write(line.replace('{{ footer }}', footer))
+            elif '{{ event_title }}' in line:
+                output_event.write(line.replace('{{ event_title }}', title))
+            elif '{{ event_body }}' in line:
+                output_event.write(line.replace('{{ event_body }}', markdown2.markdown(''.join(content), extras={'break-on-newline': True})))
+            elif '{{ event_og }}' in line:
+                output_event.write(line.replace('{{ event_og }}', og_image))
+            else:
+                output_event.write(line)
 
 
 ###############################################################################
