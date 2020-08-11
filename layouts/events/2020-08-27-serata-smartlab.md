@@ -23,6 +23,19 @@ Non avete mai provato un gioco da tavolo in vita vostra, ma siete curiosi? Fate 
 
 ---
 
+😷 **Misure per l'emergenza sanitaria**
+
+Per la sicurezza di tutti durante l'evento bisognerà seguire alcune precauzioni straordinarie:
+- Puoi sederti al tavolo con il tuo gruppo di parenti e amici
+- Ad ogni tavolo potranno sedersi max 4 persone
+- Non possiamo garantire di far sedere a giocare persone che si presentano all'evento da sole e senza un gruppo
+- I tavoli verranno predisposti garantendo le distanze di sicurezza e saranno igienizzati con soluzioni alcoliche ogni volta che un gruppo terminerà di giocare 
+- I giochi che verranno messi a disposizione potranno essere giocati da un unico gruppo di persone, poi saranno messi in quarantena per una settimana (quindi prima arrivate, più scelta avrete) 
+- Tutti i partecipanti dovranno obbligatoriamente indossare la mascherina
+- Verranno messi a disposizione dispenser per igienizzarsi le mani con apposite soluzioni
+
+---
+
 _Ricordiamo che per accedere a tutti gli eventi di Smart Lab NON È NECESSARIA alcuna tessera._
 
 **Smart Lab**
