@@ -1,5 +1,5 @@
 event_title: Serata Giochi a Rovereto 27/08/2020
-event_description: Ludimus ritorna con un evento a Rovereto!
+event_description: Ludimus ritorna con un evento a Rovereto presso SmartLab il 27 Agosto 2020!
 event_og: https://ludimus.it/static/img/events/default_rovereto.png
 
 # Serata Giochi a Rovereto 27/08/2020

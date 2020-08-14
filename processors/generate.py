@@ -246,6 +246,8 @@ for event in events:
                 output_event.write(line.replace('{{ footer }}', footer))
             elif '{{ event_title }}' in line:
                 output_event.write(line.replace('{{ event_title }}', title))
+            elif '{{ event_description }}' in line:
+                output_event.write(line.replace('{{ event_description }}', description))
             elif '{{ event_body }}' in line:
                 output_event.write(line.replace('{{ event_body }}', markdown2.markdown(''.join(content), extras={'break-on-newline': True})))
             elif '{{ event_og }}' in line:
