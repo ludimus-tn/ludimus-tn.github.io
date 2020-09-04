@@ -4,7 +4,7 @@ event_og: https://ludimus.it/static/img/events/default_rovereto.png
 
 # Serata Giochi a Rovereto 24/09/2020
 
-### Ludimus ritorna a Rovereto!
+### Vieni a giocare con Ludimus a Rovereto!
 
 📅 Giovedì 24 Settembre 2020
 🕰 dalle 19:00 in poi
