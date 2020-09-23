@@ -1038,8 +1038,40 @@ em.post-date {
     margin: 0 auto;
 }
 
-@media (max-width: 621px) {
+@media (max-width: 886px) {
     #tshirt {
         max-width: 100%;
     }
+}
+
+#tshirt .tshirts-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 3rem;
+    align-self: stretch;
+}
+
+#tshirt .tshirts-images > div {
+    display: flex;
+    flex-direction: column;
+}
+
+#tshirt .tshirts-images > div > img {
+    max-height: 300px;
+    width: auto;
+    padding: .5rem;
+}
+
+@media (max-width: 621px) {
+    #tshirt .tshirts-images > div > img {
+        max-height: 180px;
+        padding: .25rem;
+    }
+}
+
+#tshirt .tshirts-images > div > p {
+    font-family: monospace;
+    color: darkgray;
+    text-align: center;
 }
