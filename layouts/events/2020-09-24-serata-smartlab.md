@@ -41,14 +41,14 @@ _Ricordiamo che per accedere a tutti gli eventi di Smart Lab NON È NECESSARIA a
 **Smart Lab**
 Viale Trento 47/49
 Rovereto 38068 TN
-📍Maps: http://bit.ly/SmartLabMaps
+📍 [Maps](http://bit.ly/SmartLabMaps)
 
 - 🚗 Se vieni in macchina cerca di riempire tutti i posti! 🚗
 - Offri o cerca un passaggio scrivendo un post nell'evento
 - Oppure raggiungi Smart Lab utilizzando le tue gambe o il servizio pubblico:
 - 🚶‍♂️25 minuti a piedi dalla Stazione di Rovereto
 - 🚌Trasporto urbano: Linee 1, 3, 6, N3, N6 controlla gli orari qui: [http://www.ttesercizio.it/Urbano/](http://www.ttesercizio.it/Urbano/) 
-- 🚴‍♂️ Stazione Bike Sharing in via Perosi/Puccini controlla se ci sono bici disponibili qui: [http://www.bicincitta.com/frmLeStazioniComune.aspx?ID=189](http://www.bicincitta.com/frmLeStazioniComune.aspx?ID=189)
+- 🚴‍♂️ Stazione Bike Sharing in via Perosi/Puccini controlla se ci sono [bici disponibili qui](http://www.bicincitta.com/frmLeStazioniComune.aspx?ID=189)
 
 [http://www.smartlabrovereto.it](http://www.smartlabrovereto.it)
 [http://www.cooperativasmart.it](http://www.cooperativasmart.it)
