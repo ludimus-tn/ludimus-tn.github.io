@@ -269,6 +269,20 @@ with open('./layouts/maglietta.html') as base_tshirt_tmpl, \
             output_event.write(line.replace('{{ footer }}', footer))
         else:
             output_event.write(line)
+
+###############################################################################
+## GAS
+###############################################################################
+
+with open('./layouts/gas.html') as gas_tmpl, \
+        open('./gas.html', 'w') as output_gas:
+    for line in gas_tmpl:
+        if '{{ google_analytics }}' in line:
+            output_gas.write(line.replace('{{ google_analytics }}', google_analytics))
+        elif '{{ footer }}' in line:
+            output_gas.write(line.replace('{{ footer }}', footer))
+        else:
+            output_gas.write(line)
             
 ###############################################################################
 ## BLOG
