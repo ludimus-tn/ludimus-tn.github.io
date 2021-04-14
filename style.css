@@ -221,7 +221,6 @@ section h2 {
     width: 80%;
     margin: 0 auto;
     margin-bottom: 2rem;
-    object-fit: cover;
 }
 
 #blog .cards-container {
@@ -268,6 +267,7 @@ section h2 {
     height: 114px;
     width: 100%;
     display: block;
+    object-fit: cover;
 }
 
 #blog .blog-preview-footer img {
