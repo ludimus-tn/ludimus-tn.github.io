@@ -6,7 +6,7 @@ event_og: https://ludimus.it/static/img/events/default_trento.png
 
 ### Ritornano le serate settimanali di Ludimus a Trento!
 
-📅 Lunedì 05 Ottobre 2020
+📅 Lunedì 20 Settembre 2021
 🕰 dalle 19:00 in poi
 📍 [Il Simposio Bar Ristorante](https://g.page/ilsimposiotrento?share)
 
