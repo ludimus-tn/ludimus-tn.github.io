@@ -1,8 +1,8 @@
-event_title: Serata Giochi a Rovereto 28/11/2021
+event_title: Serata Giochi a Rovereto 28/10/2021
 event_description: Vieni a giocare con Ludimus a Rovereto presso Smart Lab il 28 Ottobre 2021!
 event_og: https://ludimus.it/static/img/events/default_rovereto.png
 
-# Serata Giochi a Rovereto 28/11/2021
+# Serata Giochi a Rovereto 28/10/2021
 
 ### Ritornano le serate settimanali di Ludimus a Rovereto!
 
