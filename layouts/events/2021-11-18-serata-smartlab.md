@@ -7,7 +7,7 @@ event_og: https://ludimus.it/static/img/events/default_rovereto.png
 ### Ritornano le serate settimanali di Ludimus a Rovereto!
 
 📅 Giovedì 18 Novembre 2021
-🕰 dalle 19:00 in poi
+🕰 dalle 20:00 in poi
 📍 [Centro Giovani SmartLab - Rovereto](http://bit.ly/SmartLabMaps)
 
 ---
