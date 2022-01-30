@@ -1,12 +1,12 @@
-event_title: Serata Giochi a Rovereto 17/02/2022
-event_description: Vieni a giocare con Ludimus a Rovereto presso Smart Lab il 17 Febbraio 2022!
+event_title: Serata Giochi a Rovereto 24/02/2022
+event_description: Vieni a giocare con Ludimus a Rovereto presso Smart Lab il 24 Febbraio 2022!
 event_og: https://ludimus.it/static/img/events/default_rovereto.png
 
-# Serata Giochi a Rovereto 17/02/2022
+# Serata Giochi a Rovereto 24/02/2022
 
 ### Ritornano le serate settimanali di Ludimus a Rovereto!
 
-📅 Giovedì 17 Febbraio 2022
+📅 Giovedì 24 Febbraio 2022
 🕰 dalle 20:00 in poi
 📍 [Centro Giovani SmartLab - Rovereto](http://bit.ly/SmartLabMaps)
 
