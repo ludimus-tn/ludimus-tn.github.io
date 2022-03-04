@@ -1,6 +1,6 @@
 event_title: Serata Giochi ad Arco 14/12/2021
 event_description: Vieni a giocare con Ludimus ad Arco presso il Cantiere26 il 14 Dicembre 2021!
-event_og: https://ludimus.it/static/img/events/default.png
+event_og: https://ludimus.it/static/img/events/default.jpg
 
 # Serata Giochi da Tavolo ad Arco 14/12/2021
 
