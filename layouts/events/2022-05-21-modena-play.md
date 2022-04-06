@@ -11,7 +11,7 @@ Finalmente ritorna il tradizionale viaggio a Modena Play! Dopo un po' di anni, s
 
 ### 📅 QUANDO
 
-Sabato 21 maggio 2021
+Sabato 21 maggio 2022
 
 ### 💰 QUANTO COSTA
 
