@@ -1,10 +1,10 @@
 event_title: Ludimus <3 Modena Play 2022
-event_description: Ritorna il tradizionale viaggio a Modena Play!
+event_description: Ritorna il tradizionale viaggio a Modena Play di Ludimus!
 event_og: https://ludimus.it/static/img/events/default.jpg
 
 # Ludimus <3 Modena Play 2022
 
-## Vieni a Modena Play 2022 con Ludimus
+### Vieni a Modena Play 2022 con Ludimus
 
 Finalmente ritorna il tradizionale viaggio a Modena Play! Dopo un po' di anni, siamo riusciti ad organizzare un bellissimo viaggio ludico per tutti i nostri soci e i loro familiari ♥️
 ⚠️ Se non siete ancora nostri soci (cosa aspettate?), potete tesserarvi e partecipare.
@@ -36,7 +36,7 @@ Si rimane a Modena Play fino a chiusura (ore 20:00 circa). Il rientro è previst
 
 ### ❌ TERMINE ISCRIZIONI
 
-Il 30 aprile 2021 [FINO AD ESAURIMENTO POSTI]
+Il 30 aprile 2021 **[FINO AD ESAURIMENTO POSTI]**
 
 ### PRENOTAZIONI
 
