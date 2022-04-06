@@ -36,7 +36,7 @@ Si rimane a Modena Play fino a chiusura (ore 20:00 circa). Il rientro è previst
 
 ### ❌ TERMINE ISCRIZIONI
 
-Il 30 aprile 2021 **[FINO AD ESAURIMENTO POSTI]**
+Il 30 aprile 2022 **[FINO AD ESAURIMENTO POSTI]**
 
 ### PRENOTAZIONI
 
