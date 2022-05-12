@@ -1,6 +1,6 @@
 event_title: Ludimus Escape Room - Il Destino di Ahraniles
 event_description: Partecipa all'escape room che si terrà in una location molto suggestiva all'interno del Castello di Drena.
-event_og: https://ludimus.it/static/img/escape/escape-ahraniles.jpg
+event_og: https://ludimus.it/static/img/escape/escape-ahraniles.jpeg
 
 # Ludimus Escape Room - Il Destino di Ahraniles
 
