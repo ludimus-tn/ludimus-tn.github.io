@@ -15,7 +15,6 @@ HIDDEN_GAMES = {
 markdowner = markdown2.Markdown()
 
 boardgame_tmpl = '\n'.join(open('./layouts/partials/boardgame.html').readlines())
-google_analytics = '\n'.join(open('./layouts/partials/google-analytics.html').readlines())
 footer = ''.join(open('./layouts/partials/footer.html').readlines())
 league_ranking = ''.join(open('./layouts/partials/league-ranking.html').readlines())
 league_rules = ''.join(markdowner.convert(open('./static/docs/league/2019-20-Regolamento.md').read().encode('utf-8')))
@@ -91,13 +90,8 @@ with open('./layouts/index.html') as base_index_tmpl, \
     for line in base_index_tmpl:
         if '{{ number_of_games }}' in line:
             output_index.write(line.replace('{{ number_of_games }}', str(len(board_games))))
-        elif '{{ serate_speciali }}' in line:
-            for serata in serate_speciali:
-                output_index.write(serata)
         elif '{{ hash }}' in line:
             output_index.write(line.replace('{{ hash }}', style_hash))
-        elif '{{ google_analytics }}' in line:
-            output_index.write(line.replace('{{ google_analytics }}', google_analytics))
         elif '{{ footer }}' in line:
             output_index.write(line.replace('{{ footer }}', footer))
         elif '{{ blog_post }}' in line:
@@ -122,8 +116,6 @@ with open('./layouts/games.html') as base_games_tmpl, \
                 output_games.write(item)
         elif '{{ number_of_games }}' in line:
             output_games.write(line.replace('{{ number_of_games }}', str(len(board_games))))
-        elif '{{ google_analytics }}' in line:
-            output_games.write(line.replace('{{ google_analytics }}', google_analytics))
         elif '{{ footer }}' in line:
             output_games.write(line.replace('{{ footer }}', footer))
         else:
@@ -136,9 +128,7 @@ with open('./layouts/games.html') as base_games_tmpl, \
 with open('./layouts/informative.html') as base_games_tmpl, \
         open('./informative.html', 'w') as output_games:
     for line in base_games_tmpl:
-        if '{{ google_analytics }}' in line:
-            output_games.write(line.replace('{{ google_analytics }}', google_analytics))
-        elif '{{ footer }}' in line:
+        if '{{ footer }}' in line:
             output_games.write(line.replace('{{ footer }}', footer))
         else:
             output_games.write(line)
@@ -150,9 +140,7 @@ with open('./layouts/informative.html') as base_games_tmpl, \
 with open('./layouts/league.html') as base_league_tmpl, \
         open('./league.html', 'w') as output_league:
     for line in base_league_tmpl:
-        if '{{ google_analytics }}' in line:
-            output_league.write(line.replace('{{ google_analytics }}', google_analytics))
-        elif '{{ league_ranking }}' in line:
+        if '{{ league_ranking }}' in line:
             output_league.write(line.replace('{{ league_ranking }}', league_ranking))
         elif '{{ footer }}' in line:
             output_league.write(line.replace('{{ footer }}', footer))
@@ -166,9 +154,7 @@ with open('./layouts/league.html') as base_league_tmpl, \
 with open('./layouts/league-rules.html') as base_league_tmpl, \
         open('./league-rules.html', 'w') as output_league:
     for line in base_league_tmpl:
-        if '{{ google_analytics }}' in line:
-            output_league.write(line.replace('{{ google_analytics }}', google_analytics))
-        elif '{{ league_rules }}' in line: 
+        if '{{ league_rules }}' in line: 
             output_league.write(line.replace('{{ league_rules }}', league_rules))
         elif '{{ footer }}' in line:
             output_league.write(line.replace('{{ footer }}', footer))
@@ -182,9 +168,7 @@ with open('./layouts/league-rules.html') as base_league_tmpl, \
 with open('./layouts/league-slideshow.html') as base_league_tmpl, \
         open('./league-slideshow.html', 'w') as output_league:
     for line in base_league_tmpl:
-        if '{{ google_analytics }}' in line:
-            output_league.write(line.replace('{{ google_analytics }}', google_analytics))
-        elif '{{ league_ranking }}' in line: 
+        if '{{ league_ranking }}' in line: 
             output_league.write(line.replace('{{ league_ranking }}', league_ranking))
         else:
             output_league.write(line)
@@ -196,9 +180,7 @@ with open('./layouts/league-slideshow.html') as base_league_tmpl, \
 with open('./layouts/events.html') as base_events_tmpl, \
         open('./events.html', 'w') as output_events:
     for line in base_events_tmpl:
-        if '{{ google_analytics }}' in line:
-            output_events.write(line.replace('{{ google_analytics }}', google_analytics))
-        elif '{{ footer }}' in line:
+        if '{{ footer }}' in line:
             output_events.write(line.replace('{{ footer }}', footer))
         else:
             output_events.write(line)
@@ -240,8 +222,6 @@ for event in events:
         for line in events_tmpl:
             if '{{ hash }}' in line:
                 output_event.write(line.replace('{{ hash }}', style_hash))
-            elif '{{ google_analytics }}' in line:
-                output_event.write(line.replace('{{ google_analytics }}', google_analytics))
             elif '{{ footer }}' in line:
                 output_event.write(line.replace('{{ footer }}', footer))
             elif '{{ event_title }}' in line:
@@ -263,9 +243,7 @@ for event in events:
 with open('./layouts/maglietta.html') as base_tshirt_tmpl, \
         open('./maglietta.html', 'w') as output_event:
     for line in base_tshirt_tmpl:
-        if '{{ google_analytics }}' in line:
-            output_event.write(line.replace('{{ google_analytics }}', google_analytics))
-        elif '{{ footer }}' in line:
+        if '{{ footer }}' in line:
             output_event.write(line.replace('{{ footer }}', footer))
         else:
             output_event.write(line)
@@ -277,9 +255,7 @@ with open('./layouts/maglietta.html') as base_tshirt_tmpl, \
 with open('./layouts/gas.html') as gas_tmpl, \
         open('./gas.html', 'w') as output_gas:
     for line in gas_tmpl:
-        if '{{ google_analytics }}' in line:
-            output_gas.write(line.replace('{{ google_analytics }}', google_analytics))
-        elif '{{ footer }}' in line:
+        if '{{ footer }}' in line:
             output_gas.write(line.replace('{{ footer }}', footer))
         else:
             output_gas.write(line)
@@ -321,8 +297,6 @@ for post in posts:
         for line in blog_post_tmpl:
             if '{{ hash }}' in line:
                 output_post.write(line.replace('{{ hash }}', style_hash))
-            elif '{{ google_analytics }}' in line:
-                output_post.write(line.replace('{{ google_analytics }}', google_analytics))
             elif '{{ footer }}' in line:
                 output_post.write(line.replace('{{ footer }}', footer))
             elif '{{ blog_post_title }}' in line:

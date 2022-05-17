@@ -1,20 +1,5 @@
 <html>
 <head>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111599032-1"></script>
-
-<script>
-
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag(){dataLayer.push(arguments);}
-
-    gtag('js', new Date());
-
-
-
-    gtag('config', 'UA-111599032-1');
-
-</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -69,10 +54,6 @@
                 <a href="/events.html" target="_blank">Dove trovarci ⇢</a>
             </div>
         </div>
-    </section>
-
-    <section id="instagram">
-        <div id="instagram-photos" class="grid"></div>
     </section>
 
     <section id="blog">
@@ -955,38 +936,5 @@
 
     <script src="/static/js/blog.js"></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDL3E8pZkDlbq5DTC7on1R3dlQF9iL1n30&callback=initMap"></script>
-    <script src="/static/js/instafeed.min.js"></script>
-    <script>
-        var rendered = 0,
-            feedBig = new Instafeed({
-            accessToken: '6431223467.1677ed0.497a3fb534224faabb7630d4f0bc6e93',
-            clientId: 'f22d3e48a2c74c5ca51de31e6a499f19',
-            get: 'user',
-            userId: 6431223467,
-            target: 'instagram-photos',
-            sortBy: 'most-recent',
-            limit: 20,
-            resolution: 'standard_resolution',
-            filter: function (image) {
-                if (image.tags.length === 0) {
-                    return false;
-                }
-            
-                return image.tags.indexOf('ludimusleague') < 0;
-            },
-            template: '<div class="grid__item">' +
-            '    <div class="content">' +
-            '        <div class="content-inside">' +
-            '            <a href="{{link}}" target="_blank">' +
-            '                <img class="card-img-top" src="{{image}}" />' +
-            '                <i class="fa fa-instagram"></i>' +
-            '            </a>'+
-            '        </div>' +
-            '    </div>' +
-            '</div>'
-        });
-        feedBig.run();
-    </script>
-
 </body>
 </html>
