@@ -4,7 +4,7 @@ event_og: https://ludimus.it/static/img/events/default_rovereto.png
 
 # Serata Giochi a Rovereto 09/06/2022
 
-### Ritornano le serate settimanali di Ludimus a Rovereto!
+### Vieni a giocare alle serate settimanali di Ludimus a Rovereto!
 
 📅 Giovedì 09 Giugno 2022
 🕰 dalle 20:00 in poi
