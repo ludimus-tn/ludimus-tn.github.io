@@ -8,8 +8,8 @@ event_og: https://ludimus.it/static/img/escape/escape-ahraniles.jpeg
 
 ### 📅 Informazioni sull'evento
 
-- sabato 25 maggio | ore 10.00 - 18.00
-- domenica 26 maggio | ore 10.00 - 18.00
+- sabato 25 giugno | ore 10.00 - 18.00
+- domenica 26 giugno | ore 10.00 - 18.00
 
 Una grande battaglia alle porte della capitale di Ahraniles ha segnato la fine di una guerra civile durata anni, ma la situazione del regno è tutt'altro che stabile.
 Vi schiererete al fianco del nuovo Re Brynjolf Ahrtus?
@@ -18,8 +18,8 @@ Oppure, assieme alla Gran Duchessa Lyall Lyngwyr, appoggerete i nobili alla rice
 
 ### QUANDO
 
-- sabato 25 maggio | ore 10.00 - 18.00
-- domenica 26 maggio | ore 10.00 - 18.00
+- sabato 25 giugno | ore 10.00 - 18.00
+- domenica 26 giugno | ore 10.00 - 18.00
 
 ### 🚩 DOVE
 
@@ -27,11 +27,11 @@ Castello di Drena, Via al Castello 38074 Drena.
 
 ### PRENOTAZIONI
 
-Prenotazioni gratuite su Eventbrite al seguente link: [https://www.eventbrite.it/e/biglietti-ludimus-escape-room-il-destino-di-ahraniles-322045244997](https://www.eventbrite.it/e/biglietti-ludimus-escape-room-il-destino-di-ahraniles-322045244997)
+Prenotazioni gratuite su Eventbrite al seguente link: [https://www.eventbrite.it/e/biglietti-ludimus-escape-room-il-destino-di-ahraniles-362849702227](https://www.eventbrite.it/e/biglietti-ludimus-escape-room-il-destino-di-ahraniles-362849702227)
 
 ### INFO PARTECIPANTI
 
-- Partecipazione gratuita con prenotazione obbligatoria tramite [Eventbrite](https://www.eventbrite.it/e/biglietti-ludimus-escape-room-il-destino-di-ahraniles-322045244997)
+- Partecipazione gratuita con prenotazione obbligatoria tramite [Eventbrite](https://www.eventbrite.it/e/biglietti-ludimus-escape-room-il-destino-di-ahraniles-362849702227)
 - L'ingresso al Castello ha un prezzo scontato di 3 € a persona (biglietto da fare in loco)
 - Un biglietto vale per un intero team
 - Ogni team può avere al massimo 6 partecipanti
