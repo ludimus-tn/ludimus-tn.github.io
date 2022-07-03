@@ -1,6 +1,6 @@
 event_title: Ludimus x Civico13 martedì 12/07/2022
 event_description: Vieni a giocare martedì 12 Luglio 2022 dalle 18:00 alle 21:00 a Trento in via Belenzani 13
-event_og: https://ludimus.it/static/img/events/default_trento.png
+event_og: https://ludimus.it/static/img/events/event_civico13.jpeg
 
 # Ludimus x Civico13 a Trento il 12/07/2022
 
