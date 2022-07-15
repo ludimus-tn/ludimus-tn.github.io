@@ -260,6 +260,8 @@ with open('./layouts/archive.html') as base_archive_events_tmpl, \
                         output_archive_events.write(line.replace('{{ date }}', event_date))
                     elif '{{ event_url }}' in line:
                         output_archive_events.write(line.replace('{{ event_url }}', event_url))
+                    else:
+                        output_archive_events.write(line)
         else:
             output_archive_events.write(line)
 
