@@ -177,6 +177,56 @@ with open('./layouts/league-slideshow.html') as base_league_tmpl, \
         else:
             output_league.write(line)
 
+
+###############################################################################
+## ARCHIVED EVENTS
+###############################################################################
+
+archived_events = []
+for event in sorted(events, reverse=True):
+    event_name = event.replace('./layouts/events/', '')
+    event_date_tmp = event_name[:10].split('-')
+    event_day = int(event_date_tmp[2])
+    event_month = int(event_date_tmp[1])
+    event_year = int(event_date_tmp[0])
+
+    event_date = datetime(event_year, event_month, event_day)
+    now = datetime.now()
+
+    if event_date >= now:
+        continue
+    archived_events.append(event)
+
+with open('./layouts/archive.html') as base_archive_events_tmpl, \
+        open('./archive.html', 'w') as output_archive_events:
+    for line in base_archive_events_tmpl:
+        if '{{ footer }}' in line:
+            output_archive_events.write(line.replace('{{ footer }}', footer))
+        elif '{{ archived_events }}' in line: 
+            for archived_event in archived_events:
+                event_name = archived_event.replace('./layouts/events/', '')
+                event_title = event_name[10:].replace('.html', '').replace('.md', '').replace('-', ' ').title()
+                event_date_tmp = event_name[:10].split('-')
+                event_date = '{}/{}/{}'.format(event_date_tmp[2], event_date_tmp[1], event_date_tmp[0])
+                event_url = event_name.replace('.md', '.html')
+
+                event_body = open(archived_event).readlines()
+                for event_line in event_body:
+                    if 'event_title: ' in event_line:
+                        event_title = event_line.replace('event_title: ', '').strip()
+
+                for line in event_link_tmpl:
+                    if '{{ title }}' in line:
+                        output_archive_events.write(line.replace('{{ title }}', event_title))
+                    elif '{{ date }}' in line:
+                        output_archive_events.write(line.replace('{{ date }}', event_date))
+                    elif '{{ event_url }}' in line:
+                        output_archive_events.write(line.replace('{{ event_url }}', event_url))
+                    else:
+                        output_archive_events.write(line)
+        else:
+            output_archive_events.write(line)
+
 ###############################################################################
 ## EVENTS
 ###############################################################################
@@ -275,56 +325,6 @@ for event in events:
                 output_event.write(line.replace('{{ event_og }}', og_image))
             else:
                 output_event.write(line)
-
-###############################################################################
-## ARCHIVED EVENTS
-###############################################################################
-
-archived_events = []
-for event in events:
-    event_name = event.replace('./layouts/events/', '')
-    event_date_tmp = event_name[:10].split('-')
-    event_day = int(event_date_tmp[2])
-    event_month = int(event_date_tmp[1])
-    event_year = int(event_date_tmp[0])
-
-    event_date = datetime(event_year, event_month, event_day)
-    now = datetime.now()
-
-    if event_date >= now:
-        continue
-    archived_events.append(event)
-
-with open('./layouts/archive.html') as base_archive_events_tmpl, \
-        open('./archive.html', 'w') as output_archive_events:
-    for line in base_archive_events_tmpl:
-        if '{{ footer }}' in line:
-            output_archive_events.write(line.replace('{{ footer }}', footer))
-        elif '{{ archived_events }}' in line: 
-            for archived_event in archived_events:
-                event_name = archived_event.replace('./layouts/events/', '')
-                event_title = event_name[10:].replace('.html', '').replace('.md', '').replace('-', ' ').title()
-                event_date_tmp = event_name[:10].split('-')
-                event_date = '{}/{}/{}'.format(event_date_tmp[2], event_date_tmp[1], event_date_tmp[0])
-                event_url = event_name.replace('.md', '.html')
-
-                event_body = open(archived_event).readlines()
-                for event_line in event_body:
-                    if 'event_title: ' in event_line:
-                        event_title = event_line.replace('event_title: ', '').strip()
-                        print(event_title)
-
-                for line in event_link_tmpl:
-                    if '{{ title }}' in line:
-                        output_archive_events.write(line.replace('{{ title }}', event_title))
-                    elif '{{ date }}' in line:
-                        output_archive_events.write(line.replace('{{ date }}', event_date))
-                    elif '{{ event_url }}' in line:
-                        output_archive_events.write(line.replace('{{ event_url }}', event_url))
-                    else:
-                        output_archive_events.write(line)
-        else:
-            output_archive_events.write(line)
 
 ###############################################################################
 ## T-Shirt Requirements
