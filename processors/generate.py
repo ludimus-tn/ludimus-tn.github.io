@@ -1,3 +1,4 @@
+from ast import If
 from datetime import datetime
 import glob
 import json
@@ -251,7 +252,10 @@ with open('./layouts/events.html') as base_events_tmpl, \
     for line in base_events_tmpl:
         if '{{ footer }}' in line:
             output_events.write(line.replace('{{ footer }}', footer))
-        elif '{{ next_events }}' in line: 
+        elif '{{ next_events }}' in line:
+            if len(next_events) == 0:
+                output_events.write('Al momento non ci sono eventi in programma 🎲')
+                continue
             for event in next_events:
                 event_name = event.replace('./layouts/events/', '')
                 event_title = event_name[10:].replace('.html', '').replace('.md', '').replace('-', ' ').title()
