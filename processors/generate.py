@@ -1,3 +1,4 @@
+from datetime import datetime
 import glob
 import json
 import os
@@ -80,6 +81,40 @@ for post in sorted(glob.glob('./layouts/blog/*')):
             output_blog_tmpl += blog_line
     output_blog_tmpl += '</div>'
     blog_file_to_tmpl[post] = output_blog_tmpl
+
+events = sorted(glob.glob('./layouts/events/*'))
+
+archived_events = []
+for event in events:
+    event_name = event.replace('./layouts/events/', '')
+    event_date_tmp = event_name[:10].split('-')
+    event_date = '{}/{}/{}'.format(event_date_tmp[2], event_date_tmp[1], event_date_tmp[0])
+    event_day = int(event_date_tmp[2])
+    event_month = int(event_date_tmp[1])
+    event_year = int(event_date_tmp[0])
+
+    d1 = datetime(event_year, event_month, event_day)
+    now = datetime.now()
+
+    if d1 >= now:
+        continue
+    archived_events.append(event)
+
+next_events = []
+for event in events:
+    event_name = event.replace('./layouts/events/', '')
+    event_date_tmp = event_name[:10].split('-')
+    event_date = '{}/{}/{}'.format(event_date_tmp[2], event_date_tmp[1], event_date_tmp[0])
+    event_day = int(event_date_tmp[2])
+    event_month = int(event_date_tmp[1])
+    event_year = int(event_date_tmp[0])
+
+    d1 = datetime(event_year, event_month, event_day)
+    now = datetime.now()
+
+    if d1 < now:
+        continue
+    next_events.append(event)
 
 ###############################################################################
 ## Homepage
@@ -183,6 +218,23 @@ with open('./layouts/events.html') as base_events_tmpl, \
     for line in base_events_tmpl:
         if '{{ footer }}' in line:
             output_events.write(line.replace('{{ footer }}', footer))
+        elif '{{ next_events }}' in line: 
+            for event in next_events:
+                event_name = event.replace('./layouts/events/', '')
+                event_title = event_name[10:].replace('.html', '').replace('.md', '').replace('-', ' ').title()
+                event_date_tmp = event_name[:10].split('-')
+                event_date = '{}/{}/{}'.format(event_date_tmp[2], event_date_tmp[1], event_date_tmp[0])
+                event_url = event_name.replace('.md', '.html')
+
+                for line in event_link_tmpl:
+                    if '{{ title }}' in line:
+                        output_events.write(line.replace('{{ title }}', event_title))
+                    elif '{{ date }}' in line:
+                        output_events.write(line.replace('{{ date }}', event_date))
+                    elif '{{ event_url }}' in line:
+                        output_events.write(line.replace('{{ event_url }}', event_url))
+                    else:
+                        output_events.write(line)
         else:
             output_events.write(line)
 
@@ -246,7 +298,7 @@ with open('./layouts/archive.html') as base_archive_events_tmpl, \
         if '{{ footer }}' in line:
             output_archive_events.write(line.replace('{{ footer }}', footer))
         elif '{{ archived_events }}' in line: 
-            for archived_event in sorted(glob.glob('./layouts/events/*'), reverse=True):
+            for archived_event in archived_events:
                 event_name = archived_event.replace('./layouts/events/', '')
                 event_title = event_name[10:].replace('.html', '').replace('.md', '').replace('-', ' ').title()
                 event_date_tmp = event_name[:10].split('-')
