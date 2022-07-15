@@ -82,39 +82,7 @@ for post in sorted(glob.glob('./layouts/blog/*')):
     output_blog_tmpl += '</div>'
     blog_file_to_tmpl[post] = output_blog_tmpl
 
-events = sorted(glob.glob('./layouts/events/*'))
-
-archived_events = []
-for event in events:
-    event_name = event.replace('./layouts/events/', '')
-    event_date_tmp = event_name[:10].split('-')
-    event_date = '{}/{}/{}'.format(event_date_tmp[2], event_date_tmp[1], event_date_tmp[0])
-    event_day = int(event_date_tmp[2])
-    event_month = int(event_date_tmp[1])
-    event_year = int(event_date_tmp[0])
-
-    d1 = datetime(event_year, event_month, event_day)
-    now = datetime.now()
-
-    if d1 >= now:
-        continue
-    archived_events.append(event)
-
-next_events = []
-for event in events:
-    event_name = event.replace('./layouts/events/', '')
-    event_date_tmp = event_name[:10].split('-')
-    event_date = '{}/{}/{}'.format(event_date_tmp[2], event_date_tmp[1], event_date_tmp[0])
-    event_day = int(event_date_tmp[2])
-    event_month = int(event_date_tmp[1])
-    event_year = int(event_date_tmp[0])
-
-    d1 = datetime(event_year, event_month, event_day)
-    now = datetime.now()
-
-    if d1 < now:
-        continue
-    next_events.append(event)
+events = sorted(glob.glob('./layouts/events/*'), reverse=True)
 
 ###############################################################################
 ## Homepage
@@ -213,6 +181,21 @@ with open('./layouts/league-slideshow.html') as base_league_tmpl, \
 ## EVENTS
 ###############################################################################
 
+next_events = []
+for event in events:
+    event_name = event.replace('./layouts/events/', '')
+    event_date_tmp = event_name[:10].split('-')
+    event_day = int(event_date_tmp[2])
+    event_month = int(event_date_tmp[1])
+    event_year = int(event_date_tmp[0])
+
+    event_date = datetime(event_year, event_month, event_day)
+    now = datetime.now()
+
+    if event_date < now:
+        continue
+    next_events.append(event)
+
 with open('./layouts/events.html') as base_events_tmpl, \
         open('./events.html', 'w') as output_events:
     for line in base_events_tmpl:
@@ -225,6 +208,11 @@ with open('./layouts/events.html') as base_events_tmpl, \
                 event_date_tmp = event_name[:10].split('-')
                 event_date = '{}/{}/{}'.format(event_date_tmp[2], event_date_tmp[1], event_date_tmp[0])
                 event_url = event_name.replace('.md', '.html')
+
+                event_body = open(event).readlines()
+                for event_line in event_body:
+                    if 'event_title: ' in event_line:
+                        event_title = event_line.replace('event_title: ', '').strip()
 
                 for line in event_link_tmpl:
                     if '{{ title }}' in line:
@@ -292,6 +280,21 @@ for event in events:
 ## ARCHIVED EVENTS
 ###############################################################################
 
+archived_events = []
+for event in events:
+    event_name = event.replace('./layouts/events/', '')
+    event_date_tmp = event_name[:10].split('-')
+    event_day = int(event_date_tmp[2])
+    event_month = int(event_date_tmp[1])
+    event_year = int(event_date_tmp[0])
+
+    event_date = datetime(event_year, event_month, event_day)
+    now = datetime.now()
+
+    if event_date >= now:
+        continue
+    archived_events.append(event)
+
 with open('./layouts/archive.html') as base_archive_events_tmpl, \
         open('./archive.html', 'w') as output_archive_events:
     for line in base_archive_events_tmpl:
@@ -304,6 +307,12 @@ with open('./layouts/archive.html') as base_archive_events_tmpl, \
                 event_date_tmp = event_name[:10].split('-')
                 event_date = '{}/{}/{}'.format(event_date_tmp[2], event_date_tmp[1], event_date_tmp[0])
                 event_url = event_name.replace('.md', '.html')
+
+                event_body = open(archived_event).readlines()
+                for event_line in event_body:
+                    if 'event_title: ' in event_line:
+                        event_title = event_line.replace('event_title: ', '').strip()
+                        print(event_title)
 
                 for line in event_link_tmpl:
                     if '{{ title }}' in line:
