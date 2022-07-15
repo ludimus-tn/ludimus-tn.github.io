@@ -22,6 +22,7 @@ style_hash = hashlib.md5(open('./style.css').read().encode('utf-8')).hexdigest()
 input_data = json.loads(''.join(open('./processors/games.json').readlines()))
 blog_post_tmpl = open('./layouts/partials/blog-post.html').readlines()
 blog_preview_tmpl = open('./layouts/partials/blog-preview.html').readlines()
+event_link_tmpl = open('./layouts/partials/event-link.html').readlines()
 events_tmpl = open('./layouts/partials/event.html').readlines()
 
 board_games = []
@@ -235,6 +236,32 @@ for event in events:
             else:
                 output_event.write(line)
 
+###############################################################################
+## ARCHIVED EVENTS
+###############################################################################
+
+with open('./layouts/archive.html') as base_archive_events_tmpl, \
+        open('./archive.html', 'w') as output_archive_events:
+    for line in base_archive_events_tmpl:
+        if '{{ footer }}' in line:
+            output_archive_events.write(line.replace('{{ footer }}', footer))
+        elif '{{ archived_events }}' in line: 
+            for archived_event in sorted(glob.glob('./layouts/events/*'), reverse=True):
+                event_name = archived_event.replace('./layouts/events/', '')
+                event_title = event_name[10:].replace('.html', '').replace('.md', '').replace('-', ' ').title()
+                event_date_tmp = event_name[:10].split('-')
+                event_date = '{}/{}/{}'.format(event_date_tmp[2], event_date_tmp[1], event_date_tmp[0])
+                event_url = event_name.replace('.md', '.html')
+
+                for line in event_link_tmpl:
+                    if '{{ title }}' in line:
+                        output_archive_events.write(line.replace('{{ title }}', event_title))
+                    elif '{{ date }}' in line:
+                        output_archive_events.write(line.replace('{{ date }}', event_date))
+                    elif '{{ event_url }}' in line:
+                        output_archive_events.write(line.replace('{{ event_url }}', event_url))
+        else:
+            output_archive_events.write(line)
 
 ###############################################################################
 ## T-Shirt Requirements
