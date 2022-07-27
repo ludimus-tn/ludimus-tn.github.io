@@ -39,11 +39,11 @@ Il pittore Marcello Fogolino sta partendo per un viaggio. Sembra però che qualc
 ### 📌 Dove si svolgerà?
 Saremo ospitati dal [Castello del Buonconsiglio](https://goo.gl/maps/WvE6B1QDJBub9gdaA)
 
-### 🍔 Cosa si mangerà?
+<!-- ### 🍔 Cosa si mangerà?
 Non preoccupatevi perché abbiamo pensato anche al cibo 🔥
 
 ### 🛌 Ma se vengo da lontano dove posso dormire?
-Se volete dormire vicino a dove si svolgerà l'evento, scriveteci perché possiamo fornirvi dei contatti 😊
+Se volete dormire vicino a dove si svolgerà l'evento, scriveteci perché possiamo fornirvi dei contatti 😊 -->
 
 ---
 
