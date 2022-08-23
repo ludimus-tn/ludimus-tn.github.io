@@ -27,6 +27,12 @@ Il pittore Marcello Fogolino sta partendo per un viaggio. Sembra però che qualc
 🔜 Prenotazioni disponibili a breve.
 
 
+#### 👥 OSPITI:
+A LUDICAMP quest'anno ci saranno:
+
+- ["The Dunwich Buyers Club"](https://dunwichbuyersclub.it/) un podcast di giochi e avventure, che ogni settimana porta a casa vostra il mondo dei giochi da tavolo e dei giochi di ruolo. Li trovate qui: https://dunwichbuyersclub.it/
+- [Dudexpress](https://dudexpress.it/), un blog di recensioni di giochi da tavolo per tutti i gusti. Li potete leggere qui: https://dudexpress.it/
+
 🔜 Presto vi annunceremo altre attività delle giornata, ma preparatevi perché ci saranno cose da fare dalla mattina alle 10 fino a sera 😉
 
 ---
