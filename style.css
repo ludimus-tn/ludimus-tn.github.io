@@ -1144,9 +1144,18 @@ em.post-date {
 .ludicamp__game-availability {
     border-bottom: 1px dashed #ababab;
     margin-bottom: 2rem;
+    padding: 0;
+    width: 100%;
+    overflow-x: auto;
 }
 
 .ludicamp__game-availability table {
+    max-width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.ludicamp__game-availability .search-filter {
     max-width: 80%;
     margin-right: auto;
     margin-left: auto;
