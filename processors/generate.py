@@ -19,6 +19,7 @@ markdowner = markdown2.Markdown()
 boardgame_tmpl = '\n'.join(open('./layouts/partials/boardgame.html').readlines())
 footer = ''.join(open('./layouts/partials/footer.html').readlines())
 league_ranking = ''.join(open('./layouts/partials/league-ranking.html').readlines())
+ludicamp_game_availability = ''.join(open('./layouts/partials/game-availability.html').readlines())
 league_rules = ''.join(markdowner.convert(open('./static/docs/league/2019-20-Regolamento.md').read().encode('utf-8')))
 style_hash = hashlib.md5(open('./style.css').read().encode('utf-8')).hexdigest()
 input_data = json.loads(''.join(open('./processors/games.json').readlines()))
@@ -411,3 +412,17 @@ for post in posts:
                     output_post.write(blog_file_to_tmpl[post])
             else:
                 output_post.write(line)
+
+###############################################################################
+## LUDICAMP
+###############################################################################
+
+with open('./layouts/ludicamp.html') as base_ludicamp_tmpl, \
+        open('./ludicamp.html', 'w') as output_ludicamp:
+    for line in base_ludicamp_tmpl:
+        if '{{ ludicamp_game_availability }}' in line:
+            output_ludicamp.write(line.replace('{{ ludicamp_game_availability }}', ludicamp_game_availability))
+        elif '{{ footer }}' in line:
+            output_ludicamp.write(line.replace('{{ footer }}', footer))
+        else:
+            output_ludicamp.write(line)

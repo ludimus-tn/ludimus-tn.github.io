@@ -1095,3 +1095,67 @@ em.post-date {
         max-width: 100%;
     }
 }
+
+/**********************************************************************************************************************/
+
+/* LUDICAMP */
+
+/**********************************************************************************************************************/
+
+#ludicamp {
+    margin: 0;
+    padding: 0;
+}
+
+#ludicamp h4 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+#ludicamp h5 {
+    font-size: 1.8rem;
+    text-transform: capitalize;
+    color: #ababab;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+#ludicamp li {
+    margin-bottom: .75rem;
+}
+
+.ludicamp__header {
+    border-bottom: 1px dashed #ababab;
+}
+
+.ludicamp__header button {
+    border-radius: 0;
+    font-weight: 900;
+}
+
+.ludicamp__game-availability {
+    border-bottom: 1px dashed #ababab;
+    margin-bottom: 2rem;
+}
+
+.ludicamp__game-availability table {
+    max-width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (max-width: 886px) {
+    .ludicamp__game-availability table {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 992px) {
+    #ludicamp h5 {
+        font-size: 1.3rem;
+        line-height: 25px;
+    }
+}
