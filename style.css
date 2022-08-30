@@ -1127,6 +1127,11 @@ em.post-date {
     margin-bottom: .75rem;
 }
 
+#ludicamp p .error {
+    text-align: center;
+    color: gray;
+}
+
 .ludicamp__header {
     border-bottom: 1px dashed #ababab;
 }
