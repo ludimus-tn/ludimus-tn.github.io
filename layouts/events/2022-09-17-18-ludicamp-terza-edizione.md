@@ -26,11 +26,15 @@ Al Castello del Buonconsiglio ci sarà a disposizione tutta la collezione dell'A
 Il pittore Marcello Fogolino sta partendo per un viaggio. Sembra però che qualcuno abbia scoperto che il pittore sia in realtà anche una spia al soldo della Repubblica di Venezia. Prima di partire però, Marcello ha confidato al fratello di aver nascosto i report incriminanti nelle cantine, così Matteo vi ha incaricati di recuperare le informazioni risolvendo gli enigmi che le proteggono, e fuggire dalla scena prima che arrivino le guardie a perquisire. Siete pronti?
 🔜 Prenotazioni disponibili a breve.
 
+#### 👩‍🍳🧑‍🍳 STRACÒT
+Stracòt è un minigioco a squadre per quattro persone pensato apposta per il LUDICAMP e liberamente ispirato al videogioco culinario “Overcooked”.
+Ma badate bene perché non sarà un gioco da tavolo! Sarete fisicamente catapultati in una frenetica cucina: tra ingredienti da tagliare, padelle che bruciano e piatti da lavare. Quanti clienti usciranno dal vostro ristorante soddisfatti?
 
-#### 👥 OSPITI:
-A LUDICAMP quest'anno ci saranno:
-
-- ["The Dunwich Buyers Club"](https://dunwichbuyersclub.it/) un podcast di giochi e avventure, che ogni settimana porta a casa vostra il mondo dei giochi da tavolo e dei giochi di ruolo. Li trovate qui: https://dunwichbuyersclub.it/
+#### 👥 OSPITI
+- ["The Dunwich Buyers Club"](https://dunwichbuyersclub.it/) "Signore e Signori, chiudete porte e finestre ed alzate il volume della vostra radio perché questo è un nuovo episodio del "The Dunwich Buyers Club" podcast di giochi e avventure, benvenuti!"
+Se queste parole vi dicono qualcosa sappiate che troverete il DucaConte e Banda al Ludicamp nella giornata del 17,
+se invece non sapete di cosa stiamo parlando potete recuperare la mancanza andando qui:
+https://dunwichbuyersclub.it/  https://dunwichbuyersclub.it/
 - [Dudexpress](https://dudexpress.it/), un blog di recensioni di giochi da tavolo per tutti i gusti. Li potete leggere qui: https://dudexpress.it/
 
 🔜 Presto vi annunceremo altre attività delle giornata, ma preparatevi perché ci saranno cose da fare dalla mattina alle 10 fino a sera 😉
