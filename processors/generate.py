@@ -234,7 +234,7 @@ with open('./layouts/archive.html') as base_archive_events_tmpl, \
 ###############################################################################
 
 next_events = []
-for event in events:
+for event in sorted(events, reverse=False):
     event_name = event.replace('./layouts/events/', '')
     event_date_tmp = event_name[:10].split('-')
     event_day = int(event_date_tmp[2])
