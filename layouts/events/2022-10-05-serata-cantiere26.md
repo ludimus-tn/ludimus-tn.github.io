@@ -1,6 +1,6 @@
 event_title: Serata Giochi ad Arco 05/10/2022
 event_description: Vieni a giocare con Ludimus ad Arco presso il Cantiere26 il 05 Ottobre 2022!
-event_og: https://ludimus.it/static/img/events/default.jpg
+event_og: https://ludimus.it/static/img/events/default_arco.png
 
 # Serata Giochi da Tavolo ad Arco 05/10/2022
 

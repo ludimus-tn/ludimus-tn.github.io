@@ -1,6 +1,6 @@
 event_title: Serata Giochi ad Arco 07/09/2022
 event_description: Ritornano dopo la pausa estiva le serate Ludimus ad Arco presso il Cantiere26 il 07 Settembre 2022!
-event_og: https://ludimus.it/static/img/events/default.jpg
+event_og: https://ludimus.it/static/img/events/default_arco.png
 
 # Serata Giochi da Tavolo ad Arco 07/09/2022
 
