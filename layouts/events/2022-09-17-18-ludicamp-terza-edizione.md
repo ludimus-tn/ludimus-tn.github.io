@@ -30,6 +30,9 @@ Il pittore Marcello Fogolino sta partendo per un viaggio. Sembra però che qualc
 Stracòt è un minigioco a squadre per quattro persone pensato apposta per il LUDICAMP e liberamente ispirato al videogioco culinario “Overcooked”.
 Ma badate bene perché non sarà un gioco da tavolo! Sarete fisicamente catapultati in una frenetica cucina: tra ingredienti da tagliare, padelle che bruciano e piatti da lavare. Quanti clienti usciranno dal vostro ristorante soddisfatti?
 
+#### 🏆 TORNEO DI CARCASSONNE
+Anche quest'anno non potevano mancare dei tornei: in questa edizione vi proponiamo il torneo di un grande classico: Carcassonne! Questo torneo è valido per le classifiche dei nazionali italiani, organizzati da **BIG - Board Italian Gamers**. Le iscrizioni saranno possibili direttamente al Castello dalle 10:00 alle 11:00 e saranno richiesti _nome, cognome, email, data di nascita e numero di tessera Ludimus_ (se sprovvisti ci si potrà tesserare al momento). Per tutti i dettagli vi rimandiamo al regolamento 👉 [LINK AL REGOLAMENTO](https://ludimus.it/static/docs/ludicamp/2022-09-17-18/Regolamento-Torneo-Carcassonne.pdf?q=0)
+
 #### 👥 OSPITI
 - ["The Dunwich Buyers Club"](https://dunwichbuyersclub.it/) "Signore e Signori, chiudete porte e finestre ed alzate il volume della vostra radio perché questo è un nuovo episodio del "The Dunwich Buyers Club" podcast di giochi e avventure, benvenuti!"
 Se queste parole vi dicono qualcosa sappiate che troverete il DucaConte e Banda al Ludicamp nella giornata del 17,
