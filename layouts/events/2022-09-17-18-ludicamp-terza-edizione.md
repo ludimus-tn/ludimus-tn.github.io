@@ -46,8 +46,8 @@ https://dunwichbuyersclub.it/  https://dunwichbuyersclub.it/
 
 ### 📅 QUANDO
 
-- sabato 17 settembre | ore 10.00 - 19.00
-- domenica 18 settembre | ore 10.00 - 19.00
+- sabato 17 settembre | ore 09.00 - 18.00
+- domenica 18 settembre | ore 09.00 - 18.00
 
 ### 📌 Dove si svolgerà?
 Saremo ospitati dal [Castello del Buonconsiglio](https://goo.gl/maps/WvE6B1QDJBub9gdaA)
