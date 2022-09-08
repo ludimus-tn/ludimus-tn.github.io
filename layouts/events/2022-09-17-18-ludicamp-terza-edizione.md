@@ -6,7 +6,7 @@ event_og: https://ludimus.it/static/img/events/2022-09-17-18-ludicamp-terza-ediz
 
 ### Ritorna LUDICAMP, questa volta al Castello del Buonconsiglio dal 17 al 18 Settembre 2022
 📅 Sabato 17 e Domenica 18 Settembre 2022
-🕰 dalle 10:00 in poi
+🕰 dalle 09:00 alle 18:00
 📍 [Castello del Buonconsiglio](https://goo.gl/maps/WvE6B1QDJBub9gdaA)
 
 ---
@@ -32,6 +32,13 @@ Ma badate bene perché non sarà un gioco da tavolo! Sarete fisicamente catapult
 
 #### 🏆 TORNEO DI CARCASSONNE 18/09
 Anche quest'anno non potevano mancare dei tornei: in questa edizione vi proponiamo il torneo di un grande classico: Carcassonne! Questo torneo è valido per le classifiche dei nazionali italiani, organizzati da **BIG - Board Italian Gamers** e si svolgerà domenica 18/09. Le iscrizioni saranno possibili direttamente al Castello dalle 10:00 alle 11:00 del 18/09 e saranno richiesti _nome, cognome, email, data di nascita e numero di tessera Ludimus_ (se sprovvisti ci si potrà tesserare al momento). Per tutti i dettagli vi rimandiamo al regolamento  [LINK AL REGOLAMENTO](https://ludimus.it/static/docs/ludicamp/2022-09-17-18/Regolamento-Torneo-Carcassonne.pdf?q=0)
+
+#### 💣 TWO ROOMS AND A BOOM
+Due stanze, due gruppi di persone, ed una bomba pronta a far saltare tutto in aria. A Ludicamp si gioca a Two Rooms and a Boom: portate i vostri amici e prenotatevi! Sarà possibile giocare fino a 30 persone e i gruppi partiranno con un minimo di partecipanti. All'inizio di ogni turno ci sarà una breve spiegazione delle regole e la durata di ogni partita è stimata sui 15/20 minuti. Si giocherà nei giardini del castello
+[👉 PRENOTAZIONI QUI](https://ludicamp-22-traab.eventbrite.it)
+
+#### 🤺 SCHERMA:
+Saranno presenti i nostri amici di Sala d'Arme Achille Marozzo che faranno delle dimostrazioni di scherma storica nel giardini del Castello entrambe le giornate di sabato 17/09 che domenica 18/09
 
 #### 👥 OSPITI
 - ["The Dunwich Buyers Club"](https://dunwichbuyersclub.it/) "Signore e Signori, chiudete porte e finestre ed alzate il volume della vostra radio perché questo è un nuovo episodio del "The Dunwich Buyers Club" podcast di giochi e avventure, benvenuti!"
