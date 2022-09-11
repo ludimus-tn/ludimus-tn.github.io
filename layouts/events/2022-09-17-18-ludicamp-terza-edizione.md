@@ -24,7 +24,7 @@ Al Castello del Buonconsiglio ci sarà a disposizione tutta la collezione dell'A
 
 #### 🔓 ESCAPE ROOM:
 Il pittore Marcello Fogolino sta partendo per un viaggio. Sembra però che qualcuno abbia scoperto che il pittore sia in realtà anche una spia al soldo della Repubblica di Venezia. Prima di partire però, Marcello ha confidato al fratello di aver nascosto i report incriminanti nelle cantine, così Matteo vi ha incaricati di recuperare le informazioni risolvendo gli enigmi che le proteggono, e fuggire dalla scena prima che arrivino le guardie a perquisire. Siete pronti?
-🔜 Prenotazioni disponibili a breve.
+[👉 PRENOTAZIONI QUI](https://ludicamp-ludimus-escape-room-spia-del-buonconsiglio.eventbrite.it)
 
 #### 👩‍🍳🧑‍🍳 STRACÒT
 Stracòt è un minigioco a squadre per quattro persone pensato apposta per il LUDICAMP e liberamente ispirato al videogioco culinario “Overcooked”.
@@ -44,7 +44,6 @@ Due stanze, due gruppi di persone, ed una bomba pronta a far saltare tutto in ar
 Qualche settimana fa era uscito il sondaggio per chiedervi a quali giochi (che noi di Ludimus chiamiamo cinghialoni) difficili da intavolare avreste voluto giocare a Ludicamp.
 Finalmente sono aperte le prenotazioni per giocare a Descent e Root sabato 17/09 e a Medioevo Universale, Nemesis e Rising Sun durante la giornata di domenica 18/09.
 _Per quanto riguarda Root, una copia sarà disponibile alla ludoteca dell'evento, ma vi consigliamo di prenotare per assicurarvi di poterci giocare._
-
 [👉 PRENOTAZIONI QUI](https://ludicamp-prenotazione-giochi.eventbrite.it)
 
 #### 🤺 SCHERMA:
