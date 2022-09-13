@@ -50,7 +50,7 @@ Anche quest'anno non potevano mancare dei tornei: in questa edizione vi proponia
 
 #### 💣 KEEP TALKING AND NOBODY EXPLODES
 📍 _Torrione nei giardini del castello_
-Due stanze, due gruppi di persone, ed una bomba pronta a far saltare tutto in aria. A Ludicamp si gioca a Two Rooms and a Boom: portate i vostri amici e prenotatevi! Sarà possibile giocare fino a 30 persone e i gruppi partiranno con un minimo di partecipanti. All'inizio di ogni turno ci sarà una breve spiegazione delle regole e la durata di ogni partita è stimata sui 15/20 minuti. Si giocherà nei giardini del castello
+Volete partecipare a qualcosa di divertente con i vostri amici? Passate al torrione a giocare **Keep Talking and Nobody Explodes**, un gioco super divertente dove dovrete collaborare per risolvere rompicapi e disinnescare la bomba prima che esploda allo scadere del tempo. Per partecipare non è necessaria alcuna prenotazione.
 
 #### 🎟 GIOCHI A PRENOTAZIONE
 📍 _Ludoteca - Marangonerie_
