@@ -1,8 +1,10 @@
 event_title: LUDICAMP - Terza Edizione
 event_description: Ritorna LUDICAMP, dal 17 al 18/09 al Castello del Buonconsiglio 
-event_og: https://ludimus.it/static/img/events/2022-09-17-18-ludicamp-terza-edizione.png
+event_og: https://ludimus.it/static/img/events/2022-09-17-18_ludicamp_3a_edizione.png
 
 # LUDICAMP - Terza Edizione
+
+[Scarica QUI la mappa e il programma](https://ludimus.it/static/docs/ludicamp/2022-09-17-18/mappa-ludicamp-2022.pdf?q=0)
 
 ### Ritorna LUDICAMP, questa volta al Castello del Buonconsiglio dal 17 al 18 Settembre 2022
 📅 Sabato 17 e Domenica 18 Settembre 2022
@@ -40,13 +42,13 @@ Anche quest'anno non potevano mancare dei tornei: in questa edizione vi proponia
 Due stanze, due gruppi di persone, ed una bomba pronta a far saltare tutto in aria. A Ludicamp si gioca a Two Rooms and a Boom: portate i vostri amici e prenotatevi! Sarà possibile giocare fino a 30 persone e i gruppi partiranno con un minimo di partecipanti. All'inizio di ogni turno ci sarà una breve spiegazione delle regole e la durata di ogni partita è stimata sui 15/20 minuti. Si giocherà nei giardini del castello
 [👉 PRENOTAZIONI QUI](https://ludicamp-22-traab.eventbrite.it)
 
-#### GIOCHI A PRENOTAZIONE
+#### 🎟 GIOCHI A PRENOTAZIONE
 Qualche settimana fa era uscito il sondaggio per chiedervi a quali giochi (che noi di Ludimus chiamiamo cinghialoni) difficili da intavolare avreste voluto giocare a Ludicamp.
 Finalmente sono aperte le prenotazioni per giocare a Descent e Root sabato 17/09 e a Medioevo Universale, Nemesis e Rising Sun durante la giornata di domenica 18/09.
 _Per quanto riguarda Root, una copia sarà disponibile alla ludoteca dell'evento, ma vi consigliamo di prenotare per assicurarvi di poterci giocare._
 [👉 PRENOTAZIONI QUI](https://ludicamp-prenotazione-giochi.eventbrite.it)
 
-#### 🤺 SCHERMA:
+#### 🤺 SCHERMA
 Saranno presenti i nostri amici di Sala d'Arme Achille Marozzo che faranno delle dimostrazioni di scherma storica nel giardini del Castello entrambe le giornate di sabato 17/09 che domenica 18/09
 
 #### 🏰 ASGARD
@@ -54,6 +56,9 @@ Nella terra oscurità del lontano futuro c'è solo guerra...
 Grazie agli amici di Asgard, avremo sui nostri tavoli anche diversi giochi tridimensionali con bellissime miniature. Sarà possibile provare un po' di quello che è il vasto universo di Warhammer, oppure altri giochi dal forte spirito American rifacendosi gli occhi con componentistiche bellissime che vi caleranno nell'ambientazione.
 Inoltre grazie ad il nostro socio Andrea, sarà possibile anche provare Blood Bowl all'interno di un dungeon tridimensionale!
 Se vi siete incuriositi basta che passiate Sabato 17 a Ludicamp.
+
+#### ♻️ ZONA SCAMBIO GIOCHI
+Avete giochi che non giocate più spesso e vorreste avere dei nuovi giochi nella vostra collezione? Allora dovete assolutamente passare nei giardini del Castello, alla zona scambi, al Torrione perché potreste trovare quello che cercate!
 
 #### 👥 OSPITI
 - ["The Dunwich Buyers Club"](https://dunwichbuyersclub.it/) "Signore e Signori, chiudete porte e finestre ed alzate il volume della vostra radio perché questo è un nuovo episodio del "The Dunwich Buyers Club" podcast di giochi e avventure, benvenuti!"
@@ -84,3 +89,5 @@ Se volete dormire vicino a dove si svolgerà l'evento, scriveteci perché possia
 
 ### ♥️ RINGRAZIAMENTI
 L’appuntamento è realizzato in collaborazione con il Museo Castello del Buonconsiglio.
+
+Si ringrazia anche [Il Simposio Bar Ristorante](https://g.page/ilsimposiotrento?share) per il supporto!
