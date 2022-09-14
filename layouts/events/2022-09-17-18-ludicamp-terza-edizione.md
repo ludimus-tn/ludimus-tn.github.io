@@ -107,3 +107,5 @@ Se volete dormire vicino a dove si svolgerà l'evento, scriveteci perché possia
 L’appuntamento è realizzato in collaborazione con il Museo Castello del Buonconsiglio.
 
 Si ringrazia anche [Il Simposio Bar Ristorante](https://g.page/ilsimposiotrento?share) per il supporto!
+
+Si ringra anche la [Cassa Rurale di Trento](https://www.cassaditrento.it/) per aver deciso di supportare l'evento
