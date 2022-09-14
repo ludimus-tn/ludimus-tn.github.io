@@ -61,7 +61,7 @@ _Per quanto riguarda Root, una copia sarà disponibile alla ludoteca dell'evento
 
 #### 🤺 SCHERMA
 📍 _Giardini del castello vicino al bar_
-Saranno presenti i nostri amici di Sala d'Arme Achille Marozzo che faranno delle dimostrazioni di scherma storica nel giardini del Castello entrambe le giornate di sabato 17/09 che domenica 18/09
+Sabato e domenica a Ludicamp ci saranno anche i nostri amici della **Sala d'Arme Achille Marozzo**. Li troverete nei giardini del Castello del Buonconsiglio al loro stand informativo: potrete assistere alle dimostrazioni di scherma storica e avrete anche la possibilità di provare in totale sicurezza questa disciplina.
 
 #### 🏰 ASGARD
 📍 _Ludoteca - Marangonerie_
