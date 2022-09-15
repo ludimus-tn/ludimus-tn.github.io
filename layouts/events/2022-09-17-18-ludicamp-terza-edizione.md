@@ -95,7 +95,7 @@ https://dunwichbuyersclub.it/  https://dunwichbuyersclub.it/
 ### 📌 Dove si svolgerà?
 Saremo ospitati dal [Castello del Buonconsiglio](https://goo.gl/maps/WvE6B1QDJBub9gdaA)
 
-_Vi informiamo anche che nella giornata di sabato 17/09 in occasione della "Giornata della mobilità dell'Euregio", l'ingresso all'intero castello sarà gratuito e saranno possibili visite guidate. Per info e prenotazioni vi rimandiamo al sito del Buonconsiglio: https://www.buonconsiglio.it/index.php/Castello-del-Buonconsiglio/attivita/Attivita-del-museo/Castello-del-Buonconsiglio2_
+_Vi informiamo anche che nella giornata di sabato 17/09 in occasione della "Giornata della mobilità dell'Euregio", l'ingresso all'intero castello sarà gratuito e saranno possibili visite guidate. Per info e prenotazioni vi rimandiamo al sito del Buonconsiglio:_ [INFO E PRENOTAZIONI](https://www.buonconsiglio.it/index.php/Castello-del-Buonconsiglio/attivita/Attivita-del-museo/Castello-del-Buonconsiglio2)
 
 ---
 
