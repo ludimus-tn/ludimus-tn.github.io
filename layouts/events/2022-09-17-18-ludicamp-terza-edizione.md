@@ -26,7 +26,7 @@ Finalmente possiamo annunciarvi il ritorno di Ludicamp, questa volta della durat
 Al Castello del Buonconsiglio ci sarà a disposizione tutta la collezione dell'Associazione, e non solo! Giochi di tutti i tipi, dai family ai german più cattivi, dai party game alle ultime novità: avrete solo l'imbarazzo della scelta. La Luditeca sarà aperta tutto il giorno per entrambi i giorni, fino a sera e non richiede nessuna prenotazione. Semplicemente, fatevi avanti e giocate!
 
 #### 🔓 ESCAPE ROOM:
-📍 _Ritrovo all'infopoint e room nelle cantine sopra al bar_
+📍 _Ritrovo all'InfoPoint e room nelle cantine sopra al bar_
 Il pittore Marcello Fogolino sta partendo per un viaggio. Sembra però che qualcuno abbia scoperto che il pittore sia in realtà anche una spia al soldo della Repubblica di Venezia. Prima di partire però, Marcello ha confidato al fratello di aver nascosto i report incriminanti nelle cantine, così Matteo vi ha incaricati di recuperare le informazioni risolvendo gli enigmi che le proteggono, e fuggire dalla scena prima che arrivino le guardie a perquisire. Siete pronti?
 [👉 PRENOTAZIONI QUI](https://ludicamp-ludimus-escape-room-spia-del-buonconsiglio.eventbrite.it)
 
@@ -41,11 +41,11 @@ Due stanze, due gruppi di persone, ed una bomba pronta a far saltare tutto in ar
 [👉 PRENOTAZIONI QUI](https://ludicamp-22-traab.eventbrite.it)
 
 #### 🏆 TORNEO DI NOME IN CODICE 17/09
-📍 _Aule didattiche, iscrizioni all'Infopoint_
+📍 _Aule didattiche, iscrizioni all'InfoPoint_
 Avete mai partecipato ad un torneo a squadre? Sabato 17/09 potrete farlo partecipando al torneo di Nome in Codice. Le iscrizioni saranno possibili direttamente al Castello dalle 09:00 alle 10:00 del 17/09 e saranno richiesti _nome della squadra, nome, cognome dei componenti della squadra e numero di tessera Ludimus_ (se sprovvisti ci si potrà tesserare al momento). Le squadre devono essere formate da un **minimo di 2 giocatori a un massimo di 4**. L’inizio delle partite è stimato poco dopo le 10. Per tutti i dettagli vi rimandiamo al regolamento [LINK AL REGOLAMENTO](https://ludimus.it/static/docs/ludicamp/2022-09-17-18/Regolamento-Torneo-Nome-in-Codice.pdf?q=0)
 
 #### 🏆 TORNEO DI CARCASSONNE 18/09
-📍 _Aule didattiche, iscrizioni all'Infopoint_
+📍 _Aule didattiche, iscrizioni all'InfoPoint_
 Anche quest'anno non potevano mancare dei tornei: in questa edizione vi proponiamo il torneo di un grande classico: Carcassonne! Questo torneo è valido per le classifiche dei nazionali italiani, organizzati da **BIG - Board Italian Gamers** e si svolgerà domenica 18/09. Le iscrizioni saranno possibili direttamente al Castello dalle 10:00 alle 11:00 del 18/09 e saranno richiesti _nome, cognome, email, data di nascita e numero di tessera Ludimus_ (se sprovvisti ci si potrà tesserare al momento). Per tutti i dettagli vi rimandiamo al regolamento [LINK AL REGOLAMENTO](https://ludimus.it/static/docs/ludicamp/2022-09-17-18/Regolamento-Torneo-Carcassonne.pdf?q=0)
 
 #### 💣 KEEP TALKING AND NOBODY EXPLODES
@@ -95,11 +95,7 @@ https://dunwichbuyersclub.it/  https://dunwichbuyersclub.it/
 ### 📌 Dove si svolgerà?
 Saremo ospitati dal [Castello del Buonconsiglio](https://goo.gl/maps/WvE6B1QDJBub9gdaA)
 
-<!-- ### 🍔 Cosa si mangerà?
-Non preoccupatevi perché abbiamo pensato anche al cibo 🔥
-
-### 🛌 Ma se vengo da lontano dove posso dormire?
-Se volete dormire vicino a dove si svolgerà l'evento, scriveteci perché possiamo fornirvi dei contatti 😊 -->
+_Vi informiamo anche che nella giornata di sabato 17/09 in occasione della "Giornata della mobilità dell'Euregio", l'ingresso all'intero castello sarà gratuito e saranno possibili visite guidate. Per info e prenotazioni vi rimandiamo al sito del Buonconsiglio: https://www.buonconsiglio.it/index.php/Castello-del-Buonconsiglio/attivita/Attivita-del-museo/Castello-del-Buonconsiglio2_
 
 ---
 
@@ -108,4 +104,4 @@ L’appuntamento è realizzato in collaborazione con il Museo Castello del Buonc
 
 Si ringrazia anche [Il Simposio Bar Ristorante](https://g.page/ilsimposiotrento?share) per il supporto!
 
-Si ringra anche la [Cassa Rurale di Trento](https://www.cassaditrento.it/) per aver deciso di supportare l'evento
+Si ringrazia anche la [Cassa Rurale di Trento](https://www.cassaditrento.it/) per il contributo all'evento
