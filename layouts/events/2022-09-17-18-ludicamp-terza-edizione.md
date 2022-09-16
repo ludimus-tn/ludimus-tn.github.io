@@ -49,7 +49,7 @@ Avete mai partecipato ad un torneo a squadre? Sabato 17/09 potrete farlo parteci
 Anche quest'anno non potevano mancare dei tornei: in questa edizione vi proponiamo il torneo di un grande classico: Carcassonne! Questo torneo è valido per le classifiche dei nazionali italiani, organizzati da **BIG - Board Italian Gamers** e si svolgerà domenica 18/09. Le iscrizioni saranno possibili direttamente al Castello dalle 10:00 alle 11:00 del 18/09 e saranno richiesti _nome, cognome, email, data di nascita e numero di tessera Ludimus_ (se sprovvisti ci si potrà tesserare al momento). Per tutti i dettagli vi rimandiamo al regolamento [LINK AL REGOLAMENTO](https://ludimus.it/static/docs/ludicamp/2022-09-17-18/Regolamento-Torneo-Carcassonne.pdf?q=0)
 
 #### 💣 KEEP TALKING AND NOBODY EXPLODES
-📍 _Torrione nei giardini del castello_
+📍 _Aule didattiche_
 Volete partecipare a qualcosa di divertente con i vostri amici? Passate al torrione a giocare **Keep Talking and Nobody Explodes**, un gioco super divertente dove dovrete collaborare per risolvere rompicapi e disinnescare la bomba prima che esploda allo scadere del tempo. Per partecipare non è necessaria alcuna prenotazione.
 
 #### 🎟 GIOCHI A PRENOTAZIONE
