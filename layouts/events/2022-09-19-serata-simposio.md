@@ -8,6 +8,6 @@ event_og: https://ludimus.it/static/img/events/default_trento.png
 
 Vi aspettiamo il prossimo lunedì:
 
-📅 Lunedì 19 Settembre 2022
+📅 Lunedì 26 Settembre 2022
 🕰 dalle 19:00 in poi
 📍 [Il Simposio Bar Ristorante](https://g.page/ilsimposiotrento?share)
