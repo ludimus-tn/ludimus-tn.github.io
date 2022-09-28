@@ -45,77 +45,30 @@
             </p>
         </section>
 
-        <br>
-        <br>
-        <h4 class="centered-text">Disponibilità Ludoteca</h4>
-        <br>
-        <section class="ludicamp__game-availability">
-            <html>
-
-<head>
-  <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
-</head>
-
-<body>
-  <div id="game-availability">
-    <div x-data="{
-      headers: null,
-      rows: null,
-      error: null,
-  
-      getBoardgameAvailability() {
-        fetch('https://sheets.googleapis.com/v4/spreadsheets/1v8xRQePCMmP_ksp4tB3Sl8snvmV1tWz5ox-LYup8gGU/values/Ludoteca?alt=json&key=AIzaSyBlF3yDrX9KXw-XEYnmPhj1CNgsDUuacJU')
-              .then((response) => response.json())
-              .then((data) => {
-                this.headers = data.values[0]
-                this.rows = data.values.slice(1)
-              }).catch((error) => this.error = error);
-      }
-    }" x-init="getBoardgameAvailability()">
-
-    <div x-show="error !== null">
-      <p class="error">Oh no! Non è stato possibile recuperare le informazioni sulla disponibilità dei giochi</p>
-    </div>
-  
-      <div x-show="headers === null && error === null">
-        <h3 class="centered-text" style="color: darkgrey;">
-          <div class="spinner">
-            <div class="bounce1"></div>
-            <div class="bounce2"></div>
-            <div class="bounce3"></div>
-          </div>
-        </h3>
-      </div>
-  
-      <div x-show="headers !== null && rows !== null && error === null">
-        <br>
-        <div class="table-responsive"></div>
-        <table class="table table-hover table-striped">
-          <thead class="thead-light">
-            <tr>
-              <template x-for="(header, index) in headers" :key="index">
-                <th scope="col" x-text="header"></th>
-              </template>
-            </tr>
-          </thead>
-          <tbody>
-            <template x-for="(row, rIndex) in rows" :key="rIndex">
-              <tr>
-                <template x-for="(header, hIndex) in headers" :key="hIndex">
-                  <td x-text="row[hIndex]"></td>
-                </template>
-              </tr>
-            </template>
-          </tbody>
-        </table>
-      </div>
-  
-    </div>
-  </div>
-</body>
-
-</html>
-        </section>
+        <!-- <section>
+            <div class="container">
+                <h3 class="text-center">Edizioni di Ludicamp</h3>
+                <br>
+                <br>
+                <div class="card-deck">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <div class="card-title font-weight-bold">Edizione 2018</div>
+                        </div>
+                    </div>
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <div class="card-title font-weight-bold">Edizione 2019</div>
+                        </div>
+                    </div>
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <div class="card-title font-weight-bold">Edizione 2022</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
 
     </section>
 
