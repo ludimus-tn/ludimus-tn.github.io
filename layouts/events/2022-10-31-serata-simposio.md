@@ -1,4 +1,4 @@
-event_title: Serata Giochi a Trento 31/10/2022
+event_title: Serata Giochi a Trento 31/10/2022 🎃
 event_description: Vieni a giocare con Ludimus a Trento presso il Simposio il 31 Ottobre 2022!
 event_og: https://ludimus.it/static/img/events/default_trento.png
 
