@@ -2,7 +2,7 @@ event_title: Tra orrore cosmico e mistero - ad Arco al Cantiere26
 event_description: A novembre il gioco da tavolo incontra la letteratura! 📖
 event_og: https://ludimus.it/static/img/events/default_trento.png
 
-# Serata Giochi da Tavolo a Trento 07/11/2022
+# Tra orrore cosmico e mistero
 
 ### A novembre il gioco da tavolo incontra la letteratura! 📖
 
