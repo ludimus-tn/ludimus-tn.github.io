@@ -1,6 +1,6 @@
 event_title: Tra orrore cosmico e mistero - ad Arco al Cantiere26
 event_description: A novembre il gioco da tavolo incontra la letteratura! 📖
-event_og: https://ludimus.it/static/img/events/default_trento.png
+event_og: https://ludimus.it/static/img/events/default_arco.png
 
 # Tra orrore cosmico e mistero
 
