@@ -1,8 +1,8 @@
-event_title: Serata Giochi ad Arco 30/11/2022
-event_description: Vieni a giocare con Ludimus ad Arco presso il Cantiere26 il 30 Novembre 2022!
+event_title: Serata Giochi ad Arco
+event_description: Ultima serata ad Arco per questo 2022
 event_og: https://ludimus.it/static/img/events/default_arco.png
 
-# Serata Giochi da Tavolo ad Arco 30/11/2022
+# Ultima Serata Giochi da Tavolo ad Arco per questo 2022
 
 ### Vieni a giocare con Ludimus ad Arco!
 

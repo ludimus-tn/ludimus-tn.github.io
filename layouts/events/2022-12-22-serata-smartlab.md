@@ -1,10 +1,10 @@
 event_title: Serata Giochi a Rovereto 22/12/2022
-event_description: Vieni a giocare con Ludimus a Rovereto presso Smart Lab il 22 Dicembre 2022!
+event_description: Ultima serata del 2022 a Rovereto!
 event_og: https://ludimus.it/static/img/events/default_rovereto.png
 
 # Serata Giochi a Rovereto 22/12/2022
 
-### Vieni a giocare alle serate settimanali di Ludimus a Rovereto!
+### Ultima serata Ludimus del 2022 a Rovereto!
 
 📅 Giovedì 22 Dicembre 2022
 🕰 dalle 20:00 in poi

@@ -1,10 +1,10 @@
 event_title: Serata Giochi a Trento 19/12/2022
-event_description: Vieni a giocare con Ludimus a Trento presso il Simposio il 19 Dicembre 2022!
+event_description: Ultima serata a Trento per questo 2022, ci rivediamo il 09/01/2023
 event_og: https://ludimus.it/static/img/events/default_trento.png
 
 # Serata Giochi da Tavolo a Trento 19/12/2022
 
-### Vieni a giocare alle serate settimanali di Ludimus a Trento!
+### Ultima serata a Trento per questo 2022, ci rivediamo il 09/01/2023
 
 📅 Lunedì 19 Dicembre 2022
 🕰 dalle 19:00 in poi
