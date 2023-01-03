@@ -7,7 +7,7 @@ event_og: https://ludimus.it/static/img/events/default_arco.png
 ### Partecipa alla serata alla Biblioteca di Arco
 
 📅 Martedì 24 Gennaio 2023
-🕰 dalle 19:00 in poi
+🕰 dalle 19:30 in poi
 📍 [Biblioteca Civica di Arco](https://goo.gl/maps/pko7vpUfVCExDP5k7)
 
 ---
