@@ -1,6 +1,6 @@
 event_title: Serata Giochi al Luogo Comune di Riva del Garda
 event_description: Vieni a giocare con Ludimus al Luogo Comune di Riva del Garda!
-event_og: https://ludimus.it/static/img/events/default_arco.png
+event_og: https://ludimus.it/static/img/events/default_riva.png
 
 # Serata Giochi da Tavolo a Riva del Garda
 
