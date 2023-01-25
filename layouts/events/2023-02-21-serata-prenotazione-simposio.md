@@ -19,7 +19,7 @@ L'evento viene pubblicato circa una settimana prima su EventBrite. [👉 PRENOTA
 
 🎲 **INFO UTILI**
 
-- **Quando ?** Martedì 24 gennaio ore 20:30
+- **Quando ?** Ogni 2 martedì
 - **Dove ?** A Trento, al Simposio bar Ristorante
 - **Come funziona?** Prenota un biglietto per i giochi della serata o per un gioco libero
 - **Si paga?** No, l'evento è gratuito, ma è gradita la consumazione
