@@ -148,6 +148,19 @@ section h2 {
     }
 }
 
+#banner {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: #5A66A5;
+    color: white;
+    height: fit-content;
+    text-align: center;
+    z-index: 2;
+    padding: 8px 10px;
+}
+
 /**********************************************************************************************************************/
 
 /* numbers */
