@@ -2,7 +2,7 @@ event_title: Serata Giochi a Trento
 event_description: Vieni a giocare con Ludimus a Trento presso il Simposio il 16 Gennaio 2023!
 event_og: https://ludimus.it/static/img/events/default_trento.png
 
-# Serata Giochi da Tavolo a Trento 09/01/2023
+# Serata Giochi da Tavolo a Trento
 
 ### Vieni a giocare alle serate settimanali di Ludimus a Trento!
 
