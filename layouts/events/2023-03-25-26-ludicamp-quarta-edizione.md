@@ -22,7 +22,7 @@ event_og: https://ludimus.it/static/img/events/2023-03-25-26_ludicamp_4a_edizion
 
 #### 🎲 GIOCHI DA TAVOLO:
 📍 _Ludoteca - Teatro
-Al Castello del Buonconsiglio ci sarà a disposizione tutta la collezione dell'Associazione, e non solo! Giochi di tutti i tipi, dai family ai german più cattivi, dai party game alle ultime novità: avrete solo l'imbarazzo della scelta. La Luditeca sarà aperta tutto il giorno per entrambi i giorni, fino a sera e non richiede nessuna prenotazione. Semplicemente, fatevi avanti e giocate!
+A Smart Lab ci sarà a disposizione tutta la collezione dell'Associazione, e non solo! Giochi di tutti i tipi, dai family ai german più cattivi, dai party game alle ultime novità: avrete solo l'imbarazzo della scelta. La Luditeca sarà aperta tutto il giorno per entrambi i giorni, fino a sera e non richiede nessuna prenotazione. Semplicemente, fatevi avanti e giocate!
 
 #### 🏆 TORNEO DI WINGSPAN 26/03
 📍 _Ludoteca - Teatro
