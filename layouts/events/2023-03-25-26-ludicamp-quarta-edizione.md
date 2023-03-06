@@ -22,11 +22,11 @@ event_og: https://ludimus.it/static/img/events/2023-03-25-26_ludicamp_4a_edizion
 
 #### 🎲 GIOCHI DA TAVOLO:
 📍 _Ludoteca - Teatro
-A Smart Lab ci sarà a disposizione tutta la collezione dell'Associazione, e non solo! Giochi di tutti i tipi, dai family ai german più cattivi, dai party game alle ultime novità: avrete solo l'imbarazzo della scelta. La Luditeca sarà aperta tutto il giorno per entrambi i giorni, fino a sera e non richiede nessuna prenotazione. Semplicemente, fatevi avanti e giocate!
+A Smart Lab ci sarà a disposizione tutta la collezione dell'Associazione, e non solo! Giochi di tutti i tipi, dai family ai german più cattivi, dai party game alle ultime novità: avrete solo l'imbarazzo della scelta. La Ludoteca sarà aperta tutto il giorno per entrambi i giorni, fino a sera e non richiede nessuna prenotazione. Semplicemente, fatevi avanti e giocate!
 
 #### 🏆 TORNEO DI WINGSPAN 26/03
 📍 _Ludoteca - Teatro
-Domenica 26/03 alle ore 14:00 inizia il torneo di Wingspan vieni a sfidare i migliori giocatori e diventa campione! La partecipazione al torneo è gratuita, ma occorre essere tesserati a Ludimus per l'anno 2022/23. Il torneo avrà luogo **solo al raggiungimento del numero minimo di iscritti (8)**. Se al 19 marzo non avremo raggiunto questa cifra il torneo sarà annullato. Ci saranno 2 turni ad eliminazione diretta. I primi tre classificati vinceranno ricchi premi targati Ghenos League, tra cui dei componenti promo per Wingspan. Il **torneo è valido per la qualificazione alla Ghenos League**, il campionato nazionale organizzato da DvGiochi/Ghenos Games. Per tutti i dettagli vi rimandiamo al regolamento [LINK AL REGOLAMENTO](https://ludimus.it/static/docs/ludicamp/2023-03-15-26/Regolamento-Torneo-Wingspan.pdf?q=0)
+Domenica 26/03 alle ore 14:00 inizia il torneo di Wingspan vieni a sfidare i migliori giocatori e diventa campione! La partecipazione al torneo è gratuita, ma occorre essere tesserati a Ludimus per l'anno 2022/23. Il torneo avrà luogo **solo al raggiungimento del numero minimo di iscritti (8)**. Se al 19 marzo non avremo raggiunto questa cifra il torneo sarà annullato. Ci saranno 2 turni ad eliminazione diretta. I primi tre classificati vinceranno ricchi premi targati Ghenos League, tra cui dei componenti promo per Wingspan. Il **torneo è valido per la qualificazione alla Ghenos League**, il campionato nazionale organizzato da DvGiochi/Ghenos Games. Per tutti i dettagli vi rimandiamo al regolamento [LINK AL REGOLAMENTO](https://ludimus.it/static/docs/ludicamp/2023-03-25-26/Regolamento-Torneo-Wingspan.pdf?q=0)
 
 👉 [ISCRIZIONI DISPONIBILI SU EVENTBRITE](https://www.eventbrite.it/e/biglietti-torneo-wingspan-a-ludicamp-568280661757)
 
