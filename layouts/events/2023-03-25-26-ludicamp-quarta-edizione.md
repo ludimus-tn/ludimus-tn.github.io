@@ -36,9 +36,8 @@ Dopo il sondaggio di qualche settimana fa per chiedervi quali giochi difficili d
 _Alcune copie dei giochi saranno disponibili anche alla Ludoteca, ma vi consigliamo di prenotare per assicurarvi di poterci giocare._
 [👉 PRENOTAZIONI QUI](https://www.eventbrite.it/o/ludimus-17674887161)
 
-#### LAST SABBATH IL GDR DELLE STREGHE
+#### 🔮 LAST SABBATH IL GDR DELLE STREGHE
 📍  _Ludoteca - Teatro_
-
 A Ludicamp non ci saranno solo i giochi da tavolo, ma sarà possibile giocare a Last Sabbath il gioco di ruolo ispirato alle opere di Loputyn e realizzato da Atropo Kelevra e Valentino Sergi. Si tratta di un journaling game cooperativo senza master e dalle regole essenziali la cui storia procede attraverso la lettura dei Tarocchi o altri strumenti di divinazione.
 Last Sabbath è pubblicato da [Shockdom](https://shockdom.com/) in collaborazione con [Officina Meningi](https://officinameningi.it/) e sia nella giornata di sabato 25/03 che nella giornata di domenica 26/03 sarà possibile partecipare gratuitamente con amici e amiche a una sessione dimostrativa dalla durata di 1h e 30 circa.
 
