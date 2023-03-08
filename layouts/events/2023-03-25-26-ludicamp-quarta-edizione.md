@@ -34,7 +34,7 @@ Domenica 26/03 alle ore 14:00 inizia il torneo di Wingspan vieni a sfidare i mig
 📍  _Ludoteca - Teatro_
 Dopo il sondaggio di qualche settimana fa per chiedervi quali giochi difficili da intavolare (che noi di Ludimus chiamiamo cinghialoni) avreste voluto giocare a Ludicamp, sono uscite le prenotazioni! Sarà infatti possibile giocare a Nemesis, Terraforming Mars, Insondabili, Black Rose Wars.
 _Alcune copie dei giochi saranno disponibili anche alla Ludoteca, ma vi consigliamo di prenotare per assicurarvi di poterci giocare._
-[👉 PRENOTAZIONI QUI](https://www.eventbrite.it/o/ludimus-17674887161)
+[👉 PRENOTAZIONI QUI](https://www.eventbrite.it/e/biglietti-giochi-a-prenotazione-ludicamp-quarta-edizione-574386795367)
 
 #### 🔮 LAST SABBATH IL GDR DELLE STREGHE
 📍  _Ludoteca - Teatro_
