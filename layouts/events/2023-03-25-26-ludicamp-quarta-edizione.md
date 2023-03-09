@@ -41,12 +41,24 @@ _Alcune copie dei giochi saranno disponibili anche alla Ludoteca, ma vi consigli
 A Ludicamp non ci saranno solo i giochi da tavolo, ma sarà possibile giocare a Last Sabbath il gioco di ruolo ispirato alle opere di Loputyn e realizzato da Atropo Kelevra e Valentino Sergi. Si tratta di un journaling game cooperativo senza master e dalle regole essenziali la cui storia procede attraverso la lettura dei Tarocchi o altri strumenti di divinazione.
 Last Sabbath è pubblicato da [Shockdom](https://shockdom.com/) in collaborazione con [Officina Meningi](https://officinameningi.it/) e sia nella giornata di sabato 25/03 che nella giornata di domenica 26/03 sarà possibile partecipare gratuitamente con amici e amiche a una sessione dimostrativa dalla durata di 1h e 30 circa.
 
+#### 🥽 TORNEO DI PING PONG IN VR
+📍 _Zona bar_
+La [Trento Virtual Reality Society](https://trentovrsociety.it/torneo2023) sbarca a Ludicamp con il primo torneo di **Ping Pong in VR in Trentino**!
+Si giocherà a _Eleven Table Tennis_, uno dei giochi più gettonati della Realtà Virtuale nonché il "simulatore di Ping Pong in VR per eccellenza.". Il torneo si terrà sabato 25 marzo, dalle 14:00 in poi se verrà raggiunto un _minimo di 8 partecipanti_. Le **iscrizioni termineranno il 23 marzo**!
+
+👉 Vi incuriosisce l'idea di partecipare ad un torneo in VR? Allora potete iscrivervi tramite [QUESTO FORM](https://forms.gle/2mcb9tRhipRRKn597)
+
+#### 💣 KEEP TALKING AND NOBODY EXPLODES
+📍 _Zona bar_
+Volete partecipare a qualcosa di divertente con i vostri amici? Allora passate a giocare con i nostri amici di [Trento Virtual Reality Society](https://trentovrsociety.it/torneo2023) che vi faranno provare **Keep Talking and Nobody Explodes** con i visori di Realtà Virtuale, un gioco super divertente dove dovrete collaborare per risolvere rompicapi e disinnescare la bomba prima che esploda allo scadere del tempo. Sarà possibile giocare sia sabato 25/03 che domenica 26/03 dalle 10:00 alle 20:00. Non è necessaria la prenotazione.
+
 #### ❓ QUIZZONE FINALE
 📍 _Zona bar_
-Vi piacciono i giochi da tavolo e siete appassionati anche di quiz? Allora non potrete mancare al quizzone conclusivo dell'evento
+Vi piacciono i giochi da tavolo e siete appassionati anche di quiz? Allora non potrete mancare al quizzone conclusivo dell'evento.
 
 #### 👥 OSPITI
 - [Dudexpress](https://dudexpress.it/), un blog di recensioni di giochi da tavolo per tutti i gusti. Li potete leggere qui: https://dudexpress.it/
+- [Trento Virtual Reality Society](https://trentovrsociety.it/torneo2023)
 
 ---
 
