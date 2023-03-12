@@ -52,6 +52,12 @@ Si giocherà a _Eleven Table Tennis_, uno dei giochi più gettonati della Realt�
 📍 _Zona bar_
 Volete partecipare a qualcosa di divertente con i vostri amici? Allora passate a giocare con i nostri amici di [Trento Virtual Reality Society](https://trentovrsociety.it/torneo2023) che vi faranno provare **Keep Talking and Nobody Explodes** con i visori di Realtà Virtuale, un gioco super divertente dove dovrete collaborare per risolvere rompicapi e disinnescare la bomba prima che esploda allo scadere del tempo. Sarà possibile giocare sia sabato 25/03 che domenica 26/03 dalle 10:00 alle 20:00. Non è necessaria la prenotazione.
 
+#### 🏈 BLOOD BOWL CON WILD THING STUDIO
+Tra gli ospiti di questo Ludicamp troverai anche [Wild Thing Studio](https://linktr.ee/WildThingStudio) con cui potrai giocare a Blood Bowl!
+Per chi non lo conoscesse [Blood Bowl](https://it.wikipedia.org/wiki/Blood_Bowl) è un gioco di "football fantasy" per due giocatori che utilizza delle miniature per rappresentare i giocatori in campo. Quale occasione migliore di questa per imparare a giocare? Puoi venire con un amico oppure provare a sfidare il leggendario Coach dietro a Wild Thing Studio: Lo Spesso!
+
+Assicurati un posto uno slot [PRENOTANDO A QUESTO LINK](https://www.eventbrite.com/e/biglietti-blood-bowl-con-wild-thing-studio-ludicamp-quarta-edizione-583094781187)
+
 #### ❓ QUIZZONE FINALE
 📍 _Zona bar_
 Vi piacciono i giochi da tavolo e siete appassionati anche di quiz? Allora non potrete mancare al quizzone conclusivo dell'evento.
@@ -59,6 +65,7 @@ Vi piacciono i giochi da tavolo e siete appassionati anche di quiz? Allora non p
 #### 👥 OSPITI
 - [Dudexpress](https://dudexpress.it/), un blog di recensioni di giochi da tavolo per tutti i gusti. Li potete leggere qui: https://dudexpress.it/
 - [Trento Virtual Reality Society](https://trentovrsociety.it/torneo2023)
+- [Wild Thing Studio](https://linktr.ee/WildThingStudio)
 
 ---
 
