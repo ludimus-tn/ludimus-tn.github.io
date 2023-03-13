@@ -15,7 +15,7 @@ event_og: https://ludimus.it/static/img/events/2023-03-25-26_ludicamp_4a_edizion
 
 ---
 
-### COS'È Ludicamp?
+### COS'È LUDICAMP?
 È un ritrovo ludico per gli appassionati di gioco da tavolo della durata di due giorni, è dedicato al gioco intelligente in ogni sua forma: potete trovare la classica ludoteca, escape room, tornei, ospiti e tanto altro!
 
 ### 🎲 CHE ATTIVITÀ CI SARANNO?
@@ -52,6 +52,16 @@ Si giocherà a _Eleven Table Tennis_, uno dei giochi più gettonati della Realt�
 📍 _Zona bar_
 Volete partecipare a qualcosa di divertente con i vostri amici? Allora passate a giocare con i nostri amici di [Trento Virtual Reality Society](https://trentovrsociety.it/torneo2023) che vi faranno provare **Keep Talking and Nobody Explodes** con i visori di Realtà Virtuale, un gioco super divertente dove dovrete collaborare per risolvere rompicapi e disinnescare la bomba prima che esploda allo scadere del tempo. Sarà possibile giocare sia sabato 25/03 che domenica 26/03 dalle 10:00 alle 20:00. Non è necessaria la prenotazione.
 
+#### 🍳 STRACÒT
+Ha riscosso moltissimo successo allo scorso Ludicamp, sia tra i grandi che tra i piccini, perciò non potevamo non riproporlo!
+🍳Stiamo parlando di Stracòt, un minigioco a squadre ispirato al videogioco "Overcooked" che vi catapulterà in una frenetica cucina: tra ingredienti da tagliare, padelle che bruciano e piatti da lavare. Riuscirete a soddisfare tutti i clienti?
+_Le cucine di Stracòt saranno aperte in entrambe le giornate del LUDICAMP e non è richiesta la prenotazione._
+
+#### 🏡 TANA DEI PAPÀ
+Il Ludicamp è un'occasione per introdurre anche i più piccoli al mondo dei giochi da tavolo! Sabato 25/03 a partire dalle 15:00 sarà con noi [La Tana dei Papà](https://www.tanadeipapa.it/) che vi farà divertire con giochi adatti a tutta la famiglia.
+
+In più durante tutto il weekend potrete partecipare alla bellissima **caccia al tesoro** che hanno pensato per noi 🥳🔍
+
 #### 🏈 BLOOD BOWL CON WILD THING STUDIO
 📍  _Ludoteca - Teatro_
 Tra gli ospiti di questo Ludicamp troverai anche [Wild Thing Studio](https://linktr.ee/WildThingStudio) con cui potrai giocare a Blood Bowl!
@@ -66,6 +76,7 @@ Vi piacciono i giochi da tavolo e siete appassionati anche di quiz? Allora non p
 #### 👥 OSPITI
 - [Dudexpress](https://dudexpress.it/), un blog di recensioni di giochi da tavolo per tutti i gusti. Li potete leggere qui: https://dudexpress.it/
 - [Trento Virtual Reality Society](https://trentovrsociety.it/torneo2023)
+- [La Tana dei Papà](https://www.tanadeipapa.it/)
 - [Wild Thing Studio](https://linktr.ee/WildThingStudio)
 
 ---
