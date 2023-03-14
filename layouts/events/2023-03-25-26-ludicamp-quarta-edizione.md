@@ -83,8 +83,8 @@ Vi piacciono i giochi da tavolo e siete appassionati anche di quiz? Allora non p
 
 ### 📅 QUANDO
 
-- sabato 25 settembre | ore 10:00 - 22.00
-- domenica 26 settembre | ore 10:00 - 20.00
+- sabato 25 marzo | ore 10:00 - 22.00
+- domenica 26 marzo | ore 10:00 - 20.00
 
 ### 📌 Dove si svolgerà?
 Saremo ospitati da [Centro Giovani SmartLab - Rovereto](http://bit.ly/SmartLabMaps)
