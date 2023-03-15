@@ -26,7 +26,7 @@ A Smart Lab ci sarà a disposizione tutta la collezione dell'Associazione, e non
 
 #### 🏆 TORNEO DI WINGSPAN 26/03
 📍 _Ludoteca - Teatro_
-Domenica 26/03 alle ore 14:00 inizia il torneo di Wingspan vieni a sfidare i migliori giocatori e diventa campione! La partecipazione al torneo è gratuita, ma occorre essere tesserati a Ludimus per l'anno 2022/23. Il torneo avrà luogo **solo al raggiungimento del numero minimo di iscritti (8)**. Se al 19 marzo non avremo raggiunto questa cifra il torneo sarà annullato. Ci saranno 2 turni ad eliminazione diretta. I primi tre classificati vinceranno ricchi premi targati Ghenos League, tra cui dei componenti promo per Wingspan. Il **torneo è valido per la qualificazione alla Ghenos League**, il campionato nazionale organizzato da DvGiochi/Ghenos Games. Per tutti i dettagli vi rimandiamo al regolamento [LINK AL REGOLAMENTO](https://ludimus.it/static/docs/ludicamp/2023-03-25-26/Regolamento-Torneo-Wingspan.pdf?q=0)
+Domenica 26/03 alle ore 14:00 inizia il torneo di Wingspan vieni a sfidare i migliori giocatori e diventa campione! La partecipazione al torneo è gratuita, ma occorre essere tesserati a Ludimus per l'anno 2022/23. Il torneo avrà luogo **solo al raggiungimento del numero minimo di iscritti (8)**. ~~Se al 19 marzo non avremo raggiunto questa cifra il torneo sarà annullato~~ Il numero minimo è stato raggiunto. Ci saranno 2 turni ad eliminazione diretta. I primi tre classificati vinceranno ricchi premi targati Ghenos League, tra cui dei componenti promo per Wingspan. Il **torneo è valido per la qualificazione alla Ghenos League**, il campionato nazionale organizzato da DvGiochi/Ghenos Games. Per tutti i dettagli vi rimandiamo al regolamento [LINK AL REGOLAMENTO](https://ludimus.it/static/docs/ludicamp/2023-03-25-26/Regolamento-Torneo-Wingspan.pdf?q=0)
 
 👉 [ISCRIZIONI DISPONIBILI SU EVENTBRITE](https://www.eventbrite.it/e/biglietti-torneo-wingspan-a-ludicamp-568280661757)
 
@@ -35,6 +35,22 @@ Domenica 26/03 alle ore 14:00 inizia il torneo di Wingspan vieni a sfidare i mig
 Dopo il sondaggio di qualche settimana fa per chiedervi quali giochi difficili da intavolare (che noi di Ludimus chiamiamo cinghialoni) avreste voluto giocare a Ludicamp, sono uscite le prenotazioni! Sarà infatti possibile giocare a Nemesis, Terraforming Mars, Insondabili, Black Rose Wars.
 _Alcune copie dei giochi saranno disponibili anche alla Ludoteca, ma vi consigliamo di prenotare per assicurarvi di poterci giocare._
 [👉 PRENOTAZIONI QUI](https://www.eventbrite.it/e/biglietti-giochi-a-prenotazione-ludicamp-quarta-edizione-574386795367)
+
+#### 🔓 ESCAPE ROOM
+📍 _Ritrovo all'InfoPoint ed escape room nelle sale al piano inferiore_
+Pessime notizie: il cugino di terzo grado del vostro babbo, il caro zio Tarcisio de Roccavalle, è passato a miglior vita. È annegato in piscina, mentre cercava di nuotare in apnea nella sua collezione di dobloni d'oro della corona spagnola, come tante volte lo avevate visto fare da piccoli, quando vi portava ad ammirare il suo zoo da giardino o a sorvolare l'Atlantico a bordo del suo jet privato. Quanto volevate bene allo zio!
+E quanto bene ve ne voleva lui! Non per niente eravate i suoi nipotini preferiti. Lo dice anche la lettera dell'avvocato, che vi ha informato delle ultime volontà del defunto: siete stati così convocati al maniero Roccavalle, dove il caro miliardario ha preparato per voi soli una ricca, ricchissima, sorpresa. Che sia finalmente venuta la vostra ora di succedere nelle immense fortune di famiglia?
+Solo le ultime parole della lettera però vi lasciano un poco perplessi: _"se ne sarete all'altezza"_...
+
+Per partecipare vi sarà richiesto direttamente in loco un **contributo minimo**, che varia a seconda del numero di partecipanti:
+
+- gruppo da 2: 20€ (10€ a testa)
+- gruppo da 3: 27€ (9€ a testa)
+- gruppo da 4: 32€ (8€ a testa)
+- gruppo da 5: 35€ (7€ a testa)
+- gruppo da 6: 36€ (6€ a testa)
+
+[👉 PRENOTAZIONI QUI](https://www.eventbrite.it/e/biglietti-escape-room-ludicamp-quarta-edizione-576721568737)
 
 #### 🔮 LAST SABBATH IL GDR DELLE STREGHE
 📍  _Ludoteca - Teatro_
@@ -69,6 +85,20 @@ Per chi non lo conoscesse [Blood Bowl](https://it.wikipedia.org/wiki/Blood_Bowl)
 
 👉 Assicurati uno slot [PRENOTANDO A QUESTO LINK](https://www.eventbrite.com/e/biglietti-blood-bowl-con-wild-thing-studio-ludicamp-quarta-edizione-583094781187)
 
+#### 🌳 DEMO EARTHBORNE RANGERS
+📍  _Ludoteca - Teatro_
+Finalmente ci siamo: mancano pochi mesi all'uscita di **Earthborne Rangers**! Come molti di voi, anche noi lo stiamo aspettando da tempo e quale occasioni migliore se non il Ludicamp per provare il gioco? 🤩
+Ispirandosi a giochi LCG come Arkham Horror (il gioco di carte) e Marvel Champions, in **Earthborne Rangers** sarete catapultati in un'ambientazione Solar punk: non il solito futuro catastrofico post apocalittico ma un mondo rinato, una seconda occasione per l'umanità.  Nei panni dei Ranger vi muoverete all'Interno di questo mondo, che risponderà alle vostre prove ma allo stesso modo vi darà l'impressione di vivere anche un po' di vita propria.
+
+A noi ha catturato fin da subito e quindi il nostro consiglio è quello di provarlo per capire se può fare per voi. Non temete di spoilerarvi la storia perché Ludicamp verranno giocate le demo di inizio avventura 😉
+
+_Earthborne Rangers è un'esclusiva Fantàsia inedita in Italia!_
+👉 [Vi lasciamo il link al preordine del set base](https://fantasiastore.it/it/Earthborne-Rangers/14524-earthborne-rangers-set-base.html)
+
+#### 🏰 ASGARD
+📍  _Ludoteca - Teatro_
+Grazie agli amici di [Asgard Aldeno](https://www.asgardaldeno.it/) avremo sui nostri tavoli anche diversi giochi tridimensionali con bellissime miniature e la possibilità di imparare le basi della pittura insieme ai loro esperti. Sarà possibile conoscere un po' di quello che è il vasto universo **Warhammer**, oppure altri giochi dal forte spirito American rifacendosi gli occhi con bellissime componentistiche 3D che vi caleranno ancora di piu' nell'ambientazione.
+
 #### ❓ QUIZZONE FINALE
 📍 _Zona bar_
 Vi piacciono i giochi da tavolo e siete appassionati anche di quiz? Allora non potrete mancare al quizzone conclusivo dell'evento.
@@ -77,6 +107,7 @@ Vi piacciono i giochi da tavolo e siete appassionati anche di quiz? Allora non p
 - [Dudexpress](https://dudexpress.it/), un blog di recensioni di giochi da tavolo per tutti i gusti. Li potete leggere qui: https://dudexpress.it/
 - [Trento Virtual Reality Society](https://trentovrsociety.it/torneo2023)
 - [La Tana dei Papà](https://www.tanadeipapa.it/)
+- [Asgard Aldeno](https://www.asgardaldeno.it/)
 - [Wild Thing Studio](https://linktr.ee/WildThingStudio)
 
 ---
