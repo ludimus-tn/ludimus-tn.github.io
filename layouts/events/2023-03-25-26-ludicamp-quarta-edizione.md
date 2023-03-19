@@ -73,6 +73,11 @@ Ha riscosso moltissimo successo allo scorso Ludicamp, sia tra i grandi che tra i
 🍳Stiamo parlando di Stracòt, un minigioco a squadre ispirato al videogioco "Overcooked" che vi catapulterà in una frenetica cucina: tra ingredienti da tagliare, padelle che bruciano e piatti da lavare. Riuscirete a soddisfare tutti i clienti?
 _Le cucine di Stracòt saranno aperte in entrambe le giornate del LUDICAMP e non è richiesta la prenotazione._
 
+#### 🏴‍☠️ THREE RUMS AND A BOOM
+Tre stanze, tre gruppi di persone, ed una bomba pronta a far saltare tutto in aria. A Ludicamp si gioca a **Three Rums and a Boom**: la versione piratesca di Two Rooms and a Boom, portate i vostri amici e prenotatevi! Sarà possibile giocare fino a 30 persone e i gruppi partiranno con un minimo di partecipanti. All'inizio di ogni turno ci sarà una breve spiegazione delle regole e la durata di ogni partita è stimata sui 40 minuti, inclusa la spiegazione. Sono disponibili due turni in ogni giornata, uno alla mattina e uno al pomeriggio e sarà possibile giocare due partite in ogni turno.
+
+[👉 PRENOTAZIONI QUI](https://www.eventbrite.it/e/biglietti-three-rums-and-a-boom-ludicamp-quarta-edizione-594154651557)
+
 #### 🏡 TANA DEI PAPÀ
 Il Ludicamp è un'occasione per introdurre anche i più piccoli al mondo dei giochi da tavolo! Sabato 25/03 a partire dalle 15:00 sarà con noi [La Tana dei Papà](https://www.tanadeipapa.it/) che vi farà divertire con giochi adatti a tutta la famiglia.
 
