@@ -100,6 +100,11 @@ A noi ha catturato fin da subito e quindi il nostro consiglio è quello di prova
 _Earthborne Rangers è un'esclusiva Fantàsia inedita in Italia!_
 👉 [Vi lasciamo il link al preordine del set base](https://fantasiastore.it/it/Earthborne-Rangers/14524-earthborne-rangers-set-base.html)
 
+#### 🤺 SCHERMA
+
+Non solo giochi a Ludicamp: durante la giornata di sabato 25/03 sarà presente anche la Sala d'Arme Achille Marozzo!
+Al loro stand informativo potrete assistere alle dimostrazioni di scherma storica e provare in totale sicurezza questa affascinante disciplina.  Potrete anche assistere a un interessantissimo seminario che introduce alcune delle tecniche insegnate da un maestro di inizio Seicento 🤩
+
 #### 🏰 ASGARD
 📍  _Ludoteca - Teatro_
 Grazie agli amici di [Asgard Aldeno](https://www.asgardaldeno.it/) avremo sui nostri tavoli anche diversi giochi tridimensionali con bellissime miniature e la possibilità di imparare le basi della pittura insieme ai loro esperti. Sarà possibile conoscere un po' di quello che è il vasto universo **Warhammer**, oppure altri giochi dal forte spirito American rifacendosi gli occhi con bellissime componentistiche 3D che vi caleranno ancora di piu' nell'ambientazione.
