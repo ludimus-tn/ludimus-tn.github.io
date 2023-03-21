@@ -8,6 +8,8 @@ event_og: https://ludimus.it/static/img/events/2023-03-25-26_ludicamp_4a_edizion
 
 ![ludicamp 4a edizione](https://ludimus.it/static/img/events/2023-03-25-26_ludicamp_4a_edizione.png)
 
+[Scarica QUI la mappa e il programma](https://ludimus.it/static/docs/ludicamp/2023-03-25-26/mappa-ludicamp-2023.jpg?q=0)
+
 ### Ludicamp a SmartLab Rovereto dal 25 al 26 Marzo 2023
 📅 Sabato 25 e Domenica 26 Marzo 2023
 🕰 sabato 10:00-22:00 e domenica 10:00-20:00
@@ -101,7 +103,7 @@ _Earthborne Rangers è un'esclusiva Fantàsia inedita in Italia!_
 👉 [Vi lasciamo il link al preordine del set base](https://fantasiastore.it/it/Earthborne-Rangers/14524-earthborne-rangers-set-base.html)
 
 #### 🤺 SCHERMA
-
+📍 _Piano Terra vicino al parco_
 Non solo giochi a Ludicamp: durante la giornata di sabato 25/03 sarà presente anche la Sala d'Arme Achille Marozzo!
 Al loro stand informativo potrete assistere alle dimostrazioni di scherma storica e provare in totale sicurezza questa affascinante disciplina.  Potrete anche assistere a un interessantissimo seminario che introduce alcune delle tecniche insegnate da un maestro di inizio Seicento 🤩
 
@@ -109,7 +111,17 @@ Al loro stand informativo potrete assistere alle dimostrazioni di scherma storic
 📍  _Ludoteca - Teatro_
 Grazie agli amici di [Asgard Aldeno](https://www.asgardaldeno.it/) avremo sui nostri tavoli anche diversi giochi tridimensionali con bellissime miniature e la possibilità di imparare le basi della pittura insieme ai loro esperti. Sarà possibile conoscere un po' di quello che è il vasto universo **Warhammer**, oppure altri giochi dal forte spirito American rifacendosi gli occhi con bellissime componentistiche 3D che vi caleranno ancora di piu' nell'ambientazione.
 
-#### ❓ QUIZZONE FINALE
+#### ♻️ MERCATINO
+📍 _Info Point_
+Avete dei giochi che non giocate più spesso? Volete vendere i vostri giochi usati e non sapete dove andare? Volete cercare delle buone occasioni senza spulciare mercatini online tutto il giorno? Allora venite a Ludicamp e portateli a far vedere nella nostra area dedicata al mercatino!
+
+_Il mercatino verrà gestito in conto vendita e in caso di effettiva vendita del gioco verrà trattenuto il 5% del prezzo_
+
+#### 🎟️ PESCA DI BENEFICENZA
+📍 _Info Point_
+Volete tentare la sorte ma allo stesso tempo supportare l'associazione Ludimus? Allora potete partecipare alla pesca di beneficenza che sarà presente all'ingresso durante le giornate di sabato 25/03 e domenica 26/03. Ci saranno tanti fantastici premi che abbiamo messo in palio e che potrete vincere 🎉
+
+#### ❓ QUIZZONE FINALE 26/03
 📍 _Zona bar_
 Vi piacciono i giochi da tavolo e siete appassionati anche di quiz? Allora non potrete mancare al quizzone conclusivo dell'evento.
 
