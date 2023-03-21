@@ -115,8 +115,6 @@ Grazie agli amici di [Asgard Aldeno](https://www.asgardaldeno.it/) avremo sui no
 📍 _Info Point_
 Avete dei giochi che non giocate più spesso? Volete vendere i vostri giochi usati e non sapete dove andare? Volete cercare delle buone occasioni senza spulciare mercatini online tutto il giorno? Allora venite a Ludicamp e portateli a far vedere nella nostra area dedicata al mercatino!
 
-_Il mercatino verrà gestito in conto vendita e in caso di effettiva vendita del gioco verrà trattenuto il 5% del prezzo_
-
 #### 🎟️ PESCA DI BENEFICENZA
 📍 _Info Point_
 Volete tentare la sorte ma allo stesso tempo supportare l'associazione Ludimus? Allora potete partecipare alla pesca di beneficenza che sarà presente all'ingresso durante le giornate di sabato 25/03 e domenica 26/03. Ci saranno tanti fantastici premi che abbiamo messo in palio e che potrete vincere 🎉
