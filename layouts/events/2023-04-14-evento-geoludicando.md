@@ -1,8 +1,8 @@
-event_title: Geo-ludicando: la geografia in gioco
+event_title: Notte della Geografia | Geonight 2023
 event_description: Trento, venerdì 14 aprile 2023, dalle ore 20 alle ore 23
 event_og: https://ludimus.it/static/img/events/default.jpg
 
-# Geo-ludicando: la geografia in gioco 02/04/2023
+# Geo-ludicando: la geografia in gioco | Geo-playing: geography at play
 
 📅 Venerdì 14 Aprile 2023
 🕰 dalle ore 20:00 alle ore 23:00
