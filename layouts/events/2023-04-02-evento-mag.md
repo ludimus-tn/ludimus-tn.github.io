@@ -1,12 +1,12 @@
-event_title: Game of MAG a Riva del Garda il 02/04/2022
-event_description: Vieni a giocare al Museo Alto Garda di Riva il 2 Aprile 2022!
+event_title: Game of MAG a Riva del Garda il 02/04/2023
+event_description: Vieni a giocare al Museo Alto Garda di Riva il 2 Aprile 2023!
 event_og: https://ludimus.it/static/img/events/default.jpg
 
-# Game of MAG 02/04/2022
+# Game of MAG 02/04/2023
 
 ### Vieni a giocare al Museo Alto Garda
 
-📅 Domenica 2 Aprile 2022
+📅 Domenica 2 Aprile 2023
 🕰 dalle 10:00 alle 17:00
 📍 [MAG - Riva del Garda](https://goo.gl/maps/xTsL6d3pdizXhJ6D8)
 
