@@ -200,6 +200,7 @@ section h2 {
 #serate {
     text-align: center;
     border-bottom: 1px dashed #ababab;
+    border-top: 1px dashed #ababab;
 }
 
 #serate img {
