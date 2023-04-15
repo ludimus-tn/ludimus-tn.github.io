@@ -19,7 +19,6 @@ markdowner = markdown2.Markdown()
 boardgame_tmpl = '\n'.join(open('./layouts/partials/boardgame.html').readlines())
 footer = ''.join(open('./layouts/partials/footer.html').readlines())
 league_ranking = ''.join(open('./layouts/partials/league-ranking.html').readlines())
-ludicamp_game_availability = ''.join(open('./layouts/partials/game-availability.html').readlines())
 league_rules = ''.join(markdowner.convert(open('./static/docs/league/2019-20-Regolamento.md').read().encode('utf-8')))
 style_hash = hashlib.md5(open('./style.css').read().encode('utf-8')).hexdigest()
 input_data = json.loads(''.join(open('./processors/games.json').readlines()))
@@ -146,9 +145,7 @@ with open('./layouts/informative.html') as base_games_tmpl, \
 with open('./layouts/league.html') as base_league_tmpl, \
         open('./league.html', 'w') as output_league:
     for line in base_league_tmpl:
-        if '{{ league_ranking }}' in line:
-            output_league.write(line.replace('{{ league_ranking }}', league_ranking))
-        elif '{{ footer }}' in line:
+        if '{{ footer }}' in line:
             output_league.write(line.replace('{{ footer }}', footer))
         else:
             output_league.write(line)
@@ -420,9 +417,19 @@ for post in posts:
 with open('./layouts/ludicamp.html') as base_ludicamp_tmpl, \
         open('./ludicamp.html', 'w') as output_ludicamp:
     for line in base_ludicamp_tmpl:
-        if '{{ ludicamp_game_availability }}' in line:
-            output_ludicamp.write(line.replace('{{ ludicamp_game_availability }}', ludicamp_game_availability))
-        elif '{{ footer }}' in line:
+        if '{{ footer }}' in line:
             output_ludicamp.write(line.replace('{{ footer }}', footer))
         else:
             output_ludicamp.write(line)
+
+###############################################################################
+## Cronache di Ahraniles
+###############################################################################
+
+with open('./layouts/cronache-ahraniles.html') as cronache_tmpl, \
+        open('./cronache-ahraniles.html', 'w') as output_cronache:
+    for line in cronache_tmpl:
+        if '{{ footer }}' in line:
+            output_cronache.write(line.replace('{{ footer }}', footer))
+        else:
+            output_cronache.write(line)

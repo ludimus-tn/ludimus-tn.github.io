@@ -1,7 +1,7 @@
 <html>
 
-  <head>
-	 
+<head>
+
 
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,22 +11,23 @@
 	<meta property="og:description" content="Ludimus League: il campionato di giochi da tavolo a Trento e Rovereto" />
 
 
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto+Condensed|Raleway|Roboto+Mono" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto+Condensed|Raleway|Roboto+Mono"
+		rel="stylesheet">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
-	  crossorigin="anonymous">
+		crossorigin="anonymous">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-	  crossorigin="anonymous">
+		crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
 
 	<link rel="stylesheet" href="./style.css?t={{ hash }}">
 
 	<link rel="icon" type="image/png" href="../static/img/favicon/favicon-32x32.png" sizes="32x32" />
-  <link rel="icon" type="image/png" href="../static/img/favicon/favicon-16x16.png" sizes="16x16" />
+	<link rel="icon" type="image/png" href="../static/img/favicon/favicon-16x16.png" sizes="16x16" />
 
-  </head>
+</head>
 
-  <body>
+<body>
 
 	<a href="/"><img class="go-back" src="../static/img/logo.svg" alt="ludimus"></a>
 
@@ -36,11 +37,13 @@
 				<h2>Ludimus League 2019-2020</h2>
 			</div>
 			<p class="centered-text">
-				La Ludimus League 2019-2020 è un campionato che si terrà dal <strong>30 settembre 2019</strong> al <strong>19 marzo 2020</strong>.
+				La Ludimus League 2019-2020 è un campionato che si terrà dal <strong>30 settembre 2019</strong> al
+				<strong>19 marzo 2020</strong>.
 			</p>
 			<br>
 			<p class="centered-text">
-				Partecipare è semplicissimo: basta giocare ai <a href="/league-rules.html#league_games">15 giochi</a> selezionati per le nostre serate a
+				Partecipare è semplicissimo: basta giocare ai <a href="/league-rules.html#league_games">15 giochi</a>
+				selezionati per le nostre serate a
 				<strong>Trento</strong> e <strong>Rovereto</strong> e vincerai fantastici <a href="#prizes">premi</a>.
 			</p>
 			<br>
@@ -51,134 +54,9 @@
 
 		<section class="league__ranking" id="ranking">
 			<h4 class="centered-text">Classifica</h4>
-			<script src="https://cdn.jsdelivr.net/npm/vue"></script>
-<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-
-<div id="rank">
-  <div v-if="loading">
-    <h3 class="centered-text" style="color: darkgrey;">
-      <div class="spinner">
-        <div class="bounce1"></div>
-        <div class="bounce2"></div>
-        <div class="bounce3"></div>
-      </div>
-    </h3>
-  </div>
-  <div v-else>
-    <div class="centered-text">
-      <a @click="setGameVisibility" style="color: #ec3645; cursor: pointer;"><span v-if="!areGamesVisible"> Clicca per
-          mostrare il dettaglio giochi ►</span><span v-if="areGamesVisible"> ◀︎ Nascondi dettaglio giochi</span></a>
-      <p></p>
-    </div>
-    <div class="table-responsive">
-      <table class="table table-hover table-striped" v-if="partecipants">
-        <thead class="thead-light">
-          <tr>
-            <th scope="col">Posizione</th>
-            <th scope="col">Partecipante</th>
-            <th scope="col">Partite registrate</th>
-            <th scope="col">Jolly utilizzati</th>
-            <th scope="col">Punteggio</th>
-            <th scope="col" v-show="areGamesVisible">7 Wonders Duel</th>
-            <th scope="col" v-show="areGamesVisible">Azul</th>
-            <th scope="col" v-show="areGamesVisible">Biblios</th>
-            <th scope="col" v-show="areGamesVisible">Carcassonne</th>
-            <th scope="col" v-show="areGamesVisible">Catan</th>
-            <th scope="col" v-show="areGamesVisible">Coloretto</th>
-            <th scope="col" v-show="areGamesVisible">Dixit</th>
-            <th scope="col" v-show="areGamesVisible">Kingdomino</th>
-            <th scope="col" v-show="areGamesVisible">Nome in Codice</th>
-            <th scope="col" v-show="areGamesVisible">Orleans</th>
-            <th scope="col" v-show="areGamesVisible">Pandemia</th>
-            <th scope="col" v-show="areGamesVisible">Pozioni Esplosive</th>
-            <th scope="col" v-show="areGamesVisible">Quadropolis</th>
-            <th scope="col" v-show="areGamesVisible">Santorini</th>
-            <th scope="col" v-show="areGamesVisible">Ticket to Ride</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr v-for="partecipant in partecipants" :key="partecipants.position">
-            <th scope="row">{{ partecipant.position }}°</th>
-            <td>
-              {{ partecipant.name }} {{ getFirstLetter(partecipant.lastName) }}
-            </td>
-            <td>{{ partecipant.matches }}</td>
-            <td>{{ partecipant.jolly }}</td>
-            <td>{{ partecipant.points }}</td>
-            <td v-show="areGamesVisible">{{ setGameAsPlayed(partecipant.wondersDuel) }}</td>
-            <td v-show="areGamesVisible">{{ setGameAsPlayed(partecipant.azul) }}</td>
-            <td v-show="areGamesVisible">{{ setGameAsPlayed(partecipant.biblios) }}</td>
-            <td v-show="areGamesVisible">{{ setGameAsPlayed(partecipant.carcassonne) }}</td>
-            <td v-show="areGamesVisible">{{ setGameAsPlayed(partecipant.catan) }}</td>
-            <td v-show="areGamesVisible">{{ setGameAsPlayed(partecipant.coloretto) }}</td>
-            <td v-show="areGamesVisible">{{ setGameAsPlayed(partecipant.dixit) }}</td>
-            <td v-show="areGamesVisible">{{ setGameAsPlayed(partecipant.kingdomino) }}</td>
-            <td v-show="areGamesVisible">{{ setGameAsPlayed(partecipant.nomeInCodice) }}</td>
-            <td v-show="areGamesVisible">{{ setGameAsPlayed(partecipant.orleans) }}</td>
-            <td v-show="areGamesVisible">{{ setGameAsPlayed(partecipant.pandemia) }}</td>
-            <td v-show="areGamesVisible">{{ setGameAsPlayed(partecipant.pozioniEsplosive) }}</td>
-            <td v-show="areGamesVisible">{{ setGameAsPlayed(partecipant.quadropolis) }}</td>
-            <td v-show="areGamesVisible">{{ setGameAsPlayed(partecipant.santorini) }}</td>
-            <td v-show="areGamesVisible">{{ setGameAsPlayed(partecipant.ticketToRide) }}</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
-</div>
-
-<script>
-  var app = new Vue({
-    el: "#rank",
-    data: {
-      partecipants: [],
-      loading: true,
-      areGamesVisible: false
-    },
-    mounted() {
-      this.getPartecipants()
-      this.fetchNewPartecipants()
-    },
-    destroy() { },
-    methods: {
-      getPartecipants() {
-        axios
-          .get(
-            "https://script.google.com/macros/s/AKfycbyhMbmkrZ3UozK2PZv1BIHaa2HGpxxg6n-1ynmGWRoIi-35JQo/exec"
-          )
-          .then(response => {
-            this.partecipants = response.data.partecipants;
-          })
-          .catch(error => {
-            console.error(error);
-          })
-          .finally(() => (this.loading = false));
-      },
-      getFirstLetter(data) {
-        letter = data.split('', 1)
-        firstLetter = letter[0] + '.'
-        return firstLetter
-      },
-      setGameAsPlayed(points) {
-        if (points === 0) {
-          return "-"
-        } else {
-          return points
-        }
-      },
-      setGameVisibility() {
-        return this.areGamesVisible = !this.areGamesVisible
-      },
-      fetchNewPartecipants() {
-        setInterval(() => {
-          this.getPartecipants()
-        }, 60000)
-      }
-    }
-  })
-</script>
+			{{ league_ranking }}
 		</section>
-		
+
 		<section class="league__prizes" id="prizes">
 			<h4 class="centered-text">Premi</h4>
 			<div class="container">
@@ -189,7 +67,9 @@
 						</div>
 						<div class="card-body">
 							<h5 class="card-title">Modena Play 2020 + Biglietti concerto + Buono 10€</h5>
-							<div class="card-text">Viaggio ed ingresso alla fiera Modena Play 2020 + 2 biglietti per un concerto presso Smart Lab <i>(artista e dettagli verranno annunciati prossimamente)</i> + 1 buono da 10€ spendibile presso il Simposio Bar Ristorante di Trento</div>
+							<div class="card-text">Viaggio ed ingresso alla fiera Modena Play 2020 + 2 biglietti per un
+								concerto presso Smart Lab <i>(artista e dettagli verranno annunciati prossimamente)</i>
+								+ 1 buono da 10€ spendibile presso il Simposio Bar Ristorante di Trento</div>
 						</div>
 					</div>
 					<div class="card text-center">
@@ -198,7 +78,9 @@
 						</div>
 						<div class="card-body">
 							<h5 class="card-title">Buono 15€ giochi da tavolo + 2 Buoni 10€ </h5>
-							<div class="card-text">1 Buono da 15€ spendibile per l'acquisto di giochi da tavolo + 1 buono da 10€ spendibile presso il Simposio Bar Ristorante di Trento + 1 buono da 10€ spendibile presso Smart Lab a Rovereto</div>
+							<div class="card-text">1 Buono da 15€ spendibile per l'acquisto di giochi da tavolo + 1
+								buono da 10€ spendibile presso il Simposio Bar Ristorante di Trento + 1 buono da 10€
+								spendibile presso Smart Lab a Rovereto</div>
 						</div>
 					</div>
 					<div class="card text-center">
@@ -207,7 +89,9 @@
 						</div>
 						<div class="card-body">
 							<h5 class="card-title">Tazza Ludimus + 2 Buoni 10€</h5>
-							<div class="card-text">Esclusiva tazza Ludimus + 1 buono da 10€ spendibile presso il Simposio Bar Ristorante di Trento + 1 buono da 10€ spendibile presso Smart Lab a Rovereto</div>
+							<div class="card-text">Esclusiva tazza Ludimus + 1 buono da 10€ spendibile presso il
+								Simposio Bar Ristorante di Trento + 1 buono da 10€ spendibile presso Smart Lab a
+								Rovereto</div>
 						</div>
 					</div>
 				</div>
@@ -215,7 +99,8 @@
 					<h3>Tutti possono vincere!</h3>
 					<p>
 						Tutti i concorrenti, <i>esclusi i tre primi classificati</i>, parteciperanno automaticamente
-						alla <strong>lotteria di fine League</strong> che assegnerà <strong>esclusivi gadget marchiati Ludimus</strong> ai fortunati estratti.
+						alla <strong>lotteria di fine League</strong> che assegnerà <strong>esclusivi gadget marchiati
+							Ludimus</strong> ai fortunati estratti.
 					</p>
 					<p class="centered-text">
 						<a href="/league-rules.html#league_rules"> <strong>Leggi il regolamento ⇢</strong> </a>
@@ -223,9 +108,9 @@
 				</div>
 			</div>
 		</section>
-		
+
 	</section>
-	
+
 	<footer>
     <div id="staff">
         <div class="cards-container">
@@ -299,6 +184,6 @@
     <p>Associazione "Ludimus" &bull; CF: 96110070222 &bull; P.IVA: 02683080226 <a href='informative.html'>informative e Documentazioni</a></p>
 </footer>
 
-  </body>
+</body>
 
 </html>
