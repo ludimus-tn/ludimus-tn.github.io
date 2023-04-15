@@ -27,8 +27,7 @@ Il prezzo finale sarà al massimo di 35€, più siamo e meno pagherete.
 
 ### 🕖 PARTENZA
 
-Alle 06:30 da Trento, 07:00 circa uscita autostrada Rovereto Sud
-**⚠️ Per via di modifiche alla viabilità, a Trento si partirà dalla zona della Motorizzazione e non più dalla zona Funivia ⚠️**
+Alle 06:30 da Trento zona funivia, 07:00 circa uscita autostrada Rovereto Sud
 
 ### 🕙 RIENTRO
 
