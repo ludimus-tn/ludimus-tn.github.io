@@ -17,13 +17,14 @@ Il nostro MegaGioco prende in prestito alcune dinamiche dei giochi da tavolo e l
 🕚 inizieremo ad accogliere i partecipanti e a spiegare le regole dalle 9, il gioco durerà dalle 10.00 alle 17.00
 💶 viene richiesto un contributo di 5€
 🧑 il gioco è consigliato a partecipanti con un’età minima di 16 anni
-🍔 il pranzo sarà preparato dall’associazione Drena Oltre i Confini
+🍔 il pranzo sarà preparato dall’[associazione Drena Oltre i Confini](https://m.facebook.com/doc.drena)
 
 Per i visitatori del castello, sarà possibile partecipare a una **caccia al tesoro a tema** che è rivolta a chi non partecipa al MegaGioco e adatta anche ai bambini.
 
 ---
 
-Il progetto è finanziato da Piano B - Piano Giovani Alto Garda e Ledro
+Il progetto è finanziato da [Piano B - Piano Giovani Alto Garda e Ledro](https://www.pianob.cloud/)
+
 PER ISCRIVERTI COMPILA IL FORM: [https://docs.google.com/forms/d/e/1FAIpQLScS-YH8lkLoGIwApGHjVAHoEe7cO_JYSDKwiU0o_eNb7QehNQ/viewform?usp=sf_link](https://docs.google.com/forms/d/e/1FAIpQLScS-YH8lkLoGIwApGHjVAHoEe7cO_JYSDKwiU0o_eNb7QehNQ/viewform?usp=sf_link)
 
 _Per dubbi o maggiori info scrivi alla mail [ahraniles.ludimus@gmail.com](mailto:ahraniles.ludimus@gmail.com)_
