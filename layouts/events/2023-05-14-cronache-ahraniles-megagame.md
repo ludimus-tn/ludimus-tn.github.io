@@ -13,6 +13,7 @@ Così inizia la nostra storia, ma come continuerà lo deciderete voi!
 Interpreterete i rappresentanti delle famiglie nobiliari di Ahraniles, regno dalla storia centenaria giunto a un punto di svolta. Grazie alle ricchezze delle vostre città, alla forza dei vostri eserciti e a sapienti alleanze sarete in grado di scrivere il futuro del regno.
 
 Il nostro MegaGioco prende in prestito alcune dinamiche dei giochi da tavolo e le interseca con il gioco di ruolo dal vivo, per un’esperienza immersiva di una giornata tra le suggestive mura del Castello di Drena!
+
 🗓️ 14 maggio 2023
 🕚 inizieremo ad accogliere i partecipanti e a spiegare le regole dalle 9, il gioco durerà dalle 10.00 alle 17.00
 💶 viene richiesto un contributo di 5€
