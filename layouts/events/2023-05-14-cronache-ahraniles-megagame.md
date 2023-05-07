@@ -30,6 +30,6 @@ Il progetto è finanziato da [Piano B - Piano Giovani Alto Garda e Ledro](https:
 
 [REGOLAMENTO](https://drive.google.com/file/d/1kRUFfOJAw2INJ-loClF_0okZrsfW3NwS/view?usp=sharing)
 
-PER ISCRIVERTI COMPILA IL FORM: [https://docs.google.com/forms/d/e/1FAIpQLScS-YH8lkLoGIwApGHjVAHoEe7cO_JYSDKwiU0o_eNb7QehNQ/viewform?usp=sf_link](https://docs.google.com/forms/d/e/1FAIpQLScS-YH8lkLoGIwApGHjVAHoEe7cO_JYSDKwiU0o_eNb7QehNQ/viewform?usp=sf_link)
+PER ISCRIVERTI COMPILA IL FORM **ENTRO IL 10/05**: [https://docs.google.com/forms/d/e/1FAIpQLScS-YH8lkLoGIwApGHjVAHoEe7cO_JYSDKwiU0o_eNb7QehNQ/viewform?usp=sf_link](https://docs.google.com/forms/d/e/1FAIpQLScS-YH8lkLoGIwApGHjVAHoEe7cO_JYSDKwiU0o_eNb7QehNQ/viewform?usp=sf_link)
 
 _Per dubbi o maggiori info scrivi alla mail [ahraniles.ludimus@gmail.com](mailto:ahraniles.ludimus@gmail.com)_
