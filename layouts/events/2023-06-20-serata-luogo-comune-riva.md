@@ -1,5 +1,5 @@
 event_title: Serata Giochi al Luogo Comune di Riva del Garda
-event_description: Martedì 20 Giugno 2023 vieni a giocare con Ludimus al Luogo Comune di Riva del Garda!
+event_description: Ultima serata Ludimus al Luogo Comune di Riva del Garda per la stagione 2022/23 il 20 Giugno 2023!
 event_og: https://ludimus.it/static/img/events/default_riva.jpg
 
 # Serata Giochi da Tavolo a Riva del Garda

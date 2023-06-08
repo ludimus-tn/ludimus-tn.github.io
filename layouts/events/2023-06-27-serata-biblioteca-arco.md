@@ -1,10 +1,10 @@
-event_title: Serata Giochi alla Biblioteca di Arco
-event_description: Martedì 27 Giugno 2023 vieni a giocare con Ludimus alla Biblioteca di Arco!
+event_title: ULTIMA Serata Giochi alla Biblioteca di Arco
+event_description: Ultima serata della stagione 2022/23 alla Biblioteca di Arco il 27 Giugno 2023!
 event_og: https://ludimus.it/static/img/events/default_arco.png
 
 # Serata Giochi da Tavolo ad Arco
 
-### Partecipa alla serata alla Biblioteca di Arco
+### Ultima serata Ludimus alla Biblioteca di Arco
 
 📅 Martedì 27 Giugno 2023
 🕰 dalle 19:30 alle 23:00

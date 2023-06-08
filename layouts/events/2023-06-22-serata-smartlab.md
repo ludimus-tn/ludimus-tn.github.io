@@ -1,10 +1,10 @@
-event_title: Serata Giochi a Rovereto
-event_description: Giovedì 22 Giugno 2023 vieni a giocare con Ludimus a Smart Lab!
+event_title: ULTIMA Serata Giochi a Rovereto
+event_description: Ultima serata a Smart Lab per questa stagione 2022/23 il 22 Giugno 2023!
 event_og: https://ludimus.it/static/img/events/default_rovereto.png
 
 # Serata Giochi a Rovereto
 
-### Vieni a giocare alle serate settimanali di Ludimus a Rovereto!
+### Ultima serata Ludimus a Rovereto per questa stagione!
 
 📅 Giovedì 22 Giugno 2023
 🕰 dalle 20:00 in poi
