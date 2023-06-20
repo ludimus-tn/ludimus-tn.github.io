@@ -226,6 +226,21 @@
    "thumbnail": "https://cf.geekdo-images.com/S3ybV1LAp-8SnHIXLLjVqA__thumb/img/oqViRj6nVxK3m36NluTxU1PZkrk=/fit-in/200x150/filters:strip_icc()/pic1534148.jpg"
   },
   {
+   "idBGG": 31016,
+   "rankBGG": 24274,
+   "nomeGioco": "We Didn't Playtest This At All",
+   "autore": "Chris Cieslik",
+   "votoMedio": 5.43283,
+   "pesoMedio": 1.0845,
+   "numeroVoti": 3455,
+   "proprietari": "Ludimus",
+   "numGiocatori": "Min:2 - Max:10",
+   "annoPubblicazione": 2007,
+   "durata": 10,
+   "image": "https://cf.geekdo-images.com/Le_02RvuMsKA1LtnBIGG9A__original/img/n7GsIXrxIGMEuppv6ZUg6WiXz5Q=/0x0/filters:format(jpeg)/pic477199.jpg",
+   "thumbnail": "https://cf.geekdo-images.com/Le_02RvuMsKA1LtnBIGG9A__thumb/img/IyBgcp8miXNoTWLWWnwBvFfo5LI=/fit-in/200x150/filters:strip_icc()/pic477199.jpg"
+  },
+  {
    "idBGG": 34219,
    "rankBGG": 395,
    "nomeGioco": "Biblios",
@@ -571,6 +586,21 @@
    "thumbnail": "https://cf.geekdo-images.com/MabiuZo226P_M7PO8AJTWA__thumb/img/WTTPtTgmU6b_glj8FGrqsEErNFI=/fit-in/200x150/filters:strip_icc()/pic2688992.jpg"
   },
   {
+   "idBGG": 134453,
+   "rankBGG": 1352,
+   "nomeGioco": "The Little Prince: Make Me a Planet",
+   "autore": "Antoine Bauza,Bruno Cathala",
+   "votoMedio": 6.89547,
+   "pesoMedio": 1.5739,
+   "numeroVoti": 3753,
+   "proprietari": "Ludimus",
+   "numGiocatori": "Min:2 - Max:5",
+   "annoPubblicazione": 2013,
+   "durata": 25,
+   "image": "https://cf.geekdo-images.com/qrSFj8YArH-rUAwpUaTpPw__original/img/hzOdnLpx_JUNrvKUyTHsv95J0q0=/0x0/filters:format(jpeg)/pic3083205.jpg",
+   "thumbnail": "https://cf.geekdo-images.com/qrSFj8YArH-rUAwpUaTpPw__thumb/img/S8jwzlcCFgk1UwU966TipcK0DQE=/fit-in/200x150/filters:strip_icc()/pic3083205.jpg"
+  },
+  {
    "idBGG": 136991,
    "rankBGG": 969,
    "nomeGioco": "Loony Quest",
@@ -751,6 +781,21 @@
    "thumbnail": "https://cf.geekdo-images.com/wLW7pFn0--20lEizEz5p3A__thumb/img/P49TUiytgjmRAtKsfO7Y3yU_xic=/fit-in/200x150/filters:strip_icc()/pic2270442.jpg"
   },
   {
+   "idBGG": 163967,
+   "rankBGG": 312,
+   "nomeGioco": "Tiny Epic Galaxies",
+   "autore": "Scott Almes",
+   "votoMedio": 7.3445,
+   "pesoMedio": 2.154,
+   "numeroVoti": 19444,
+   "proprietari": "Ludimus",
+   "numGiocatori": "Min:1 - Max:5",
+   "annoPubblicazione": 2015,
+   "durata": 45,
+   "image": "https://cf.geekdo-images.com/c_87h8o0AOrfCO3hxMjjrA__original/img/a1VPd_zbaoq3vthJxghgsnt2AyM=/0x0/filters:format(jpeg)/pic2349732.jpg",
+   "thumbnail": "https://cf.geekdo-images.com/c_87h8o0AOrfCO3hxMjjrA__thumb/img/OPNd-zRznLHOLfNDIN8rdhSMHPM=/fit-in/200x150/filters:strip_icc()/pic2349732.jpg"
+  },
+  {
    "idBGG": 163968,
    "rankBGG": 496,
    "nomeGioco": "Elysium",
@@ -779,6 +824,21 @@
    "durata": 90,
    "image": "https://cf.geekdo-images.com/nagl1li6kYt9elV9jbfVQw__original/img/Qn6vlBaTUaHNFsqohIUjd0EA4z0=/0x0/filters:format(jpeg)/pic6228507.jpg",
    "thumbnail": "https://cf.geekdo-images.com/nagl1li6kYt9elV9jbfVQw__thumb/img/ykeqdM_Naz4IiqOgyB1arzteOiU=/fit-in/200x150/filters:strip_icc()/pic6228507.jpg"
+  },
+  {
+   "idBGG": 168788,
+   "rankBGG": 2094,
+   "nomeGioco": "Rum & Bones",
+   "autore": "Michael Shinall",
+   "votoMedio": 6.89692,
+   "pesoMedio": 2.322,
+   "numeroVoti": 1869,
+   "proprietari": "Ludimus",
+   "numGiocatori": "Min:2 - Max:6",
+   "annoPubblicazione": 2015,
+   "durata": 60,
+   "image": "https://cf.geekdo-images.com/UhShS2hLt3bV8Eg4RO5-ZQ__original/img/bG_C_BID602-hLyMwXBkLiubyW0=/0x0/filters:format(jpeg)/pic3954085.jpg",
+   "thumbnail": "https://cf.geekdo-images.com/UhShS2hLt3bV8Eg4RO5-ZQ__thumb/img/KFj2-GxWazu8PlHaUZb9ALqMeVw=/fit-in/200x150/filters:strip_icc()/pic3954085.jpg"
   },
   {
    "idBGG": 172818,
@@ -944,6 +1004,36 @@
    "durata": 15,
    "image": "https://cf.geekdo-images.com/F_KDEu0GjdClml8N7c8Imw__original/img/gcX_EfjsRpB5fI4Ug4XV73G4jGI=/0x0/filters:format(jpeg)/pic2582929.jpg",
    "thumbnail": "https://cf.geekdo-images.com/F_KDEu0GjdClml8N7c8Imw__thumb/img/yl8iXxSNwguMeg3KkmfFO9SMVVc=/fit-in/200x150/filters:strip_icc()/pic2582929.jpg"
+  },
+  {
+   "idBGG": 179794,
+   "rankBGG": 11065,
+   "nomeGioco": "Me Want Cookies!",
+   "autore": "Roberto Fraga",
+   "votoMedio": 5.97162,
+   "pesoMedio": 1.1,
+   "numeroVoti": 267,
+   "proprietari": "Ludimus",
+   "numGiocatori": "Min:2 - Max:5",
+   "annoPubblicazione": 2015,
+   "durata": 10,
+   "image": "https://cf.geekdo-images.com/xICT94ogRj3CNZ-b9BFsdQ__original/img/4cLCYNuWEdrYS6Mytdz7EGC6gh0=/0x0/filters:format(png)/pic2584954.png",
+   "thumbnail": "https://cf.geekdo-images.com/xICT94ogRj3CNZ-b9BFsdQ__thumb/img/GoPTjvdnPvEIMeWnMn1XPltZf80=/fit-in/200x150/filters:strip_icc()/pic2584954.png"
+  },
+  {
+   "idBGG": 180459,
+   "rankBGG": 22976,
+   "nomeGioco": "Wikipedia: The Game About Everything",
+   "autore": "",
+   "votoMedio": 5.34517,
+   "pesoMedio": 1.2857,
+   "numeroVoti": 209,
+   "proprietari": "Ludimus",
+   "numGiocatori": "Min:2 - Max:4",
+   "annoPubblicazione": 2015,
+   "durata": 30,
+   "image": "https://cf.geekdo-images.com/mqF7rCWznElkOk43to8yKg__original/img/2RucXG4y_YMTSIiZVnT3ihoskSw=/0x0/filters:format(jpeg)/pic2661981.jpg",
+   "thumbnail": "https://cf.geekdo-images.com/mqF7rCWznElkOk43to8yKg__thumb/img/E1RLeYNOS1ZajQ2LgD9v0mEchlA=/fit-in/200x150/filters:strip_icc()/pic2661981.jpg"
   },
   {
    "idBGG": 180974,
@@ -1154,6 +1244,36 @@
    "durata": 20,
    "image": "https://cf.geekdo-images.com/665Ply7Ho1WVf1v1iZlWeg__original/img/4q6RCxd7st-yW2MyrJwVC_d3ajk=/0x0/filters:format(png)/pic3283110.png",
    "thumbnail": "https://cf.geekdo-images.com/665Ply7Ho1WVf1v1iZlWeg__thumb/img/BKnSb6kAhpVFHV8cyUXrs3EF_dw=/fit-in/200x150/filters:strip_icc()/pic3283110.png"
+  },
+  {
+   "idBGG": 197443,
+   "rankBGG": 820,
+   "nomeGioco": "Fugitive",
+   "autore": "Tim Fowers",
+   "votoMedio": 7.1705,
+   "pesoMedio": 1.6706,
+   "numeroVoti": 5030,
+   "proprietari": "Ludimus",
+   "numGiocatori": "Min:2 - Max:2",
+   "annoPubblicazione": 2017,
+   "durata": 20,
+   "image": "https://cf.geekdo-images.com/Jeukp3NUs-u6i3SuF-yE4A__original/img/X8-dbZ1EzlwOUAe3CuwKBRztTMY=/0x0/filters:format(png)/pic3481216.png",
+   "thumbnail": "https://cf.geekdo-images.com/Jeukp3NUs-u6i3SuF-yE4A__thumb/img/1cw7pZbdLk2bBFh-tjkwzZXwgmw=/fit-in/200x150/filters:strip_icc()/pic3481216.png"
+  },
+  {
+   "idBGG": 199025,
+   "rankBGG": null,
+   "nomeGioco": "OrgoglioNerd: Area Stampa",
+   "autore": "Giacomo Maltagliati",
+   "votoMedio": 5.645,
+   "pesoMedio": 1.0,
+   "numeroVoti": 20,
+   "proprietari": "Ludimus",
+   "numGiocatori": "Min:2 - Max:6",
+   "annoPubblicazione": 2016,
+   "durata": 20,
+   "image": "https://cf.geekdo-images.com/kyyOmyza45iN0CjXu_5Paw__original/img/SC-oi0XNkVQMzv_vX6PnbD2rY0Y=/0x0/filters:format(png)/pic3107373.png",
+   "thumbnail": "https://cf.geekdo-images.com/kyyOmyza45iN0CjXu_5Paw__thumb/img/e_c7zyFPeT646NdBHKzh6QDnUJE=/fit-in/200x150/filters:strip_icc()/pic3107373.png"
   },
   {
    "idBGG": 199561,
@@ -1409,6 +1529,21 @@
    "durata": 45,
    "image": "https://cf.geekdo-images.com/tz19PfklMdAdjxV9WArraA__original/img/eFRt3o7W6YltnrkqpiSOKr2rKCw=/0x0/filters:format(jpeg)/pic3718275.jpg",
    "thumbnail": "https://cf.geekdo-images.com/tz19PfklMdAdjxV9WArraA__thumb/img/debo694HgBaIBeNGyxu1ELUbQGA=/fit-in/200x150/filters:strip_icc()/pic3718275.jpg"
+  },
+  {
+   "idBGG": 233247,
+   "rankBGG": 677,
+   "nomeGioco": "Civilization: A New Dawn",
+   "autore": "James Kniffen",
+   "votoMedio": 7.26796,
+   "pesoMedio": 3.1454,
+   "numeroVoti": 6282,
+   "proprietari": "Ludimus",
+   "numGiocatori": "Min:2 - Max:4",
+   "annoPubblicazione": 2017,
+   "durata": 120,
+   "image": "https://cf.geekdo-images.com/S0GM2Mxfh8Tmvsdeog0W0g__original/img/VAuHAXQZXWYFXlwbPqbwmmiSv_w=/0x0/filters:format(jpeg)/pic3764168.jpg",
+   "thumbnail": "https://cf.geekdo-images.com/S0GM2Mxfh8Tmvsdeog0W0g__thumb/img/FmFQ2XURW1ndAFqlvnUYV7cxCAA=/fit-in/200x150/filters:strip_icc()/pic3764168.jpg"
   },
   {
    "idBGG": 235375,
@@ -1681,6 +1816,21 @@
    "thumbnail": "https://cf.geekdo-images.com/kBZGJlIqir1I_EVCr2nDbg__thumb/img/mSl669ndQnGcsmKfe0Yppc1XvbI=/fit-in/200x150/filters:strip_icc()/pic4853794.jpg"
   },
   {
+   "idBGG": 276631,
+   "rankBGG": null,
+   "nomeGioco": "Throne: I Guardiani di Kalesh",
+   "autore": "Fabio Napolitano",
+   "votoMedio": 8.27778,
+   "pesoMedio": 3.0,
+   "numeroVoti": 9,
+   "proprietari": "Ludimus",
+   "numGiocatori": "Min:2 - Max:8",
+   "annoPubblicazione": 2019,
+   "durata": 90,
+   "image": "https://cf.geekdo-images.com/_sMKNeIqaQcks5PIVJFquA__original/img/aDYYXBrOwMacNf6zqm1mt6mu3E0=/0x0/filters:format(png)/pic4666896.png",
+   "thumbnail": "https://cf.geekdo-images.com/_sMKNeIqaQcks5PIVJFquA__thumb/img/ITpPC3hEu3-ocjStcWQSEi_rzkU=/fit-in/200x150/filters:strip_icc()/pic4666896.png"
+  },
+  {
    "idBGG": 284083,
    "rankBGG": 48,
    "nomeGioco": "The Crew: The Quest for Planet Nine",
@@ -1771,6 +1921,21 @@
    "thumbnail": "https://cf.geekdo-images.com/8fz_EITlrSNDlAQB09Fa8Q__thumb/img/x8W_orHGaTVoElOr1Hwhq9ilvKc=/fit-in/200x150/filters:strip_icc()/pic5322307.jpg"
   },
   {
+   "idBGG": 307369,
+   "rankBGG": 16700,
+   "nomeGioco": "Instacrime: Munford",
+   "autore": "Francisco Gallego Arredondo",
+   "votoMedio": 5.8671,
+   "pesoMedio": 2.0,
+   "numeroVoti": 108,
+   "proprietari": "Ludimus",
+   "numGiocatori": "Min:2 - Max:6",
+   "annoPubblicazione": 2020,
+   "durata": 60,
+   "image": "https://cf.geekdo-images.com/pteAw3EyrSAfBU-0-lk50Q__original/img/UotiKIwWXjAhCS-KQiAmShWH8ZU=/0x0/filters:format(jpeg)/pic5649819.jpg",
+   "thumbnail": "https://cf.geekdo-images.com/pteAw3EyrSAfBU-0-lk50Q__thumb/img/_6L2my6t1ktGkQGPHFAkD0zxvP8=/fit-in/200x150/filters:strip_icc()/pic5649819.jpg"
+  },
+  {
    "idBGG": 312484,
    "rankBGG": 32,
    "nomeGioco": "Lost Ruins of Arnak",
@@ -1784,6 +1949,21 @@
    "durata": 120,
    "image": "https://cf.geekdo-images.com/6GqH14TJJhza86BX5HCLEQ__original/img/CXqwimJPonWy1oyXEMgPN_ZVmUI=/0x0/filters:format(jpeg)/pic5674958.jpg",
    "thumbnail": "https://cf.geekdo-images.com/6GqH14TJJhza86BX5HCLEQ__thumb/img/J8SVmGOJXZGxNjkT3xYNQU7Haxg=/fit-in/200x150/filters:strip_icc()/pic5674958.jpg"
+  },
+  {
+   "idBGG": 318084,
+   "rankBGG": 376,
+   "nomeGioco": "Furnace",
+   "autore": "Ivan Lashin",
+   "votoMedio": 7.4406,
+   "pesoMedio": 2.2713,
+   "numeroVoti": 8534,
+   "proprietari": "Ludimus",
+   "numGiocatori": "Min:2 - Max:4",
+   "annoPubblicazione": 2020,
+   "durata": 60,
+   "image": "https://cf.geekdo-images.com/7UK6bLlP0Cz3EFYCqhtcSw__original/img/jc4av13AOJpkqfvcpJ39HyoeCoM=/0x0/filters:format(png)/pic5934958.png",
+   "thumbnail": "https://cf.geekdo-images.com/7UK6bLlP0Cz3EFYCqhtcSw__thumb/img/7WjwLTkySTiSMQu89ClZRhspd5Q=/fit-in/200x150/filters:strip_icc()/pic5934958.png"
   },
   {
    "idBGG": 318977,
@@ -1919,6 +2099,51 @@
    "durata": 25,
    "image": "https://cf.geekdo-images.com/T5nRnFlmfthJFY7fdHmF-g__original/img/HjJ3MmUFw4vlxgHTW1R_Mq0HPiY=/0x0/filters:format(png)/pic6467297.png",
    "thumbnail": "https://cf.geekdo-images.com/T5nRnFlmfthJFY7fdHmF-g__thumb/img/31j3i1izBvG-xkGXUobznFutMNI=/fit-in/200x150/filters:strip_icc()/pic6467297.png"
+  },
+  {
+   "idBGG": 348096,
+   "rankBGG": 2482,
+   "nomeGioco": "Kites",
+   "autore": "Kevin Hamano",
+   "votoMedio": 7.07791,
+   "pesoMedio": 1.1579,
+   "numeroVoti": 1103,
+   "proprietari": "Ludimus",
+   "numGiocatori": "Min:2 - Max:6",
+   "annoPubblicazione": 2022,
+   "durata": 10,
+   "image": "https://cf.geekdo-images.com/TIEYwnIRV6kvAEnFkYe2OA__original/img/F_I7FrEWXrTcl-3fYOgC4OZcryQ=/0x0/filters:format(png)/pic6858706.png",
+   "thumbnail": "https://cf.geekdo-images.com/TIEYwnIRV6kvAEnFkYe2OA__thumb/img/ysbEGf4Z0tNnYPSnGOH8tw5sa8Y=/fit-in/200x150/filters:strip_icc()/pic6858706.png"
+  },
+  {
+   "idBGG": 364478,
+   "rankBGG": null,
+   "nomeGioco": "Mini Crimes: La Strana Coppa",
+   "autore": "Remo Conzadori,Simone sime Peracchi,Francesco Pieraccini,Fabio Trudu",
+   "votoMedio": 7.25,
+   "pesoMedio": 0.0,
+   "numeroVoti": 8,
+   "proprietari": "Ludimus",
+   "numGiocatori": "Min:1 - Max:8",
+   "annoPubblicazione": 2022,
+   "durata": 30,
+   "image": "https://cf.geekdo-images.com/qLq-oytt4KuSDOtOcaPhdw__original/img/L8-SZAv7uHbJmnebUt1y1jHL_Mk=/0x0/filters:format(png)/pic6937125.png",
+   "thumbnail": "https://cf.geekdo-images.com/qLq-oytt4KuSDOtOcaPhdw__thumb/img/DH8Wsp37GiG4V-lXLnDpUYbTKK8=/fit-in/200x150/filters:strip_icc()/pic6937125.png"
+  },
+  {
+   "idBGG": 366013,
+   "rankBGG": 78,
+   "nomeGioco": "Heat: Pedal to the Metal",
+   "autore": "Asger Harding Granerud,Daniel Skjold Pedersen",
+   "votoMedio": 8.1685,
+   "pesoMedio": 2.1673,
+   "numeroVoti": 8664,
+   "proprietari": "Ludimus",
+   "numGiocatori": "Min:1 - Max:6",
+   "annoPubblicazione": 2022,
+   "durata": 60,
+   "image": "https://cf.geekdo-images.com/-vOrd4bOspibyohYExLqWg__original/img/iXU8a9WaVlwrkiEiOxWN06y9y5g=/0x0/filters:format(png)/pic6940449.png",
+   "thumbnail": "https://cf.geekdo-images.com/-vOrd4bOspibyohYExLqWg__thumb/img/2GbaKvYOzWIxfgbYTk2R9puiyzo=/fit-in/200x150/filters:strip_icc()/pic6940449.png"
   }
  ]
 }
