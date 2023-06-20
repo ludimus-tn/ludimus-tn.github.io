@@ -1,20 +1,11 @@
-event_title: Serata Giochi a Trento
-event_description: Lunedì 26 Giugno 2023 vieni a giocare con Ludimus al Bar Simposio!
+event_title: Niente serata giochi a Trento
+event_description: Il 26 giugno la serata al Simposio salta per via delle festività! Ci rivediamo a Trento il 03 Luglio 2023!
 event_og: https://ludimus.it/static/img/events/default_trento.png
 
-# Serata Giochi da Tavolo a Trento
+# Niente serata giochi a Trento il 24/04/2023
 
-### Vieni a giocare alle serate settimanali di Ludimus a Trento!
+Vi aspettiamo il prossimo lunedì:
 
-📅 Lunedì 26 Giugno
+📅 Lunedì 03 Luglio 2023
 🕰 dalle 19:00 in poi
 📍 [Il Simposio Bar Ristorante](https://g.page/ilsimposiotrento?share)
-
----
-
-🎲 **Come funziona?**
-
-Voi venite, noi ci mettiamo i giochi (tanti giochi!)
-Vedete qualcosa che conoscete? Potete giocarci!
-Volete provare qualcosa ma non ne conoscete le regole? I nostri esperti saranno pronti a spiegarvi tutto quel che c'è da sapere.
-Non avete mai provato un gioco da tavolo in vita vostra, ma siete curiosi? Fate un salto, abbiamo il gioco adatto a voi!
