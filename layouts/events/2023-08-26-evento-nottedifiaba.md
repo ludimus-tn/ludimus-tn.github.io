@@ -9,5 +9,6 @@ event_og: https://ludimus.it/static/img/events/default.jpg
 📅 Sabato 26 e Domenica 27 Agosto 2023
 🕰 TBA
 📍 [Riva del Garda](https://goo.gl/maps/H3CUa9HdyYXv9xL29)
+🔗 [Sito evento](https://www.nottedifiaba.it/)
 
 _Maggiori dettagli verranno aggiunti prossimamente_

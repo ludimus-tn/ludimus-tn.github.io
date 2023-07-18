@@ -4,10 +4,11 @@ event_og: https://ludimus.it/static/img/events/default.jpg
 
 # Ludimus x Festival dei Sogni e del Fumetto
 
-### Quest'anno ci saremo anche noi durante la notte di Fiaba
+### Quest'anno ci saremo anche noi al Festival dei Sogni e del Fumetto
 
 📅 Sabato 09 e Domenica 10 Settembre 2023
 🕰 TBA
 📍 [Fiera Bolzano](https://goo.gl/maps/h7rcc2VHS4VNhSK78)
+🔗 [Sito festival](https://www.festivaldeisogniedelfumetto.it/)
 
 _Maggiori dettagli verranno aggiunti prossimamente_
