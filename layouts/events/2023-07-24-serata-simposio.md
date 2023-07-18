@@ -1,8 +1,8 @@
-event_title: Serata Giochi a Trento
-event_description: Lunedì 24 Luglio 2023 vieni a giocare con Ludimus al Bar Simposio!
+event_title: Serata Giochi a Trento (ultima prima della pausa estiva)
+event_description: Ultimo lunedì prima della pausa estiva!
 event_og: https://ludimus.it/static/img/events/default_trento.png
 
-# Serata Giochi da Tavolo a Trento
+# ULTIMA Serata Giochi da Tavolo a Trento prima della pausa estiva
 
 ### Vieni a giocare alle serate settimanali di Ludimus a Trento!
 
