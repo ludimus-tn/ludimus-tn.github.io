@@ -26,6 +26,7 @@ blog_post_tmpl = open('./layouts/partials/blog-post.html').readlines()
 blog_preview_tmpl = open('./layouts/partials/blog-preview.html').readlines()
 event_link_tmpl = open('./layouts/partials/event-link.html').readlines()
 events_tmpl = open('./layouts/partials/event.html').readlines()
+escaperoom_link_tmpl = open('./layouts/partials/escaperoom-link.html').readlines()
 
 board_games = []
 for item in sorted(input_data.get('items', []), key=lambda x: x.get('votoMedio', 0), reverse=True):
@@ -84,6 +85,8 @@ for post in sorted(glob.glob('./layouts/blog/*')):
     blog_file_to_tmpl[post] = output_blog_tmpl
 
 events = sorted(glob.glob('./layouts/events/*'), reverse=True)
+
+escaperooms = sorted(glob.glob('./layouts/escaperooms/*'), reverse=True)
 
 ###############################################################################
 ## Homepage
@@ -423,7 +426,7 @@ with open('./layouts/ludicamp.html') as base_ludicamp_tmpl, \
             output_ludicamp.write(line)
 
 ###############################################################################
-## Cronache di Ahraniles
+## CRONACHE AHRANILES
 ###############################################################################
 
 with open('./layouts/cronache-ahraniles.html') as cronache_tmpl, \
@@ -433,3 +436,67 @@ with open('./layouts/cronache-ahraniles.html') as cronache_tmpl, \
             output_cronache.write(line.replace('{{ footer }}', footer))
         else:
             output_cronache.write(line)
+
+###############################################################################
+## ESCAPEROOMS
+###############################################################################
+
+next_escaperooms = []
+for escaperoom in sorted(escaperooms, reverse=False):
+    escaperoom_name = escaperoom.replace('./layouts/escaperooms/', '')
+    escaperoom_date_tmp = escaperoom_name[:10].split('-')
+    escaperoom_day = int(escaperoom_date_tmp[2])
+    escaperoom_month = int(escaperoom_date_tmp[1])
+    escaperoom_year = int(escaperoom_date_tmp[0])
+
+    escaperoom_date = datetime(escaperoom_year, escaperoom_month, escaperoom_day)
+    now = datetime.now()
+
+    next_escaperooms.append(escaperoom)
+
+with open('./layouts/escaperooms.html') as base_escaperooms_tmpl, \
+        open('./escaperooms.html', 'w') as output_escaperooms:
+    for line in base_escaperooms_tmpl:
+        if '{{ footer }}' in line:
+            output_escaperooms.write(line.replace('{{ footer }}', footer))
+        
+        for escaperoom in next_escaperooms:
+            escaperoom_name = escaperoom.replace('./layouts/escaperooms/', '')
+            escaperoom_title = escaperoom_name[10:].replace('.html', '').replace('.md', '').replace('-', ' ').title()
+            escaperoom_date_tmp = escaperoom_name[:10].split('-')
+            escaperoom_date = '{}/{}/{}'.format(escaperoom_date_tmp[2], escaperoom_date_tmp[1], escaperoom_date_tmp[0])
+            escaperoom_url = escaperoom_name
+
+            escaperoom_body = open(escaperoom).readlines()
+            for escaperoom_line in escaperoom_body:
+                if 'escaperoom_title: ' in escaperoom_line:
+                    escaperoom_title = escaperoom_line.replace('escaperoom_title: ', '').strip()
+
+            for line in escaperoom_link_tmpl:
+                if '{{ title }}' in line:
+                    output_escaperooms.write(line.replace('{{ title }}', escaperoom_title))
+                elif '{{ date }}' in line:
+                    output_escaperooms.write(line.replace('{{ date }}', escaperoom_date))
+                elif '{{ escaperoom_url }}' in line:
+                    output_escaperooms.write(line.replace('{{ escaperoom_url }}', escaperoom_url))
+                else:
+                    output_escaperooms.write(line)
+        else:
+            output_escaperooms.write(line)
+
+
+# ###############################################################################
+# ## ESCAPEROOM
+# ###############################################################################
+
+# escaperooms = glob.glob('./layouts/escaperooms/*')
+# for escaperoom in escaperooms:
+#     escaperoom_name = escaperoom.rsplit('/', 1)[1]
+
+#     with open(escaperoom) as escaperoom_tmpl, \
+#             open('./escaperooms/{}'.format(escaperoom_name), 'w+') as output_escaperoom:
+#         for line in cronache_tmpl:
+#             if '{{ footer }}' in line:
+#                 output_escaperoom.write(line.replace('{{ footer }}', footer))
+#             else:
+#                 output_escaperoom.write(line)
