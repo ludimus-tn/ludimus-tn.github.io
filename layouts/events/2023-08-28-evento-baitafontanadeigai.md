@@ -8,7 +8,7 @@ event_og: https://ludimus.it/static/img/events/event_baitafontanadeigai2023.jpeg
 
 📅 Lunedì 28 Agosto 2023
 🕰 dalle 18:00
-📍 [Baita Fontana dei Gai - Strada per Maranza, 38123 Trento](https://goo.gl/maps/H3CUa9HdyYXv9xL29)
+📍 Baita Fontana dei Gai - Strada per Maranza, 38123 Trento
 
 ---
 
