@@ -11,7 +11,7 @@ event_og: https://ludimus.it/static/img/events/event_bolzanofierafumetto2023.jpg
 📍 [Fiera Bolzano](https://goo.gl/maps/h7rcc2VHS4VNhSK78)
 🔗 [Sito festival](https://www.festivaldeisogniedelfumetto.it/)
 
-Ci troverete alla fiera con una delle nostre **Escape Room** e **Stracòt**!
+Ci troverete alla fiera con una delle nostre **Escape Room** e **Stracòt**! Per entrambe le attività non è richiesta la prenotazione, sarà disponibile solo la prenotazione in loco!
 
 Il programma delle due giornate è disponibile qui: [https://www.festivaldeisogniedelfumetto.it/programma/](https://www.festivaldeisogniedelfumetto.it/programma/)
 

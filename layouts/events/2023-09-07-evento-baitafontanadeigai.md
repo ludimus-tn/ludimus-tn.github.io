@@ -1,13 +1,13 @@
 event_title: Ludimus alla Baita Fontana dei Gai
-event_description: Vieni a giocare lunedì 28 agosto alla baita Fontana dei Gai!
+event_description: Vieni a giocare giovedì 07 settembre alla baita Fontana dei Gai!
 event_og: https://ludimus.it/static/img/events/event_baitafontanadeigai2023.jpeg
 
 # Ludimus alla Baita Fontana dei Gai
 
 ### Tantissimi giochi e tanta socializzazione
 
-📅 Lunedì 28 Agosto 2023
-🕰 dalle 18:00
+📅 Giovedì 07 Settembre 2023
+🕰 dalle 18:00 alle 21:00
 📍 Baita Fontana dei Gai - Strada per Maranza, 38123 Trento
 
 ---
