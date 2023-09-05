@@ -15,7 +15,7 @@ Ci troverete alla fiera con una delle nostre **Escape Room** e **Stracòt**! Per
 
 Il programma delle due giornate è disponibile qui: [https://www.festivaldeisogniedelfumetto.it/programma/](https://www.festivaldeisogniedelfumetto.it/programma/)
 
-## Area Platesting
+#### Area Playtesting
 Hai creato un gioco da tavolo, di carte o di ruolo?
 Hai un prototipo in uno stato abbastanza avanzato da poterlo presentare?
 
