@@ -441,46 +441,11 @@ with open('./layouts/cronache-ahraniles.html') as cronache_tmpl, \
 ## ESCAPEROOMS
 ###############################################################################
 
-next_escaperooms = []
-for escaperoom in sorted(escaperooms, reverse=False):
-    escaperoom_name = escaperoom.replace('./layouts/escaperooms/', '')
-    escaperoom_date_tmp = escaperoom_name[:10].split('-')
-    escaperoom_day = int(escaperoom_date_tmp[2])
-    escaperoom_month = int(escaperoom_date_tmp[1])
-    escaperoom_year = int(escaperoom_date_tmp[0])
-
-    escaperoom_date = datetime(escaperoom_year, escaperoom_month, escaperoom_day)
-    now = datetime.now()
-
-    next_escaperooms.append(escaperoom)
-
 with open('./layouts/escaperooms.html') as base_escaperooms_tmpl, \
         open('./escaperooms.html', 'w') as output_escaperooms:
     for line in base_escaperooms_tmpl:
         if '{{ footer }}' in line:
             output_escaperooms.write(line.replace('{{ footer }}', footer))
-        
-        for escaperoom in next_escaperooms:
-            escaperoom_name = escaperoom.replace('./layouts/escaperooms/', '')
-            escaperoom_title = escaperoom_name[10:].replace('.html', '').replace('.md', '').replace('-', ' ').title()
-            escaperoom_date_tmp = escaperoom_name[:10].split('-')
-            escaperoom_date = '{}/{}/{}'.format(escaperoom_date_tmp[2], escaperoom_date_tmp[1], escaperoom_date_tmp[0])
-            escaperoom_url = escaperoom_name
-
-            escaperoom_body = open(escaperoom).readlines()
-            for escaperoom_line in escaperoom_body:
-                if 'escaperoom_title: ' in escaperoom_line:
-                    escaperoom_title = escaperoom_line.replace('escaperoom_title: ', '').strip()
-
-            for line in escaperoom_link_tmpl:
-                if '{{ title }}' in line:
-                    output_escaperooms.write(line.replace('{{ title }}', escaperoom_title))
-                elif '{{ date }}' in line:
-                    output_escaperooms.write(line.replace('{{ date }}', escaperoom_date))
-                elif '{{ escaperoom_url }}' in line:
-                    output_escaperooms.write(line.replace('{{ escaperoom_url }}', escaperoom_url))
-                else:
-                    output_escaperooms.write(line)
         else:
             output_escaperooms.write(line)
 

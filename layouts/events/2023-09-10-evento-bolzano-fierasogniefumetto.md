@@ -19,4 +19,4 @@ Il programma delle due giornate è disponibile qui: [https://www.festivaldeisogn
 Hai creato un gioco da tavolo, di carte o di ruolo?
 Hai un prototipo in uno stato abbastanza avanzato da poterlo presentare?
 
-Al Festival dei Sogni e del Fumetto ci sarà un’area dedicata anche agli autori di nuovi giochi da tavolo, di ruolo o di carte! Se hai un prototipo contatta Alessandro Vidotto alla mail: [mailto:alessandro.vidotto@404scs.com](alessandro.vidotto@404scs.com) o al telefono **+39 348 1446846**. Il termine di iscrizione è il 31 agosto!
+Al Festival dei Sogni e del Fumetto ci sarà un’area dedicata anche agli autori di nuovi giochi da tavolo, di ruolo o di carte! Se hai un prototipo contatta Alessandro Vidotto alla mail: alessandro.vidotto@404scs.com o al telefono **+39 348 1446846**. Il termine di iscrizione è il 31 agosto!
