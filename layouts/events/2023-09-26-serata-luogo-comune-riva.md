@@ -1,12 +1,12 @@
 event_title: Serata Giochi al Luogo Comune di Riva del Garda
-event_description: Martedì 12 Settembre 2023 vieni a giocare con Ludimus al Luogo Comune di Riva del Garda!
+event_description: Martedì 26 Settembre 2023 vieni a giocare con Ludimus al Luogo Comune di Riva del Garda!
 event_og: https://ludimus.it/static/img/events/default_riva.jpg
 
 # Serata Giochi da Tavolo a Riva del Garda
 
 ### Partecipa alla serata al Luogo Comune di Riva del Garda
 
-📅 Martedì 12 Settembre 2023
+📅 Martedì 26 Settembre 2023
 🕰 dalle 19:00 in poi
 📍 [Luogo Comune - Via Italo Marchi 13 Riva del Garda](https://goo.gl/maps/8cXExW6hLPMwV1yF9)
 

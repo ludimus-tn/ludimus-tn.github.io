@@ -1,12 +1,12 @@
 event_title: Serata Giochi a Trento
-event_description: Lunedì 11 Settembre 2023 vieni a giocare con Ludimus al Bar Simposio!
+event_description: Lunedì 25 Settembre 2023 vieni a giocare con Ludimus al Bar Simposio!
 event_og: https://ludimus.it/static/img/events/default_trento.png
 
 # Serata Giochi da Tavolo a Trento
 
 ### Vieni a giocare alle serate settimanali di Ludimus a Trento!
 
-📅 Lunedì 11 Settembre
+📅 Lunedì 25 Settembre
 🕰 dalle 19:00 in poi
 📍 [Il Simposio Bar Ristorante](https://g.page/ilsimposiotrento?share)
 
