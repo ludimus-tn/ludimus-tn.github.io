@@ -1,5 +1,5 @@
 event_title: Serata Giochi a Rovereto
-event_description: Giovedì 05 Ottobre Luglio 2023 vieni a giocare con Ludimus a Smart Lab!
+event_description: Giovedì 05 Ottobre 2023 vieni a giocare con Ludimus a Smart Lab!
 event_og: https://ludimus.it/static/img/events/default_rovereto.png
 
 # Serata Giochi da Tavolo a Rovereto
