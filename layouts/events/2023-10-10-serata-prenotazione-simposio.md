@@ -29,4 +29,4 @@ L'evento viene pubblicato circa una settimana prima su EventBrite. [👉 PRENOTA
 - **Posso portare un mio gioco?** Certo! Prendi il biglietto "gioco libero" e proponilo ai tuoi compagni di tavolo
 - **E se non posso più venire?** Annulla la prenotazione o contattaci
 
-Per qualsiasi questione, non esitare a scriverci a [ludimustrento@gmail.com](mailto:ludimustrento@gmail.com)
+Per qualsiasi questione, non esitare a scriverci a [info@ludimus.it](mailto:info@ludimus.it)
