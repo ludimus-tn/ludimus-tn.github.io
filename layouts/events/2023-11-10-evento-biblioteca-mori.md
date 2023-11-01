@@ -1,10 +1,10 @@
 event_title: Pomeriggio di Giochi alla Biblioteca Comunale di Mori
 event_description: Venerdì 10 novembre dalle 14:30 alle 17:30 vieni a giocare alla Biblioteca Comunale di Mori!
-event_og: https://ludimus.it/static/img/events/2023-11-11_event_bibliotecamori.jpg
+event_og: https://ludimus.it/static/img/events/2023-11-10_event_bibliotecamori.jpg
 
 # Pomeriggio di Giochi alla Biblioteca Comunale di Mori
 
-![](https://ludimus.it/static/img/events/2023-11-11_event_bibliotecamori.jpg)
+![](https://ludimus.it/static/img/events/2023-11-10_event_bibliotecamori.jpg)
 
 ### Vieni a giocare con la collezione di giochi Ludimus e della biblioteca!
 
