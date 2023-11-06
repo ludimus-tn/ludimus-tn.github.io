@@ -1,23 +1,11 @@
-event_title: Serata Giochi ad Avio
-event_description: Mercoledì 08 Novembre 2023 vieni a giocare con Ludimus al Bicigrill Ruota Libera di Avio!
+event_title: Niente Serata Giochi ad Avio
+event_description: Niente serata l'08 Novembre 2023 causa chiusura per ferie del Bicigrill Ruota Libera
 event_og: https://ludimus.it/static/img/events/default.jpg
 
-# Serata Giochi da Tavolo ad Avio
+# Niente Serata Giochi da Tavolo ad Avio
 
-### Vieni a giocare con Ludimus ad Avio!
+Dall'8 al 20 novembre il Bicigrill Ruota Libera sarà chiuso per ferie! Prossimo appuntamento:
 
-📅 Mercoledì 08 Novembre 2023
+📅 Mercoledì 22 Novembre 2023
 🕰 dalle 19:00 in poi
 📍 [Bicigrill Ruota Libera](https://goo.gl/maps/mw4eXgwcE4hmBt5R6)
-
-Venite a provare tantissimi nuovi e travolgenti giochi da tavolo al BiciGrill Ruota Libera di Avio!
-Appuntamento alle ore 19:00 per la cena e dalle 20:00 alle 23:00 si gioca 🎲
-
----
-
-🎲 **Come funziona?**
-
-Voi venite, noi ci mettiamo i giochi (tanti giochi!)
-Vedete qualcosa che conoscete? Potete giocarci!
-Volete provare qualcosa ma non ne conoscete le regole? I nostri esperti saranno pronti a spiegarvi tutto quel che c'è da sapere.
-Non avete mai provato un gioco da tavolo in vita vostra, ma siete curiosi? Fate un salto, abbiamo il gioco adatto a voi!
