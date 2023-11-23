@@ -31,7 +31,6 @@ Rovereto 38068 TN
 📍 [Maps](http://bit.ly/SmartLabMaps)
 
 - 🚗 Se vieni in macchina cerca di riempire tutti i posti! 🚗
-- Offri o cerca un passaggio scrivendo un post nell'evento
 - Oppure raggiungi Smart Lab utilizzando le tue gambe o il servizio pubblico:
 - 🚶‍♂️25 minuti a piedi dalla Stazione di Rovereto
 - 🚌Trasporto urbano: Linee 1, 3, 6, N3, N6 controlla gli orari qui: [http://www.ttesercizio.it/Urbano/](http://www.ttesercizio.it/Urbano/) 
