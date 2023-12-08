@@ -6,7 +6,7 @@ event_og: https://ludimus.it/static/img/events/2023-12-02-17_escape-rischio-tra-
 
 ![](https://ludimus.it/static/img/events/2023-12-02-17_escape-rischio-tra-i-ghiacci-ala.jpg)
 
-### Duranti i weekend di Natale nei palazzi barocchi di Ala ci saremo presenti con una escape room
+### Partecipa alla nostra escape room duranti i weekend di "Natale nei palazzi barocchi di Ala"
 
 📅 02-03, 08-09-10, 16-17 Dicembre 2023
 🕰 Dalle 15:00 alle 19:00
