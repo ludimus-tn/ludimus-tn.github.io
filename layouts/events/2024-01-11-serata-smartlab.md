@@ -1,12 +1,12 @@
 event_title: Serata Giochi a Rovereto
-event_description: Giovedì 21 Dicembre 2023 vieni a giocare con Ludimus a Smart Lab!
+event_description: Giovedì 11 Gennaio 2024 vieni a giocare con Ludimus a Smart Lab!
 event_og: https://ludimus.it/static/img/events/default_rovereto.png
 
 # Serata Giochi a Rovereto
 
 ### Vieni a giocare alle serate settimanali di Ludimus a Rovereto!
 
-📅 Giovedì 21 Dicembre 2023
+📅 Giovedì 11 Gennaio 2024
 🕰 dalle 20:00 in poi
 📍 [Centro Giovani SmartLab - Rovereto](http://bit.ly/SmartLabMaps)
 
