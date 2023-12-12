@@ -1,13 +1,13 @@
-event_title: Serata Giochi a Trento (ultima per il 2023)
-event_description: Lunedì 18 Dicembre 2023 vieni a giocare con Ludimus al Bar Simposio!
+event_title: Serata Giochi a Trento
+event_description: Lunedì 22 Gennaio 2024 vieni a giocare con Ludimus al Bar Simposio!
 event_og: https://ludimus.it/static/img/events/default_trento.png
 
 # Serata Giochi da Tavolo a Trento
 
 ### Vieni a giocare alle serate settimanali di Ludimus a Trento!
 
-📅 Lunedì 18 Dicembre
-🕰 dalle 19:00 in poi
+📅 Lunedì 22 Gennaio 2024
+🕰 dalle 21:00
 📍 [Il Simposio Bar Ristorante](https://g.page/ilsimposiotrento?share)
 
 ---
