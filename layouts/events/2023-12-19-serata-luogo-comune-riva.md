@@ -7,7 +7,7 @@ event_og: https://ludimus.it/static/img/events/default_riva.jpg
 ### Partecipa alla serata al Luogo Comune di Riva del Garda
 
 📅 Martedì 10 Dicembre 2023
-🕰 dalle 19:00 in poi
+🕰 dalle 19:30 in poi
 📍 [Luogo Comune - Via Italo Marchi 13 Riva del Garda](https://goo.gl/maps/8cXExW6hLPMwV1yF9)
 
 ---
