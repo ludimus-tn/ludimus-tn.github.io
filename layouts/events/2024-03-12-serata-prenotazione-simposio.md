@@ -1,12 +1,12 @@
 event_title: Serata Giochi su Prenotazione a Trento
-event_description: Martedì 05 Marzo 2024 prenotati e vieni a giocare con Ludimus al Simposio!
+event_description: Martedì 12 Marzo 2024 prenotati e vieni a giocare con Ludimus al Simposio!
 event_og: https://ludimus.it/static/img/events/default_trento.png
 
 # Serata Giochi da Tavolo su Prenotazione a Trento
 
 ### Ludimus Trento raddoppia! I migliori giochi da tavola anche di martedì e con la prenotazione del tavolo!
 
-📅 Martedì 05 Marzo 2024
+📅 Martedì 12 Marzo 2024
 🕰 dalle 20:30
 📍 [Il Simposio Bar Ristorante](https://g.page/ilsimposiotrento?share)
 
