@@ -1,5 +1,5 @@
 event_title: Serata Giochi a Le Petit Jardin
-event_description: Vieni a giocare con noi martedì 16 aprile 2024 dalle 19:30 alle 23:00
+event_description: Vieni a giocare con noi martedì 16 aprile 2024 dalle 19:00 alle 22:00
 event_og: https://ludimus.it/static/img/events/default.jpg
 
 # Serata Giochi da Tavolo a Trento
@@ -7,7 +7,7 @@ event_og: https://ludimus.it/static/img/events/default.jpg
 ### Vieni a giocare a Le Petit Jardin!
 
 📅 Domenica 16 Aprile 2024
-🕰 dalle 19:30 alle 23:00
+🕰 dalle 19:00 alle 22:00
 📍 [Le Petit Jardin](https://maps.app.goo.gl/U9uA4TX7iBysQA3p8)
 
 ---
