@@ -1,4 +1,4 @@
-event_title: Serata Giochi a Trento
+event_title: Serata Giochi a Trento (ANNULLATA)
 event_description: Lunedì 15 Aprile 2024 vieni a giocare con Ludimus al Bar Simposio!
 event_og: https://ludimus.it/static/img/events/default_trento.png
 
