@@ -1,8 +1,10 @@
 event_title: Stracòt al PlayMUSE
 event_description: Gioca anche tu a Stracòt domenica 2 giugno al MUSE!
-event_og: https://ludimus.it/static/img/events/default.jpg
+event_og: https://ludimus.it/static/img/events/2024-06-02_playmuse.jpeg
 
 # Stracòt al PlayMUSE
+
+![PlayMUSE 2024](https://ludimus.it/static/img/events/2024-06-02_playmuse.jpeg)
 
 ### Stracòt vi aspetta domenica 2 giugno 2024
 
