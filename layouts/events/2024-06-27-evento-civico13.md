@@ -4,6 +4,8 @@ event_og: https://ludimus.it/static/img/events/2024-06_event_civico13.png
 
 # Ludos in Tabula
 
+![Ludos in Tabula](https://ludimus.it/static/img/events/2024-06_event_civico13.png)
+
 ### Due fantastici eventi in collaborazione con Civico13
 
 📅 Giovedì 13 e giovedì 27 giugno 2024
