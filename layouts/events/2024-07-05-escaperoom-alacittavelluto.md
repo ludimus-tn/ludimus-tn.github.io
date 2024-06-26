@@ -9,7 +9,7 @@ event_og: https://ludimus.it/static/img/events/2024-07-05-06-07_escaperoom-alaci
 ### Vieni ad Ala Città di Velluto
 
 📅 05-06-07 Luglio 2024
-📍 [Palazzo Pizzini di Ala](https://goo.gl/maps/HnyH8ZEngGvAowsC7)
+📍 [Via Roma Ala](https://maps.app.goo.gl/BGnSqHVJewkn2eWt5)
 
 ---
 
