@@ -4,6 +4,8 @@ event_og: https://ludimus.it/static/img/events/2024-07-05-06-07_escaperoom-alaci
 
 # Escape Room - Gli Spartiti di Mozart
 
+![Escape Room - Gli Spartiti di Mozart](https://ludimus.it/static/img/events/2024-07-05-06-07_escaperoom-alacittavelluto.jpeg)
+
 ### Vieni ad Ala Città di Velluto
 
 📅 05-06-07 Luglio 2024
