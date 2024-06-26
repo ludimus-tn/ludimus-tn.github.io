@@ -10,7 +10,7 @@ event_og: https://ludimus.it/static/img/events/2024-06-28_event_bibliotecapergin
 
 📅 Venerdì 28 Giugno 2024
 🕰 dalle 15:00 alle 18:00
-📍 [Biblioteca sovracomunale di Pergine Valsugana e Valle del Fersina](https://maps.app.goo.gl/7YHe7NZrrnUyVHGF9)
+📍 [Biblioteca sovracomunale di Pergine Valsugana e Valle del Fersina](https://maps.app.goo.gl/bjWkBYk9EcAm8tGSA)
 
 Venite a provare tantissimi nuovi e travolgenti giochi da tavolo alla Biblioteca sovracomunale di Pergine Valsugana e Valle del Fersina!
 
