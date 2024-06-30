@@ -195,7 +195,7 @@ for event in sorted(events, reverse=True):
     event_date = datetime(event_year, event_month, event_day)
     now = datetime.now()
 
-    if event_date >= now:
+    if event_date > now:
         continue
     archived_events.append(event)
 
@@ -244,7 +244,7 @@ for event in sorted(events, reverse=False):
     event_date = datetime(event_year, event_month, event_day)
     now = datetime.now()
 
-    if event_date < now:
+    if event_date <= now:
         continue
     next_events.append(event)
 
