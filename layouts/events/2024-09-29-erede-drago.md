@@ -2,7 +2,7 @@ event_title: L'Erede del Drago
 event_description: Il 29 Settembre 2024 a Drena
 event_og: https://ludimus.it/static/img/events/default.jpg
 
-# Ludimus x Rovereto Comics
+# L'Erede del Drago
 
 ### Vieni a giocare con noi a Rovereto Comics
 
