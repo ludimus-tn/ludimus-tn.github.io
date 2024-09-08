@@ -2,6 +2,8 @@ event_title: L'Erede del Drago - Murder Party
 event_description: Il 29 Settembre 2024 a Drena partecipa a L'Erede del Drago - Murder PArty
 event_og: https://ludimus.it/static/img/events/2024-09-29_event-erede-drago.jpg
 
+# L’Erede del Drago – Murder Party
+
 ![Erede del Drago](https://ludimus.it/static/img/events/2024-09-29_event-erede-drago.jpg)
 
 Ehi! Chi sa cos’è un murder party? Una cena con delitto dite? Fuochino! 
