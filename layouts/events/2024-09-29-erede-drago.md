@@ -20,6 +20,6 @@ Ogni personaggio ha i suoi obiettivi, le sue risorse e soprattutto… i suoi seg
 ---
 
 **PER ISCRIVERTI COMPILA IL FORM** (iscrizioni aperte fino ad esaurimento posti): 
-https://docs.google.com/forms/d/e/1FAIpQLSe5J4JXjNcT59TjILhnKsDCNQqiFA3moBfdc67jPHGBI4Qg-Q/viewform
+[LINK AL FORM](https://docs.google.com/forms/d/e/1FAIpQLSe5J4JXjNcT59TjILhnKsDCNQqiFA3moBfdc67jPHGBI4Qg-Q/viewform)
 
 Per dubbi o maggiori info scrivi alla mail: [davide.andreoli@ludimus.it](mailto:davide.andreoli@ludimus.it)
