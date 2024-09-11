@@ -1,8 +1,10 @@
 event_title: Ludimus x Rovereto Comics
 event_description: Il 14 e 15 settembre ti aspettiamo a Rovereto Comics
-event_og: https://ludimus.it/static/img/events/event_roveretocomics2024.jpg
+event_og: https://ludimus.it/static/img/events/event_roveretocomics2024.png
 
 # Ludimus x Rovereto Comics
+
+![Rovereto Comics 2024](https://ludimus.it/static/img/events/event_roveretocomics2024.png)
 
 ### Vieni a giocare con noi a Rovereto Comics
 

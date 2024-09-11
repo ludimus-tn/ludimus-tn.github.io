@@ -4,13 +4,14 @@ event_og: https://ludimus.it/static/img/events/event_roveretocomics2024.png
 
 # Ludimus x Rovereto Comics
 
-![Rovereto Comics](https://ludimus.it/static/img/events/event_roveretocomics2024.png)
+![Rovereto Comics 2024](https://ludimus.it/static/img/events/event_roveretocomics2024.png)
 
 ### Vieni a giocare con noi a Rovereto Comics
 
 📅 Sabato 14 e Domenica 15 Settembre 2024
 🕰 dalle 10:00 alle 19:00
 📍 [Giardino delle Sculture del MART](https://goo.gl/maps/vwTCB69XvfG5N2NP7)
+🔗 [Sito con Programma Completo](https://www.bibliotecacivica.rovereto.tn.it/Eventi-e-attivita/ROVERETO-COMICS-2024)
 
 #### INFO EVENTO
 
