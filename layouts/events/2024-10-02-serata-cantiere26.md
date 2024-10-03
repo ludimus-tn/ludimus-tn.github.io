@@ -8,7 +8,7 @@ event_og: https://ludimus.it/static/img/events/default_arco.png
 
 📅 Mercoledì 02 Ottobre 2024
 🕰 dalle 19:30 alle 23:00
-📍 📍 [Cantiere26](https://g.page/Cantiere26?share)
+📍 [Cantiere26](https://g.page/Cantiere26?share)
 
 ---
 
