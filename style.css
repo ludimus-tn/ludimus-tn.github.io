@@ -1081,7 +1081,6 @@ em.post-date {
     flex-wrap: wrap;
     justify-content: space-around;
     margin-bottom: 3rem;
-    align-self: stretch;
 }
 
 #tshirt .tshirts-images > div {
@@ -1105,6 +1104,12 @@ em.post-date {
 #tshirt .tshirts-images > div > p {
     font-family: monospace;
     color: darkgray;
+    text-align: center;
+}
+
+#tshirt .tshirts-images > div > h6 {
+    font-weight: bold;
+    font-size: 1rem;
     text-align: center;
 }
 
