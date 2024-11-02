@@ -12,7 +12,7 @@ L'abbiamo aspettata un anno intero, e in tre giorni **se n'è andata via**. Per 
 Per tutti voi che non siete riusciti a raggiungerci in quel di Modena i**l 7 Aprile**, e per tutti quelli che non sono riusciti ad andarci proprio, abbiamo pensato bene di **documentare** il nostro viaggio **nella più importante** manifestazione italiana dedicata ai giochi da tavolo. 
 Volete vedere?
 
-[ _Guardate il nostro album di **Modena Play** su **Facebook**!_ ]((https://www.facebook.com/pg/ludimusTN/photos/?tab=album&album_id=2100169810200597))
+[ _Guardate il nostro album di **Modena Play** su **Facebook**!_ ]((https://www.facebook.com/ludimus.it/photos/?tab=album&album_id=2100169810200597))
 
 ![](../static/img/blog/play/salmone.gif)
 _Il Salmone Felice ve lo comanda!_

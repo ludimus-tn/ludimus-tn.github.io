@@ -58,5 +58,5 @@ All'arrivo a Trento sono passate 16 ore dalla nostra partenza e, di queste, 11 l
 
 ## Le foto
 
-Se siete curiosi di vedere tutte le foto fatte in fiera, potete trovarle sul nostro [album Facebook](https://www.facebook.com/pg/ludimusTN/photos/?tab=album&album_id=2314916492059260)!
+Se siete curiosi di vedere tutte le foto fatte in fiera, potete trovarle sul nostro [album Facebook](https://www.facebook.com/ludimus.it/photos/?tab=album&album_id=2314916492059260)!
 

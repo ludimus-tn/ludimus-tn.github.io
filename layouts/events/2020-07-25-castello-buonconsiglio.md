@@ -44,7 +44,7 @@ Questo evento è in collaborazione con Castello del Buonconsiglio. Monumenti e c
 
 Seguici su:
 
-- [Pagina Facebook](https://www.facebook.com/ludimusTN/)
-- [Instagram](https://www.instagram.com/ludimustrento/)
+- [Pagina Facebook](https://www.facebook.com/ludimus.it/)
+- [Instagram](https://www.instagram.com/ludimus.it/)
 - [Telegram](https://t.me/ludimus)
-- [Twitter](https://twitter.com/ludimustrento)
+- [Twitter](https://twitter.com/ludimus_it)
