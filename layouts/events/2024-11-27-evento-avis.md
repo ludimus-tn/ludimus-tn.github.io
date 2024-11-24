@@ -6,7 +6,7 @@ event_og: https://ludimus.it/static/img/events/2024-11-27_event_ludavis.png
 
 ![](https://ludimus.it/static/img/events/2024-11-27_event_ludavis.png)
 
-### Viani a giocare con noi e provare CAPITAN AVIS
+### Vieni a giocare con noi e provare CAPITAN AVIS
 
 📅 Giovedì 27 novembre
 🕰 dalle 19:30 alle 24:00
