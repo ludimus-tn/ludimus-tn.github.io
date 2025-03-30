@@ -1,5 +1,5 @@
 event_title: Speck&Tech #73
-event_description: Giovedì 27 novembre dalle 19:30 alle 24:00 vieni a giocare al circolo Paganini!
+event_description: Martedì 25 Marzo 2025 in collaborazione con Spech&Tech e Smart Lab parleremo di femminismo, IA, ruoli di genere, polizia predittiva, giochi da tavolo, algoritmi e molto altro!
 event_og: https://ludimus.it/static/img/events/default.jpg
 
 # Speck&Tech #73
