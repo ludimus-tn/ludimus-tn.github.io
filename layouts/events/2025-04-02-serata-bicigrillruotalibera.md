@@ -1,12 +1,12 @@
 event_title: Serata Giochi ad Avio
-event_description: Mercoledì 19 Marzo 2025 vieni a giocare con Ludimus al Bicigrill Ruota Libera di Avio!
+event_description: Mercoledì 02 Aprile 2025 vieni a giocare con Ludimus al Bicigrill Ruota Libera di Avio!
 event_og: https://ludimus.it/static/img/events/default.jpg
 
 # Serata Giochi da Tavolo ad Avio
 
 ### Vieni a giocare con Ludimus ad Avio!
 
-📅 Mercoledì 19 Marzo 2025
+📅 Mercoledì 02 Aprile 2025
 🕰 dalle 19:00 in poi
 📍 [Bicigrill Ruota Libera](https://goo.gl/maps/mw4eXgwcE4hmBt5R6)
 
