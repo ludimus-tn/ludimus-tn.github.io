@@ -6,6 +6,7 @@ import os
 import hashlib
 import markdown2
 import re
+import os
 from random import Random
 
 
@@ -285,9 +286,32 @@ with open('./layouts/events.html') as base_events_tmpl, \
 ## EVENT
 ###############################################################################
 
-events = glob.glob('./layouts/events/*')
+static_events = [
+    "bicigrillruotalibera",
+    "cantiere26",
+    "luogo-comune-riva",
+    "simposio",
+    "smartlab",
+]
+
+done = {event: False for event in static_events}
+
+events = sorted(glob.glob('./layouts/events/*'), reverse=True)
 for event in events:
     event_name = event.rsplit('/', 1)[1]
+    
+    must_do_static = False
+    try:
+        event_type = event_name.split('serata-')
+        if len(event_type) >= 2:
+            event_type = event_type[1].split('.')[0]
+            if event_type in static_events:
+                date = datetime.datetime.strptime(event_name[:10], '%Y-%m-%d')
+                today = datetime.datetime.now()
+                if today <= date <= today + datetime.timedelta(days=7):
+                    must_do_static = True
+    except IndexError:
+        pass
 
     with open(event) as event_tmpl, \
             open('./events/{}'.format(event_name.replace('.md', '.html')), 'w+') as output_event:
@@ -330,6 +354,17 @@ for event in events:
                 output_event.write(line.replace('{{ event_og }}', og_image))
             else:
                 output_event.write(line)
+
+        if must_do_static:
+            if not done[event_type]:
+                with open('./events/{}.html'.format(event_type), 'w') as static_event:
+                    static_event.write('<meta http-equiv="refresh" content="0; url=/events/{}.html" />'.format(event_name.replace('.md', '')))
+                    done[event_type] = True
+
+    for static_event in static_events:
+        if not done[static_event]:
+            with open('./events/{}.html'.format(static_event), 'w') as static_event:
+                static_event.write('<meta http-equiv="refresh" content="0; url=/events" />'.format(static_event))
 
 ###############################################################################
 ## T-Shirt Requirements
