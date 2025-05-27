@@ -4,7 +4,7 @@ event_og: https://ludimus.it/static/img/events/default.jpg
 
 # Pergine Comics il 21 e 22 Giugno
 
-![Pergine Comics 2025](https://ludimus.it/static/img/events/2025-06-21-22_pergine-comics.jpeg)
+![Pergine Comics 2025](https://ludimus.it/static/img/events/2025-06-21-22_pergine-comics.png)
 
 [ℹ️ Programma Completo](https://drive.google.com/file/d/1TqaJHMbRQ-orR2ZcrmEVY8D8Iej5nZGc/view)
 
