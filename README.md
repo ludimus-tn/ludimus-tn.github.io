@@ -19,3 +19,9 @@
 ## How to deploy
 
 - git commit -am "do something cool" && git push
+
+
+## Environment variables
+
+- `SHUFFLE_BLOG_LINKS`: (default: False) if set to True, the suggested links in blog posts will be shuffled
+- `DO_BLOG_POSTS`: (default: False) if set to True, blog posts will be generated

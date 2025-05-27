@@ -360,6 +360,9 @@ with open('./layouts/gas.html') as gas_tmpl, \
 ###############################################################################
 
 posts = glob.glob('./layouts/blog/*')
+do_posts = os.getenv('DO_BLOG_POSTS', False)
+if not do_posts:
+    posts = []
 for post in posts:
     post_name = post.rsplit('/', 1)[1]
 
@@ -406,7 +409,9 @@ for post in posts:
                 output_post.write(line.replace('{{ blog_post_og }}', og_image))
             elif '{{ blog_post_read_more }}' in line:
                 post_blogs_links = list(set(glob.glob('./layouts/blog/*')) - {post})
-                Random(post).shuffle(post_blogs_links)
+                use_random = os.getenv('SHUFFLE_BLOG_LINKS', False)
+                if use_random:
+                    Random(post).shuffle(post_blogs_links)
                 read_more_files = post_blogs_links[:4]
                 for post in read_more_files:
                     output_post.write(blog_file_to_tmpl[post])
