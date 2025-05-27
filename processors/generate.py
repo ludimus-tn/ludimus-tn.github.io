@@ -1,5 +1,5 @@
 from ast import If
-from datetime import datetime
+import datetime
 import glob
 import json
 import os
@@ -192,8 +192,8 @@ for event in sorted(events, reverse=True):
     event_month = int(event_date_tmp[1])
     event_year = int(event_date_tmp[0])
 
-    event_date = datetime(event_year, event_month, event_day)
-    now = datetime.now()
+    event_date = datetime.datetime(event_year, event_month, event_day)
+    now = datetime.datetime.now()
 
     if event_date > now:
         continue
@@ -241,8 +241,8 @@ for event in sorted(events, reverse=False):
     event_month = int(event_date_tmp[1])
     event_year = int(event_date_tmp[0])
 
-    event_date = datetime(event_year, event_month, event_day)
-    now = datetime.now()
+    event_date = datetime.datetime(event_year, event_month, event_day)
+    now = datetime.datetime.now()
 
     if event_date <= now:
         continue
