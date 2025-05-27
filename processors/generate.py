@@ -1,11 +1,12 @@
 from ast import If
-from datetime import datetime
+import datetime
 import glob
 import json
 import os
 import hashlib
 import markdown2
 import re
+import os
 from random import Random
 
 
@@ -192,8 +193,8 @@ for event in sorted(events, reverse=True):
     event_month = int(event_date_tmp[1])
     event_year = int(event_date_tmp[0])
 
-    event_date = datetime(event_year, event_month, event_day)
-    now = datetime.now()
+    event_date = datetime.datetime(event_year, event_month, event_day)
+    now = datetime.datetime.now()
 
     if event_date > now:
         continue
@@ -241,8 +242,8 @@ for event in sorted(events, reverse=False):
     event_month = int(event_date_tmp[1])
     event_year = int(event_date_tmp[0])
 
-    event_date = datetime(event_year, event_month, event_day)
-    now = datetime.now()
+    event_date = datetime.datetime(event_year, event_month, event_day)
+    now = datetime.datetime.now()
 
     if event_date <= now:
         continue
@@ -285,9 +286,32 @@ with open('./layouts/events.html') as base_events_tmpl, \
 ## EVENT
 ###############################################################################
 
-events = glob.glob('./layouts/events/*')
+static_events = [
+    "bicigrillruotalibera",
+    "cantiere26",
+    "luogo-comune-riva",
+    "simposio",
+    "smartlab",
+]
+
+done = {event: False for event in static_events}
+
+events = sorted(glob.glob('./layouts/events/*'), reverse=True)
 for event in events:
     event_name = event.rsplit('/', 1)[1]
+    
+    must_do_static = False
+    try:
+        event_type = event_name.split('serata-')
+        if len(event_type) >= 2:
+            event_type = event_type[1].split('.')[0]
+            if event_type in static_events:
+                date = datetime.datetime.strptime(event_name[:10], '%Y-%m-%d')
+                today = datetime.datetime.now()
+                if today <= date <= today + datetime.timedelta(days=7):
+                    must_do_static = True
+    except IndexError:
+        pass
 
     with open(event) as event_tmpl, \
             open('./events/{}'.format(event_name.replace('.md', '.html')), 'w+') as output_event:
@@ -331,6 +355,17 @@ for event in events:
             else:
                 output_event.write(line)
 
+        if must_do_static:
+            if not done[event_type]:
+                with open('./events/{}.html'.format(event_type), 'w') as static_event:
+                    static_event.write('<meta http-equiv="refresh" content="0; url=/events/{}.html" />'.format(event_name.replace('.md', '')))
+                    done[event_type] = True
+
+    for static_event in static_events:
+        if not done[static_event]:
+            with open('./events/{}.html'.format(static_event), 'w') as static_event:
+                static_event.write('<meta http-equiv="refresh" content="0; url=/events" />'.format(static_event))
+
 ###############################################################################
 ## T-Shirt Requirements
 ###############################################################################
@@ -360,6 +395,9 @@ with open('./layouts/gas.html') as gas_tmpl, \
 ###############################################################################
 
 posts = glob.glob('./layouts/blog/*')
+do_posts = os.getenv('DO_BLOG_POSTS', False)
+if not do_posts:
+    posts = []
 for post in posts:
     post_name = post.rsplit('/', 1)[1]
 
@@ -406,7 +444,9 @@ for post in posts:
                 output_post.write(line.replace('{{ blog_post_og }}', og_image))
             elif '{{ blog_post_read_more }}' in line:
                 post_blogs_links = list(set(glob.glob('./layouts/blog/*')) - {post})
-                Random(post).shuffle(post_blogs_links)
+                use_random = os.getenv('SHUFFLE_BLOG_LINKS', False)
+                if use_random:
+                    Random(post).shuffle(post_blogs_links)
                 read_more_files = post_blogs_links[:4]
                 for post in read_more_files:
                     output_post.write(blog_file_to_tmpl[post])
