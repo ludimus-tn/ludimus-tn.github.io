@@ -1,4 +1,4 @@
-event_title: Serata Giochi a Trento con AVIS
+event_title: Serata Giochi a Trento
 event_description: Lunedì 09 Giugno 2025 vieni a giocare con Ludimus al Bar Simposio!
 event_og: https://ludimus.it/static/img/events/default_trento.png
 
