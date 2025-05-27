@@ -2,3 +2,5 @@
 .idea
 tmp
 .vscode/settings.json
+.direnv
+.envrc
