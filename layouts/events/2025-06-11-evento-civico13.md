@@ -4,11 +4,9 @@ event_og: https://ludimus.it/static/img/events/2025-06-11_event_civico13.png
 
 # Ludos in Tabula
 
-![Locandina Ludos in Tabula 11 giugno 2025](https://ludimus.it/static/img/events/2025-06-11_event_civico13.png)
-
 ### Partecipa all'evento in collaborazione con Civico13
 
-📅 Mercoledì 11 Giugno 2024
+📅 Mercoledì 11 Giugno 2025
 🕰 dalle 18:00 alle 20:00
 📍 [Civico 13, via Belenzani 13 Trento](https://g.page/sportellogiovanitrentino?share)
 
