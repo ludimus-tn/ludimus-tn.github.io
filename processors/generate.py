@@ -289,6 +289,7 @@ with open('./layouts/events.html') as base_events_tmpl, \
 static_events = [
     "bicigrillruotalibera",
     "cantiere26",
+    "le-petit-jardin",
     "luogo-comune-riva",
     "simposio",
     "smartlab",
