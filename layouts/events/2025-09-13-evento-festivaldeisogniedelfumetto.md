@@ -4,7 +4,9 @@ event_og: https://ludimus.it/static/img/events/2025-09-13-14_festivaldeisogniede
 
 # Ludimus x Festival dei Sogni e del Fumetto
 
-### Quest'anno ci saremo anche noi al Festival dei Sogni e del Fumetto
+![Ludimus x Festival dei Sogni e del Fumetto](https://ludimus.it/static/img/events/2025-09-13-14_festivaldeisogniedelfumetto.png)
+
+### Ci saremo anche noi al Festival dei Sogni e del Fumetto
 
 📅 Sabato 13 e Domenica 14 Settembre 2025
 🕰 dalle 10:00 alle 20:00 orario continuato
