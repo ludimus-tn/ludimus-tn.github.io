@@ -1,8 +1,10 @@
 event_title: Pomeriggio di Giochi alla Biblioteca Comunale di Trento
 event_description: Sabato 20 Settembre 2025 dalle 14:30 alle 18:00 vieni a giocare alla Biblioteca Comunale di Trento!
-event_og: https://ludimus.it/static/img/events/2024-10-11-12_event_bibliotecatrento.png
+event_og: https://ludimus.it/static/img/events/2025-09-20_event_bibliotecatrento.png
 
 # Pomeriggio di Giochi alla Biblioteca Comunale di Trento
+
+![](https://ludimus.it/static/img/events/2025-09-20_event_bibliotecatrento.png)
 
 ### Vieni a giocare con la collezione di giochi Ludimus e della biblioteca!
 
