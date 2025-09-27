@@ -1,12 +1,12 @@
 event_title: Serata Giochi a Pergine Valsugana
-event_description: Martedì 30 Settembre 2025 vieni a giocare con Ludimus al Biergarten Mönchshof Ristorante Pizzeria di Pergine Valsugana!
+event_description: Giovedì 02 Ottobre 2025 vieni a giocare con Ludimus al Biergarten Mönchshof Ristorante Pizzeria di Pergine Valsugana!
 event_og: https://ludimus.it/static/img/events/default.jpg
 
 # Serata Giochi da Tavolo a Pergine Valsugana
 
 ### Vieni a giocare con Ludimus ad Pergine Valsugana!
 
-📅 Martedì 30 Settembre 2025
+📅 Giovedì 02 Ottobre 2025
 🕰 dalle 19:00 in poi
 📍 [Biergarten Mönchshof Ristorante Pizzeria](https://maps.app.goo.gl/vthcbUG4yPN5EBY1A)
 
