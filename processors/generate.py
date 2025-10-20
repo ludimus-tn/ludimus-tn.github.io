@@ -309,8 +309,8 @@ for event in events:
             event_type = event_type[1].split('.')[0]
             if event_type in static_events:
                 date = datetime.datetime.strptime(event_name[:10], '%Y-%m-%d')
-                today = datetime.datetime.now()
-                if today <= date <= today + datetime.timedelta(days=7):
+                today = datetime.datetime.now().replace(hour=0, minute=0, second=0, microsecond=0)
+                if today <= date < today + datetime.timedelta(days=7):
                     must_do_static = True
     except IndexError:
         pass
