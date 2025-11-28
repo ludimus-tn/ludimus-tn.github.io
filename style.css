@@ -525,15 +525,29 @@ footer {
     background: #1b1b1b;
     color: white;
     padding: 1rem;
+    font-size: 0.75rem;
+}
+
+footer .footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+footer .footer-links a {
+    color: #ec3645;
+    text-decoration: none;
+    opacity: 0.9;
+}
+
+footer .footer-links a:hover {
+    opacity: 1;
 }
 
 footer p {
-    margin-bottom: 0;
-    font-size: 10px;
-    display: inline-block;
-    float: right;
-    height: 22px;
-    line-height: 22px;
+    margin-top: 0.5rem;
+    font-size: 0.65rem;
+    opacity: 0.8;
 }
 
 /**********************************************************************************************************************/

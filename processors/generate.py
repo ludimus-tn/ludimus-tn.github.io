@@ -143,6 +143,18 @@ with open('./layouts/informative.html') as base_games_tmpl, \
             output_games.write(line)
 
 ###############################################################################
+## Trasparenza
+###############################################################################
+
+with open('./layouts/trasparenza.html') as trasparenza_tmpl, \
+        open('./trasparenza.html', 'w') as output_trasparenza:
+    for line in trasparenza_tmpl:
+        if '{{ footer }}' in line:
+            output_trasparenza.write(line.replace('{{ footer }}', footer))
+        else:
+            output_trasparenza.write(line)
+
+###############################################################################
 ## League
 ###############################################################################
 
