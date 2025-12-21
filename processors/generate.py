@@ -299,9 +299,10 @@ with open('./layouts/events.html') as base_events_tmpl, \
 ###############################################################################
 
 static_events = [
+    "ala",
     "bicigrillruotalibera",
-    "biergarten-pergine",
     "cantiere26",
+    "doppiomalto",
     "le-petit-jardin",
     "luogo-comune-riva",
     "simposio",
