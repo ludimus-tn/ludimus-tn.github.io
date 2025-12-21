@@ -78,6 +78,11 @@ section h2 {
     z-index: 1000;
 }
 
+
+.row {
+    row-gap: 3rem;
+}
+
 /**********************************************************************************************************************/
 
 /* INTRO */
@@ -210,6 +215,12 @@ section h2 {
     max-width: 100%;
     display: block;
     margin: 0 auto;
+}
+
+#serate img.temporary-meeple {
+    opacity: 0.2;
+    width: 300px;
+    padding: 20px;
 }
 
 /**********************************************************************************************************************/
@@ -490,6 +501,26 @@ section h2 {
 
 /**********************************************************************************************************************/
 
+/* CALENDAR */
+
+/**********************************************************************************************************************/
+
+
+#calendar {
+    border-bottom: 1px dashed #ababab;
+}
+
+
+.calendar-iframe {
+    width: 100%;
+    min-width: 300px;
+    border: none;
+    height: 600px;
+}
+
+
+/**********************************************************************************************************************/
+
 /* JOIN */
 
 /**********************************************************************************************************************/
@@ -526,12 +557,15 @@ footer {
     color: white;
     padding: 1rem;
     font-size: 0.75rem;
+    text-align: center;
 }
 
 footer .footer-links {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
+    justify-content: center;
+    margin-bottom: 15px;
 }
 
 footer .footer-links a {
@@ -1225,4 +1259,17 @@ em.post-date {
         font-size: 1.3rem;
         line-height: 25px;
     }
+}
+
+.temp-disabled {
+    pointer-events: none;
+    cursor: default;
+    color: gray;
+}
+
+.temporary-meeple {
+    text-align: center;
+    color: gray;
+    font-size: 1.2rem;
+    margin-top: 2rem;
 }

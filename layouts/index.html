@@ -29,9 +29,9 @@
             <img src="../static/img/logo.svg" alt="ludimus">
             <p><strong>Giochi da tavolo</strong> ed <strong>Escape room</strong>. In <strong>Trentino</strong>.</p>
 
-            <a href="https://www.facebook.com/ludimus.it/" target="_blank"><i class="fa fa-fw fa-facebook"></i></a>
             <a href="https://www.instagram.com/ludimus.it" target="_blank"><i class="fa fa-fw fa-instagram"></i></a>
             <a href="https://t.me/ludimus" target="_blank"><i class="fa fa-fw fa-paper-plane"></i></a>
+            <a href="https://www.facebook.com/ludimus.it/" target="_blank"><i class="fa fa-fw fa-facebook"></i></a>
             <a href="mailto:info@ludimus.it"><i class="fa fa-fw fa-envelope"></i></a>
             <br>
             <br>
@@ -43,24 +43,26 @@
 
     <section id="numbers">
         <div class="row">
-            <div class="col">
+            <div class="col clickable-div">
                 <h3>ISCRITTI</h3>
-                <p>380+</p>
+                <p>520+</p>
                 <a href="#join">Manchi solo tu ⇢</a>
             </div>
             <div class="col">
                 <h3>GIOCHI</h3>
-                <p>{{ number_of_games }}</p>
-                <a href="/games.html">Curiosa pure ⇢</a>
+                <p>310+</p>
+                <a class="temp-disabled">(lista giochi in aggiornamento)</a>
+                <!-- <p>{{ number_of_games }}</p>
+                <a href="/games.html">Curiosa pure ⇢</a>-->
             </div>
-            <div class="col">
+            <div class="col clickable-div">
                 <h3>ESCAPE ROOM</h3>
-                <p>7+</p>
+                <p>8+</p>
                 <a href="/escaperooms.html" target="_blank">Scoprile ⇢</a>
             </div>
-            <div class="col">
+            <div class="col clickable-div">
                 <h3>EVENTI</h3>
-                <p>400+</p>
+                <p>750+</p>
                 <a href="/events.html" target="_blank">Dove trovarci ⇢</a>
             </div>
         </div>
@@ -68,16 +70,7 @@
 
     <section id="serate">
         <h2><small>scopri</small>dove trovarci</h2>
-
-        <div class="row">
-            <div class="col-md-6 col-lg-4 offset-md-3 offset-lg-4">
-                Dal 02/10/2025 ogni <strong>2 giovedì</strong>, a <strong>Pergine Valsugana</strong> presso <a
-                    href="https://biergartenperzen.it/" target="_blank">Biergarten Mönchshof Ristorante Pizzeria</a>.
-                <br>
-                <a href="https://maps.app.goo.gl/vthcbUG4yPN5EBY1A" target="_blank">Come arrivare ⇢</a>
-            </div>
-        </div>
-        <div class="row" style="margin-top: 2rem;">
+        <div class="row" style="margin-top: 3rem;">
             <div class="col-md-6 col-lg-4 offset-lg-2">
                 <img src="../static/img/hp/trento.png" alt="Ludimus Trento" />
                 Ogni <strong>lunedì</strong>, a <strong>Trento</strong> presso <a
@@ -94,17 +87,28 @@
                 <a href="https://goo.gl/maps/12R3EDBMK1G2" target="_blank">Come arrivare ⇢</a>
             </div>
         </div>
-        <div class="row" style="margin-top: 2rem;">
+        <!--
+        <div class="row">
+            <div class="col-md-6 col-lg-4 offset-md-3 offset-lg-4" style="margin-top: 3rem;">
+                <img class="temporary-meeple" src="../static/img/meeple.svg" alt="Ludimus Pergine" />
+                Dal 02/10/2025 ogni <strong>2 giovedì</strong>, a <strong>Pergine Valsugana</strong> presso <a
+                    href="https://biergartenperzen.it/" target="_blank">Biergarten Mönchshof Ristorante Pizzeria</a>.
+                <br>
+                <a href="https://maps.app.goo.gl/vthcbUG4yPN5EBY1A" target="_blank">Come arrivare ⇢</a>
+            </div>
+        </div>
+        -->
+        <div class="row" style="margin-top: 3rem;">
             <div class="col-md-6 col-lg-4 offset-lg-2">
                 <img src="../static/img/hp/busa.png" alt="Ludimus Busa" />
                 <br>
-                Dal 10/09/2025 ogni <strong>2 mercoledì</strong>, ad <strong>Arco</strong> presso <a
+                Dal 07/01/2026 ogni <strong>due mercoledì</strong>,<br> ad <strong>Arco</strong> presso <a
                     href="https://bento.me/cantiere26" target="_blank">Cantiere26</a>.
                 <br>
                 <a href="https://g.page/Cantiere26?share" target="_blank">Come arrivare ⇢</a>
                 <br>
                 <br>
-                Dal 17/09/2025 Ogni <strong>2 mercoledì</strong>, a <strong>Riva del Garda</strong> presso <a
+                Dal 14/01/2026 Ogni <strong>due mercoledì</strong>,<br> a <strong>Riva del Garda</strong> presso <a
                     href="https://it-it.facebook.com/luogocomuneriva/" target="_blank">Luogo Comune</a>.
                 <br>
                 <a href="https://goo.gl/maps/8cXExW6hLPMwV1yF9" target="_blank">Come arrivare ⇢</a>
@@ -112,29 +116,24 @@
             <div class="col-md-6 col-lg-4">
                 <img src="../static/img/hp/avio.png" alt="Ludimus Avio" />
                 <br>
-                Ogni <strong>2 mercoledì</strong>, ad <strong>Avio</strong> presso <a
+                Da gennaio a marzo 2026, ogni <strong>due mercoledì</strong>,<br> ad <strong>Ala</strong> presso la <a
+                    href="https://www.comune.ala.tn.it/Vivere-il-comune/Luoghi/Biblioteca-ed-Archivio-storico" target="_blank">Biblioteca Comunale di Ala</a>.
+                <br>
+                <a href="https://maps.app.goo.gl/9eoUCpcju8tVdhnw9" target="_blank">Come arrivare ⇢</a>
+                <br>
+                <br>
+                <strong>Da marzo</strong>, ogni <strong>due mercoledì</strong>,<br> ad <strong>Avio</strong> presso <a
                     href="https://www.bicigrillruotalibera.it/" target="_blank">Bicigrill Ruota Libera</a>.
                 <br>
                 <a href="https://goo.gl/maps/mw4eXgwcE4hmBt5R6" target="_blank">Come arrivare ⇢</a>
             </div>
         </div>
     </section>
-
-    <section id="blog">
-        <h2><small>leggi il nostro</small>ludiblog</h2>
-
-        <div class="blog-items">
-            <div class="cards-container">
-                <div class="row">
-                    {{ blog_post }}
-                </div>
-            </div>
-        </div>
-        <div class="text-center read-more">
-            <a href="javascript:showBlogPosts();">Carica altri post ⇢</a>
-        </div>
+    <section id="calendar">
+        <h2><small>prossimi</small> eventi</h2>
+        <iframe class="calendar-iframe"
+            src="https://calendar.google.com/calendar/embed?height=600&wkst=2&ctz=Europe%2FRome&showPrint=0&mode=AGENDA&showDate=0&hl=it&showTabs=0&showTz=0&showCalendars=0&showTitle=0&showNav=0&src=ZnV0MGFpMTRncWxkNmNwdXV1OGg3aXU5ZGdAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%23ef6c00"  frameborder="0" scrolling="no"></iframe>
     </section>
-
     <section id="join">
         <h2><small>come aiutarci</small> tesseramento</h2>
 
@@ -153,7 +152,7 @@
         </ul>
 
         <p class="text-center">
-            La quota annuale d’iscrizione è di 7 euro. Interessato/a?<br>
+            La quota annuale d’iscrizione è di <strong>7,00€</strong>. Interessato/a?<br>
             <a href="mailto:info@ludimus.it">Contattaci ⇢</a>
         </p>
     </section>
@@ -165,6 +164,23 @@
         crossorigin="anonymous"></script>
 
     <script src="/static/js/blog.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.clickable-div').css('cursor', 'pointer').on('click', function (e) {
+                var link = $(this).find('a[href]');
+                if (link.length) {
+                    var href = link.attr('href');
+                    var target = link.attr('target');
+
+                    if (target === '_blank') {
+                        window.open(href, '_blank');
+                    } else {
+                        window.location.href = href;
+                    }
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>
