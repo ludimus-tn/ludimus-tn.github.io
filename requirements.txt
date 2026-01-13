@@ -1,4 +1,4 @@
 markdown2==2.4.0
 progressbar2==3.39.2
 diskcache==3.1.1
-requests==2.31.0
+requests==2.32.4
