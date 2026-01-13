@@ -410,6 +410,23 @@ with open('./layouts/gas.html') as gas_tmpl, \
             output_gas.write(line.replace('{{ footer }}', footer))
         else:
             output_gas.write(line)
+
+###############################################################################
+## BLOG PAGE
+###############################################################################
+
+with open('./layouts/blog.html') as base_blog_tmpl, \
+        open('./blog.html', 'w') as output_blog:
+    for line in base_blog_tmpl:
+        if '{{ hash }}' in line:
+            output_blog.write(line.replace('{{ hash }}', style_hash))
+        elif '{{ footer }}' in line:
+            output_blog.write(line.replace('{{ footer }}', footer))
+        elif '{{ blog_posts }}' in line:
+            for post in sorted(glob.glob('./layouts/blog/*'), reverse=True):
+                output_blog.write(blog_file_to_tmpl[post])
+        else:
+            output_blog.write(line)
             
 ###############################################################################
 ## BLOG

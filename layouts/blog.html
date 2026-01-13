@@ -1,0 +1,57 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Blog - Ludimus</title>
+    <meta property="og:image" content="https://ludimus.it/static/img/logo.png" />
+    <meta property="og:title" content="Blog - Ludimus" />
+    <meta property="og:description" content="Tutti gli articoli del blog di Ludimus" />
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto+Condensed|Raleway|Roboto+Mono"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./style.css?t={{ hash }}">
+
+    <link rel="icon" type="image/png" href="./static/img/favicon/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="./static/img/favicon/favicon-16x16.png" sizes="16x16" />
+</head>
+
+<body>
+    <a href="/"><img class="go-back" src="./static/img/logo.svg" alt="ludimus"></a>
+
+    <section class="big-title">
+        <small>il nostro</small>
+        <h2>Blog</h2>
+        <h3>Articoli, recensioni e riflessioni sul mondo dei giochi da tavolo</h3>
+    </section>
+
+    <section id="blog">
+        <div class="cards-container">
+            <div class="row">
+                {{ blog_posts }}
+            </div>
+        </div>
+    </section>
+
+    {{ footer }}
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+        crossorigin="anonymous"></script>
+
+    <script src="/static/js/blog.js"></script>
+    <script>
+        $(document).ready(function () {
+            // Show all blog posts
+            $('#blog .cards-container .row > div').show();
+        });
+    </script>
+</body>
+
+</html>

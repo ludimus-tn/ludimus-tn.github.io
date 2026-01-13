@@ -83,6 +83,11 @@ section h2 {
     row-gap: 3rem;
 }
 
+.clickable-div {
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
 /**********************************************************************************************************************/
 
 /* FIXED-SIZE NAVBAR */
@@ -92,8 +97,8 @@ section h2 {
 
 #fixed-side-navbar {
     position: fixed;
-    top: 1%;
-    right: -0.5em;
+    top: 0.5%;
+    right: -0.2em;
     z-index: 99999;
     text-align: right;
     padding: 10px 0;
@@ -111,17 +116,23 @@ section h2 {
     display: block;
     color: #ec3645;
     text-align: center;
-    font-size: 12px;
-    padding: 2px 12px;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 4px 14px;
+    background: #fff;
     -webkit-border-radius: 15px;
     -moz-border-radius: 15px;
     border-radius: 15px;
 }
 
+#fixed-side-navbar .nav>li a.active span {
+    background: #fff;
+}
+
 #fixed-side-navbar .nav>li a.active {
     color: #990c18;
     font-weight: bold;
-    background: #fff;
+    background: transparent;
 }
 
 #fixed-side-navbar .nav>li a.active:after {
@@ -156,19 +167,25 @@ section h2 {
 #fixed-side-navbar .nav>li a {
     color: #000;
     min-height: 32px;
-    padding: 5px 45px 5px 25px;
+    padding: 5px 45px 5px 5px;
     border-right: none;
     backdrop-filter: blur(30px);
-    background: #fff;
+    background: transparent;
     border-radius: 20px;
+    position: relative;
 }
 
 #fixed-side-navbar .nav>li a span {
     display: none;
-    -webkit-transition: all .2s;
-    -o-transition: all .2s;
-    -moz-transition: all .2s;
-    transition: all .2s;
+    position: absolute;
+    right: 45px;
+    top: 50%;
+    transform: translateY(-50%);
+    white-space: nowrap;
+    -webkit-transition: opacity .2s;
+    -o-transition: opacity .2s;
+    -moz-transition: opacity .2s;
+    transition: opacity .2s;
 }
 
 #fixed-side-navbar .nav>li a:after {
@@ -272,9 +289,6 @@ section h2 {
     height: 140px;
     text-align: center;
     animation: GoDown 1s linear infinite;
-}
-
-#go-down:hover {
     text-decoration: none;
 }
 
@@ -370,10 +384,6 @@ section h2 {
 /* BLOG & GAMES */
 
 /**********************************************************************************************************************/
-
-#blog {
-    border-bottom: 1px dashed #ababab;
-}
 
 #games .card {
     width: 228px;
@@ -667,7 +677,96 @@ section h2 {
 
 /**********************************************************************************************************************/
 
-#join ul {
+#join {
+    border-bottom: 1px dashed #ababab;
+}
+
+#join #join-cards h3 {
+    text-align: center;
+    font-family: "Roboto Condensed", sans-serif;
+    margin-bottom: -1rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    line-height: 1.5em;
+    font-size: 2rem;
+}
+
+#join #join-cards i {
+    font-size: 6em;
+    text-align: center;
+    display: block;
+    color: #ec3645;
+    margin-bottom: 1rem;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+#join #join-cards .col:hover i {
+    transform: scale(1.1);
+}
+
+#join #join-cards a {
+    text-align: center;
+    display: block;
+}
+
+#join #membership-details {
+    text-align: left;
+}
+
+#join .support-div > * {
+    padding: 0.5rem;
+}
+
+@media (max-width: 621px) {
+    #join #join-cards a {
+        margin-bottom: 2rem;
+    }
+}
+
+#join .membership {
+    color: #000000;
+    border-radius: 30px;
+    width: 80%;
+    margin: auto;
+    position: relative;
+}
+
+#join .membership #close-membership {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    font-size: 2rem;
+    line-height: 1;
+    color: #ec3645;
+    text-decoration: none;
+    opacity: 0.7;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+#join .membership #close-membership:hover {
+    opacity: 1;
+    transform: scale(1.1);
+    text-decoration: none;
+}
+
+#join .membership h2 {
+    color: #ec3645;
+}
+
+#join .membership small {
+    color: #ec3645;
+}
+
+#join .membership a {
+    color: #ec3645;
+    font-weight: bold;
+}
+
+#join .membership a:hover {
+    text-decoration: underline;
+}
+
+#join .membership ul {
     width: 50%;
     margin: 0 auto;
     margin-bottom: 2rem;
@@ -675,17 +774,30 @@ section h2 {
     padding: 0;
 }
 
-#join img {
-    height: 0.5rem;
+#join .membership img {
+    height: .5em;
     transform: rotate(15deg);
     margin-bottom: 3px;
     margin-right: 1px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    opacity: 0.9;
 }
 
 @media (max-width: 992px) {
-    #join ul {
+    #join .membership ul {
         width: 90%;
     }
+}
+
+#join .close-membership {
+    font-size: 1.5rem;
+}
+
+.close-membership-p {
+    margin-bottom: 0;
+    margin-top: 0.5rem;
+    font-weight: 600;
 }
 
 /**********************************************************************************************************************/
@@ -1264,6 +1376,11 @@ em.post-date {
     margin: 0 auto;
 }
 
+#tshirt p {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
 @media (max-width: 886px) {
     #tshirt {
         max-width: 100%;
@@ -1281,6 +1398,7 @@ em.post-date {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: .3rem;
 }
 
 #tshirt .tshirts-images > div > img {
@@ -1299,8 +1417,7 @@ em.post-date {
 }
 
 #tshirt .tshirts-images > div > p {
-    font-family: monospace;
-    color: darkgray;
+    color: rgb(94, 94, 94);
     text-align: center;
 }
 

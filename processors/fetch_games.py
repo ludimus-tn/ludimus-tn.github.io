@@ -240,7 +240,9 @@ def main():
     #     if (idx + 1) % 10 == 0 or (idx + 1) == len(games_data):
     #         print(f"  Progress: {idx + 1}/{len(games_data)} games processed")
     
-    transformed_games = [transform_game(game) for game in games_data]
+    transformed_games = [transform_game(game) 
+                         for game in games_data
+                         if game.get("dove") != "venduti"]
     # Sort by BGG ID
     transformed_games.sort(key=lambda x: x.get("idBGG") or 0)
     

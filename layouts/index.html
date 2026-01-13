@@ -9,8 +9,9 @@
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto+Condensed|Raleway|Roboto+Mono"
         rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/all.min.css"
         crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
@@ -21,7 +22,7 @@
     <link rel="icon" type="image/png" href="../static/img/favicon/favicon-16x16.png" sizes="16x16" />
 </head>
 
-<body>
+<body><!--
     <div id="fixed-side-navbar">
         <ul class="nav flex-column">
             <li class="nav-item"><a class="nav-link" href="#header"><span>Intro</span></a></li>
@@ -30,17 +31,17 @@
             <li class="nav-item"><a class="nav-link" href="#calendar"><span>Eventi</span></a></li>
             <li class="nav-item"><a class="nav-link" href="#join"><span>Tesseramento</span></a></li>
         </ul>
-    </div>
+    </div>-->
     <section id="header">
         <div id="intro">
             <h1 style="display: none;">ludimus</h1>
             <img src="../static/img/logo.svg" alt="ludimus">
             <p><strong>Giochi da tavolo</strong> ed <strong>Escape room</strong>. In <strong>Trentino</strong>.</p>
 
-            <a href="https://www.instagram.com/ludimus.it" target="_blank"><i class="fa fa-fw fa-instagram"></i></a>
-            <a href="https://t.me/ludimus" target="_blank"><i class="fa fa-fw fa-paper-plane"></i></a>
-            <a href="https://www.facebook.com/ludimus.it/" target="_blank"><i class="fa fa-fw fa-facebook"></i></a>
-            <a href="mailto:info@ludimus.it"><i class="fa fa-fw fa-envelope"></i></a>
+            <a href="https://www.instagram.com/ludimus.it" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://t.me/ludimus" target="_blank"><i class="fa-solid fa-paper-plane"></i></a>
+            <a href="https://www.facebook.com/ludimus.it/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="mailto:info@ludimus.it"><i class="fa-solid fa-envelope"></i></a>
             <br>
             <br>
             <a href="events">Scopri i prossimi eventi ⇢</a>
@@ -58,7 +59,7 @@
             </div>
             <div class="col clickable-div">
                 <h3>GIOCHI</h3>
-                <p>315+</p>
+                <p>275+</p>
                 <a href="/games.html">Curiosa pure ⇢</a>
             </div>
             <div class="col clickable-div">
@@ -123,7 +124,8 @@
                 <img src="../static/img/hp/avio.png" alt="Ludimus Avio" />
                 <br>
                 Da gennaio a marzo 2026, ogni <strong>due mercoledì</strong>,<br> ad <strong>Ala</strong> presso la <a
-                    href="https://www.comune.ala.tn.it/Vivere-il-comune/Luoghi/Biblioteca-ed-Archivio-storico" target="_blank">Biblioteca Comunale di Ala</a>.
+                    href="https://www.comune.ala.tn.it/Vivere-il-comune/Luoghi/Biblioteca-ed-Archivio-storico"
+                    target="_blank">Biblioteca Comunale di Ala</a>.
                 <br>
                 <a href="https://maps.app.goo.gl/9eoUCpcju8tVdhnw9" target="_blank">Come arrivare ⇢</a>
                 <br>
@@ -138,37 +140,57 @@
     <section id="calendar">
         <h2><small>prossimi</small> eventi</h2>
         <iframe class="calendar-iframe"
-            src="https://calendar.google.com/calendar/embed?height=600&wkst=2&ctz=Europe%2FRome&showPrint=0&mode=AGENDA&showDate=0&hl=it&showTabs=0&showTz=0&showCalendars=0&showTitle=0&showNav=0&src=ZnV0MGFpMTRncWxkNmNwdXV1OGg3aXU5ZGdAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%23ef6c00"  frameborder="0" scrolling="no"></iframe>
+            src="https://calendar.google.com/calendar/embed?height=600&wkst=2&ctz=Europe%2FRome&showPrint=0&mode=AGENDA&showDate=0&hl=it&showTabs=0&showTz=0&showCalendars=0&showTitle=0&showNav=0&src=ZnV0MGFpMTRncWxkNmNwdXV1OGg3aXU5ZGdAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%23ef6c00"
+            frameborder="0" scrolling="no"></iframe>
     </section>
+
     <section id="join">
         <h2><small>come aiutarci</small> tesseramento</h2>
+        <div class="membership">
+            <p class="text-center">Con la tessera potrai:</p>
+            <ul>
+                <li><img src="../static/img/meeple.svg" /> Prendere in prestito fino a 2 settimane i <a
+                        href="/games.html">giochi dell’associazione</a></li>
+                <li><img src="../static/img/meeple.svg" />  Partecipare ai nostri <a href="/gas.html">gruppi d'acquisto
+                        solidale</a> e beneficiare dei nostri sconti</li>
+                <li><img src="../static/img/meeple.svg" /> Acquistare la <a href="/maglietta.html">maglietta annuale</a>
+                    e il nostro merchandising a un prezzo agevolato</li>
+                <li><img src="../static/img/meeple.svg" /> Partecipare alla nostra gita annuale al Bologna Play</li>
+                <li><img src="../static/img/meeple.svg" /> Ottenere sconti sulle consumazioni durante le nostre serate</li>
+                <li><img src="../static/img/meeple.svg" /> Avere accessi privilegiati e vantaggi ad eventi esclusivi
+                    come <a href="/ludicamp.html">Ludicamp</a></li>
+            </ul>
 
-        <p class="text-center">con la tessera potrai:</p>
-        <ul>
-            <li><img src="../static/img/meeple.svg" /> Prendere in prestito fino a 2 settimane i <a
-                    href="/games.html">giochi dell’associazione</a></li>
-            <li><img src="../static/img/meeple.svg" /> Sconti sulle consumazioni durante le nostre serate</li>
-            <li><img src="../static/img/meeple.svg" /> Partecipare ai nostri <a href="/gas.html">gruppi d'acquisto
-                    solidale</a> e beneficiare dei nostri sconti</li>
-            <li><img src="../static/img/meeple.svg" /> Acquistare la <a href="/maglietta.html">maglietta annuale</a> ad
-                un prezzo agevolato</li>
-            <li><img src="../static/img/meeple.svg" /> Partecipare alla nostra gita annuale a Play</li>
-            <li><img src="../static/img/meeple.svg" /> Avere accessi privilegiati e vantaggi ad eventi esclusivi come <a
-                    href="/ludicamp.html">Ludicamp</a></li>
-        </ul>
+            <p class="text-center">
+                La quota annuale d’iscrizione è di <strong>7,00€</strong>. Interessato/a?<br>
+                <a href="mailto:info@ludimus.it">Contattaci</a> o vieni a trovarci in una delle nostre serate!
+            </p>
+        </div>
+    </section>
 
-        <p class="text-center">
-            La quota annuale d’iscrizione è di <strong>7,00€</strong>. Interessato/a?<br>
-            <a href="mailto:info@ludimus.it">Contattaci ⇢</a>
-        </p>
+    <section id="join">
+        <h2><small>scopri</small>di più</h2>
+        <div class="row" id="join-cards">
+            <div class="col clickable-div support-div">
+                <i class="fa-solid fa-shirt" aria-hidden="true"></i>
+                <h3><small>scopri le</small>MAGLIETTE</h3>
+                <a href="/maglietta.html">Dai un'occhiata ⇢</a>
+            </div>
+            <div class="col clickable-div support-div">
+                <i class="fa-solid fa-pencil" aria-hidden="true"></i>
+                <h3><small>leggi il nostro</small>BLOG</h3>
+                <a href="/blog.html">Leggi i post ⇢</a>
+            </div>
+        </div>
     </section>
 
     {{ footer }}
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 
     <script src="/static/js/blog.js"></script>
     <script>
@@ -188,9 +210,10 @@
             });
         });
         // ScrollSpy for side navbar (Bootstrap 5)
-        const scrollSpy = new bootstrap.ScrollSpy(document.body, {
-            target: '#fixed-side-navbar',
-        });
+        //const scrollSpy = new bootstrap.ScrollSpy(document.body, {
+        //    target: '#fixed-side-navbar',
+        //    threshold: [0, 0.5, 1.0]
+        //});
     </script>
 </body>
 

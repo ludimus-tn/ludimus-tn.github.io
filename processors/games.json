@@ -55,15 +55,6 @@
       "thumbnail": "https://cf.geekdo-images.com/wLto-xaabHwKQe_Bc4iD1Q__thumb/img/AUqMholGVlwXLjMcxwiziE_7Ffw=/fit-in/200x150/filters:strip_icc()/pic3458036.png"
     },
     {
-      "idBGG": 265,
-      "nomeGioco": "Intrigo a Palazzo",
-      "pesoMedio": 1.9241,
-      "proprietari": "venduti",
-      "numGiocatori": "Min:3 - Max:5",
-      "durata": 45,
-      "thumbnail": "https://cf.geekdo-images.com/l8ki305GFjjmrRworLUzLw__thumb/img/UZGoQD08li-O011CJNu3LQyusYY=/fit-in/200x150/filters:strip_icc()/pic182825.jpg"
-    },
-    {
       "idBGG": 372,
       "nomeGioco": "Schotten Totten",
       "pesoMedio": 1.6738,
@@ -107,15 +98,6 @@
       "numGiocatori": "Min:2 - Max:5",
       "durata": 45,
       "thumbnail": "https://cf.geekdo-images.com/okM0dq_bEXnbyQTOvHfwRA__thumb/img/88274KiOg94wziybVHyW8AeOiXg=/fit-in/200x150/filters:strip_icc()/pic6544250.png"
-    },
-    {
-      "idBGG": 823,
-      "nomeGioco": "Il Signore Degli Anelli",
-      "pesoMedio": 2.5332,
-      "proprietari": "venduti",
-      "numGiocatori": "Min:2 - Max:5",
-      "durata": 90,
-      "thumbnail": "https://cf.geekdo-images.com/oWttjfs235Zh7jLGWO7_Hg__thumb/img/D8T2cKo8fiipSbw4vNNP9hNbZ0g=/fit-in/200x150/filters:strip_icc()/pic479124.jpg"
     },
     {
       "idBGG": 1234,
@@ -217,15 +199,6 @@
       "thumbnail": "https://cf.geekdo-images.com/I91uGgl2f0ig1AtKywolqg__thumb/img/vIuIyR5RkGQxxUKxFULWux-JgG4=/fit-in/200x150/filters:strip_icc()/pic105364.jpg"
     },
     {
-      "idBGG": 23107,
-      "nomeGioco": "Drakon",
-      "pesoMedio": 1.8138,
-      "proprietari": "venduti",
-      "numGiocatori": "Min:2 - Max:6",
-      "durata": 60,
-      "thumbnail": "https://cf.geekdo-images.com/M16DElXmmeR5O_78d1CpOA__thumb/img/_keAjU3FcMGAkLZFZbhzV-8ZvJ8=/fit-in/200x150/filters:strip_icc()/pic153409.jpg"
-    },
-    {
       "idBGG": 28143,
       "nomeGioco": "Race for the Galaxy",
       "pesoMedio": 2.9919,
@@ -253,15 +226,6 @@
       "thumbnail": "https://cf.geekdo-images.com/tHVtPzu82mBpeQbbZkV6EA__thumb/img/AghH1bAEhqzvyRcP3cy5G-rz0So=/fit-in/200x150/filters:strip_icc()/pic3469216.jpg"
     },
     {
-      "idBGG": 30287,
-      "nomeGioco": "Ghost For $ale",
-      "pesoMedio": 2,
-      "proprietari": "venduti",
-      "numGiocatori": "Min:3 - Max:5",
-      "durata": 40,
-      "thumbnail": "https://cf.geekdo-images.com/cUzh6cB_TI-E5CHkOWbXkg__thumb/img/nsUhzqkI-YjEtTGSSipaxeP1do0=/fit-in/200x150/filters:strip_icc()/pic261058.jpg"
-    },
-    {
       "idBGG": 30549,
       "nomeGioco": "Pandemic",
       "pesoMedio": 2.3956,
@@ -269,15 +233,6 @@
       "numGiocatori": "Min:2 - Max:4",
       "durata": 45,
       "thumbnail": "https://cf.geekdo-images.com/S3ybV1LAp-8SnHIXLLjVqA__thumb/img/oqViRj6nVxK3m36NluTxU1PZkrk=/fit-in/200x150/filters:strip_icc()/pic1534148.jpg"
-    },
-    {
-      "idBGG": 31016,
-      "nomeGioco": "We didn't playtest it at all",
-      "pesoMedio": 1.0811,
-      "proprietari": "venduti",
-      "numGiocatori": "Min:2 - Max:10",
-      "durata": 10,
-      "thumbnail": "https://cf.geekdo-images.com/vD1XOwfbUZr67sRgHdrncQ__thumb/img/nPQWL70tFZ2mYpnWW56cOQ-S_3U=/fit-in/200x150/filters:strip_icc()/pic7299902.jpg"
     },
     {
       "idBGG": 34219,
@@ -296,24 +251,6 @@
       "numGiocatori": "Min:2 - Max:4",
       "durata": 30,
       "thumbnail": "https://cf.geekdo-images.com/j6iQpZ4XkemZP07HNCODBA__thumb/img/B2u2ghwlmI_qsUtCwuvcbnBcIqU=/fit-in/200x150/filters:strip_icc()/pic394356.jpg"
-    },
-    {
-      "idBGG": 38386,
-      "nomeGioco": "A Castle For All Seasons",
-      "pesoMedio": 2.7904,
-      "proprietari": "venduti",
-      "numGiocatori": "Min:2 - Max:4",
-      "durata": 60,
-      "thumbnail": "https://cf.geekdo-images.com/HEHduHVfdLULQHoWLu-Sqw__thumb/img/HnBxzNEHY0vivRABnTIRmBR_aPU=/fit-in/200x150/filters:strip_icc()/pic400762.jpg"
-    },
-    {
-      "idBGG": 38506,
-      "nomeGioco": "Cthulhu Lo Stregone Di Salem",
-      "pesoMedio": 2.4868,
-      "proprietari": "venduti",
-      "numGiocatori": "Min:2 - Max:4",
-      "durata": 60,
-      "thumbnail": "https://cf.geekdo-images.com/B6QAQ6-Ft3c6HDnTzvhEBw__thumb/img/hTDRm-qY3z6l34l8cnQOcVWkMAc=/fit-in/200x150/filters:strip_icc()/pic564525.jpg"
     },
     {
       "idBGG": 39856,
@@ -343,15 +280,6 @@
       "thumbnail": "https://cf.geekdo-images.com/VwuH7Q3HgmTuL8YvUTqoMA__thumb/img/EXQm7HaXKe7-VckI6Zhcpt7KO0U=/fit-in/200x150/filters:strip_icc()/pic815592.jpg"
     },
     {
-      "idBGG": 43022,
-      "nomeGioco": "Yomi",
-      "pesoMedio": 2.3622,
-      "proprietari": "venduti",
-      "numGiocatori": "Min:2 - Max:2",
-      "durata": 30,
-      "thumbnail": "https://cf.geekdo-images.com/NGxZknC3YvP4Xjn6ro38tQ__thumb/img/0jN0d9qt3YM2DN9MnG1-v6qI2VM=/fit-in/200x150/filters:strip_icc()/pic885442.jpg"
-    },
-    {
       "idBGG": 53953,
       "nomeGioco": "Thunderstone",
       "pesoMedio": 2.5055,
@@ -379,15 +307,6 @@
       "thumbnail": "https://cf.geekdo-images.com/5k9eYdxaLEoVSz-YGjNHnw__thumb/img/3kTiBn6SFnvm9JEGgG3rlYwbmFU=/fit-in/200x150/filters:strip_icc()/pic3211830.jpg"
     },
     {
-      "idBGG": 63632,
-      "nomeGioco": "Jerusalem",
-      "pesoMedio": 2.9125,
-      "proprietari": "venduti",
-      "numGiocatori": "Min:2 - Max:4",
-      "durata": 90,
-      "thumbnail": "https://cf.geekdo-images.com/D_dyuI3Ne2BaP9VMM6iKSw__thumb/img/fVJPUFiqp4_C-OvjjMX3fKw1Lgc=/fit-in/200x150/filters:strip_icc()/pic677411.jpg"
-    },
-    {
       "idBGG": 68448,
       "nomeGioco": "7 Wonders",
       "pesoMedio": 2.3146,
@@ -395,15 +314,6 @@
       "numGiocatori": "Min:2 - Max:7",
       "durata": 30,
       "thumbnail": "https://cf.geekdo-images.com/35h9Za_JvMMMtx_92kT0Jg__thumb/img/BUOso8b0M1aUOkU80FWlhE8uuxc=/fit-in/200x150/filters:strip_icc()/pic7149798.jpg"
-    },
-    {
-      "idBGG": 77130,
-      "nomeGioco": "Sid Meier's Civilization",
-      "pesoMedio": 3.8994,
-      "proprietari": "venduti",
-      "numGiocatori": "Min:2 - Max:4",
-      "durata": 240,
-      "thumbnail": "https://cf.geekdo-images.com/1WAfWHPi4Vvm1UCMtQaeaA__thumb/img/2zIfpLPUFyuWfgqLTvtvrHa19Mg=/fit-in/200x150/filters:strip_icc()/pic798666.jpg"
     },
     {
       "idBGG": 82168,
@@ -458,24 +368,6 @@
       "numGiocatori": "Min:2 - Max:5",
       "durata": 25,
       "thumbnail": "https://cf.geekdo-images.com/JDVksMwfcqoem1k_xtZrOA__thumb/img/amCeCcEKhYGbVtDvpvIMnu3qTg0=/fit-in/200x150/filters:strip_icc()/pic2007286.jpg"
-    },
-    {
-      "idBGG": 99770,
-      "nomeGioco": "Arcanum",
-      "pesoMedio": 2.64,
-      "proprietari": "venduti",
-      "numGiocatori": "Min:3 - Max:5",
-      "durata": 45,
-      "thumbnail": "https://cf.geekdo-images.com/kQ9t7ui-bJheMAcaATJPIQ__thumb/img/mSEmNusmfFgQYDXu80_vFUrMTQg=/fit-in/200x150/filters:strip_icc()/pic1010936.jpg"
-    },
-    {
-      "idBGG": 99777,
-      "nomeGioco": "Lupin The Third",
-      "pesoMedio": 2.5385,
-      "proprietari": "venduti",
-      "numGiocatori": "Min:2 - Max:5",
-      "durata": 90,
-      "thumbnail": "https://cf.geekdo-images.com/_XitnsIbItMtbc9-Lusycw__thumb/img/kHdEfqdOSj_-5l2FQ99-731r_lU=/fit-in/200x150/filters:strip_icc()/pic1051822.png"
     },
     {
       "idBGG": 102548,
@@ -613,15 +505,6 @@
       "thumbnail": "https://cf.geekdo-images.com/iIIGoA267xJDn3RuOfXBeQ__thumb/img/zX7ii2eBry5znNIWJ7-Fisqttbw=/fit-in/200x150/filters:strip_icc()/pic3043308.jpg"
     },
     {
-      "idBGG": 137297,
-      "nomeGioco": "Augustus",
-      "pesoMedio": 1.6387,
-      "proprietari": "venduti",
-      "numGiocatori": "Min:2 - Max:6",
-      "durata": 30,
-      "thumbnail": "https://cf.geekdo-images.com/DjlNoENOK3z7DO8rpNsofQ__thumb/img/DOPkJkUFO89G83sHjAyfN4pqoE4=/fit-in/200x150/filters:strip_icc()/pic3532649.jpg"
-    },
-    {
       "idBGG": 140934,
       "nomeGioco": "Arboretum ",
       "pesoMedio": 2.1148,
@@ -629,15 +512,6 @@
       "numGiocatori": "Min:2 - Max:4",
       "durata": 30,
       "thumbnail": "https://cf.geekdo-images.com/XYOn10oXBrDqHySf0jvnyQ__thumb/img/X6V1M2nZOinTgwE0KIBfup_QrCw=/fit-in/200x150/filters:strip_icc()/pic4172124.png"
-    },
-    {
-      "idBGG": 144826,
-      "nomeGioco": "Zombie 15'",
-      "pesoMedio": 2.236,
-      "proprietari": "venduti",
-      "numGiocatori": "Min:2 - Max:4",
-      "durata": 15,
-      "thumbnail": "https://cf.geekdo-images.com/RGK02ffZrgloU6p_sXVlFQ__thumb/img/beFzNoSRm5kqbLKAwl-q5RuSXfw=/fit-in/200x150/filters:strip_icc()/pic2138386.jpg"
     },
     {
       "idBGG": 146278,
@@ -674,15 +548,6 @@
       "numGiocatori": "Min:2 - Max:4",
       "durata": 30,
       "thumbnail": "https://cf.geekdo-images.com/vNFe4JkhKAERzi4T0Ntwpw__thumb/img/KKU_42Uswt4tKCpf1zY5kTzgr-g=/fit-in/200x150/filters:strip_icc()/pic8234167.png"
-    },
-    {
-      "idBGG": 149809,
-      "nomeGioco": "Escape: Zombie City",
-      "pesoMedio": 1.7692,
-      "proprietari": "venduti",
-      "numGiocatori": "Min:2 - Max:4",
-      "durata": 15,
-      "thumbnail": "https://cf.geekdo-images.com/YiJaCqkZeU1IPCrotd9eDQ__thumb/img/gQiQDBHDnLM9zClbU6MuF1iZiP4=/fit-in/200x150/filters:strip_icc()/pic2335551.jpg"
     },
     {
       "idBGG": 150312,
@@ -784,15 +649,6 @@
       "thumbnail": "https://cf.geekdo-images.com/c_87h8o0AOrfCO3hxMjjrA__thumb/img/OPNd-zRznLHOLfNDIN8rdhSMHPM=/fit-in/200x150/filters:strip_icc()/pic2349732.jpg"
     },
     {
-      "idBGG": 163968,
-      "nomeGioco": "Elysium",
-      "pesoMedio": 2.7688,
-      "proprietari": "venduti",
-      "numGiocatori": "Min:2 - Max:4",
-      "durata": 60,
-      "thumbnail": "https://cf.geekdo-images.com/hNyO7u1pR3oSxKTELS7n2w__thumb/img/HWVlTW4WTam1F8UeT6RJeS4olIs=/fit-in/200x150/filters:strip_icc()/pic2837103.png"
-    },
-    {
       "idBGG": 164928,
       "nomeGioco": "Orleans",
       "pesoMedio": 3.0137,
@@ -809,15 +665,6 @@
       "numGiocatori": "Min:1 - Max:5",
       "durata": 120,
       "thumbnail": "https://cf.geekdo-images.com/wg9oOLcsKvDesSUdZQ4rxw__thumb/img/BTxqxgYay5tHJfVoJ2NF5g43_gA=/fit-in/200x150/filters:strip_icc()/pic3536616.jpg"
-    },
-    {
-      "idBGG": 168788,
-      "nomeGioco": "Rum & Bones",
-      "pesoMedio": 2.3387,
-      "proprietari": "venduti",
-      "numGiocatori": "Min:2 - Max:6",
-      "durata": 60,
-      "thumbnail": "https://cf.geekdo-images.com/UhShS2hLt3bV8Eg4RO5-ZQ__thumb/img/KFj2-GxWazu8PlHaUZb9ALqMeVw=/fit-in/200x150/filters:strip_icc()/pic3954085.jpg"
     },
     {
       "idBGG": 170042,
@@ -856,33 +703,6 @@
       "thumbnail": "https://cf.geekdo-images.com/VJwOnMF5vwJg2Yaq6ozn3Q__thumb/img/Ms3h8cBxGzfcKB16q1KPOsmnoG8=/fit-in/200x150/filters:strip_icc()/pic2869714.jpg"
     },
     {
-      "idBGG": 172818,
-      "nomeGioco": "Above and Below",
-      "pesoMedio": 2.5142,
-      "proprietari": "venduti",
-      "numGiocatori": "Min:2 - Max:4",
-      "durata": 90,
-      "thumbnail": "https://cf.geekdo-images.com/U0wpvRmBe65e4vwGf0Jbpg__thumb/img/jHLwKKWiJ-lHoaNIj0TrKAGm7QM=/fit-in/200x150/filters:strip_icc()/pic2398773.jpg"
-    },
-    {
-      "idBGG": 173096,
-      "nomeGioco": "Una storia di pirati",
-      "pesoMedio": 1.8214,
-      "proprietari": "venduti",
-      "numGiocatori": "Min:2 - Max:4",
-      "durata": 30,
-      "thumbnail": "https://cf.geekdo-images.com/UhtxFEXDXOmxyMf0wsnIrA__thumb/img/GwRP4puZbkO0P0yzm0TG6Bjhqac=/fit-in/200x150/filters:strip_icc()/pic4231262.png"
-    },
-    {
-      "idBGG": 173101,
-      "nomeGioco": "Consiglio dei quattro",
-      "pesoMedio": 2.6569,
-      "proprietari": "venduti",
-      "numGiocatori": "Min:2 - Max:4",
-      "durata": 75,
-      "thumbnail": "https://cf.geekdo-images.com/1PVwotn_MXzaG8aRWJBwLw__thumb/img/F8oR7WY_sXDfNAJKVmenGWQweQs=/fit-in/200x150/filters:strip_icc()/pic3252438.png"
-    },
-    {
       "idBGG": 173346,
       "nomeGioco": "7 Wonders Duel",
       "pesoMedio": 2.2269,
@@ -910,15 +730,6 @@
       "thumbnail": "https://cf.geekdo-images.com/LE-dGEPYcDRK-CGAqN2iGw__thumb/img/j1lHjQLufKr5xlBLhv_LcZyF8nk=/fit-in/200x150/filters:strip_icc()/pic8723226.jpg"
     },
     {
-      "idBGG": 176229,
-      "nomeGioco": "Tides of Time",
-      "pesoMedio": 1.5508,
-      "proprietari": "venduti",
-      "numGiocatori": "Min:2 - Max:2",
-      "durata": 20,
-      "thumbnail": "https://cf.geekdo-images.com/pRCIGU5zrYqPc-fjF2CevA__thumb/img/muBa0gw1sCOOkLqKIBXK42iyF_g=/fit-in/200x150/filters:strip_icc()/pic2486726.jpg"
-    },
-    {
       "idBGG": 176396,
       "nomeGioco": "Quadropolis",
       "pesoMedio": 2.2014,
@@ -944,15 +755,6 @@
       "numGiocatori": "Min:2 - Max:2",
       "durata": 45,
       "thumbnail": "https://cf.geekdo-images.com/A37oW1nGIGZHtV-I7itwSw__thumb/img/3IyGnnOQq9To85StZy-okYBPOIU=/fit-in/200x150/filters:strip_icc()/pic2935653.jpg"
-    },
-    {
-      "idBGG": 178054,
-      "nomeGioco": "Uno studio in Smeraldo",
-      "pesoMedio": 2.9398,
-      "proprietari": "venduti",
-      "numGiocatori": "Min:2 - Max:5",
-      "durata": 60,
-      "thumbnail": "https://cf.geekdo-images.com/1NvtIv0xBUkA5_DIKaW7QA__thumb/img/fkJzAadYX3wtt4VI7kKTy2rDh8U=/fit-in/200x150/filters:strip_icc()/pic2528014.jpg"
     },
     {
       "idBGG": 178570,
@@ -991,15 +793,6 @@
       "thumbnail": "https://cf.geekdo-images.com/xICT94ogRj3CNZ-b9BFsdQ__thumb/img/GoPTjvdnPvEIMeWnMn1XPltZf80=/fit-in/200x150/filters:strip_icc()/pic2584954.png"
     },
     {
-      "idBGG": 180459,
-      "nomeGioco": "Il gioco su Wikipedia",
-      "pesoMedio": 1.2222,
-      "proprietari": "venduti",
-      "numGiocatori": "Min:2 - Max:4",
-      "durata": 30,
-      "thumbnail": "https://cf.geekdo-images.com/mqF7rCWznElkOk43to8yKg__thumb/img/E1RLeYNOS1ZajQ2LgD9v0mEchlA=/fit-in/200x150/filters:strip_icc()/pic2661981.jpg"
-    },
-    {
       "idBGG": 180974,
       "nomeGioco": "Pozioni Esplosive",
       "pesoMedio": 1.7843,
@@ -1016,15 +809,6 @@
       "numGiocatori": "Min:2 - Max:7",
       "durata": 42,
       "thumbnail": "https://cf.geekdo-images.com/1nQ3ZKudtDeAP7IiKE-kNg__thumb/img/sW38512N2r1ZuuPE2TUD2LNfoxM=/fit-in/200x150/filters:strip_icc()/pic8625343.jpg"
-    },
-    {
-      "idBGG": 182050,
-      "nomeGioco": "Germania Magna: Border in Flames",
-      "pesoMedio": 2.3333,
-      "proprietari": "venduti",
-      "numGiocatori": "Min:2 - Max:4",
-      "durata": 60,
-      "thumbnail": "https://cf.geekdo-images.com/Oer5u8dNIo9y2ncEMIljGQ__thumb/img/sN9Px7o3oogpKe_1qe4glWujOv0=/fit-in/200x150/filters:strip_icc()/pic3130233.png"
     },
     {
       "idBGG": 182194,
@@ -1052,15 +836,6 @@
       "numGiocatori": "Min:2 - Max:4",
       "durata": 120,
       "thumbnail": "https://cf.geekdo-images.com/GlCmHjdLwv3SqSjv52ToGw__thumb/img/WXzXZh50EGKd1U2fg75fCbFIL_8=/fit-in/200x150/filters:strip_icc()/pic6966955.jpg"
-    },
-    {
-      "idBGG": 182875,
-      "nomeGioco": "Hengist",
-      "pesoMedio": 1.6452,
-      "proprietari": "venduti",
-      "numGiocatori": "Min:2 - Max:2",
-      "durata": 20,
-      "thumbnail": "https://cf.geekdo-images.com/mY6vS28jjXiAnvNa-0KJvw__thumb/img/jlwCOT_VJjRpjXWOt658SVk70Z8=/fit-in/200x150/filters:strip_icc()/pic2728136.jpg"
     },
     {
       "idBGG": 184921,
@@ -1162,15 +937,6 @@
       "thumbnail": "https://cf.geekdo-images.com/Jeukp3NUs-u6i3SuF-yE4A__small/img/1cw7pZbdLk2bBFh-tjkwzZXwgmw=/fit-in/200x150/filters:strip_icc()/pic3481216.png"
     },
     {
-      "idBGG": 199025,
-      "nomeGioco": "OrgoglioNerd: Area Stampa",
-      "pesoMedio": 1,
-      "proprietari": "venduti",
-      "numGiocatori": "Min:2 - Max:6",
-      "durata": 20,
-      "thumbnail": "https://cf.geekdo-images.com/kyyOmyza45iN0CjXu_5Paw__thumb/img/e_c7zyFPeT646NdBHKzh6QDnUJE=/fit-in/200x150/filters:strip_icc()/pic3107373.png"
-    },
-    {
       "idBGG": 199042,
       "nomeGioco": "Harry Potter: Hogwarts Battle",
       "pesoMedio": 2.0879,
@@ -1196,15 +962,6 @@
       "numGiocatori": "Min:2 - Max:4",
       "durata": 60,
       "thumbnail": "https://cf.geekdo-images.com/DPjV1iI0ygo5Bl3XLNRiIg__thumb/img/O2WnqJew5gNjQqPUH3gqmTBc1pQ=/fit-in/200x150/filters:strip_icc()/pic4449526.jpg"
-    },
-    {
-      "idBGG": 202408,
-      "nomeGioco": "Adrenalina",
-      "pesoMedio": 2.3687,
-      "proprietari": "venduti",
-      "numGiocatori": "Min:3 - Max:5",
-      "durata": 60,
-      "thumbnail": "https://cf.geekdo-images.com/TiNI7bUCR2RPFMlvKEC9TQ__thumb/img/nnWEA6jjVsxPSuEC_Ooph9kzO_g=/fit-in/200x150/filters:strip_icc()/pic3476604.jpg"
     },
     {
       "idBGG": 202564,
@@ -1360,15 +1117,6 @@
       "thumbnail": "https://cf.geekdo-images.com/hGWFm3hbMlCDsfCsauOQ4g__thumb/img/NNG7Ijyx4evp5gcVReis9i0koas=/fit-in/200x150/filters:strip_icc()/pic5375625.png"
     },
     {
-      "idBGG": 223201,
-      "nomeGioco": "Attack of the Jelly Monster",
-      "pesoMedio": 1.4444,
-      "proprietari": "venduti",
-      "numGiocatori": "Min:3 - Max:5",
-      "durata": 25,
-      "thumbnail": "https://cf.geekdo-images.com/1MFz221RJi7nR4KEyi33Fg__thumb/img/mV0AUr-G3ZxJ9o2H6C5CSfadYgo=/fit-in/200x150/filters:strip_icc()/pic3928905.png"
-    },
-    {
       "idBGG": 223931,
       "nomeGioco": "Sherlock Holmes Consulente Investigativo: Carlton House e Queen's Park",
       "pesoMedio": 2.2609,
@@ -1450,15 +1198,6 @@
       "thumbnail": "https://cf.geekdo-images.com/aPSHJO0d0XOpQR5X-wJonw__thumb/img/ccsXKrdGJw-YSClWwzVUwk5Nh9Y=/fit-in/200x150/filters:strip_icc()/pic6973671.png"
     },
     {
-      "idBGG": 233247,
-      "nomeGioco": "Civilization: una nuova alba",
-      "pesoMedio": 3.1877,
-      "proprietari": "venduti",
-      "numGiocatori": "Min:2 - Max:4",
-      "durata": 120,
-      "thumbnail": "https://cf.geekdo-images.com/S0GM2Mxfh8Tmvsdeog0W0g__thumb/img/FmFQ2XURW1ndAFqlvnUYV7cxCAA=/fit-in/200x150/filters:strip_icc()/pic3764168.jpg"
-    },
-    {
       "idBGG": 233398,
       "nomeGioco": "Endeavor le Rotte dell'Impero",
       "pesoMedio": 2.8486,
@@ -1475,15 +1214,6 @@
       "numGiocatori": "Min:2 - Max:4",
       "durata": 120,
       "thumbnail": "https://cf.geekdo-images.com/A1H2QX5meUBthiEpX-gq8w__thumb/img/q4W2Kl7sBDxq8E4_GwVqLWertl0=/fit-in/200x150/filters:strip_icc()/pic5355459.jpg"
-    },
-    {
-      "idBGG": 233678,
-      "nomeGioco": "Indian Summer",
-      "pesoMedio": 2.1529,
-      "proprietari": "venduti",
-      "numGiocatori": "Min:1 - Max:4",
-      "durata": 60,
-      "thumbnail": "https://cf.geekdo-images.com/bloH9_cfn7U0ZxilTblA9w__thumb/img/8L96NRWJxXeFgtYSivzGYPtMlNU=/fit-in/200x150/filters:strip_icc()/pic3749870.jpg"
     },
     {
       "idBGG": 234396,
@@ -1675,15 +1405,6 @@
       "thumbnail": "https://cf.geekdo-images.com/lFUcRqTNwRpeGE5DFJocTg__thumb/img/QrGDs8bkx7l1u1E9RE2w_OblUjo=/fit-in/200x150/filters:strip_icc()/pic4244955.jpg"
     },
     {
-      "idBGG": 254103,
-      "nomeGioco": "Il Diavolo e l'Acqua Scura",
-      "pesoMedio": 1.5,
-      "proprietari": "venduti",
-      "numGiocatori": "Min:3 - Max:6",
-      "durata": 30,
-      "thumbnail": "https://cf.geekdo-images.com/-eXjLFavmEXMAwmm29kcyw__thumb/img/tNw1iqMpKV0kAWE78VMce52qEwM=/fit-in/200x150/filters:strip_icc()/pic4156940.jpg"
-    },
-    {
       "idBGG": 254640,
       "nomeGioco": "Just One",
       "pesoMedio": 1.0359,
@@ -1727,15 +1448,6 @@
       "numGiocatori": "Min:2 - Max:6",
       "durata": 120,
       "thumbnail": "https://cf.geekdo-images.com/7Ej5V5Dq92QdvVFvISfl_A__thumb/img/8tU6KCVSI5dlcibYTT6mq3K9ljk=/fit-in/200x150/filters:strip_icc()/pic4216110.jpg"
-    },
-    {
-      "idBGG": 256957,
-      "nomeGioco": "Monkey Temple",
-      "pesoMedio": 1.5,
-      "proprietari": "venduti",
-      "numGiocatori": "Min:3 - Max:8",
-      "durata": 30,
-      "thumbnail": "https://cf.geekdo-images.com/WCQvrj6naEqKd1DR8VcQ_A__thumb/img/mfSAHAzodzHNrCP8dP18T0F4Iso=/fit-in/200x150/filters:strip_icc()/pic4244806.jpg"
     },
     {
       "idBGG": 259374,
@@ -1846,15 +1558,6 @@
       "thumbnail": "https://cf.geekdo-images.com/mF2cSNRk2O6HtE45Sl9TcA__thumb/img/K2AgL-KE_CTcvwahWd7zlt9YR0U=/fit-in/200x150/filters:strip_icc()/pic4852372.jpg"
     },
     {
-      "idBGG": 266993,
-      "nomeGioco": "Call to Adventure: The Stormlight Archive",
-      "pesoMedio": 1.9474,
-      "proprietari": "venduti",
-      "numGiocatori": "Min:1 - Max:4",
-      "durata": 60,
-      "thumbnail": "https://cf.geekdo-images.com/AZFSmsj-ACtob63KPcKCtg__thumb/img/HjnwT6w_utAWn-H0n52zhK2IryI=/fit-in/200x150/filters:strip_icc()/pic5532947.png"
-    },
-    {
       "idBGG": 268620,
       "nomeGioco": "Similo: Storia",
       "pesoMedio": 1.0556,
@@ -1871,15 +1574,6 @@
       "numGiocatori": "Min:2 - Max:8",
       "durata": 15,
       "thumbnail": "https://cf.geekdo-images.com/fl0hNCmltu2hpcmXaVnmLg__thumb/img/Nwxz6SRTlKky0ynhYUEk2ooRZc4=/fit-in/200x150/filters:strip_icc()/pic6417388.png"
-    },
-    {
-      "idBGG": 269385,
-      "nomeGioco": "Il Signore degli Anelli: Viaggi nella Terra di Mezzo",
-      "pesoMedio": 2.6901,
-      "proprietari": "venduti",
-      "numGiocatori": "Min:1 - Max:5",
-      "durata": 120,
-      "thumbnail": "https://cf.geekdo-images.com/1XA2-niwTBa0HEB7hOz3Dw__thumb/img/iMrsSq7nICZjz1DBXkefq-8E9Js=/fit-in/200x150/filters:strip_icc()/pic4530974.jpg"
     },
     {
       "idBGG": 269537,
@@ -1925,15 +1619,6 @@
       "numGiocatori": "Min:2 - Max:6",
       "durata": 45,
       "thumbnail": "https://cf.geekdo-images.com/kBZGJlIqir1I_EVCr2nDbg__thumb/img/mSl669ndQnGcsmKfe0Yppc1XvbI=/fit-in/200x150/filters:strip_icc()/pic4853794.jpg"
-    },
-    {
-      "idBGG": 276631,
-      "nomeGioco": "Throne",
-      "pesoMedio": 3,
-      "proprietari": "venduti",
-      "numGiocatori": "Min:2 - Max:8",
-      "durata": 90,
-      "thumbnail": "https://cf.geekdo-images.com/_sMKNeIqaQcks5PIVJFquA__thumb/img/ITpPC3hEu3-ocjStcWQSEi_rzkU=/fit-in/200x150/filters:strip_icc()/pic4666896.png"
     },
     {
       "idBGG": 277458,
@@ -2744,15 +2429,6 @@
       "numGiocatori": "Min:8 - Max:24",
       "durata": 30,
       "thumbnail": "https://cf.geekdo-images.com/gY9V4qNWSfXVlSXeSU-KZA__thumb/img/J0PQ9jJ5jBBnmcxaU0oNZzj_res=/fit-in/200x150/filters:strip_icc()/pic7719357.png"
-    },
-    {
-      "idBGG": 403250,
-      "nomeGioco": "Little Tavern",
-      "pesoMedio": 1.2727,
-      "proprietari": "venduti",
-      "numGiocatori": "Min:3 - Max:5",
-      "durata": 25,
-      "thumbnail": "https://cf.geekdo-images.com/A0Y0PDfBu_ROs_SBkcKMXQ__thumb/img/s0rYq9fOB02gU_F03ZkSJMcrYlQ=/fit-in/200x150/filters:strip_icc()/pic7990613.jpg"
     },
     {
       "idBGG": 407297,
