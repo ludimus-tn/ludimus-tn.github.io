@@ -85,6 +85,142 @@ section h2 {
 
 /**********************************************************************************************************************/
 
+/* FIXED-SIZE NAVBAR */
+
+/**********************************************************************************************************************/
+
+
+#fixed-side-navbar {
+    position: fixed;
+    top: 1%;
+    right: -0.5em;
+    z-index: 99999;
+    text-align: right;
+    padding: 10px 0;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    -moz-transition: all .3s;
+    transition: all .3s;
+}
+
+#fixed-side-navbar:hover {
+    background: transparent;
+}
+
+#fixed-side-navbar:hover .nav>li>a>span {
+    display: block;
+    color: #ec3645;
+    text-align: center;
+    font-size: 12px;
+    padding: 2px 12px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+}
+
+#fixed-side-navbar .nav>li a.active {
+    color: #990c18;
+    font-weight: bold;
+    background: #fff;
+}
+
+#fixed-side-navbar .nav>li a.active:after {
+    background: #ec3645;
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -o-transform: scale(0.9);
+    transform: scale(0.9);
+}
+
+#fixed-side-navbar .nav>li a.active:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 17px;
+    margin-top: -8px;
+    width: 16px;
+    height: 16px;
+    background: transparent;
+    border: 2px solid #fff;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+.nav>li {
+    position: relative;
+    display: block;
+}
+
+#fixed-side-navbar .nav>li a {
+    color: #000;
+    min-height: 32px;
+    padding: 5px 45px 5px 25px;
+    border-right: none;
+    backdrop-filter: blur(30px);
+    background: #fff;
+    border-radius: 20px;
+}
+
+#fixed-side-navbar .nav>li a span {
+    display: none;
+    -webkit-transition: all .2s;
+    -o-transition: all .2s;
+    -moz-transition: all .2s;
+    transition: all .2s;
+}
+
+#fixed-side-navbar .nav>li a:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    margin-top: -5px;
+    width: 10px;
+    height: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    background: #000;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    -moz-transition: all .3s;
+    transition: all .3s;
+    -webkit-transform: scale(0.6);
+    -ms-transform: scale(0.6);
+    -moz-transform: scale(0.6);
+    -o-transform: scale(0.6);
+    transform: scale(0.6);
+}
+
+#fixed-side-navbar .nav>li a:hover {
+    background-color: transparent;
+    -webkit-border-top-left-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    border-top-left-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    -moz-border-radius-bottomleft: 5px;
+    border-bottom-left-radius: 5px;
+    border-color: black;
+    border-right: 0;
+}
+
+#fixed-side-navbar .nav>li a:hover>span {
+    color: black;
+    display: block;
+}
+
+.nav-link {
+  display: block;
+  padding: .5rem 1rem;
+  color: #ec3645;
+  text-decoration: none;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+}
+
+/**********************************************************************************************************************/
+
 /* INTRO */
 
 /**********************************************************************************************************************/
@@ -185,6 +321,12 @@ section h2 {
     text-align: center;
     font-family: "Roboto Mono", monospace;
     margin-bottom: -1rem;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+#numbers p:hover {
+    color: #ec3645;
+    transform: scale(1.1);
 }
 
 #numbers a {
@@ -611,6 +753,10 @@ footer p {
 
 #games .card {
     width: 100%;
+}
+
+.card-img-top {
+    max-height: 300px;
 }
 
 @media (max-width: 1284px) {

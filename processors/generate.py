@@ -30,19 +30,25 @@ events_tmpl = open('./layouts/partials/event.html').readlines()
 escaperoom_link_tmpl = open('./layouts/partials/escaperoom-link.html').readlines()
 
 board_games = []
-for item in sorted(input_data.get('items', []), key=lambda x: x.get('votoMedio', 0), reverse=True):
+for item in sorted(input_data.get('items', []), key=lambda x: x.get('idBGG', 0), reverse=True):
     if item['idBGG'] in HIDDEN_GAMES:
         continue
 
     image = item['thumbnail']
+    if not 'pesoMedio' in item or item['pesoMedio'] is None:
+        pesoMedio = '?'
+    else:
+        pesoMedio = '{0:0.1f}'.format(item['pesoMedio'])
+
     board_games.append(boardgame_tmpl.format(
         name=item['nomeGioco'],
-        image=image,
+        image=image if image else 'https://ludimus.it/images/no-image-available.png',
         link='https://boardgamegeek.com/boardgame/{}/-'.format(item['idBGG']),
-        vote='{0:0.1f}'.format(item['votoMedio']),
+        # vote='{0:0.1f}'.format(item['votoMedio']),
         players=item['numGiocatori'].replace('Min:', 'da ').replace(' - Max:', ' a '),
         time=item['durata'],
-        weight='{0:0.1f}'.format(item['pesoMedio']),
+        weight=pesoMedio,
+        location=item['proprietari']
     ))
 
 blog_file_to_tmpl = {}

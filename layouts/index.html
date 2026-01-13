@@ -9,8 +9,7 @@
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto+Condensed|Raleway|Roboto+Mono"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
-        crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
         crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
@@ -23,6 +22,15 @@
 </head>
 
 <body>
+    <div id="fixed-side-navbar">
+        <ul class="nav flex-column">
+            <li class="nav-item"><a class="nav-link" href="#header"><span>Intro</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="#numbers"><span>Numeri</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="#serate"><span>Serate</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="#calendar"><span>Eventi</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="#join"><span>Tesseramento</span></a></li>
+        </ul>
+    </div>
     <section id="header">
         <div id="intro">
             <h1 style="display: none;">ludimus</h1>
@@ -48,12 +56,10 @@
                 <p>520+</p>
                 <a href="#join">Manchi solo tu ⇢</a>
             </div>
-            <div class="col">
+            <div class="col clickable-div">
                 <h3>GIOCHI</h3>
-                <p>310+</p>
-                <a class="temp-disabled">(lista giochi in aggiornamento)</a>
-                <!-- <p>{{ number_of_games }}</p>
-                <a href="/games.html">Curiosa pure ⇢</a>-->
+                <p>315+</p>
+                <a href="/games.html">Curiosa pure ⇢</a>
             </div>
             <div class="col clickable-div">
                 <h3>ESCAPE ROOM</h3>
@@ -158,6 +164,7 @@
     </section>
 
     {{ footer }}
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -179,6 +186,10 @@
                     }
                 }
             });
+        });
+        // ScrollSpy for side navbar (Bootstrap 5)
+        const scrollSpy = new bootstrap.ScrollSpy(document.body, {
+            target: '#fixed-side-navbar',
         });
     </script>
 </body>
