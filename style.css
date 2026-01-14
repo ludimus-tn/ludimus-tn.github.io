@@ -373,7 +373,7 @@ section h2 {
     margin: 0 auto;
 }
 
-#serate img.temporary-meeple {
+#serate img.temporary-placeholder {
     opacity: 0.2;
     width: 300px;
     padding: 20px;
@@ -1530,9 +1530,9 @@ em.post-date {
     color: gray;
 }
 
-.temporary-meeple {
+.temporary-placeholder {
     text-align: center;
-    color: gray;
+    opacity: 0.75;
     font-size: 1.2rem;
     margin-top: 2rem;
 }
