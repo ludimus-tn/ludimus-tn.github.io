@@ -311,6 +311,7 @@ static_events = [
     "doppiomalto",
     "le-petit-jardin",
     "luogo-comune-riva",
+    "savot-ala",
     "simposio",
     "smartlab",
 ]
