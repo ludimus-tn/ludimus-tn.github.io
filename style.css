@@ -309,13 +309,13 @@ section h2 {
     top: 0;
     right: 0;
     left: 0;
-    background-color: #37b684;
+    background-color: #3184B9;
     color: white;
     height: fit-content;
     text-align: center;
     z-index: 2;
     padding: 14px 20px;
-    font-size: x-large;
+    font-size: large;
 }
 
 /**********************************************************************************************************************/
