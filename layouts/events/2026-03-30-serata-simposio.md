@@ -1,14 +1,16 @@
-event_title: Serata Giochi a Trento
-event_description: Lunedì 30 Marzo 2026 vieni a giocare con Ludimus al Bar Simposio!
+event_title: Serata Giochi a Trento - Addio Simposio
+event_description: Lunedì 30 Marzo 2026 vieni a giocare per un'ultima volta al Bar Simposio - sarà l'ultima serata del Simposio perché poi il locale chiuderà.
 event_og: https://ludimus.it/static/img/events/default_trento.png
 
 # Serata Giochi da Tavolo a Trento
 
-### Vieni a giocare alle serate settimanali di Ludimus a Trento!
+### Vieni a giocare per l'ultima volta al Simposio
 
 📅 Lunedì 30 Marzo 2026
 🕰 dalle 19:00 in poi
 📍 [Il Simposio Bar Ristorante](https://g.page/ilsimposiotrento?share)
+
+Lunedì 30 marzo ci sarà l'ultima del bar Simposio, poi il locale chiuderà e diventerà un ristorante cinese.
 
 ---
 
