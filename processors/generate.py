@@ -28,6 +28,7 @@ blog_preview_tmpl = open('./layouts/partials/blog-preview.html').readlines()
 event_link_tmpl = open('./layouts/partials/event-link.html').readlines()
 events_tmpl = open('./layouts/partials/event.html').readlines()
 escaperoom_link_tmpl = open('./layouts/partials/escaperoom-link.html').readlines()
+gallery_photo_tmpl = open('./layouts/partials/gallery-photo.html').read()
 
 board_games = []
 for item in sorted(input_data.get('items', []), key=lambda x: x.get('idBGG', 0), reverse=True):
@@ -526,6 +527,34 @@ with open('./layouts/escaperooms.html') as base_escaperooms_tmpl, \
             output_escaperooms.write(line.replace('{{ footer }}', footer))
         else:
             output_escaperooms.write(line)
+
+
+###############################################################################
+## STRACOT
+###############################################################################
+
+stracot_photo_extensions = {'.jpg', '.jpeg', '.png', '.gif', '.webp'}
+stracot_photos = sorted(
+    p for p in glob.glob('./static/img/stracot/*')
+    if os.path.splitext(p)[1].lower() in stracot_photo_extensions
+)
+
+gallery_items = ''.join(
+    gallery_photo_tmpl.format(image='./static/img/stracot/{}'.format(os.path.basename(p)))
+    for p in stracot_photos
+)
+
+with open('./layouts/stracot.html') as base_stracot_tmpl, \
+        open('./stracot.html', 'w') as output_stracot:
+    for line in base_stracot_tmpl:
+        if '{{ footer }}' in line:
+            output_stracot.write(line.replace('{{ footer }}', footer))
+        elif '{{ gallery }}' in line:
+            output_stracot.write(gallery_items)
+        elif '{{ hash }}' in line:
+            output_stracot.write(line.replace('{{ hash }}', style_hash))
+        else:
+            output_stracot.write(line)
 
 
 # ###############################################################################

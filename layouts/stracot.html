@@ -1,0 +1,69 @@
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Stracot - Ludimus</title>
+  <meta property="og:title" content="Stracot - Ludimus" />
+  <meta property="og:description" content="Stracot: la versione dal vivo di Overcooked ambientata nella cucina trentina, con squadre di 4 persone che collaborano per ottenere il punteggio più alto!" />
+  <meta property="og:image" content="https://ludimus.it/static/img/og/stracot.jpg" />
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto+Condensed|Raleway|Roboto+Mono"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    crossorigin="anonymous">
+
+  <link rel="stylesheet" href="./style.css?t={{ hash }}">
+
+  <link rel="icon" type="image/png" href="./static/img/favicon/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="./static/img/favicon/favicon-16x16.png" sizes="16x16" />
+
+</head>
+
+<body>
+
+  <a href="/"><img class="go-back" src="./static/img/logo.svg" alt="ludimus"></a>
+
+  <section id="stracot">
+
+    <section class="stracot__header">
+      <div>
+        <h2>STRACÒT</h2>
+      </div>
+      <p class="centered-text">
+        <strong>Stracòt</strong> è la versione dal vivo di <em>Overcooked</em>: un gioco di cooperazione frenetica in
+        cui squadre di <strong>4 persone</strong> devono coordinarsi alla perfezione per realizzare ricette e ottenere
+        il punteggio più alto possibile… prima che scada il tempo!
+      </p>
+      <p class="centered-text">
+        La nostra variante trentina ti mette ai fornelli con gli ingredienti del territorio: <strong>carne
+          salada</strong>, <strong>polenta</strong>, <strong>formaggio</strong>, <strong>canederli</strong> e
+        molto altro. Ogni squadra riceve di continuo ordini da evadere entro 8 (o 10) minuti, gestendo
+        contemporaneamente gli spazi della cucina, la divisione dei compiti e la comunicazione tra i giocatori.
+      </p>
+      <br>
+      <div class="stracot__mascots">
+        <img src="./static/img/Lino_Stracot.png" alt="Lino" class="stracot__mascot">
+        <img src="./static/img/Lola_Stracot.png" alt="Lola" class="stracot__mascot">
+      </div>
+    </section>
+
+    <section class="stracot__gallery">
+      <div class="cards-container">
+        <div class="card-columns">
+          {{ gallery }}
+        </div>
+      </div>
+    </section>
+
+  </section>
+
+  {{ footer }}
+
+</body>
+
+</html>

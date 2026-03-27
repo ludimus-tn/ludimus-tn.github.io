@@ -1536,3 +1536,75 @@ em.post-date {
     font-size: 1.2rem;
     margin-top: 2rem;
 }
+
+/**********************************************************************************************************************/
+
+/* STRACOT */
+
+/**********************************************************************************************************************/
+
+#stracot {
+    text-align: center;
+}
+
+#stracot .stracot__header {
+    padding-bottom: 1rem;
+}
+
+#stracot .stracot__mascots {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 1.5rem auto;
+}
+
+#stracot .stracot__mascot {
+    height: 250px;
+    width: auto;
+}
+
+@media (max-width: 480px) {
+    #stracot .stracot__mascot {
+        height: 130px;
+    }
+}
+
+#stracot .stracot__gallery .cards-container {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+}
+
+#stracot .stracot__gallery .card-columns {
+    column-gap: .5rem;
+    columns: 3;
+}
+
+#stracot .gallery-card {
+    break-inside: avoid;
+    margin-bottom: .5rem;
+    border: none;
+    background: transparent;
+}
+
+#stracot .gallery-photo {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+    #stracot .stracot__gallery .cards-container {
+        width: 95%;
+    }
+    #stracot .stracot__gallery .card-columns {
+        columns: 2;
+    }
+}
+
+@media (max-width: 480px) {
+    #stracot .stracot__gallery .card-columns {
+        columns: 1;
+    }
+}
