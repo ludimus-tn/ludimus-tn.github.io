@@ -309,6 +309,7 @@ static_events = [
     "bicigrillruotalibera",
     "cantiere26",
     "doppiomalto",
+    "gattogordo",
     "le-petit-jardin",
     "luogo-comune-riva",
     "savot-ala",

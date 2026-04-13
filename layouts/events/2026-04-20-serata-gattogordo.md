@@ -1,14 +1,14 @@
-event_title: Serata Giochi a Trento - Doppio Malto
-event_description: Venerdì 17 Aprile 2026 vieni a giocare con Ludimus al Ristorante Doppio Malto di Trento!
+event_title: Serata Giochi a Trento - Locanda Gatto Gordo
+event_description: Lunedì 23 Aprile 2026 vieni a giocare con Ludimus al Bar Simposio!
 event_og: https://ludimus.it/static/img/events/default_trento.png
 
 # Serata Giochi da Tavolo a Trento
 
 ### Vieni a giocare alle serate settimanali di Ludimus a Trento!
 
-📅 Venerdì 17 Aprile 2026
+📅 Lunedì 23 Aprile 2026
 🕰 dalle 19:00 in poi
-📍 [Doppio Malto Trento](https://maps.app.goo.gl/aMUXxgqDS8iZ4fYa9)
+📍 [Locanda Gatto Gordo](https://maps.app.goo.gl/SkH39dic7ntw4NcG7)
 
 ---
 
