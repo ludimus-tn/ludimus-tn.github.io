@@ -1,4 +1,4 @@
-event_title: scape Room - La Strega e l'Inquisitore a Calendimaggio
+event_title: Escape Room: La Strega e l'Inquisitore - Calendimaggio
 event_description: Partecipa all'escape room il 1° Maggio 2026 a Calendimaggio - Nogaredo
 event_og: https://ludimus.it/static/img/events/2026-05-01_calendimaggio-escape-room.png
 
