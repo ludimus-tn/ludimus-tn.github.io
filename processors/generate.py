@@ -17,17 +17,22 @@ HIDDEN_GAMES = {
 
 markdowner = markdown2.Markdown()
 
-boardgame_tmpl = '\n'.join(open('./layouts/partials/boardgame.html').readlines())
+boardgame_tmpl = '\n'.join(
+    open('./layouts/partials/boardgame.html').readlines())
 footer = ''.join(open('./layouts/partials/footer.html').readlines())
-league_ranking = ''.join(open('./layouts/partials/league-ranking.html').readlines())
-league_rules = ''.join(markdowner.convert(open('./static/docs/league/2019-20-Regolamento.md').read().encode('utf-8')))
-style_hash = hashlib.md5(open('./style.css').read().encode('utf-8')).hexdigest()
+league_ranking = ''.join(
+    open('./layouts/partials/league-ranking.html').readlines())
+league_rules = ''.join(markdowner.convert(
+    open('./static/docs/league/2019-20-Regolamento.md').read().encode('utf-8')))
+style_hash = hashlib.md5(
+    open('./style.css').read().encode('utf-8')).hexdigest()
 input_data = json.loads(''.join(open('./processors/games.json').readlines()))
 blog_post_tmpl = open('./layouts/partials/blog-post.html').readlines()
 blog_preview_tmpl = open('./layouts/partials/blog-preview.html').readlines()
 event_link_tmpl = open('./layouts/partials/event-link.html').readlines()
 events_tmpl = open('./layouts/partials/event.html').readlines()
-escaperoom_link_tmpl = open('./layouts/partials/escaperoom-link.html').readlines()
+escaperoom_link_tmpl = open(
+    './layouts/partials/escaperoom-link.html').readlines()
 gallery_photo_tmpl = open('./layouts/partials/gallery-photo.html').read()
 
 board_games = []
@@ -46,7 +51,8 @@ for item in sorted(input_data.get('items', []), key=lambda x: x.get('idBGG', 0),
         image=image if image else 'https://ludimus.it/images/no-image-available.png',
         link='https://boardgamegeek.com/boardgame/{}/-'.format(item['idBGG']),
         # vote='{0:0.1f}'.format(item['votoMedio']),
-        players=item['numGiocatori'].replace('Min:', 'da ').replace(' - Max:', ' a '),
+        players=item['numGiocatori'].replace(
+            'Min:', 'da ').replace(' - Max:', ' a '),
         time=item['durata'],
         weight=pesoMedio,
         location=item['proprietari']
@@ -55,7 +61,8 @@ for item in sorted(input_data.get('items', []), key=lambda x: x.get('idBGG', 0),
 blog_file_to_tmpl = {}
 for post in sorted(glob.glob('./layouts/blog/*')):
     file_name = post.replace('./layouts/blog/', '')
-    title = file_name[10:].replace('.html', '').replace('.md', '').replace('-', ' ').title()
+    title = file_name[10:].replace('.html', '').replace(
+        '.md', '').replace('-', ' ').title()
     file_url = file_name.replace('.md', '.html')
     with open(post) as post_tmpl:
         for line in post_tmpl:
@@ -70,7 +77,8 @@ for post in sorted(glob.glob('./layouts/blog/*')):
                 continue
 
     post_date_tmp = file_url[:10].split('-')
-    post_date = '{}/{}/{}'.format(post_date_tmp[2], post_date_tmp[1], post_date_tmp[0])
+    post_date = '{}/{}/{}'.format(post_date_tmp[2],
+                                  post_date_tmp[1], post_date_tmp[0])
 
     output_blog_tmpl = ''
     output_blog_tmpl += '<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" style="display: none;">'
@@ -78,13 +86,15 @@ for post in sorted(glob.glob('./layouts/blog/*')):
         if '{{ blog_url }}' in blog_line:
             output_blog_tmpl += blog_line.replace('{{ blog_url }}', file_url)
         elif '{{ image_url }}' in blog_line:
-            output_blog_tmpl += blog_line.replace('{{ image_url }}', og_image.replace('https://ludimus.it/', '../'))
+            output_blog_tmpl += blog_line.replace(
+                '{{ image_url }}', og_image.replace('https://ludimus.it/', '../'))
         elif '{{ title }}' in blog_line:
             output_blog_tmpl += blog_line.replace('{{ title }}', title)
         elif '{{ date }}' in blog_line:
             output_blog_tmpl += blog_line.replace('{{ date }}', post_date)
         elif '{{ author_img }}' in blog_line:
-            output_blog_tmpl += blog_line.replace('{{ author_img }}', author_img)
+            output_blog_tmpl += blog_line.replace(
+                '{{ author_img }}', author_img)
         elif '{{ abstract }}' in blog_line:
             output_blog_tmpl += blog_line.replace('{{ abstract }}', abstract)
         else:
@@ -97,7 +107,7 @@ events = sorted(glob.glob('./layouts/events/*'), reverse=True)
 escaperooms = sorted(glob.glob('./layouts/escaperooms/*'), reverse=True)
 
 ###############################################################################
-## Homepage
+# Homepage
 ###############################################################################
 
 with open('./layouts/index.html') as base_index_tmpl, \
@@ -105,7 +115,8 @@ with open('./layouts/index.html') as base_index_tmpl, \
 
     for line in base_index_tmpl:
         if '{{ number_of_games }}' in line:
-            output_index.write(line.replace('{{ number_of_games }}', str(len(board_games))))
+            output_index.write(line.replace(
+                '{{ number_of_games }}', str(len(board_games))))
         elif '{{ hash }}' in line:
             output_index.write(line.replace('{{ hash }}', style_hash))
         elif '{{ footer }}' in line:
@@ -118,7 +129,7 @@ with open('./layouts/index.html') as base_index_tmpl, \
             output_index.write(line)
 
 ###############################################################################
-## Games
+# Games
 ###############################################################################
 
 with open('./layouts/games.html') as base_games_tmpl, \
@@ -131,14 +142,15 @@ with open('./layouts/games.html') as base_games_tmpl, \
             for item in board_games:
                 output_games.write(item)
         elif '{{ number_of_games }}' in line:
-            output_games.write(line.replace('{{ number_of_games }}', str(len(board_games))))
+            output_games.write(line.replace(
+                '{{ number_of_games }}', str(len(board_games))))
         elif '{{ footer }}' in line:
             output_games.write(line.replace('{{ footer }}', footer))
         else:
             output_games.write(line)
 
 ###############################################################################
-## Informative
+# Informative
 ###############################################################################
 
 with open('./layouts/informative.html') as base_games_tmpl, \
@@ -150,7 +162,7 @@ with open('./layouts/informative.html') as base_games_tmpl, \
             output_games.write(line)
 
 ###############################################################################
-## Trasparenza
+# Trasparenza
 ###############################################################################
 
 with open('./layouts/trasparenza.html') as trasparenza_tmpl, \
@@ -162,7 +174,7 @@ with open('./layouts/trasparenza.html') as trasparenza_tmpl, \
             output_trasparenza.write(line)
 
 ###############################################################################
-## League
+# League
 ###############################################################################
 
 with open('./layouts/league.html') as base_league_tmpl, \
@@ -174,83 +186,108 @@ with open('./layouts/league.html') as base_league_tmpl, \
             output_league.write(line)
 
 ###############################################################################
-## League Rules
+# League Rules
 ###############################################################################
 
 with open('./layouts/league-rules.html') as base_league_tmpl, \
         open('./league-rules.html', 'w') as output_league:
     for line in base_league_tmpl:
-        if '{{ league_rules }}' in line: 
-            output_league.write(line.replace('{{ league_rules }}', league_rules))
+        if '{{ league_rules }}' in line:
+            output_league.write(line.replace(
+                '{{ league_rules }}', league_rules))
         elif '{{ footer }}' in line:
             output_league.write(line.replace('{{ footer }}', footer))
         else:
             output_league.write(line)
 
 ###############################################################################
-## League Slideshow
+# League Slideshow
 ###############################################################################
 
 with open('./layouts/league-slideshow.html') as base_league_tmpl, \
         open('./league-slideshow.html', 'w') as output_league:
     for line in base_league_tmpl:
-        if '{{ league_ranking }}' in line: 
-            output_league.write(line.replace('{{ league_ranking }}', league_ranking))
+        if '{{ league_ranking }}' in line:
+            output_league.write(line.replace(
+                '{{ league_ranking }}', league_ranking))
         else:
             output_league.write(line)
 
 
 ###############################################################################
-## ARCHIVED EVENTS
+# ARCHIVED EVENTS
 ###############################################################################
 
 archived_events = []
-for event in sorted(events, reverse=True):
-    event_name = event.replace('./layouts/events/', '')
-    event_date_tmp = event_name[:10].split('-')
-    event_day = int(event_date_tmp[2])
-    event_month = int(event_date_tmp[1])
-    event_year = int(event_date_tmp[0])
+for event in sorted(glob.glob('./events/*.html'), reverse=True):
+    event_name = os.path.basename(event)
+
+    if len(event_name) < 10:
+        continue
+    date_part = event_name[:10]
+    if not re.match(r'\d{4}-\d{2}-\d{2}', date_part):
+        continue
+
+    event_date_tmp = date_part.split('-')
+    try:
+        event_day = int(event_date_tmp[2])
+        event_month = int(event_date_tmp[1])
+        event_year = int(event_date_tmp[0])
+    except (IndexError, ValueError):
+        continue
 
     event_date = datetime.datetime(event_year, event_month, event_day)
     now = datetime.datetime.now().replace(hour=0, minute=0, second=0, microsecond=0)
 
     if event_date >= now:
         continue
-    archived_events.append(event)
+    archived_events.append((event_year, event))
 
 with open('./layouts/archive.html') as base_archive_events_tmpl, \
         open('./archive.html', 'w') as output_archive_events:
     for line in base_archive_events_tmpl:
         if '{{ footer }}' in line:
             output_archive_events.write(line.replace('{{ footer }}', footer))
-        elif '{{ archived_events }}' in line: 
-            for archived_event in archived_events:
-                event_name = archived_event.replace('./layouts/events/', '')
-                event_title = event_name[10:].replace('.html', '').replace('.md', '').replace('-', ' ').title()
+        elif '{{ archived_events }}' in line:
+            current_year = None
+            for year, archived_event in archived_events:
+                event_name = os.path.basename(archived_event)
                 event_date_tmp = event_name[:10].split('-')
-                event_date = '{}/{}/{}'.format(event_date_tmp[2], event_date_tmp[1], event_date_tmp[0])
-                event_url = event_name.replace('.md', '.html')
+                event_date = '{}/{}/{}'.format(
+                    event_date_tmp[2], event_date_tmp[1], event_date_tmp[0])
+                event_url = event_name
 
-                event_body = open(archived_event).readlines()
-                for event_line in event_body:
-                    if 'event_title: ' in event_line:
-                        event_title = event_line.replace('event_title: ', '').strip()
+                if year != current_year:
+                    current_year = year
+                    output_archive_events.write(
+                        '<h3>{}</h3>\n'.format(current_year))
 
-                for line in event_link_tmpl:
-                    if '{{ title }}' in line:
-                        output_archive_events.write(line.replace('{{ title }}', event_title))
-                    elif '{{ date }}' in line:
-                        output_archive_events.write(line.replace('{{ date }}', event_date))
-                    elif '{{ event_url }}' in line:
-                        output_archive_events.write(line.replace('{{ event_url }}', event_url))
+                event_title = event_name[10:].replace(
+                    '.html', '').replace('-', ' ').title()
+                event_body = open(archived_event, encoding='utf-8').read()
+
+                title_match = re.search(
+                    r'<title>(.*?)</title>', event_body, re.IGNORECASE)
+                if title_match:
+                    event_title = title_match.group(1).strip()
+
+                for tmpl_line in event_link_tmpl:
+                    if '{{ title }}' in tmpl_line:
+                        output_archive_events.write(
+                            tmpl_line.replace('{{ title }}', event_title))
+                    elif '{{ date }}' in tmpl_line:
+                        output_archive_events.write(
+                            tmpl_line.replace('{{ date }}', event_date))
+                    elif '{{ event_url }}' in tmpl_line:
+                        output_archive_events.write(
+                            tmpl_line.replace('{{ event_url }}', event_url))
                     else:
-                        output_archive_events.write(line)
+                        output_archive_events.write(tmpl_line)
         else:
             output_archive_events.write(line)
 
 ###############################################################################
-## EVENTS
+# EVENTS
 ###############################################################################
 
 next_events = []
@@ -275,34 +312,41 @@ with open('./layouts/events.html') as base_events_tmpl, \
             output_events.write(line.replace('{{ footer }}', footer))
         elif '{{ next_events }}' in line:
             if len(next_events) == 0:
-                output_events.write('Al momento non ci sono eventi in programma 🎲')
+                output_events.write(
+                    'Al momento non ci sono eventi in programma 🎲')
                 continue
             for event in next_events:
                 event_name = event.replace('./layouts/events/', '')
-                event_title = event_name[10:].replace('.html', '').replace('.md', '').replace('-', ' ').title()
+                event_title = event_name[10:].replace('.html', '').replace(
+                    '.md', '').replace('-', ' ').title()
                 event_date_tmp = event_name[:10].split('-')
-                event_date = '{}/{}/{}'.format(event_date_tmp[2], event_date_tmp[1], event_date_tmp[0])
+                event_date = '{}/{}/{}'.format(
+                    event_date_tmp[2], event_date_tmp[1], event_date_tmp[0])
                 event_url = event_name.replace('.md', '.html')
 
                 event_body = open(event).readlines()
                 for event_line in event_body:
                     if 'event_title: ' in event_line:
-                        event_title = event_line.replace('event_title: ', '').strip()
+                        event_title = event_line.replace(
+                            'event_title: ', '').strip()
 
                 for line in event_link_tmpl:
                     if '{{ title }}' in line:
-                        output_events.write(line.replace('{{ title }}', event_title))
+                        output_events.write(line.replace(
+                            '{{ title }}', event_title))
                     elif '{{ date }}' in line:
-                        output_events.write(line.replace('{{ date }}', event_date))
+                        output_events.write(
+                            line.replace('{{ date }}', event_date))
                     elif '{{ event_url }}' in line:
-                        output_events.write(line.replace('{{ event_url }}', event_url))
+                        output_events.write(line.replace(
+                            '{{ event_url }}', event_url))
                     else:
                         output_events.write(line)
         else:
             output_events.write(line)
 
 ###############################################################################
-## EVENT
+# EVENT
 ###############################################################################
 
 static_events = [
@@ -322,7 +366,7 @@ done = {event: False for event in static_events}
 events = sorted(glob.glob('./layouts/events/*'), reverse=True)
 for event in events:
     event_name = event.rsplit('/', 1)[1]
-    
+
     must_do_static = False
     try:
         event_type = event_name.split('serata-')
@@ -330,7 +374,8 @@ for event in events:
             event_type = event_type[1].split('.')[0]
             if event_type in static_events:
                 date = datetime.datetime.strptime(event_name[:10], '%Y-%m-%d')
-                today = datetime.datetime.now().replace(hour=0, minute=0, second=0, microsecond=0)
+                today = datetime.datetime.now().replace(
+                    hour=0, minute=0, second=0, microsecond=0)
                 if today <= date < today + datetime.timedelta(days=7):
                     must_do_static = True
     except IndexError:
@@ -370,9 +415,11 @@ for event in events:
             elif '{{ event_title }}' in line:
                 output_event.write(line.replace('{{ event_title }}', title))
             elif '{{ event_description }}' in line:
-                output_event.write(line.replace('{{ event_description }}', description))
+                output_event.write(line.replace(
+                    '{{ event_description }}', description))
             elif '{{ event_body }}' in line:
-                output_event.write(line.replace('{{ event_body }}', markdown2.markdown(''.join(content), extras={'break-on-newline': True})))
+                output_event.write(line.replace('{{ event_body }}', markdown2.markdown(
+                    ''.join(content), extras={'break-on-newline': True})))
             elif '{{ event_og }}' in line:
                 output_event.write(line.replace('{{ event_og }}', og_image))
             else:
@@ -381,16 +428,18 @@ for event in events:
         if must_do_static:
             if not done[event_type]:
                 with open('./events/{}.html'.format(event_type), 'w') as static_event:
-                    static_event.write('<meta http-equiv="refresh" content="0; url=/events/{}.html" />'.format(event_name.replace('.md', '')))
+                    static_event.write(
+                        '<meta http-equiv="refresh" content="0; url=/events/{}.html" />'.format(event_name.replace('.md', '')))
                     done[event_type] = True
 
     for static_event in static_events:
         if not done[static_event]:
             with open('./events/{}.html'.format(static_event), 'w') as static_event:
-                static_event.write('<meta http-equiv="refresh" content="0; url=/events" />'.format(static_event))
+                static_event.write(
+                    '<meta http-equiv="refresh" content="0; url=/events" />'.format(static_event))
 
 ###############################################################################
-## T-Shirt Requirements
+# T-Shirt Requirements
 ###############################################################################
 
 with open('./layouts/maglietta.html') as base_tshirt_tmpl, \
@@ -402,7 +451,7 @@ with open('./layouts/maglietta.html') as base_tshirt_tmpl, \
             output_event.write(line)
 
 ###############################################################################
-## GAS
+# GAS
 ###############################################################################
 
 with open('./layouts/gas.html') as gas_tmpl, \
@@ -414,7 +463,7 @@ with open('./layouts/gas.html') as gas_tmpl, \
             output_gas.write(line)
 
 ###############################################################################
-## BLOG PAGE
+# BLOG PAGE
 ###############################################################################
 
 with open('./layouts/blog.html') as base_blog_tmpl, \
@@ -429,9 +478,9 @@ with open('./layouts/blog.html') as base_blog_tmpl, \
                 output_blog.write(blog_file_to_tmpl[post])
         else:
             output_blog.write(line)
-            
+
 ###############################################################################
-## BLOG
+# BLOG
 ###############################################################################
 
 posts = glob.glob('./layouts/blog/*')
@@ -475,15 +524,19 @@ for post in posts:
             elif '{{ blog_post_title }}' in line:
                 output_post.write(line.replace('{{ blog_post_title }}', title))
             elif '{{ blog_post_body }}' in line:
-                output_post.write(line.replace('{{ blog_post_body }}', markdown2.markdown(''.join(post_blog_body), extras={'break-on-newline': True})))
+                output_post.write(line.replace('{{ blog_post_body }}', markdown2.markdown(
+                    ''.join(post_blog_body), extras={'break-on-newline': True})))
             elif '{{ blog_post_author_img }}' in line:
-                output_post.write(line.replace('{{ blog_post_author_img }}', author_img))
+                output_post.write(line.replace(
+                    '{{ blog_post_author_img }}', author_img))
             elif '{{ blog_post_author }}' in line:
-                output_post.write(line.replace('{{ blog_post_author }}', author))
+                output_post.write(line.replace(
+                    '{{ blog_post_author }}', author))
             elif '{{ blog_post_og }}' in line:
                 output_post.write(line.replace('{{ blog_post_og }}', og_image))
             elif '{{ blog_post_read_more }}' in line:
-                post_blogs_links = list(set(glob.glob('./layouts/blog/*')) - {post})
+                post_blogs_links = list(
+                    set(glob.glob('./layouts/blog/*')) - {post})
                 use_random = os.getenv('SHUFFLE_BLOG_LINKS', False)
                 if use_random:
                     Random(post).shuffle(post_blogs_links)
@@ -494,7 +547,7 @@ for post in posts:
                 output_post.write(line)
 
 ###############################################################################
-## LUDICAMP
+# LUDICAMP
 ###############################################################################
 
 with open('./layouts/ludicamp.html') as base_ludicamp_tmpl, \
@@ -506,7 +559,7 @@ with open('./layouts/ludicamp.html') as base_ludicamp_tmpl, \
             output_ludicamp.write(line)
 
 ###############################################################################
-## CRONACHE AHRANILES
+# CRONACHE AHRANILES
 ###############################################################################
 
 with open('./layouts/cronache-ahraniles.html') as cronache_tmpl, \
@@ -518,7 +571,7 @@ with open('./layouts/cronache-ahraniles.html') as cronache_tmpl, \
             output_cronache.write(line)
 
 ###############################################################################
-## ESCAPEROOMS
+# ESCAPEROOMS
 ###############################################################################
 
 with open('./layouts/escaperooms.html') as base_escaperooms_tmpl, \
@@ -531,7 +584,7 @@ with open('./layouts/escaperooms.html') as base_escaperooms_tmpl, \
 
 
 ###############################################################################
-## STRACOT
+# STRACOT
 ###############################################################################
 
 stracot_photo_extensions = {'.jpg', '.jpeg', '.png', '.gif', '.webp'}
@@ -541,7 +594,8 @@ stracot_photos = sorted(
 )
 
 gallery_items = ''.join(
-    gallery_photo_tmpl.format(image='./static/img/stracot/{}'.format(os.path.basename(p)))
+    gallery_photo_tmpl.format(
+        image='./static/img/stracot/{}'.format(os.path.basename(p)))
     for p in stracot_photos
 )
 
