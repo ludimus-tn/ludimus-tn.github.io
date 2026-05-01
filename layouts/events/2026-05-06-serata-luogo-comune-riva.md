@@ -1,12 +1,12 @@
-event_title: Serata Giochi Riva del Garda - Luogo Comune
-event_description: Mercoledì 06 Maggio 2026 vieni a giocare con Ludimus al Luogo Comune di Riva del Garda!
+event_title: Serata Giochi al Luogo Comune di Riva del Garda
+event_description: Mercoledì 22 Aprile 2026 vieni a giocare con Ludimus al Luogo Comune di Riva del Garda!
 event_og: https://ludimus.it/static/img/events/default_riva.jpg
 
 # Serata Giochi da Tavolo a Riva del Garda
 
 ### Partecipa alla serata al Luogo Comune di Riva del Garda
 
-📅 Mercoledì 06 Maggio 2026
+📅 Mercoledì 22 Aprile 2026
 🕰 dalle 19:30 alle 23:00
 📍 [Luogo Comune - Via Italo Marchi 13 Riva del Garda](https://goo.gl/maps/8cXExW6hLPMwV1yF9)
 

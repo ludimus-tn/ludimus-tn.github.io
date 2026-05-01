@@ -1,5 +1,5 @@
 event_title: Serata Giochi a Trento - Locanda Gatto Gordo
-event_description: Lunedì 27 Aprile 2026 vieni a giocare con Ludimus al Bar Simposio!
+event_description: Lunedì 27 Aprile 2026 vieni a giocare con Ludimus alla Locanda del Gatto Gordo!
 event_og: https://ludimus.it/static/img/events/default_trento.png
 
 # Serata Giochi da Tavolo a Trento
