@@ -1,14 +1,14 @@
-event_title: Serata Giochi al Luogo Comune di Riva del Garda
-event_description: Mercoledì 06 Maggio 2026 vieni a giocare con Ludimus al Luogo Comune di Riva del Garda!
+event_title: Serata Giochi Ala - Bar SaVot
+event_description: Mercoledì 20 Maggio 2026 vieni a giocare con Ludimus al Bar SaVot di Ala!
 event_og: https://ludimus.it/static/img/events/default_riva.jpg
 
-# Serata Giochi da Tavolo a Riva del Garda
+# Serata Giochi da Tavolo ad Ala
 
-### Partecipa alla serata al Luogo Comune di Riva del Garda
+### Partecipa alla serata al Bar SaVot di Ala
 
-📅 Mercoledì 06 Maggio 2026
-🕰 dalle 19:30 alle 23:00
-📍 [Luogo Comune - Via Italo Marchi 13 Riva del Garda](https://goo.gl/maps/8cXExW6hLPMwV1yF9)
+📅 Mercoledì 20 Maggio 2026
+🕰 dalle 20:00 alle 23:00
+📍 [Bar SaVot - Ala](https://maps.app.goo.gl/2ZyYyrpZf5b3oryQ8)
 
 ---
 
