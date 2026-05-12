@@ -1,12 +1,12 @@
-event_title: Serata Giochi a Rovereto
-event_description: Giovedì 12 Marzo 2026 vieni a giocare con Ludimus a Smart Lab!
+event_title: Serata Giochi a Rovereto - Smart Lab
+event_description: Giovedì 04 Giugno 2026 vieni a giocare con Ludimus a Smart Lab!
 event_og: https://ludimus.it/static/img/events/default_rovereto.png
 
 # Serata Giochi a Rovereto
 
 ### Vieni a giocare alle serate settimanali di Ludimus a Rovereto!
 
-📅 Giovedì 12 Marzo 2026
+📅 Giovedì 04 Giugno 2026
 🕰 dalle 20:00 in poi
 📍 [Centro Giovani Smart Lab - Rovereto](http://bit.ly/SmartLabMaps)
 

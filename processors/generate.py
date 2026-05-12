@@ -359,6 +359,7 @@ static_events = [
     "savot-ala",
     "simposio",
     "smartlab",
+    "urbancenter",
 ]
 
 done = {event: False for event in static_events}

@@ -8,8 +8,9 @@ event_og: https://ludimus.it/static/img/events/default.jpg
 ### Giochi da tavolo ed Escape Room
 
 📅 Domenica 17 Maggio 2026
-🕰 dalle 10:00 alle 17:00
+🕰 dalle 10:00 alle 14:00 e dalle 16:00 alle 19:00
 📍 [Volano, TN](https://maps.app.goo.gl/SX8wQp19QhUKAijaA)
+🎟️ [PRENOTAZIONI ESCAPE QUI](https://ludimus-escape-room-memoriae-2026.eventbrite.it/)
 
 ---
 

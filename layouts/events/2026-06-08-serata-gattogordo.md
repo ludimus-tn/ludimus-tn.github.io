@@ -1,14 +1,14 @@
-event_title: Serata Giochi a Trento
-event_description: Lunedì 23 Febbraio 2026 vieni a giocare con Ludimus al Bar Simposio!
+event_title: Serata Giochi a Trento - Locanda Gatto Gordo
+event_description: Lunedì 08 Giugno 2026 vieni a giocare con Ludimus alla Locanda del Gatto Gordo!
 event_og: https://ludimus.it/static/img/events/default_trento.png
 
 # Serata Giochi da Tavolo a Trento
 
 ### Vieni a giocare alle serate settimanali di Ludimus a Trento!
 
-📅 Lunedì 23 Febbraio 2026
+📅 Lunedì 08 Giugno 2026
 🕰 dalle 19:00 in poi
-📍 [Il Simposio Bar Ristorante](https://g.page/ilsimposiotrento?share)
+📍 [Locanda Gatto Gordo](https://maps.app.goo.gl/SkH39dic7ntw4NcG7)
 
 ---
 

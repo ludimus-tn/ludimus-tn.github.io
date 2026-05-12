@@ -1,12 +1,12 @@
 event_title: Serata Giochi al Cantiere26
-event_description: Mercoledì 18 Febbraio 2026 vieni a giocare con Ludimus al Cantiere26!
+event_description: Mercoledì 10 Giugno 2026 vieni a giocare con Ludimus al Cantiere26!
 event_og: https://ludimus.it/static/img/events/default_arco.png
 
 # Serata Giochi da Tavolo ad Arco
 
 ### Partecipa alla serata al Cantiere26
 
-📅 Mercoledì 18 Febbraio 2026
+📅 Mercoledì 10 Giugno 2026
 🕰 dalle 19:30 alle 23:00
 📍 [Cantiere26](https://g.page/Cantiere26?share)
 
