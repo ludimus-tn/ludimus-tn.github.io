@@ -1,12 +1,12 @@
-event_title: Serata Giochi al Bar SaVot di Ala
-event_description: Mercoledì 22 Aprile 2026 vieni a giocare con Ludimus al Bar SaVot di Ala!
+event_title: Serata Giochi Ala - Bar SaVot
+event_description: Mercoledì 08 Luglio 2026 vieni a giocare con Ludimus al Bar SaVot di Ala!
 event_og: https://ludimus.it/static/img/events/default_riva.jpg
 
 # Serata Giochi da Tavolo ad Ala
 
 ### Partecipa alla serata al Bar SaVot di Ala
 
-📅 Mercoledì 22 Aprile 2026
+📅 Mercoledì 08 Luglio 2026
 🕰 dalle 20:00 alle 23:00
 📍 [Bar SaVot - Ala](https://maps.app.goo.gl/2ZyYyrpZf5b3oryQ8)
 
