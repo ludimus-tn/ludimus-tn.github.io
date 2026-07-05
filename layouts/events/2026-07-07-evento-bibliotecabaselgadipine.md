@@ -6,7 +6,7 @@ event_og: https://ludimus.it/static/img/events/default_riva.jpg
 
 ### Partecipa alla serata alla Biblioteca di Baselga di Piné
 
-📅 Mercoledì 07 Luglio 2026
+📅 Martedì 07 Luglio 2026
 🕰 dalle 18:00 alle 21:00
 📍 [LAC : Biblioteca di Baselga di Piné](https://maps.app.goo.gl/iUg99V8fStB3TQGU8)
 
