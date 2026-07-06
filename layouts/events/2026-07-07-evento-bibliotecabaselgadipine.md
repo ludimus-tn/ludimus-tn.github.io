@@ -1,6 +1,6 @@
 event_title: Serata Giochi alla Biblioteca di Baselga di Piné
 event_description: Mercoledì 07 Luglio 2026 vieni a giocare con Ludimus alla Biblioteca di Baselga di Piné!
-event_og: https://ludimus.it/static/img/events/default_riva.jpg
+event_og: https://ludimus.it/static/img/events/default.jpg
 
 # Serata Giochi da Tavolo a Baselga di Piné
 
