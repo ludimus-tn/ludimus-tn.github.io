@@ -4,8 +4,7 @@ event_og: https://ludimus.it/static/img/events/default.jpg
 
 # Mostra l'Officina dei Giochi da Tavolo
 
-### Partecipa alla serata alla Altopiano in gioco
-
+### Partecipa alla visita guidata e poi gioca con noi al METS di San Michele
 📅 Mercoledì 15 Luglio 2026
 🕰 dalle 20:00 alle 23:00
 📍 [METS - Museo Etnografico Trentino San Michele](https://maps.app.goo.gl/97aGiMqvMjjMX7wx9)
