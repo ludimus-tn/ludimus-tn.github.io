@@ -1,6 +1,6 @@
 event_title: Serata Giochi - Altopiano in gioco
 event_description: Venerdì 17 Luglio 2026 vieni a giocare con Ludimus alla Altopiano in gioco!
-event_og: https://ludimus.it/static/img/events/default_riva.jpg
+event_og: https://ludimus.it/static/img/events/default.jpg
 
 # Serata Giochi da Tavolo a Bosentino
 
