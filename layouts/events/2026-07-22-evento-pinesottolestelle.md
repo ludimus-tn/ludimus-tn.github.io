@@ -7,7 +7,7 @@ event_og: https://ludimus.it/static/img/events/default.jpg
 ### Vieni a giocare con noi a Piné
 📅 Mercoledì 22 Luglio 2026
 🕰 dalle 20:00 alle 23:00
-📍 [Baselga di Piné](https://maps.app.goo.gl/eMawshRV8wX2VaHK9)
+📍 [Baselga di Piné](https://maps.app.goo.gl/tNhYQNZ7BSzjEDL38)
 🎟️ Evento a ingresso libero e gratuito
 🌐 [Sito Evento](https://www.visittrento.it/it/eventi/pine-sotto-le-stelle-baselga-di-pine)
 
