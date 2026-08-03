@@ -7,7 +7,7 @@ event_og: https://ludimus.it/static/img/events/default.jpg
 ### Partecipa alla nuova escape room
 
 📍 [Riva del Garda](https://goo.gl/maps/H3CUa9HdyYXv9xL29)
-📅 27, 28, 29, 30 Agosto 2025
+📅 27, 28, 29, 30 Agosto 2026
 
 I turni saranno disponibili nei seguenti giorni e fasce orarie:
 🕰 Giovedì: dalle 17:00 alle 22:00 – 5 turni
