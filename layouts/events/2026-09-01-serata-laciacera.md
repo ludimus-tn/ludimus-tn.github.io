@@ -21,6 +21,6 @@ Vedete qualcosa che conoscete? Potete giocarci!
 Volete provare qualcosa ma non ne conoscete le regole? Le nostre esperte e i nostri esperti saranno pronti a spiegarvi tutto quel che c'è da sapere.
 Non avete mai provato un gioco da tavolo in vita vostra, ma siete curiosi? Fate un salto, abbiamo il gioco adatto a voi!
 
-Il ristorante mette inoltre a disposizione il suo **menù completo**, per chi vuole godersi anche un aperitivo o un buon cocktail in compagnia: pasta, panini (in quantità limitata), bruschette fuori menu, menu alla carta, bibite, cocktail e dolci. Menu completo qui: [menu.menumal.com/laciacera](menu.menumal.com/laciacera)
+Il ristorante mette inoltre a disposizione il suo **menù completo**, per chi vuole godersi anche un aperitivo o un buon cocktail in compagnia: pasta, panini (in quantità limitata), bruschette fuori menu, menu alla carta, bibite, cocktail e dolci. Menu completo qui: [menu.menumal.com/laciacera](https://menu.menumal.com/laciacera)
 
 _* attenzione posti limitati_
