@@ -619,7 +619,7 @@
       "proprietari": "Trento",
       "numGiocatori": "Min:2 - Max:8",
       "durata": 30,
-      "thumbnail": "https://cf.geekdo-images.com/jVr1bGBQpshqVPcwvZ7CPg__thumb/img/oJPoB_Juxf6xLjORYBHvlc3xma8=/fit-in/200x150/filters:strip_icc()/pic1918028.jpg"
+      "thumbnail": "https://cf.geekdo-images.com/jVr1bGBQpshqVPcwvZ7CPg__small/img/oJPoB_Juxf6xLjORYBHvlc3xma8=/fit-in/200x150/filters:strip_icc()/pic1918028.jpg"
     },
     {
       "idBGG": 154597,
@@ -691,7 +691,7 @@
       "proprietari": "Trento",
       "numGiocatori": "Min:2 - Max:2",
       "durata": 30,
-      "thumbnail": "https://cf.geekdo-images.com/RDOwMRBnIb3Ehl6GyXj9xg__thumb/img/nxex9ASN99exPLXEc9E4s08qZzc=/fit-in/200x150/filters:strip_icc()/pic8669620.jpg"
+      "thumbnail": "https://cf.geekdo-images.com/xNSaIHCKr_cc7Q2rQSSJPQ__small/img/9Kf3YKiVIJxd_EbqJEJFdlGfj7I=/fit-in/200x150/filters:strip_icc()/pic9273518.jpg"
     },
     {
       "idBGG": 163967,
@@ -1030,7 +1030,7 @@
       "idBGG": 199561,
       "nomeGioco": "Sagrada",
       "pesoMedio": 1.9178,
-      "proprietari": "Rovereto",
+      "proprietari": "Avio",
       "numGiocatori": "Min:1 - Max:4",
       "durata": 45,
       "thumbnail": "https://cf.geekdo-images.com/PZt3EAAGV3dFIVuwMR0AEw__thumb/img/1m4aryOW1MOpq-8jGkF6gDTJmCY=/fit-in/200x150/filters:strip_icc()/pic3525224.jpg"
@@ -1048,7 +1048,7 @@
       "idBGG": 202564,
       "nomeGioco": "Cookie Box",
       "pesoMedio": 1,
-      "proprietari": "Trento",
+      "proprietari": "Piné",
       "numGiocatori": "Min:2 - Max:4",
       "durata": 20,
       "thumbnail": "https://cf.geekdo-images.com/SYxaVBHoKAAh_S_lRS3kVA__thumb/img/TTFpws-BZn3Tl9tc4vZloECbYTs=/fit-in/200x150/filters:strip_icc()/pic3165677.jpg"
@@ -1489,7 +1489,7 @@
       "idBGG": 254640,
       "nomeGioco": "Just One",
       "pesoMedio": 1.0359,
-      "proprietari": "Trento",
+      "proprietari": "Piné",
       "numGiocatori": "Min:3 - Max:7",
       "durata": 60,
       "thumbnail": "https://cf.geekdo-images.com/qKcKjHpzAvLddwBhyindag__thumb/img/HhZu2qLp9wyX9PNgvmDE8_hCl-0=/fit-in/200x150/filters:strip_icc()/pic4268499.jpg"
@@ -1579,7 +1579,7 @@
       "idBGG": 264055,
       "nomeGioco": "Draftosaurus",
       "pesoMedio": 1.2493,
-      "proprietari": "Trento",
+      "proprietari": "Piné",
       "numGiocatori": "Min:2 - Max:5",
       "durata": 15,
       "thumbnail": "https://cf.geekdo-images.com/JahbLRZ_jEe8P8gisXUtJw__thumb/img/XGKi6qBOizS_IdLqOHny-rf0JZw=/fit-in/200x150/filters:strip_icc()/pic4447676.jpg"
@@ -1714,7 +1714,7 @@
       "idBGG": 277458,
       "nomeGioco": "Kluster",
       "pesoMedio": 1.0093,
-      "proprietari": "Trento",
+      "proprietari": "Piné",
       "numGiocatori": "Min:1 - Max:4",
       "durata": 20,
       "thumbnail": "https://cf.geekdo-images.com/0uu0QJ2OFRIEGVMUgzfYJQ__thumb/img/aNd2-AJpD-f5yZfnYc2zfZ6Um48=/fit-in/200x150/filters:strip_icc()/pic5251671.jpg"
@@ -2110,7 +2110,7 @@
       "idBGG": 329839,
       "nomeGioco": "So Clover!",
       "pesoMedio": 1.1215,
-      "proprietari": "Trento",
+      "proprietari": "Piné",
       "numGiocatori": "Min:3 - Max:6",
       "durata": 30,
       "thumbnail": "https://cf.geekdo-images.com/8oipK9-ivkn53h7L5U2Yfg__thumb/img/cBKt41XFKkdphyqZItit4EIC45k=/fit-in/200x150/filters:strip_icc()/pic6588069.png"
@@ -2168,6 +2168,15 @@
       "numGiocatori": "Min:3 - Max:6",
       "durata": 240,
       "thumbnail": "https://cf.geekdo-images.com/_kZDRdv3tONk9vTcA_OwSA__thumb/img/_8WyQKScotYGRBbKT1ypXnH2YiA=/fit-in/200x150/filters:strip_icc()/pic8317346.png"
+    },
+    {
+      "idBGG": 340790,
+      "nomeGioco": "1923 Cotton Club",
+      "pesoMedio": 2.125,
+      "proprietari": "Busa",
+      "numGiocatori": "Min:2 - Max:4",
+      "durata": 60,
+      "thumbnail": "https://cf.geekdo-images.com/mkZuD37KjMAMWLTWTR8cvA__small/img/SB0A22etApVhJtaOyjFgZlb4Kl8=/fit-in/200x150/filters:strip_icc()/pic6233874.jpg"
     },
     {
       "idBGG": 342900,
@@ -2299,7 +2308,7 @@
       "idBGG": 352515,
       "nomeGioco": "Trio",
       "pesoMedio": 1.0476,
-      "proprietari": "Rovereto",
+      "proprietari": "Avio",
       "numGiocatori": "Min:3 - Max:6",
       "durata": 15,
       "thumbnail": "https://cf.geekdo-images.com/d9F0ZDqcN3J7J92WckyraQ__thumb/img/8d663Cj-RQy8pA8gZOcO80xYI5I=/fit-in/200x150/filters:strip_icc()/pic7605785.jpg"
