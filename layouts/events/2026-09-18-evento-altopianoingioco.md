@@ -8,7 +8,7 @@ event_og: https://ludimus.it/static/img/events/default.jpg
 
 📅 Venerdì 18 Settembre 2026
 🕰 dalle 18:00
-📍 [Centa San Nicolò](https://maps.app.goo.gl/xqx2zSs1YPEpw9Ys8)
+📍 [Centa San Nicolò - Casa Campregher](https://maps.app.goo.gl/dBLbbcNugBSFThHZ7)
 
 ---
 
