@@ -350,6 +350,7 @@ with open('./layouts/events.html') as base_events_tmpl, \
 ###############################################################################
 
 static_events = [
+    "bibliotecabaselgadipine",
     "bicigrillruotalibera",
     "cantiere26",
     "doppiomalto",
