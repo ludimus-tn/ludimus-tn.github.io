@@ -6,7 +6,7 @@ event_og: https://ludimus.it/static/img/events/default.jpg
 
 ### Partecipa alla serata alla Biblioteca di Baselga di Piné
 
-📅 Martedì 30 Settembre 2026
+📅 Mercoledì 30 Settembre 2026
 🕰 dalle 19:30
 📍 [LAC: Biblioteca di Baselga di Piné](https://maps.app.goo.gl/iUg99V8fStB3TQGU8)
 
