@@ -290,7 +290,18 @@ with open('./layouts/archive.html') as base_archive_events_tmpl, \
 # EVENTS
 ###############################################################################
 
-next_events = []
+today = datetime.datetime.now().replace(hour=0, minute=0, second=0, microsecond=0)
+
+start_this_week = today - datetime.timedelta(days=today.weekday())
+end_this_week = start_this_week + datetime.timedelta(days=6, hours=23, minutes=59, seconds=59)
+
+start_next_week = start_this_week + datetime.timedelta(days=7)
+end_next_week = start_next_week + datetime.timedelta(days=6, hours=23, minutes=59, seconds=59)
+
+events_this_week = []
+events_next_week = []
+events_future = []
+
 for event in sorted(events, reverse=False):
     event_name = event.replace('./layouts/events/', '')
     event_date_tmp = event_name[:10].split('-')
@@ -299,49 +310,66 @@ for event in sorted(events, reverse=False):
     event_year = int(event_date_tmp[0])
 
     event_date = datetime.datetime(event_year, event_month, event_day)
-    now = datetime.datetime.now().replace(hour=0, minute=0, second=0, microsecond=0)
 
-    if event_date < now:
+    if event_date < today:
         continue
-    next_events.append(event)
+
+    if start_this_week <= event_date <= end_this_week:
+        events_this_week.append(event)
+    elif start_next_week <= event_date <= end_next_week:
+        events_next_week.append(event)
+    else:
+        events_future.append(event)
+
+
+def generate_section_html(title, event_list):
+    if not event_list:
+        return ''
+
+    html_out = f'<h3>{title}:</h3>\n<ul>\n'
+    for event in event_list:
+        event_name = event.replace('./layouts/events/', '')
+        event_title = event_name[10:].replace('.html', '').replace(
+            '.md', '').replace('-', ' ').title()
+        event_date_tmp = event_name[:10].split('-')
+        event_date = '{}/{}/{}'.format(
+            event_date_tmp[2], event_date_tmp[1], event_date_tmp[0])
+        event_url = event_name.replace('.md', '.html')
+
+        event_body = open(event).readlines()
+        for event_line in event_body:
+            if 'event_title: ' in event_line:
+                event_title = event_line.replace(
+                    'event_title: ', '').strip()
+
+        for line in event_link_tmpl:
+            if '{{ title }}' in line:
+                html_out += line.replace('{{ title }}', event_title)
+            elif '{{ date }}' in line:
+                html_out += line.replace('{{ date }}', event_date)
+            elif '{{ event_url }}' in line:
+                html_out += line.replace('{{ event_url }}', event_url)
+            else:
+                html_out += line
+
+    html_out += '</ul>\n'
+    return html_out
+
 
 with open('./layouts/events.html') as base_events_tmpl, \
         open('./events.html', 'w') as output_events:
     for line in base_events_tmpl:
         if '{{ footer }}' in line:
             output_events.write(line.replace('{{ footer }}', footer))
-        elif '{{ next_events }}' in line:
-            if len(next_events) == 0:
-                output_events.write(
-                    'Al momento non ci sono eventi in programma 🎲')
-                continue
-            for event in next_events:
-                event_name = event.replace('./layouts/events/', '')
-                event_title = event_name[10:].replace('.html', '').replace(
-                    '.md', '').replace('-', ' ').title()
-                event_date_tmp = event_name[:10].split('-')
-                event_date = '{}/{}/{}'.format(
-                    event_date_tmp[2], event_date_tmp[1], event_date_tmp[0])
-                event_url = event_name.replace('.md', '.html')
+        elif '{{ events_sections }}' in line:
+            if not events_this_week and not events_next_week and not events_future:
+                output_events.write('<h3>Prossimi eventi:</h3>\n<p>Al momento non ci sono eventi in programma 🎲</p>\n')
+            else:
+                html_this_week = generate_section_html('Questa settimana', events_this_week)
+                html_next_week = generate_section_html('Prossima settimana', events_next_week)
+                html_future = generate_section_html('Eventi futuri', events_future)
 
-                event_body = open(event).readlines()
-                for event_line in event_body:
-                    if 'event_title: ' in event_line:
-                        event_title = event_line.replace(
-                            'event_title: ', '').strip()
-
-                for line in event_link_tmpl:
-                    if '{{ title }}' in line:
-                        output_events.write(line.replace(
-                            '{{ title }}', event_title))
-                    elif '{{ date }}' in line:
-                        output_events.write(
-                            line.replace('{{ date }}', event_date))
-                    elif '{{ event_url }}' in line:
-                        output_events.write(line.replace(
-                            '{{ event_url }}', event_url))
-                    else:
-                        output_events.write(line)
+                output_events.write(html_this_week + html_next_week + html_future)
         else:
             output_events.write(line)
 
