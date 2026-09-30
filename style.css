@@ -9,7 +9,7 @@
     font-weight: 400;
     /* Regular */
     font-display: swap;
-    src: url('../static/fonts/OpenSans-Regular.ttf') format('truetype');
+    src: url('/static/fonts/OpenSans-Regular.ttf') format('truetype');
 }
 
 @font-face {
@@ -17,7 +17,7 @@
     font-style: italic;
     font-weight: 400;
     font-display: swap;
-    src: url('../static/fonts/OpenSans-Italic.ttf') format('truetype');
+    src: url('/static/fonts/OpenSans-Italic.ttf') format('truetype');
 }
 
 @font-face {
@@ -26,7 +26,7 @@
     font-weight: 600;
     /* SemiBold / Bold */
     font-display: swap;
-    src: url('../static/fonts/OpenSans-SemiBold.ttf') format('truetype');
+    src: url('/static/fonts/OpenSans-SemiBold.ttf') format('truetype');
 }
 
 
@@ -36,7 +36,7 @@
     font-style: normal;
     font-weight: 400;
     font-display: swap;
-    src: url('../static/fonts/RobotoCondensed-Regular.ttf') format('truetype');
+    src: url('/static/fonts/RobotoCondensed-Regular.ttf') format('truetype');
 }
 
 @font-face {
@@ -44,7 +44,7 @@
     font-style: normal;
     font-weight: 700;
     font-display: swap;
-    src: url('../static/fonts/RobotoCondensed-Bold.ttf') format('truetype');
+    src: url('/static/fonts/RobotoCondensed-Bold.ttf') format('truetype');
 }
 
 
@@ -54,7 +54,7 @@
     font-style: normal;
     font-weight: 400;
     font-display: swap;
-    src: url('../static/fonts/RobotoMono-Regular.ttf') format('truetype');
+    src: url('/static/fonts/RobotoMono-Regular.ttf') format('truetype');
 }
 
 @font-face {
@@ -62,7 +62,7 @@
     font-style: normal;
     font-weight: 700;
     font-display: swap;
-    src: url('../static/fonts/RobotoMono-Bold.ttf') format('truetype');
+    src: url('/static/fonts/RobotoMono-Bold.ttf') format('truetype');
 }
 
 /* Ludimus RED #ec3645 */
