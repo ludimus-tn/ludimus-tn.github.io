@@ -20,10 +20,6 @@ markdowner = markdown2.Markdown()
 boardgame_tmpl = '\n'.join(
     open('./layouts/partials/boardgame.html').readlines())
 footer = ''.join(open('./layouts/partials/footer.html').readlines())
-league_ranking = ''.join(
-    open('./layouts/partials/league-ranking.html').readlines())
-league_rules = ''.join(markdowner.convert(
-    open('./static/docs/league/2019-20-Regolamento.md').read().encode('utf-8')))
 style_hash = hashlib.md5(
     open('./style.css').read().encode('utf-8')).hexdigest()
 input_data = json.loads(''.join(open('./processors/games.json').readlines()))
@@ -172,47 +168,6 @@ with open('./layouts/trasparenza.html') as trasparenza_tmpl, \
             output_trasparenza.write(line.replace('{{ footer }}', footer))
         else:
             output_trasparenza.write(line)
-
-###############################################################################
-# League
-###############################################################################
-
-with open('./layouts/league.html') as base_league_tmpl, \
-        open('./league.html', 'w') as output_league:
-    for line in base_league_tmpl:
-        if '{{ footer }}' in line:
-            output_league.write(line.replace('{{ footer }}', footer))
-        else:
-            output_league.write(line)
-
-###############################################################################
-# League Rules
-###############################################################################
-
-with open('./layouts/league-rules.html') as base_league_tmpl, \
-        open('./league-rules.html', 'w') as output_league:
-    for line in base_league_tmpl:
-        if '{{ league_rules }}' in line:
-            output_league.write(line.replace(
-                '{{ league_rules }}', league_rules))
-        elif '{{ footer }}' in line:
-            output_league.write(line.replace('{{ footer }}', footer))
-        else:
-            output_league.write(line)
-
-###############################################################################
-# League Slideshow
-###############################################################################
-
-with open('./layouts/league-slideshow.html') as base_league_tmpl, \
-        open('./league-slideshow.html', 'w') as output_league:
-    for line in base_league_tmpl:
-        if '{{ league_ranking }}' in line:
-            output_league.write(line.replace(
-                '{{ league_ranking }}', league_ranking))
-        else:
-            output_league.write(line)
-
 
 ###############################################################################
 # ARCHIVED EVENTS
