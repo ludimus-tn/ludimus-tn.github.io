@@ -1,11 +1,79 @@
-/* #ec3645 */
+/* ==========================================================================
+   FONTS
+   ========================================================================== */
+
+/* --- 1. OPEN SANS (Testo base, small, em) --- */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    /* Regular */
+    font-display: swap;
+    src: url('../static/fonts/OpenSans-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: italic;
+    font-weight: 400;
+    font-display: swap;
+    src: url('../static/fonts/OpenSans-Italic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    /* SemiBold / Bold */
+    font-display: swap;
+    src: url('../static/fonts/OpenSans-SemiBold.ttf') format('truetype');
+}
+
+
+/* --- 2. ROBOTO CONDENSED (titles) --- */
+@font-face {
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('../static/fonts/RobotoCondensed-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url('../static/fonts/RobotoCondensed-Bold.ttf') format('truetype');
+}
+
+
+/* --- 3. ROBOTO MONO (numbers and blog) --- */
+@font-face {
+    font-family: 'Roboto Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('../static/fonts/RobotoMono-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Roboto Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url('../static/fonts/RobotoMono-Bold.ttf') format('truetype');
+}
+
+/* Ludimus RED #ec3645 */
 
 * {
     font-family: 'Open Sans', sans-serif;
 }
 
 .em {
-    font-family: 'Pinyon Script', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
 }
 
 a {
@@ -27,7 +95,8 @@ section:last-of-type {
 }
 
 section small {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
     color: #ec3645;
     margin-bottom: -5px;
     font-size: 16px;
@@ -60,10 +129,12 @@ section h2 {
         line-height: 12px;
         margin-bottom: 0;
     }
+
     section h2 {
         font-size: 1.9rem;
         line-height: 35px;
     }
+
     .centered-text {
         width: 90%;
     }
@@ -229,11 +300,11 @@ section h2 {
 }
 
 .nav-link {
-  display: block;
-  padding: .5rem 1rem;
-  color: #ec3645;
-  text-decoration: none;
-  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+    display: block;
+    padding: .5rem 1rem;
+    color: #ec3645;
+    text-decoration: none;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
 }
 
 /**********************************************************************************************************************/
@@ -296,9 +367,11 @@ section h2 {
     0% {
         bottom: 10px;
     }
+
     50% {
         bottom: 20px;
     }
+
     100% {
         bottom: 10px;
     }
@@ -395,7 +468,8 @@ section h2 {
     min-height: 350px;
 }
 
-#blog .cards-container, #games .cards-container {
+#blog .cards-container,
+#games .cards-container {
     text-align: center;
     width: 80%;
     margin: 0 auto;
@@ -414,7 +488,8 @@ section h2 {
     background: #fff;
 }
 
-#blog .cards-container h3, #games .cards-container h3 {
+#blog .cards-container h3,
+#games .cards-container h3 {
     margin: 0;
     font-size: 1rem;
 }
@@ -424,7 +499,8 @@ section h2 {
     font-family: "Roboto Mono", monospace;
 }
 
-#blog .cards-container p, #games .cards-container p {
+#blog .cards-container p,
+#games .cards-container p {
     font-size: .8rem;
 }
 
@@ -436,13 +512,15 @@ section h2 {
     margin: .2rem;
 }
 
-#blog .cards-container a, #games .cards-container a {
+#blog .cards-container a,
+#games .cards-container a {
     font-size: 10px;
     float: right;
     margin-bottom: 5px;
 }
 
-#blog .cards-container img, #games .cards-container img {
+#blog .cards-container img,
+#games .cards-container img {
     height: 114px;
     width: 100%;
     display: block;
@@ -471,7 +549,8 @@ section h2 {
     left: .8rem;
 }
 
-#blog .card-block, #games .card-block {
+#blog .card-block,
+#games .card-block {
     padding: .8rem;
 }
 
@@ -513,6 +592,7 @@ section h2 {
     .big-title small {
         margin-bottom: 38px;
     }
+
     .big-title h2 {
         margin-bottom: 2rem;
     }
@@ -580,7 +660,7 @@ section h2 {
     text-align: left;
 }
 
-#join .support-div > * {
+#join .support-div>* {
     padding: 0.5rem;
 }
 
@@ -742,6 +822,7 @@ footer p {
     #games .cards-container {
         width: 750px;
     }
+
     #games .card-columns {
         columns: 4;
     }
@@ -751,6 +832,7 @@ footer p {
     #games .cards-container {
         width: 500px;
     }
+
     #games .card-columns {
         columns: 3;
     }
@@ -760,6 +842,7 @@ footer p {
     #games .cards-container {
         width: 250px;
     }
+
     #games .card-columns {
         columns: 1;
     }
@@ -825,7 +908,8 @@ footer p {
     font-weight: bold;
 }
 
-.blog-post h1, .blog-post h3 {
+.blog-post h1,
+.blog-post h3 {
     font-family: 'Roboto Condensed', sans-serif;
 }
 
@@ -860,19 +944,24 @@ em.post-date {
     margin-left: -25px;
 }
 
-.blog-post, .blog-post-writer {
+.blog-post,
+.blog-post-writer {
     max-width: 60%;
     margin: 0 auto;
 }
 
 @media (max-width: 886px) {
-    .blog-post, .blog-post-writer {
+
+    .blog-post,
+    .blog-post-writer {
         max-width: 80%;
     }
 }
 
 @media (max-width: 621px) {
-    .blog-post, .blog-post-writer {
+
+    .blog-post,
+    .blog-post-writer {
         max-width: 100%;
     }
 }
@@ -950,7 +1039,8 @@ em.post-date {
     }
 }
 
-.event h1, .event h3 {
+.event h1,
+.event h3 {
     font-family: 'Roboto Condensed', sans-serif;
 }
 
@@ -977,19 +1067,24 @@ em.post-date {
     margin-left: -25px;
 }
 
-.event, .event-writer {
+.event,
+.event-writer {
     max-width: 60%;
     margin: 0 auto;
 }
 
 @media (max-width: 886px) {
-    .event, .event-writer {
+
+    .event,
+    .event-writer {
         max-width: 80%;
     }
 }
 
 @media (max-width: 621px) {
-    .event, .event-writer {
+
+    .event,
+    .event-writer {
         max-width: 100%;
     }
 }
@@ -1026,14 +1121,14 @@ em.post-date {
     margin-bottom: 3rem;
 }
 
-#tshirt .tshirts-images > div {
+#tshirt .tshirts-images>div {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: .3rem;
 }
 
-#tshirt .tshirts-images > div > img {
+#tshirt .tshirts-images>div>img {
     max-height: 300px;
     max-width: 100%;
     height: auto;
@@ -1042,18 +1137,18 @@ em.post-date {
 }
 
 @media (max-width: 621px) {
-    #tshirt .tshirts-images > div > img {
+    #tshirt .tshirts-images>div>img {
         max-height: 180px;
         padding: .25rem;
     }
 }
 
-#tshirt .tshirts-images > div > p {
+#tshirt .tshirts-images>div>p {
     color: rgb(94, 94, 94);
     text-align: center;
 }
 
-#tshirt .tshirts-images > div > h6 {
+#tshirt .tshirts-images>div>h6 {
     font-weight: bold;
     font-size: 1rem;
     text-align: center;
@@ -1230,6 +1325,7 @@ em.post-date {
     #stracot .stracot__gallery .cards-container {
         width: 95%;
     }
+
     #stracot .stracot__gallery .card-columns {
         columns: 2;
     }
