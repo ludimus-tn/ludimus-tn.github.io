@@ -1353,7 +1353,36 @@ em.post-date {
 
 /**********************************************************************************************************************/
 
-.privacy-section .privacy-note {
+.privacy-section {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+.privacy-header {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 2rem auto;
+}
+
+.privacy-header h2 {
+    margin-bottom: 0.25rem;
+}
+
+.privacy-updated {
+    font-size: 0.85rem;
+    color: #6c757d;
+    margin-bottom: 1.25rem;
+    font-style: italic;
+}
+
+.privacy-intro {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #333;
+}
+
+.privacy-note {
     display: block;
     margin-top: 0.5rem;
     font-size: 0.95rem;
@@ -1404,12 +1433,4 @@ em.post-date {
 
 .privacy-contact p {
     margin-bottom: 0;
-}
-
-.privacy-updated {
-    font-size: 0.9rem;
-    color: #6c757d;
-    margin-top: -0.5rem;
-    margin-bottom: 1.5rem;
-    text-align: center;
 }
