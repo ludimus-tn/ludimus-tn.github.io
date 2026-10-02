@@ -170,6 +170,18 @@ with open('./layouts/trasparenza.html') as trasparenza_tmpl, \
             output_trasparenza.write(line)
 
 ###############################################################################
+# Privacy Policy Sito
+###############################################################################
+
+with open('./layouts/privacy.html') as privacy_tmpl, \
+        open('./privacy.html', 'w') as output_privacy:
+    for line in privacy_tmpl:
+        if '{{ footer }}' in line:
+            output_privacy.write(line.replace('{{ footer }}', footer))
+        else:
+            output_privacy.write(line)
+
+###############################################################################
 # ARCHIVED EVENTS
 ###############################################################################
 
