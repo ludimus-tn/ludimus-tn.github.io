@@ -895,19 +895,20 @@ footer p {
     margin-bottom: .5em;
     text-transform: uppercase;
     font-size: 5em;
-    line-height: .8em;
+    line-height: 1.1;
 }
 
 @media (max-width: 886px) {
     .blog-post h1 {
         font-size: 4em;
+        line-height: 1.15;
     }
 }
 
 @media (max-width: 621px) {
     .blog-post h1 {
         font-size: 2.5em;
-        line-height: 1em;
+        line-height: 1.2;
     }
 }
 
@@ -1020,20 +1021,21 @@ em.post-date {
     margin-bottom: .5em;
     text-transform: uppercase;
     font-size: 4em;
-    line-height: .8em;
+    line-height: 1.1;
 }
 
 @media (max-width: 886px) {
     .event h1 {
         text-align: center;
         font-size: 3em;
+        line-height: 1.15;
     }
 }
 
 @media (max-width: 621px) {
     .event h1 {
         font-size: 2.5em;
-        line-height: 1em;
+        line-height: 1.2;
     }
 }
 
