@@ -4,7 +4,7 @@ event_og: https://ludimus.it/static/img/events/default.jpg
 
 # Altra Piazza Fest
 
-### Vieni a giocare con 
+### Vieni a giocare con noi
 
 📅 Sabato 17 Ottobre 2026
 🕰 dalle 14:00 alle 19:00
