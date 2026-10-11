@@ -4,7 +4,7 @@ event_og: https://ludimus.it/static/img/events/default.jpg
 
 # Altra Piazza Fest
 
-### Partecipa alla alla Altopiano in gioco
+### Vieni a giocare con 
 
 📅 Sabato 17 Ottobre 2026
 🕰 dalle 14:00 alle 19:00

@@ -4,7 +4,7 @@ event_og: https://ludimus.it/static/img/events/default.jpg
 
 # Serata Giochi da Tavolo a Vattaro
 
-### Partecipa alla serata alla Altopiano in gioco
+### Partecipa alla serata di Altopiano in gioco
 
 📅 Venerdì 16 Ottobre 2026
 🕰 dalle 18:00
