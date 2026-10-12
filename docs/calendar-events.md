@@ -59,7 +59,7 @@ The daily website build uses committed files; it does not fetch Calendar. You ne
 
 ## Website filters
 
-The event page filters by short venue (shown with its town), date range and activity. Filters work together; **Azzera filtri** restores the full list.
+The event page filters by town, date range and activity. Filters work together; **Azzera filtri** restores the full list.
 The script writes YAML metadata at the top of generated event Markdown: type, town, short venue, address, date, local start/end, all-day status and Calendar UID.
 The website reads it automatically, no need to touch the YAML.
 Older pages without these details remain visible and use **Non specificato** for missing location/type. With JavaScript disabled, the full list stays visible.

@@ -185,7 +185,7 @@ def source_event_info(metadata, filename):
     town, venue = metadata.get("event_town", ""), metadata.get("event_location", "")
     if not isinstance(town, str) or not isinstance(venue, str):
         raise CalendarError(f"Event town/location must be text: {filename}")
-    location = " — ".join(value for value in (town.strip(), venue.strip()) if value)
+    location = town.strip()
     return {"date": day.isoformat(), "end_date": last_day.isoformat(),
             "type": kind, "type_label": EVENT_TYPE_LABELS.get(kind, "Non specificato"),
             "location": location, "location_label": location or "Non specificato"}
