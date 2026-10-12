@@ -8,6 +8,8 @@ import markdown2
 import re
 import os
 from random import Random
+from zoneinfo import ZoneInfo
+from calendar_events import alias_targets, render_event_markdown
 
 
 HIDDEN_GAMES = {
@@ -204,7 +206,7 @@ for event in sorted(glob.glob('./events/*.html'), reverse=True):
         continue
 
     event_date = datetime.datetime(event_year, event_month, event_day)
-    now = datetime.datetime.now().replace(hour=0, minute=0, second=0, microsecond=0)
+    now = datetime.datetime.now(ZoneInfo('Europe/Rome')).replace(tzinfo=None, hour=0, minute=0, second=0, microsecond=0)
 
     if event_date >= now:
         continue
@@ -257,7 +259,7 @@ with open('./layouts/archive.html') as base_archive_events_tmpl, \
 # EVENTS
 ###############################################################################
 
-today = datetime.datetime.now().replace(hour=0, minute=0, second=0, microsecond=0)
+today = datetime.datetime.now(ZoneInfo('Europe/Rome')).replace(tzinfo=None, hour=0, minute=0, second=0, microsecond=0)
 
 start_this_week = today - datetime.timedelta(days=today.weekday())
 end_this_week = start_this_week + datetime.timedelta(days=6, hours=23, minutes=59, seconds=59)
@@ -358,25 +360,20 @@ static_events = [
     "urbancenter",
 ]
 
-done = {event: False for event in static_events}
+aliases = {event: 'serata-' + event for event in static_events}
+if os.path.exists('./processors/calendar-state.json'):
+    with open('./processors/calendar-state.json', encoding='utf-8') as state_file:
+        for route in json.load(state_file).get('routes', {}).values():
+            if route.get('alias'):
+                aliases[route['alias']] = route['slug']
+with open('./processors/event_profiles.json', encoding='utf-8') as profiles_file:
+    for slug, profile in json.load(profiles_file)['profiles'].items():
+        if profile.get('alias'):
+            aliases[profile['alias']] = slug
 
 events = sorted(glob.glob('./layouts/events/*'), reverse=True)
 for event in events:
     event_name = event.rsplit('/', 1)[1]
-
-    must_do_static = False
-    try:
-        event_type = event_name.split('serata-')
-        if len(event_type) >= 2:
-            event_type = event_type[1].split('.')[0]
-            if event_type in static_events:
-                date = datetime.datetime.strptime(event_name[:10], '%Y-%m-%d')
-                today = datetime.datetime.now().replace(
-                    hour=0, minute=0, second=0, microsecond=0)
-                if today <= date < today + datetime.timedelta(days=7):
-                    must_do_static = True
-    except IndexError:
-        pass
 
     with open(event) as event_tmpl, \
             open('./events/{}'.format(event_name.replace('.md', '.html')), 'w+') as output_event:
@@ -415,25 +412,15 @@ for event in events:
                 output_event.write(line.replace(
                     '{{ event_description }}', description))
             elif '{{ event_body }}' in line:
-                output_event.write(line.replace('{{ event_body }}', markdown2.markdown(
-                    ''.join(content), extras={'break-on-newline': True})))
+                output_event.write(line.replace('{{ event_body }}', render_event_markdown(''.join(content))))
             elif '{{ event_og }}' in line:
                 output_event.write(line.replace('{{ event_og }}', og_image))
             else:
                 output_event.write(line)
 
-        if must_do_static:
-            if not done[event_type]:
-                with open('./events/{}.html'.format(event_type), 'w') as static_event:
-                    static_event.write(
-                        '<meta http-equiv="refresh" content="0; url=/events/{}.html" />'.format(event_name.replace('.md', '')))
-                    done[event_type] = True
-
-    for static_event in static_events:
-        if not done[static_event]:
-            with open('./events/{}.html'.format(static_event), 'w') as static_event:
-                static_event.write(
-                    '<meta http-equiv="refresh" content="0; url=/events" />'.format(static_event))
+for alias, target in alias_targets(events, today.date(), aliases).items():
+    with open('./events/{}.html'.format(alias), 'w') as static_event:
+        static_event.write('<meta http-equiv="refresh" content="0; url={}" />'.format(target))
 
 ###############################################################################
 # T-Shirt Requirements

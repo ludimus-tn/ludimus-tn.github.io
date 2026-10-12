@@ -1,0 +1,40 @@
+{
+  "version": 1,
+  "migration_start": "2026-10-19",
+  "profiles": {
+    "serata-gattogordo": {
+      "summaries": ["Serata Trento @ Gatto Gordo"],
+      "uids": ["65gikkhnmqbqmbhnd1bs812lin@google.com"],
+      "alias": "gattogordo"
+    },
+    "serata-bibliotecabaselgadipine": {
+      "summaries": ["Serata Piné @ Biblioteca di Baselga di Piné"],
+      "uids": ["47pg9l2qtoe6ldedrjpai5acnu@google.com"],
+      "alias": "bibliotecabaselgadipine"
+    },
+    "serata-cantiere26": {
+      "summaries": ["Serata Arco @ Cantiere26"],
+      "uids": ["22jja4hte3b44u4ora1m3ch3fi@google.com"],
+      "alias": "cantiere26"
+    },
+    "serata-savot-ala": {
+      "summaries": ["Serata Ala @ Bar SaVot"],
+      "uids": ["d7e9oj8pv8jk7ejv298riflcne@google.com"],
+      "alias": "savot-ala"
+    },
+    "serata-luogo-comune-riva": {
+      "summaries": ["Serata Riva @ Luogo Comune"],
+      "uids": ["4ajboa5lqk7mn4jf364aulthsh@google.com"],
+      "alias": "luogo-comune-riva"
+    },
+    "serata-smartlab": {
+      "summaries": ["Serata Rovereto @ Smart Lab", "Serata Rovereto @ SmartLab"],
+      "uids": ["2iu51qsntjk8tod6c7e7sgv5a3@google.com"],
+      "alias": "smartlab"
+    },
+    "serata-doppiomalto": {
+      "summaries": ["Serata Trento @ Doppio Malto"],
+      "alias": "doppiomalto"
+    }
+  }
+}

@@ -5,21 +5,22 @@
 - mkvirtualenv ludimus  --python `which python3`
 - pip install -r requirements.txt
 
-
 ## How to update boardgames
 
-- python processors/fetch.py  # edit this file if needed
-
+- python processors/fetch_games.py  # edit this file if needed
 
 ## How to generate the new website
 
 - python processors/generate.py
 
-
 ## How to deploy
 
 - git commit -am "do something cool" && git push
 
+
+## How to publish events
+
+See [Calendar and Telegram instructions](docs/calendar-events.md).
 
 ## Environment variables
 

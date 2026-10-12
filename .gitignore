@@ -4,3 +4,7 @@ tmp
 .vscode/settings.json
 .direnv
 .envrc
+.venv/
+__pycache__/
+*.pyc
+tests/
