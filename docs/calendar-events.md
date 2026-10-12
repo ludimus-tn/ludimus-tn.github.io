@@ -55,7 +55,14 @@ python processors/calendar_events.py --ics ~/Downloads/calendar.ics --week 2026-
 Edit Calendar, then run the affected week again. For a series-wide change, run the full affected date range.
 Edit/delete just one occurrence for an exception. Keep generated event files untouched.
 If the script stops, read the report, fix the issue and retry.
-The daily website build uses committed files; it does not fetch Calendar.
+The daily website build uses committed files; it does not fetch Calendar. You need to run the script again BEFORE rebuilding the website.
+
+## Website filters
+
+The event page filters by short venue (shown with its town), date range and activity. Filters work together; **Azzera filtri** restores the full list.
+The script writes YAML metadata at the top of generated event Markdown: type, town, short venue, address, date, local start/end, all-day status and Calendar UID.
+The website reads it automatically, no need to touch the YAML.
+Older pages without these details remain visible and use **Non specificato** for missing location/type. With JavaScript disabled, the full list stays visible.
 
 Keep dates/hours in their Calendar fields. Split lunch breaks and different daily hours into separate sessions, each at most 24 hours.
 
@@ -86,7 +93,7 @@ A chi è rivolto: Tutti
 | `Prenotazioni`      | Booking link.                                                  | `https://example.org/iscrizioni`<br>`https://example.org/prenota-un-turno`                                                                                           |
 | `Costo`             | Price, if known.                                               | `Gratuito`<br>`5€ per la tessera associativa di Glow`<br>`30€ a gruppo`                                                                                                      |
 | `A chi è rivolto`   | Audience and age rules.                                        | `Tutti, anche senza esperienza.`<br>`Famiglie; bambini accompagnati da un adulto.`<br>`Ragazzi e adulti dai 16 anni.`                                                |
-| `Durata`            | Length of one game/turn, not opening hours.                    | `8 minuti per partita`<br>`45 minuti per turno`<br>`Circa 2 ore`                                                                                                     |
+| `Durata`            | Length of one game/turn (not opening hours!)                   | `8 minuti per partita`<br>`45 minuti per turno`<br>`Circa 2 ore`                                                                                                     |
 | `Dimensione gruppi` | People per team or turn.                                       | `4 persone per squadra`<br>`5–6 persone a turno`<br>`Da 3 a 5 persone`                                                                                               |
 | `Note`              | Extra public information.                                      | `Presentati 10 minuti prima del turno prenotato.`<br>`Ultimo appuntamento prima della pausa estiva.`<br>`Sito ufficiale: https://example.org/evento`                 |
 | `Locandina`         | Image link; otherwise the template supplies a generic image.   | `https://ludimus.it/static/img/stracot.png`<br>`https://example.org/locandina.jpg`                                                                                   |
@@ -102,7 +109,7 @@ A short link such as `/events/gattogordo` points to the next upcoming event.
 
 The script chooses a name automatically and remembers it in `processors/calendar-state.json`. Do not edit that file.
 For a new recurring series, add it in Calendar, preview and apply. No JSON edit is needed unless you want a custom URL.
-Editing the same series keeps its URL. Deleting and recreating it gives it a new Calendar ID.
+Editing the same series keeps its URL. Deleting and recreating it gives it a new Calendar ID (which you should then add to the existing JSON profile).
 
 ### Custom names and matching
 
@@ -131,9 +138,7 @@ To recreate a series without changing its URL, add its new UID to the existing p
 
 ## Templates and event details
 
-`processors/event_templates/` has four shared files: `ludoteca.md`, `stracot.md`, `escape-room.md`, `altro.md`.
+`processors/event_templates/` contains templates: `ludoteca.md`, `stracot.md`, `escape-room.md`, `altro.md`.
 They supply page layout, shared wording and a default image. Calendar supplies event details, including membership rules, fees and booking.
-The repository JSON files control URLs only; they do not supply venue details or public instructions.
 
-If a build fails after applying, fix the issue and run `python processors/generate.py` again.
 Imports start on 19 October 2026. Earlier events are handled manually.

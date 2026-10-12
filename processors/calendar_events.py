@@ -20,6 +20,7 @@ import icalendar
 import markdown2
 import recurring_ical_events
 import requests
+import yaml
 
 ROME = ZoneInfo("Europe/Rome")
 ROOT = Path(__file__).resolve().parents[1]
@@ -45,6 +46,8 @@ KINDS = {"giochi da tavolo": "boardgames", "ludoteca": "boardgames", "escape roo
 ACTIVITY_TEMPLATES = {"boardgames": "ludoteca.md", "stracot": "stracot.md",
                       "escape-room": "escape-room.md", "custom": "altro.md"}
 ROUTING_FIELDS = {"uids", "summaries", "alias", "group"}
+EVENT_TYPE_CODES = {"boardgames": "ludoteca", "stracot": "stracot", "escape-room": "escape-room", "custom": "altro"}
+EVENT_TYPE_LABELS = {"ludoteca": "Ludoteca", "stracot": "Stracòt", "escape-room": "Escape Room", "altro": "Altro"}
 DETAILS = (("participation", "Come partecipare: "),
            ("cost", "Costo: "), ("audience", "A chi è rivolto: "),
            ("duration", "Durata: "), ("players", "Dimensione gruppi: "))
@@ -81,7 +84,7 @@ def render_event_markdown(text, safe_mode=None):
     return rendered
 
 
-def alias_targets(paths, today, aliases):
+def alias_targets(paths, today, aliases, end_dates=None):
     targets = {}
     for path in sorted(paths):
         name = Path(path).name
@@ -90,12 +93,128 @@ def alias_targets(paths, today, aliases):
         except ValueError:
             continue
         slug = Path(name[11:]).stem
-        if date < today:
+        last_day = dt.date.fromisoformat((end_dates or {}).get(name, date.isoformat()))
+        if last_day < today:
             continue
         for alias, event_slug in aliases.items():
             if slug == event_slug and alias not in targets:
                 targets[alias] = "/events/" + Path(name).with_suffix(".html").name
     return {alias: targets.get(alias, "/events") for alias in aliases}
+
+
+class EventMetadataLoader(yaml.SafeLoader):
+    def construct_mapping(self, node, deep=False):
+        self.flatten_mapping(node)
+        seen = set()
+        for key_node, _ in node.value:
+            key = self.construct_object(key_node, deep=deep)
+            if not isinstance(key, str):
+                raise CalendarError("Event metadata keys must be text")
+            if key in seen:
+                raise CalendarError(f"Repeated event metadata field: {key}")
+            seen.add(key)
+        return super().construct_mapping(node, deep=deep)
+
+
+def read_event_source(text):
+    """Read YAML front matter or the older leading event_* lines."""
+    lines = text.lstrip("\ufeff").splitlines(keepends=True)
+    first = next((index for index, line in enumerate(lines) if line.strip()), len(lines))
+    lines = lines[first:]
+    if lines and lines[0].strip() == "---":
+        closing = next((index for index in range(1, len(lines)) if lines[index].rstrip("\r\n") == "---"), None)
+        if closing is None:
+            raise CalendarError("Unclosed event YAML metadata")
+        try:
+            metadata = yaml.load("".join(lines[1:closing]), Loader=EventMetadataLoader)
+        except yaml.YAMLError as error:
+            raise CalendarError(f"Invalid event YAML metadata: {error}") from None
+        if metadata is None:
+            metadata = {}
+        if not isinstance(metadata, dict):
+            raise CalendarError("Event YAML metadata must be a mapping")
+        for key in ("event_title", "event_description", "event_og", "event_type", "event_town", "event_location", "event_address", "event_uid"):
+            if key in metadata and not isinstance(metadata[key], str):
+                raise CalendarError(f"Event metadata field must be text: {key}")
+        if "event_all_day" in metadata and not isinstance(metadata["event_all_day"], bool):
+            raise CalendarError("event_all_day must be a YAML boolean")
+        return metadata, "".join(lines[closing + 1:]).lstrip("\r\n")
+    metadata, index = {}, 0
+    for line in lines:
+        match = re.fullmatch(r"(event_[a-z_]+):\s*(.*?)\s*", line)
+        if not match:
+            break
+        key, value = match.groups()
+        if key in metadata:
+            raise CalendarError(f"Repeated event metadata field: {key}")
+        metadata[key] = html.unescape(value)
+        index += 1
+    return metadata, "".join(lines[index:]).lstrip("\r\n")
+
+
+def source_event_info(metadata, filename):
+    """Filter facts use local dates; a midnight end excludes the next day."""
+    try:
+        file_date = dt.date.fromisoformat(Path(filename).name[:10])
+        day = dt.date.fromisoformat(str(metadata.get("event_date", file_date.isoformat())))
+        if day != file_date:
+            raise CalendarError(f"Event date disagrees with its filename: {filename}")
+        last_day = day
+        start_value, end_value = metadata.get("event_start"), metadata.get("event_end")
+        if start_value:
+            beginning = local(dt.datetime.fromisoformat(str(start_value).replace("Z", "+00:00")))
+            if beginning.date() != day:
+                raise CalendarError(f"Event start disagrees with its date: {filename}")
+        if end_value:
+            ending = local(dt.datetime.fromisoformat(str(end_value).replace("Z", "+00:00")))
+            if start_value and ending <= beginning:
+                raise CalendarError(f"Event end must be after start: {filename}")
+            last_day = ending.date()
+            if ending.time().replace(tzinfo=None) == dt.time():
+                last_day -= dt.timedelta(days=1)
+            if last_day < day:
+                raise CalendarError(f"Event end precedes its date: {filename}")
+    except ValueError as error:
+        raise CalendarError(f"Invalid event date in {filename}: {error}") from None
+    kind = metadata.get("event_type", "")
+    if not isinstance(kind, str):
+        raise CalendarError(f"Event type must be text: {filename}")
+    kind = EVENT_TYPE_CODES.get(kind, kind)
+    if kind and kind not in EVENT_TYPE_LABELS:
+        raise CalendarError(f"Unknown event type in {filename}: {kind}")
+    town, venue = metadata.get("event_town", ""), metadata.get("event_location", "")
+    if not isinstance(town, str) or not isinstance(venue, str):
+        raise CalendarError(f"Event town/location must be text: {filename}")
+    location = " — ".join(value for value in (town.strip(), venue.strip()) if value)
+    return {"date": day.isoformat(), "end_date": last_day.isoformat(),
+            "type": kind, "type_label": EVENT_TYPE_LABELS.get(kind, "Non specificato"),
+            "location": location, "location_label": location or "Non specificato"}
+
+
+def event_filter_attributes(info):
+    values = {"data-event": "", "data-date": info["date"], "data-end-date": info["end_date"],
+              "data-type": info["type"], "data-type-label": info["type_label"],
+              "data-location": info["location"], "data-location-label": info["location_label"]}
+    return "".join(f' {key}="{html.escape(value, quote=True)}"' for key, value in values.items())
+
+
+def render_event_link(template, title, date, event_url, attributes=""):
+    values = {"title": html.escape(str(title), quote=True), "date": html.escape(date, quote=True),
+              "event_url": html.escape(event_url, quote=True), "event_attributes": attributes}
+    text = "".join(template) if isinstance(template, list) else template
+    return re.sub(r"\{\{ (\w+) \}\}", lambda match: values[match.group(1)], text)
+
+
+def render_event_page(metadata, body, root=ROOT):
+    template = (root / "layouts/partials/event.html").read_text(encoding="utf-8")
+    values = {"event_title": metadata.get("event_title", ""),
+              "event_description": metadata.get("event_description", ""),
+              "event_og": metadata.get("event_og", "https://ludimus.it/static/img/events/default.jpg")}
+    values = {key: html.escape(str(value), quote=True) for key, value in values.items()}
+    values.update(event_body=render_event_markdown(body),
+                  footer=(root / "layouts/partials/footer.html").read_text(encoding="utf-8"),
+                  hash=hashlib.md5((root / "style.css").read_bytes()).hexdigest())
+    return re.sub(r"\{\{ (\w+) \}\}", lambda match: values[match.group(1)], template)
 
 
 def local(value):
@@ -394,10 +513,14 @@ def render_source(event, profile, body, root):
     elif not information:
         template = template.replace("\n\n{{ details }}", "")
     content = re.sub(r"\{\{ (\w+) \}\}", lambda match: escape_text(values[match.group(1)]), template).strip()
-    metadata = (f"event_title: {html.escape(title, quote=True)}\n"
-                f"event_description: {html.escape(date + ' ' + invitation, quote=True)}\n"
-                f"event_og: {html.escape(profile['image'], quote=True)}\n")
-    return metadata + "\n" + content.strip() + "\n"
+    metadata = {"event_title": title, "event_description": date + " " + invitation,
+                "event_og": profile["image"], "event_type": EVENT_TYPE_CODES[profile["kind"]],
+                "event_town": profile["city"], "event_location": profile["venue"],
+                "event_address": event.location, "event_date": event.start.date().isoformat(),
+                "event_start": event.start.isoformat(), "event_end": event.end.isoformat(),
+                "event_all_day": event.all_day, "event_uid": event.uid}
+    front_matter = yaml.safe_dump(metadata, allow_unicode=True, sort_keys=False, width=1000)
+    return "---\n" + front_matter + "---\n\n" + content.strip() + "\n"
 
 
 def event_link(event, profile):
@@ -604,12 +727,19 @@ def plan(calendar, start, end, root=ROOT, adopt=False):
             source_names.discard(Path(path).name)
         else:
             source_names.add(Path(path).name)
-    redirects = alias_targets(source_names, dt.datetime.now(ROME).date(), aliases)
+    end_dates = {}
+    for name in source_names:
+        path = "layouts/events/" + name
+        text = writes[path]["after"] if path in writes else source_text(root / path)
+        metadata, _ = read_event_source(text)
+        end_dates[name] = source_event_info(metadata, name)["end_date"]
+    redirects = alias_targets(source_names, dt.datetime.now(ROME).date(), aliases, end_dates)
     payload["redirects"] = redirects
     payload["build_date"] = dt.datetime.now(ROME).date().isoformat()
     payload["build_inputs"] = {path: digest(source_text(root / path)) for path in (
         "processors/generate.py", "processors/calendar_events.py", "layouts/partials/event.html",
-        "layouts/partials/event-link.html", "layouts/partials/footer.html", "layouts/events.html", "style.css")}
+        "layouts/partials/event-link.html", "layouts/partials/footer.html", "layouts/events.html",
+        "static/js/event-filters.js", "style.css")}
     fingerprint = digest(json.dumps(payload, sort_keys=True, ensure_ascii=False))
     inputs = {CONFIG: digest(payload["config"]), STATE: digest(payload["state_before"]),
               **templates, **payload["build_inputs"]}
@@ -671,25 +801,13 @@ def output_artifacts(proposal, directory):
             '<!doctype html><html lang="it"><meta charset="utf-8"><title>Telegram draft</title><body>' + rendered + '</body></html>', encoding="utf-8")
     preview = directory / "event-pages"
     preview.mkdir(exist_ok=True)
-    template = (ROOT / "layouts/partials/event.html").read_text(encoding="utf-8")
-    footer = (ROOT / "layouts/partials/footer.html").read_text(encoding="utf-8")
-    style_hash = hashlib.md5((ROOT / "style.css").read_bytes()).hexdigest()
     index = ["<!doctype html><html><meta charset='utf-8'><title>Calendar preview</title><body>",
              "<h1>Proposed event pages</h1>", "<p>Partial preview: resolve blockers first.</p>" if proposal["errors"] else "", "<ul>"]
     for path, change in sorted(proposal["writes"].items()):
         if change["after"] is None:
             continue
-        metadata, content = {}, []
-        for line in change["after"].splitlines():
-            if line.startswith("event_") and ": " in line:
-                key, value = line.split(": ", 1)
-                metadata[key] = value
-            else:
-                content.append(line)
-        rendered = template
-        replacements = dict(metadata, event_body=render_event_markdown("\n".join(content)), footer=footer, hash=style_hash)
-        for key, value in replacements.items():
-            rendered = rendered.replace("{{ " + key + " }}", value)
+        metadata, body = read_event_source(change["after"])
+        rendered = render_event_page(metadata, body)
         rendered = rendered.replace('href="../', 'href="https://ludimus.it/').replace('src="../', 'src="https://ludimus.it/')
         name = Path(path).with_suffix(".html").name
         (preview / name).write_text(rendered, encoding="utf-8")

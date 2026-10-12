@@ -1,15 +1,15 @@
-from ast import If
 import datetime
 import glob
 import json
+import html
 import os
 import hashlib
 import markdown2
 import re
-import os
 from random import Random
 from zoneinfo import ZoneInfo
-from calendar_events import alias_targets, render_event_markdown
+from calendar_events import (alias_targets, event_filter_attributes, read_event_source,
+                             render_event_link, render_event_page, source_event_info)
 
 
 HIDDEN_GAMES = {
@@ -28,7 +28,6 @@ input_data = json.loads(''.join(open('./processors/games.json').readlines()))
 blog_post_tmpl = open('./layouts/partials/blog-post.html').readlines()
 blog_preview_tmpl = open('./layouts/partials/blog-preview.html').readlines()
 event_link_tmpl = open('./layouts/partials/event-link.html').readlines()
-events_tmpl = open('./layouts/partials/event.html').readlines()
 escaperoom_link_tmpl = open(
     './layouts/partials/escaperoom-link.html').readlines()
 gallery_photo_tmpl = open('./layouts/partials/gallery-photo.html').read()
@@ -100,7 +99,10 @@ for post in sorted(glob.glob('./layouts/blog/*')):
     output_blog_tmpl += '</div>'
     blog_file_to_tmpl[post] = output_blog_tmpl
 
-events = sorted(glob.glob('./layouts/events/*'), reverse=True)
+events = sorted(glob.glob('./layouts/events/*.md') + glob.glob('./layouts/events/*.html'), reverse=True)
+event_sources = {path: read_event_source(open(path, encoding='utf-8').read()) for path in events}
+event_infos = {path: source_event_info(event_sources[path][0], path) for path in events}
+event_filter_hash = hashlib.md5(open('./static/js/event-filters.js', 'rb').read()).hexdigest()
 
 escaperooms = sorted(glob.glob('./layouts/escaperooms/*'), reverse=True)
 
@@ -208,7 +210,9 @@ for event in sorted(glob.glob('./events/*.html'), reverse=True):
     event_date = datetime.datetime(event_year, event_month, event_day)
     now = datetime.datetime.now(ZoneInfo('Europe/Rome')).replace(tzinfo=None, hour=0, minute=0, second=0, microsecond=0)
 
-    if event_date >= now:
+    source_path = './layouts/events/' + event_name.replace('.html', '.md')
+    last_day = event_infos.get(source_path, {}).get('end_date', event_date.date().isoformat())
+    if datetime.date.fromisoformat(last_day) >= now.date():
         continue
     archived_events.append((event_year, event))
 
@@ -237,21 +241,14 @@ with open('./layouts/archive.html') as base_archive_events_tmpl, \
 
                 title_match = re.search(
                     r'<title>(.*?)</title>', event_body, re.IGNORECASE)
-                if title_match:
-                    event_title = title_match.group(1).strip()
+                source_path = './layouts/events/' + event_name.replace('.html', '.md')
+                source_title = event_sources.get(source_path, ({}, ''))[0].get('event_title')
+                if source_title:
+                    event_title = source_title
+                elif title_match and title_match.group(1).strip():
+                    event_title = html.unescape(title_match.group(1).strip())
 
-                for tmpl_line in event_link_tmpl:
-                    if '{{ title }}' in tmpl_line:
-                        output_archive_events.write(
-                            tmpl_line.replace('{{ title }}', event_title))
-                    elif '{{ date }}' in tmpl_line:
-                        output_archive_events.write(
-                            tmpl_line.replace('{{ date }}', event_date))
-                    elif '{{ event_url }}' in tmpl_line:
-                        output_archive_events.write(
-                            tmpl_line.replace('{{ event_url }}', event_url))
-                    else:
-                        output_archive_events.write(tmpl_line)
+                output_archive_events.write(render_event_link(event_link_tmpl, event_title, event_date, event_url))
         else:
             output_archive_events.write(line)
 
@@ -272,18 +269,13 @@ events_next_week = []
 events_future = []
 
 for event in sorted(events, reverse=False):
-    event_name = event.replace('./layouts/events/', '')
-    event_date_tmp = event_name[:10].split('-')
-    event_day = int(event_date_tmp[2])
-    event_month = int(event_date_tmp[1])
-    event_year = int(event_date_tmp[0])
+    info = event_infos[event]
+    event_date = datetime.datetime.fromisoformat(info['date'])
 
-    event_date = datetime.datetime(event_year, event_month, event_day)
-
-    if event_date < today:
+    if datetime.date.fromisoformat(info['end_date']) < today.date():
         continue
 
-    if start_this_week <= event_date <= end_this_week:
+    if event_date <= end_this_week:
         events_this_week.append(event)
     elif start_next_week <= event_date <= end_next_week:
         events_next_week.append(event)
@@ -295,40 +287,31 @@ def generate_section_html(title, event_list):
     if not event_list:
         return ''
 
-    html_out = f'<h3>{title}:</h3>\n<ul>\n'
+    html_out = f'<div class="event-group" data-event-group>\n<h3>{title}:</h3>\n<ul>\n'
     for event in event_list:
         event_name = event.replace('./layouts/events/', '')
-        event_title = event_name[10:].replace('.html', '').replace(
-            '.md', '').replace('-', ' ').title()
-        event_date_tmp = event_name[:10].split('-')
-        event_date = '{}/{}/{}'.format(
-            event_date_tmp[2], event_date_tmp[1], event_date_tmp[0])
+        metadata = event_sources[event][0]
+        info = event_infos[event]
+        event_title = metadata.get('event_title') or event_name[11:].replace('.html', '').replace('.md', '').replace('-', ' ').title()
+        event_date = datetime.date.fromisoformat(info['date']).strftime('%d/%m/%Y')
+        if info['end_date'] != info['date']:
+            event_date += ' – ' + datetime.date.fromisoformat(info['end_date']).strftime('%d/%m/%Y')
         event_url = event_name.replace('.md', '.html')
 
-        event_body = open(event).readlines()
-        for event_line in event_body:
-            if 'event_title: ' in event_line:
-                event_title = event_line.replace(
-                    'event_title: ', '').strip()
+        html_out += render_event_link(event_link_tmpl, event_title, event_date, event_url, event_filter_attributes(info))
 
-        for line in event_link_tmpl:
-            if '{{ title }}' in line:
-                html_out += line.replace('{{ title }}', event_title)
-            elif '{{ date }}' in line:
-                html_out += line.replace('{{ date }}', event_date)
-            elif '{{ event_url }}' in line:
-                html_out += line.replace('{{ event_url }}', event_url)
-            else:
-                html_out += line
-
-    html_out += '</ul>\n'
+    html_out += '</ul>\n</div>\n'
     return html_out
 
 
 with open('./layouts/events.html') as base_events_tmpl, \
         open('./events.html', 'w') as output_events:
     for line in base_events_tmpl:
-        if '{{ footer }}' in line:
+        if '{{ hash }}' in line:
+            output_events.write(line.replace('{{ hash }}', style_hash))
+        elif '{{ event_filter_hash }}' in line:
+            output_events.write(line.replace('{{ event_filter_hash }}', event_filter_hash))
+        elif '{{ footer }}' in line:
             output_events.write(line.replace('{{ footer }}', footer))
         elif '{{ events_sections }}' in line:
             if not events_this_week and not events_next_week and not events_future:
@@ -371,54 +354,13 @@ with open('./processors/event_profiles.json', encoding='utf-8') as profiles_file
         if profile.get('alias'):
             aliases[profile['alias']] = slug
 
-events = sorted(glob.glob('./layouts/events/*'), reverse=True)
 for event in events:
     event_name = event.rsplit('/', 1)[1]
+    metadata, body = event_sources[event]
+    with open('./events/{}'.format(event_name.replace('.md', '.html')), 'w', encoding='utf-8') as output_event:
+        output_event.write(render_event_page(metadata, body))
 
-    with open(event) as event_tmpl, \
-            open('./events/{}'.format(event_name.replace('.md', '.html')), 'w+') as output_event:
-
-        event_body = event_tmpl.readlines()
-
-        title = None
-        description = None
-        og_image = None
-        date = None
-        place = None
-        content = []
-
-        for line in event_body:
-            if 'event_title: ' in line:
-                title = line.replace('event_title: ', '').strip()
-            elif 'event_description: ' in line:
-                description = line.replace('event_description: ', '').strip()
-            elif 'event_date: ' in line:
-                date = line.replace('event_date: ', '').strip()
-            elif 'event_place: ' in line:
-                place = line.replace('event_place: ', '').strip()
-            elif 'event_og: ' in line:
-                og_image = line.replace('event_og: ', '').strip()
-            else:
-                content.append(line)
-
-        for line in events_tmpl:
-            if '{{ hash }}' in line:
-                output_event.write(line.replace('{{ hash }}', style_hash))
-            elif '{{ footer }}' in line:
-                output_event.write(line.replace('{{ footer }}', footer))
-            elif '{{ event_title }}' in line:
-                output_event.write(line.replace('{{ event_title }}', title))
-            elif '{{ event_description }}' in line:
-                output_event.write(line.replace(
-                    '{{ event_description }}', description))
-            elif '{{ event_body }}' in line:
-                output_event.write(line.replace('{{ event_body }}', render_event_markdown(''.join(content))))
-            elif '{{ event_og }}' in line:
-                output_event.write(line.replace('{{ event_og }}', og_image))
-            else:
-                output_event.write(line)
-
-for alias, target in alias_targets(events, today.date(), aliases).items():
+for alias, target in alias_targets(events, today.date(), aliases, {os.path.basename(path): info['end_date'] for path, info in event_infos.items()}).items():
     with open('./events/{}.html'.format(alias), 'w') as static_event:
         static_event.write('<meta http-equiv="refresh" content="0; url={}" />'.format(target))
 
@@ -594,6 +536,18 @@ with open('./layouts/stracot.html') as base_stracot_tmpl, \
             output_stracot.write(line.replace('{{ hash }}', style_hash))
         else:
             output_stracot.write(line)
+
+
+# Older static-page loops only fill the footer; finish their shared CSS token too.
+for base_page in glob.glob('./layouts/*.html'):
+    output_path = './' + os.path.basename(base_page)
+    if not os.path.isfile(output_path):
+        continue
+    with open(output_path, encoding='utf-8') as rendered_page:
+        page = rendered_page.read()
+    if '{{ hash }}' in page:
+        with open(output_path, 'w', encoding='utf-8') as rendered_page:
+            rendered_page.write(page.replace('{{ hash }}', style_hash))
 
 
 # ###############################################################################
