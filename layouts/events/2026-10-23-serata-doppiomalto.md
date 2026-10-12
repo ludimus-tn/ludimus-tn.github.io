@@ -1,14 +1,13 @@
-event_title: Serata Giochi a Trento - Doppio Malto
-event_description: Venerdì 23 Ottobre 2026 vieni a giocare con Ludimus al Ristorante Doppio Malto di Trento!
-event_og: https://ludimus.it/static/img/events/default_trento.png
+event_title: Serata Trento @ Doppio Malto
+event_description: Venerdì 23 Ottobre 2026 vi aspettiamo dalle 19:00 alle 00:00 presso Doppio Malto!
+event_og: https://ludimus.it/static/img/events/default.jpg
 
-# Serata Giochi da Tavolo a Trento
-
-### Vieni a giocare alle serate settimanali di Ludimus a Trento!
+# Serata Trento @ Doppio Malto
 
 📅 Venerdì 23 Ottobre 2026
-🕰 dalle 19:00 in poi
-📍 [Doppio Malto Trento](https://maps.app.goo.gl/aMUXxgqDS8iZ4fYa9)
+🕰 dalle 19:00 alle 00:00
+📍 [Doppio Malto](https://maps.app.goo.gl/aMUXxgqDS8iZ4fYa9)
+
 
 ---
 
@@ -16,5 +15,5 @@ event_og: https://ludimus.it/static/img/events/default_trento.png
 
 Voi venite, noi ci mettiamo i giochi (tanti giochi!)
 Vedete qualcosa che conoscete? Potete giocarci!
-Volete provare qualcosa ma non ne conoscete le regole? I nostri esperti saranno pronti a spiegarvi tutto quel che c'è da sapere.
+Volete provare qualcosa ma non ne conoscete le regole? Vi aiutiamo a imparare tutto quel che c'è da sapere.
 Non avete mai provato un gioco da tavolo in vita vostra, ma siete curiosi? Fate un salto, abbiamo il gioco adatto a voi!

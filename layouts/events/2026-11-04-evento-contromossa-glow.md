@@ -1,23 +1,24 @@
-event_title: Ludimus+Glow ETS - Contromossa
-event_description: Mercoledì 04 Novembre 2026 vieni a giocare con Ludimus a Povo (Trento)!
+event_title: Contromossa - Glow
+event_description: Mercoledì 04 Novembre 2026 vi aspettiamo dalle 18:30 alle 21:30 allo Spazio ZERO per una serata di giochi matematici con Glow e Dopolavoro Matematico!
 event_og: https://ludimus.it/static/img/events/default.jpg
 
-# Contromossa
+# Contromossa - Glow
 
-### Vieni a giocare con noi e l'associazione Glow
 📅 Mercoledì 04 Novembre 2026
 🕰 dalle 18:30 alle 21:30
-📍 [Spazio ZERO - Povo (Trento)](https://maps.app.goo.gl/DtRrRGe3hnoQzgPa9)
-🎟️ [Evento su prenotazione](https://www.eventbrite.it/o/associazione-glow-47313148813)
+📍 [Spazio ZERO](https://maps.app.goo.gl/DtRrRGe3hnoQzgPa9)
+
+Vi aspettiamo allo Spazio ZERO per una serata di giochi matematici con Glow e Dopolavoro Matematico!<br />
+**Come partecipare:** Prenotazione obbligatoria tramite Eventbrite. È richiesta l'associazione a Glow.
+**Costo:** 5€ per associarsi a Glow
+**A chi è rivolto:** Persone associate a Glow o che si associano per partecipare.
+🎟️ [**Prenotazioni**](https://www.eventbrite.it/o/associazione-glow-47313148813)
 
 ---
 
-Una sera al mese, Spazio ZERO a Povo si riempie di giochi, sfide e persone da conoscere.
+🎲 **Come funziona?**
 
-**Tema del mese: Giochi Matematici (in collaborazione con Dopolavoro Matematico)**
-
-#### INFO UTILI
-
-- Sarà possibile portare e/o ordinare cibo, il bere invece sarà a disposizione nello spazio (piccolo prezzo a consumazione).
-- È richiesta la prenotazione tramite Eventbrite
-- L'attività è riservata a chi si associa a Glow (al costo di 5€)
+Voi venite, noi ci mettiamo i giochi (tanti giochi!)
+Vedete qualcosa che conoscete? Potete giocarci!
+Volete provare qualcosa ma non ne conoscete le regole? Vi aiutiamo a imparare tutto quel che c'è da sapere.
+Non avete mai provato un gioco da tavolo in vita vostra, ma siete curiosi? Fate un salto, abbiamo il gioco adatto a voi!

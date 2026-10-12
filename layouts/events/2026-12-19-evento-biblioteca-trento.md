@@ -1,16 +1,14 @@
-event_title: Pomeriggio di Giochi alla Biblioteca Comunale di Trento
-event_description: Sabato 12 Dicembre 2026 dalle 14:30 alle 18:00 vieni a giocare alla Biblioteca Comunale di Trento!
+event_title: Biblioteca comunale Trento
+event_description: Sabato 19 Dicembre 2026 vi aspettiamo dalle 14:30 alle 18:00 presso Sala Manzoni della Biblioteca Comunale!
 event_og: https://ludimus.it/static/img/events/default.jpg
 
-# Pomeriggio di Giochi alla Biblioteca Comunale di Trento
+# Biblioteca comunale Trento
 
-### Vieni a giocare con la collezione di giochi Ludimus e della biblioteca!
-
-📅 Sabato 12 Dicembre 2026
+📅 Sabato 19 Dicembre 2026
 🕰 dalle 14:30 alle 18:00
-📍 [Biblioteca Comunale Trento](https://maps.app.goo.gl/7YHe7NZrrnUyVHGF9)
+📍 [Sala Manzoni della Biblioteca Comunale](https://maps.app.goo.gl/7YHe7NZrrnUyVHGF9)
 
-Venite a provare tantissimi nuovi e travolgenti giochi da tavolo alla Biblioteca Comunale di Trento!
+Un pomeriggio per scoprire la collezione di giochi di Ludimus e della biblioteca.
 
 ---
 
@@ -18,5 +16,5 @@ Venite a provare tantissimi nuovi e travolgenti giochi da tavolo alla Biblioteca
 
 Voi venite, noi ci mettiamo i giochi (tanti giochi!)
 Vedete qualcosa che conoscete? Potete giocarci!
-Volete provare qualcosa ma non ne conoscete le regole? I nostri esperti saranno pronti a spiegarvi tutto quel che c'è da sapere.
+Volete provare qualcosa ma non ne conoscete le regole? Vi aiutiamo a imparare tutto quel che c'è da sapere.
 Non avete mai provato un gioco da tavolo in vita vostra, ma siete curiosi? Fate un salto, abbiamo il gioco adatto a voi!

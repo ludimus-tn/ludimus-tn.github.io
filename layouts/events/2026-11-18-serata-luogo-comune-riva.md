@@ -1,14 +1,13 @@
-event_title: Serata Giochi al Luogo Comune di Riva del Garda
-event_description: Mercoledì 18 Novembre 2026 vieni a giocare con Ludimus al Luogo Comune di Riva del Garda!
-event_og: https://ludimus.it/static/img/events/default_riva.jpg
+event_title: Serata Riva @ Luogo Comune
+event_description: Mercoledì 18 Novembre 2026 vi aspettiamo dalle 19:30 alle 23:00 presso Luogo Comune!
+event_og: https://ludimus.it/static/img/events/default.jpg
 
-# Serata Giochi da Tavolo a Riva del Garda
-
-### Partecipa alla serata al Luogo Comune di Riva del Garda
+# Serata Riva @ Luogo Comune
 
 📅 Mercoledì 18 Novembre 2026
 🕰 dalle 19:30 alle 23:00
-📍 [Luogo Comune - Via Italo Marchi 13 Riva del Garda](https://goo.gl/maps/8cXExW6hLPMwV1yF9)
+📍 [Luogo Comune](https://goo.gl/maps/8cXExW6hLPMwV1yF9)
+
 
 ---
 
@@ -16,5 +15,5 @@ event_og: https://ludimus.it/static/img/events/default_riva.jpg
 
 Voi venite, noi ci mettiamo i giochi (tanti giochi!)
 Vedete qualcosa che conoscete? Potete giocarci!
-Volete provare qualcosa ma non ne conoscete le regole? I nostri esperti saranno pronti a spiegarvi tutto quel che c'è da sapere.
+Volete provare qualcosa ma non ne conoscete le regole? Vi aiutiamo a imparare tutto quel che c'è da sapere.
 Non avete mai provato un gioco da tavolo in vita vostra, ma siete curiosi? Fate un salto, abbiamo il gioco adatto a voi!
