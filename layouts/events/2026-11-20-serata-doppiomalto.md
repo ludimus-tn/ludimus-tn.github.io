@@ -1,6 +1,17 @@
+---
 event_title: Serata Trento @ Doppio Malto
 event_description: Venerdì 20 Novembre 2026 vi aspettiamo dalle 19:00 alle 00:00 presso Doppio Malto!
 event_og: https://ludimus.it/static/img/events/default.jpg
+event_type: ludoteca
+event_town: Trento
+event_location: Doppio Malto
+event_address: Doppio Malto Trento, Via del Brennero, 148, 38121 Trento TN, Italia
+event_date: '2026-11-20'
+event_start: '2026-11-20T19:00:00+01:00'
+event_end: '2026-11-21T00:00:00+01:00'
+event_all_day: false
+event_uid: 7pcr37j1g5b5oatdsi43up3n99@google.com
+---
 
 # Serata Trento @ Doppio Malto
 

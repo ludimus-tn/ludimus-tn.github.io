@@ -1,6 +1,17 @@
+---
 event_title: Stracòt - Patto Digitale Argentario
 event_description: Sabato 28 Novembre 2026 vi aspettiamo dalle 14:00 alle 17:00 presso Istituto Comenius con Stracòt!
 event_og: https://ludimus.it/static/img/stracot.png
+event_type: stracot
+event_town: Cognola
+event_location: Istituto Comenius
+event_address: Via Ponte Alto, 38121 Cognola TN, Italy
+event_date: '2026-11-28'
+event_start: '2026-11-28T14:00:00+01:00'
+event_end: '2026-11-28T17:00:00+01:00'
+event_all_day: false
+event_uid: 71t723u24j3nq68rh334j8m41l@google.com
+---
 
 # Stracòt - Patto Digitale Argentario
 

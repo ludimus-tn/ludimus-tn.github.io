@@ -1,6 +1,17 @@
+---
 event_title: Serata Rovereto @ Smart Lab
 event_description: Giovedì 05 Novembre 2026 vi aspettiamo dalle 20:00 alle 23:30 presso Smart Lab!
 event_og: https://ludimus.it/static/img/events/default.jpg
+event_type: ludoteca
+event_town: Rovereto
+event_location: Smart Lab
+event_address: Youth Center - Smart Lab, V.le Trento, 47/49, 38068 Rovereto TN, Italy
+event_date: '2026-11-05'
+event_start: '2026-11-05T20:00:00+01:00'
+event_end: '2026-11-05T23:30:00+01:00'
+event_all_day: false
+event_uid: 2iu51qsntjk8tod6c7e7sgv5a3@google.com
+---
 
 # Serata Rovereto @ Smart Lab
 

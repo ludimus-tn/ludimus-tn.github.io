@@ -4,3 +4,4 @@ diskcache==3.1.1
 requests==2.33.0
 icalendar==6.3.2
 recurring-ical-events==3.8.2
+PyYAML==6.0.3

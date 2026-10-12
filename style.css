@@ -1010,6 +1010,37 @@ em.post-date {
     margin-bottom: 1em;
 }
 
+.events-page [hidden] {
+    display: none !important;
+}
+
+.event-filters {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.75rem;
+    align-items: end;
+    margin: 1.5rem 0 1rem;
+}
+
+.event-filters label {
+    display: block;
+    margin-bottom: 0.25rem;
+}
+
+.event-filters button {
+    justify-self: start;
+}
+
+.event-filter-error {
+    color: #a12020;
+}
+
+@media screen and (max-width: 480px) {
+    .event-filters {
+        grid-template-columns: 1fr;
+    }
+}
+
 .center-img img {
     display: block;
     width: 30%;

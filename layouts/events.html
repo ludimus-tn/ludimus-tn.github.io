@@ -14,6 +14,7 @@
 		crossorigin="anonymous">
 
 	<link rel="stylesheet" href="../style.css?t={{ hash }}">
+	<script src="/static/js/event-filters.js?t={{ event_filter_hash }}" defer></script>
 
 	<link rel="icon" type="image/png" href="../static/img/favicon/favicon-32x32.png" sizes="32x32" />
 	<link rel="icon" type="image/png" href="../static/img/favicon/favicon-16x16.png" sizes="16x16" />
@@ -23,10 +24,38 @@
 
 	<a href="/"><img class="go-back" src="../static/img/logo.svg" alt="Torna alla home page di Ludimus"></a>
 
-	<section class="event">
+	<section class="event events-page">
 		<h2>Eventi di Ludimus</h2>
 
-		{{ events_sections }}
+		<form id="event-filters" class="event-filters" hidden aria-label="Filtra gli eventi">
+			<div>
+				<label for="event-location">Luogo</label>
+				<select id="event-location" name="location" class="form-select">
+					<option value="">Tutti i luoghi</option>
+				</select>
+			</div>
+			<div>
+				<label for="event-type">Tipo</label>
+				<select id="event-type" name="type" class="form-select">
+					<option value="">Tutti i tipi</option>
+				</select>
+			</div>
+			<div>
+				<label for="event-from">Dal</label>
+				<input id="event-from" name="from" type="date" class="form-control">
+			</div>
+			<div>
+				<label for="event-to">Al</label>
+				<input id="event-to" name="to" type="date" class="form-control">
+			</div>
+			<button id="event-reset" type="button" class="btn btn-outline-secondary">Azzera filtri</button>
+		</form>
+		<p id="event-filter-error" class="event-filter-error" role="alert" hidden>La data finale deve essere uguale o successiva alla data iniziale.</p>
+		<p id="event-filter-count" role="status" aria-live="polite" hidden></p>
+		<p id="event-filter-empty" hidden>Nessun evento corrisponde ai filtri scelti.</p>
+		<div id="event-results">
+			{{ events_sections }}
+		</div>
 
 		<br>
 		<a href="/archive">Archivio eventi ⇢</a>

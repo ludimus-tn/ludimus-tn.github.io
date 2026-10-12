@@ -1,6 +1,17 @@
+---
 event_title: Serata Arco @ Cantiere26
 event_description: Mercoledì 09 Dicembre 2026 vi aspettiamo dalle 19:30 alle 23:00 presso Cantiere26!
 event_og: https://ludimus.it/static/img/events/default.jpg
+event_type: ludoteca
+event_town: Arco
+event_location: Cantiere26
+event_address: Cantiere 26 - Centro Giovani, Via Paolina Caproni Maini, 26/E, 38062 Arco TN, Italia
+event_date: '2026-12-09'
+event_start: '2026-12-09T19:30:00+01:00'
+event_end: '2026-12-09T23:00:00+01:00'
+event_all_day: false
+event_uid: 22jja4hte3b44u4ora1m3ch3fi@google.com
+---
 
 # Serata Arco @ Cantiere26
 

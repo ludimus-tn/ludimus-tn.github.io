@@ -1,6 +1,17 @@
+---
 event_title: Altopiano in gioco
 event_description: Venerdì 13 Novembre 2026 vi aspettiamo dalle 19:00 alle 00:00 presso Centro Giovani Rombo!
 event_og: https://ludimus.it/static/img/events/default.jpg
+event_type: ludoteca
+event_town: Vigolo Vattaro
+event_location: Centro Giovani Rombo
+event_address: Centro Giovani Rombo, Via F. Filzi, 2, 38049 Vigolo Vattaro TN, Italy
+event_date: '2026-11-13'
+event_start: '2026-11-13T19:00:00+01:00'
+event_end: '2026-11-14T00:00:00+01:00'
+event_all_day: false
+event_uid: 0fhbjlqsc0bjuepk1f1c3q64rm@google.com
+---
 
 # Altopiano in gioco
 

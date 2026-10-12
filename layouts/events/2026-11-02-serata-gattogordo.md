@@ -1,6 +1,17 @@
+---
 event_title: Serata Trento @ Gatto Gordo
 event_description: Lunedì 02 Novembre 2026 vi aspettiamo dalle 19:00 alle 00:00 presso Locanda del Gatto Gordo!
 event_og: https://ludimus.it/static/img/events/default.jpg
+event_type: ludoteca
+event_town: Trento
+event_location: Locanda del Gatto Gordo
+event_address: Locanda del Gatto Gordo, Via Camillo Cavour, 40, 38122 Trento TN, Italy
+event_date: '2026-11-02'
+event_start: '2026-11-02T19:00:00+01:00'
+event_end: '2026-11-03T00:00:00+01:00'
+event_all_day: false
+event_uid: 65gikkhnmqbqmbhnd1bs812lin@google.com
+---
 
 # Serata Trento @ Gatto Gordo
 

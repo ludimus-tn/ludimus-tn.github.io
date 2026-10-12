@@ -13,7 +13,8 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/all.min.css"
 		crossorigin="anonymous">
 
-	<link rel="stylesheet" href="../style.css?t={{ hash }}">
+	<link rel="stylesheet" href="../style.css?t=3d3124ec8e5a601085970f7210254ea9">
+	<script src="/static/js/event-filters.js?t=7bf96591511f3799117715fea9771dba" defer></script>
 
 	<link rel="icon" type="image/png" href="../static/img/favicon/favicon-32x32.png" sizes="32x32" />
 	<link rel="icon" type="image/png" href="../static/img/favicon/favicon-16x16.png" sizes="16x16" />
@@ -23,408 +24,418 @@
 
 	<a href="/"><img class="go-back" src="../static/img/logo.svg" alt="Torna alla home page di Ludimus"></a>
 
-	<section class="event">
+	<section class="event events-page">
 		<h2>Eventi di Ludimus</h2>
 
+		<form id="event-filters" class="event-filters" hidden aria-label="Filtra gli eventi">
+			<div>
+				<label for="event-location">Luogo</label>
+				<select id="event-location" name="location" class="form-select">
+					<option value="">Tutti i luoghi</option>
+				</select>
+			</div>
+			<div>
+				<label for="event-type">Tipo</label>
+				<select id="event-type" name="type" class="form-select">
+					<option value="">Tutti i tipi</option>
+				</select>
+			</div>
+			<div>
+				<label for="event-from">Dal</label>
+				<input id="event-from" name="from" type="date" class="form-control">
+			</div>
+			<div>
+				<label for="event-to">Al</label>
+				<input id="event-to" name="to" type="date" class="form-control">
+			</div>
+			<button id="event-reset" type="button" class="btn btn-outline-secondary">Azzera filtri</button>
+		</form>
+		<p id="event-filter-error" class="event-filter-error" role="alert" hidden>La data finale deve essere uguale o successiva alla data iniziale.</p>
+		<p id="event-filter-count" role="status" aria-live="polite" hidden></p>
+		<p id="event-filter-empty" hidden>Nessun evento corrisponde ai filtri scelti.</p>
+		<div id="event-results">
+<div class="event-group" data-event-group>
 <h3>Questa settimana:</h3>
 <ul>
-<li>
+<li data-event="" data-date="2026-10-12" data-end-date="2026-10-12" data-type="" data-type-label="Non specificato" data-location="" data-location-label="Non specificato">
     <a href="/events/2026-10-12-serata-gattogordo.html">
         <span>12/10/2026 - </span>
         <span>Serata Giochi a Trento - Locanda Gatto Gordo</span>
     </a>
 </li>
-<li>
+<li data-event="" data-date="2026-10-14" data-end-date="2026-10-14" data-type="" data-type-label="Non specificato" data-location="" data-location-label="Non specificato">
     <a href="/events/2026-10-14-serata-bibliotecabaselgadipine.html">
         <span>14/10/2026 - </span>
         <span>Serata Giochi alla Biblioteca di Baselga di Piné</span>
     </a>
 </li>
-<li>
+<li data-event="" data-date="2026-10-14" data-end-date="2026-10-14" data-type="" data-type-label="Non specificato" data-location="" data-location-label="Non specificato">
     <a href="/events/2026-10-14-serata-cantiere26.html">
         <span>14/10/2026 - </span>
         <span>Serata Giochi al Cantiere26</span>
     </a>
 </li>
-<li>
+<li data-event="" data-date="2026-10-14" data-end-date="2026-10-14" data-type="" data-type-label="Non specificato" data-location="" data-location-label="Non specificato">
     <a href="/events/2026-10-14-serata-savot-ala.html">
         <span>14/10/2026 - </span>
         <span>Serata Giochi Ala - Bar SaVot</span>
     </a>
 </li>
-<li>
+<li data-event="" data-date="2026-10-15" data-end-date="2026-10-15" data-type="" data-type-label="Non specificato" data-location="" data-location-label="Non specificato">
     <a href="/events/2026-10-15-serata-smartlab.html">
         <span>15/10/2026 - </span>
         <span>Serata Giochi a Rovereto - Smart Lab</span>
     </a>
 </li>
-<li>
+<li data-event="" data-date="2026-10-16" data-end-date="2026-10-16" data-type="" data-type-label="Non specificato" data-location="" data-location-label="Non specificato">
     <a href="/events/2026-10-16-evento-altopianoingioco.html">
         <span>16/10/2026 - </span>
         <span>Serata Giochi - Altopiano in gioco</span>
     </a>
 </li>
-<li>
+<li data-event="" data-date="2026-10-17" data-end-date="2026-10-17" data-type="" data-type-label="Non specificato" data-location="" data-location-label="Non specificato">
     <a href="/events/2026-10-17-evento-altrapiazzafest.html">
         <span>17/10/2026 - </span>
         <span>Giochi - Altra Piazza Fest</span>
     </a>
 </li>
 </ul>
+</div>
+<div class="event-group" data-event-group>
 <h3>Prossima settimana:</h3>
 <ul>
-<li>
+<li data-event="" data-date="2026-10-19" data-end-date="2026-10-19" data-type="ludoteca" data-type-label="Ludoteca" data-location="Trento — Locanda del Gatto Gordo" data-location-label="Trento — Locanda del Gatto Gordo">
     <a href="/events/2026-10-19-serata-gattogordo.html">
         <span>19/10/2026 - </span>
         <span>Serata Trento @ Gatto Gordo</span>
     </a>
 </li>
-<li>
+<li data-event="" data-date="2026-10-21" data-end-date="2026-10-21" data-type="ludoteca" data-type-label="Ludoteca" data-location="Baselga di Piné — Biblioteca di Baselga di Piné" data-location-label="Baselga di Piné — Biblioteca di Baselga di Piné">
     <a href="/events/2026-10-21-serata-bibliotecabaselgadipine.html">
         <span>21/10/2026 - </span>
         <span>Serata Piné @ Biblioteca di Baselga di Piné</span>
     </a>
 </li>
-<li>
+<li data-event="" data-date="2026-10-21" data-end-date="2026-10-21" data-type="ludoteca" data-type-label="Ludoteca" data-location="Riva del Garda — Luogo Comune" data-location-label="Riva del Garda — Luogo Comune">
     <a href="/events/2026-10-21-serata-luogo-comune-riva.html">
         <span>21/10/2026 - </span>
         <span>Serata Riva @ Luogo Comune</span>
     </a>
 </li>
-<li>
+<li data-event="" data-date="2026-10-22" data-end-date="2026-10-22" data-type="ludoteca" data-type-label="Ludoteca" data-location="Rovereto — Smart Lab" data-location-label="Rovereto — Smart Lab">
     <a href="/events/2026-10-22-serata-smartlab.html">
         <span>22/10/2026 - </span>
         <span>Serata Rovereto @ Smart Lab</span>
     </a>
 </li>
-<li>
+<li data-event="" data-date="2026-10-23" data-end-date="2026-10-23" data-type="ludoteca" data-type-label="Ludoteca" data-location="Trento — Doppio Malto" data-location-label="Trento — Doppio Malto">
     <a href="/events/2026-10-23-serata-doppiomalto.html">
         <span>23/10/2026 - </span>
         <span>Serata Trento @ Doppio Malto</span>
     </a>
 </li>
 </ul>
+</div>
+<div class="event-group" data-event-group>
 <h3>Eventi futuri:</h3>
 <ul>
-<li>
+<li data-event="" data-date="2026-10-26" data-end-date="2026-10-26" data-type="ludoteca" data-type-label="Ludoteca" data-location="Trento — Locanda del Gatto Gordo" data-location-label="Trento — Locanda del Gatto Gordo">
     <a href="/events/2026-10-26-serata-gattogordo.html">
         <span>26/10/2026 - </span>
         <span>Serata Trento @ Gatto Gordo</span>
     </a>
 </li>
-<li>
+<li data-event="" data-date="2026-10-28" data-end-date="2026-10-28" data-type="ludoteca" data-type-label="Ludoteca" data-location="Baselga di Piné — Biblioteca di Baselga di Piné" data-location-label="Baselga di Piné — Biblioteca di Baselga di Piné">
     <a href="/events/2026-10-28-serata-bibliotecabaselgadipine.html">
         <span>28/10/2026 - </span>
         <span>Serata Piné @ Biblioteca di Baselga di Piné</span>
     </a>
 </li>
-<li>
+<li data-event="" data-date="2026-10-28" data-end-date="2026-10-28" data-type="ludoteca" data-type-label="Ludoteca" data-location="Arco — Cantiere26" data-location-label="Arco — Cantiere26">
     <a href="/events/2026-10-28-serata-cantiere26.html">
         <span>28/10/2026 - </span>
         <span>Serata Arco @ Cantiere26</span>
     </a>
 </li>
-<li>
+<li data-event="" data-date="2026-10-28" data-end-date="2026-10-28" data-type="ludoteca" data-type-label="Ludoteca" data-location="Ala — Bar SaVot" data-location-label="Ala — Bar SaVot">
     <a href="/events/2026-10-28-serata-savot-ala.html">
         <span>28/10/2026 - </span>
         <span>Serata Ala @ Bar SaVot</span>
     </a>
 </li>
-<li>
+<li data-event="" data-date="2026-10-29" data-end-date="2026-10-29" data-type="ludoteca" data-type-label="Ludoteca" data-location="Rovereto — Smart Lab" data-location-label="Rovereto — Smart Lab">
     <a href="/events/2026-10-29-serata-smartlab.html">
         <span>29/10/2026 - </span>
         <span>Serata Rovereto @ Smart Lab</span>
     </a>
 </li>
-<li>
+<li data-event="" data-date="2026-11-02" data-end-date="2026-11-02" data-type="ludoteca" data-type-label="Ludoteca" data-location="Trento — Locanda del Gatto Gordo" data-location-label="Trento — Locanda del Gatto Gordo">
     <a href="/events/2026-11-02-serata-gattogordo.html">
         <span>02/11/2026 - </span>
         <span>Serata Trento @ Gatto Gordo</span>
     </a>
 </li>
-<li>
+<li data-event="" data-date="2026-11-03" data-end-date="2026-11-03" data-type="ludoteca" data-type-label="Ludoteca" data-location="Trento — Fondazione Demarchi" data-location-label="Trento — Fondazione Demarchi">
     <a href="/events/2026-11-03-evento-serata-giochi-alchimisti-anonimi-fondazione-demarchi.html">
         <span>03/11/2026 - </span>
         <span>Serata Giochi Alchimisti Anonimi @ Fondazione Demarchi</span>
     </a>
 </li>
-<li>
-    <a href="/events/2026-11-03-evento-alchimistianonimi.html">
-        <span>03/11/2026 - </span>
-        <span>Alchimisti Anomimi - Serata giochi @ Fondazione Demarchi</span>
-    </a>
-</li>
-<li>
+<li data-event="" data-date="2026-11-04" data-end-date="2026-11-04" data-type="ludoteca" data-type-label="Ludoteca" data-location="Povo — Spazio ZERO" data-location-label="Povo — Spazio ZERO">
     <a href="/events/2026-11-04-evento-contromossa-glow.html">
         <span>04/11/2026 - </span>
         <span>Contromossa - Glow</span>
     </a>
 </li>
-<li>
+<li data-event="" data-date="2026-11-04" data-end-date="2026-11-04" data-type="ludoteca" data-type-label="Ludoteca" data-location="Baselga di Piné — Biblioteca di Baselga di Piné" data-location-label="Baselga di Piné — Biblioteca di Baselga di Piné">
     <a href="/events/2026-11-04-serata-bibliotecabaselgadipine.html">
         <span>04/11/2026 - </span>
         <span>Serata Piné @ Biblioteca di Baselga di Piné</span>
     </a>
 </li>
-<li>
+<li data-event="" data-date="2026-11-04" data-end-date="2026-11-04" data-type="ludoteca" data-type-label="Ludoteca" data-location="Riva del Garda — Luogo Comune" data-location-label="Riva del Garda — Luogo Comune">
     <a href="/events/2026-11-04-serata-luogo-comune-riva.html">
         <span>04/11/2026 - </span>
         <span>Serata Riva @ Luogo Comune</span>
     </a>
 </li>
-<li>
+<li data-event="" data-date="2026-11-05" data-end-date="2026-11-05" data-type="ludoteca" data-type-label="Ludoteca" data-location="Rovereto — Smart Lab" data-location-label="Rovereto — Smart Lab">
     <a href="/events/2026-11-05-serata-smartlab.html">
         <span>05/11/2026 - </span>
         <span>Serata Rovereto @ Smart Lab</span>
     </a>
 </li>
-<li>
+<li data-event="" data-date="2026-11-06" data-end-date="2026-11-06" data-type="ludoteca" data-type-label="Ludoteca" data-location="Trento — Doppio Malto" data-location-label="Trento — Doppio Malto">
     <a href="/events/2026-11-06-serata-doppiomalto.html">
         <span>06/11/2026 - </span>
         <span>Serata Trento @ Doppio Malto</span>
     </a>
 </li>
-<li>
-    <a href="/events/2026-11-06-serata-doppiomalto.html">
-        <span>06/11/2026 - </span>
-        <span>Serata Giochi a Trento - Doppio Malto</span>
-    </a>
-</li>
-<li>
+<li data-event="" data-date="2026-11-09" data-end-date="2026-11-09" data-type="ludoteca" data-type-label="Ludoteca" data-location="Trento — Locanda del Gatto Gordo" data-location-label="Trento — Locanda del Gatto Gordo">
     <a href="/events/2026-11-09-serata-gattogordo.html">
         <span>09/11/2026 - </span>
         <span>Serata Trento @ Gatto Gordo</span>
     </a>
 </li>
-<li>
+<li data-event="" data-date="2026-11-11" data-end-date="2026-11-11" data-type="ludoteca" data-type-label="Ludoteca" data-location="Baselga di Piné — Biblioteca di Baselga di Piné" data-location-label="Baselga di Piné — Biblioteca di Baselga di Piné">
     <a href="/events/2026-11-11-serata-bibliotecabaselgadipine.html">
         <span>11/11/2026 - </span>
         <span>Serata Piné @ Biblioteca di Baselga di Piné</span>
     </a>
 </li>
-<li>
+<li data-event="" data-date="2026-11-11" data-end-date="2026-11-11" data-type="ludoteca" data-type-label="Ludoteca" data-location="Arco — Cantiere26" data-location-label="Arco — Cantiere26">
     <a href="/events/2026-11-11-serata-cantiere26.html">
         <span>11/11/2026 - </span>
         <span>Serata Arco @ Cantiere26</span>
     </a>
 </li>
-<li>
+<li data-event="" data-date="2026-11-11" data-end-date="2026-11-11" data-type="ludoteca" data-type-label="Ludoteca" data-location="Ala — Bar SaVot" data-location-label="Ala — Bar SaVot">
     <a href="/events/2026-11-11-serata-savot-ala.html">
         <span>11/11/2026 - </span>
         <span>Serata Ala @ Bar SaVot</span>
     </a>
 </li>
-<li>
+<li data-event="" data-date="2026-11-12" data-end-date="2026-11-12" data-type="ludoteca" data-type-label="Ludoteca" data-location="Rovereto — Smart Lab" data-location-label="Rovereto — Smart Lab">
     <a href="/events/2026-11-12-serata-smartlab.html">
         <span>12/11/2026 - </span>
         <span>Serata Rovereto @ Smart Lab</span>
     </a>
 </li>
-<li>
+<li data-event="" data-date="2026-11-13" data-end-date="2026-11-13" data-type="ludoteca" data-type-label="Ludoteca" data-location="Vigolo Vattaro — Centro Giovani Rombo" data-location-label="Vigolo Vattaro — Centro Giovani Rombo">
     <a href="/events/2026-11-13-evento-altopianoingioco.html">
         <span>13/11/2026 - </span>
         <span>Altopiano in gioco</span>
     </a>
 </li>
-<li>
-    <a href="/events/2026-11-13-evento-altopianoingioco.html">
-        <span>13/11/2026 - </span>
-        <span>Serata Giochi - Altopiano in gioco</span>
-    </a>
-</li>
-<li>
+<li data-event="" data-date="2026-11-14" data-end-date="2026-11-14" data-type="ludoteca" data-type-label="Ludoteca" data-location="Trento — Sala Manzoni della Biblioteca Comunale" data-location-label="Trento — Sala Manzoni della Biblioteca Comunale">
     <a href="/events/2026-11-14-evento-biblioteca-trento.html">
         <span>14/11/2026 - </span>
         <span>Biblioteca comunale Trento</span>
     </a>
 </li>
-<li>
+<li data-event="" data-date="2026-11-16" data-end-date="2026-11-16" data-type="ludoteca" data-type-label="Ludoteca" data-location="Trento — Locanda del Gatto Gordo" data-location-label="Trento — Locanda del Gatto Gordo">
     <a href="/events/2026-11-16-serata-gattogordo.html">
         <span>16/11/2026 - </span>
         <span>Serata Trento @ Gatto Gordo</span>
     </a>
 </li>
-<li>
+<li data-event="" data-date="2026-11-18" data-end-date="2026-11-18" data-type="ludoteca" data-type-label="Ludoteca" data-location="Baselga di Piné — Biblioteca di Baselga di Piné" data-location-label="Baselga di Piné — Biblioteca di Baselga di Piné">
     <a href="/events/2026-11-18-serata-bibliotecabaselgadipine.html">
         <span>18/11/2026 - </span>
         <span>Serata Piné @ Biblioteca di Baselga di Piné</span>
     </a>
 </li>
-<li>
+<li data-event="" data-date="2026-11-18" data-end-date="2026-11-18" data-type="ludoteca" data-type-label="Ludoteca" data-location="Riva del Garda — Luogo Comune" data-location-label="Riva del Garda — Luogo Comune">
     <a href="/events/2026-11-18-serata-luogo-comune-riva.html">
         <span>18/11/2026 - </span>
         <span>Serata Riva @ Luogo Comune</span>
     </a>
 </li>
-<li>
+<li data-event="" data-date="2026-11-19" data-end-date="2026-11-19" data-type="ludoteca" data-type-label="Ludoteca" data-location="Rovereto — Smart Lab" data-location-label="Rovereto — Smart Lab">
     <a href="/events/2026-11-19-serata-smartlab.html">
         <span>19/11/2026 - </span>
         <span>Serata Rovereto @ Smart Lab</span>
     </a>
 </li>
-<li>
+<li data-event="" data-date="2026-11-20" data-end-date="2026-11-20" data-type="ludoteca" data-type-label="Ludoteca" data-location="Trento — Doppio Malto" data-location-label="Trento — Doppio Malto">
     <a href="/events/2026-11-20-serata-doppiomalto.html">
         <span>20/11/2026 - </span>
         <span>Serata Trento @ Doppio Malto</span>
     </a>
 </li>
-<li>
-    <a href="/events/2026-11-20-serata-doppiomalto.html">
-        <span>20/11/2026 - </span>
-        <span>Serata Giochi a Trento - Doppio Malto</span>
-    </a>
-</li>
-<li>
+<li data-event="" data-date="2026-11-23" data-end-date="2026-11-23" data-type="ludoteca" data-type-label="Ludoteca" data-location="Trento — Locanda del Gatto Gordo" data-location-label="Trento — Locanda del Gatto Gordo">
     <a href="/events/2026-11-23-serata-gattogordo.html">
         <span>23/11/2026 - </span>
         <span>Serata Trento @ Gatto Gordo</span>
     </a>
 </li>
-<li>
+<li data-event="" data-date="2026-11-25" data-end-date="2026-11-25" data-type="ludoteca" data-type-label="Ludoteca" data-location="Baselga di Piné — Biblioteca di Baselga di Piné" data-location-label="Baselga di Piné — Biblioteca di Baselga di Piné">
     <a href="/events/2026-11-25-serata-bibliotecabaselgadipine.html">
         <span>25/11/2026 - </span>
         <span>Serata Piné @ Biblioteca di Baselga di Piné</span>
     </a>
 </li>
-<li>
+<li data-event="" data-date="2026-11-25" data-end-date="2026-11-25" data-type="ludoteca" data-type-label="Ludoteca" data-location="Arco — Cantiere26" data-location-label="Arco — Cantiere26">
     <a href="/events/2026-11-25-serata-cantiere26.html">
         <span>25/11/2026 - </span>
         <span>Serata Arco @ Cantiere26</span>
     </a>
 </li>
-<li>
+<li data-event="" data-date="2026-11-25" data-end-date="2026-11-25" data-type="ludoteca" data-type-label="Ludoteca" data-location="Ala — Bar SaVot" data-location-label="Ala — Bar SaVot">
     <a href="/events/2026-11-25-serata-savot-ala.html">
         <span>25/11/2026 - </span>
         <span>Serata Ala @ Bar SaVot</span>
     </a>
 </li>
-<li>
+<li data-event="" data-date="2026-11-26" data-end-date="2026-11-26" data-type="ludoteca" data-type-label="Ludoteca" data-location="Rovereto — Smart Lab" data-location-label="Rovereto — Smart Lab">
     <a href="/events/2026-11-26-serata-smartlab.html">
         <span>26/11/2026 - </span>
         <span>Serata Rovereto @ Smart Lab</span>
     </a>
 </li>
-<li>
+<li data-event="" data-date="2026-11-28" data-end-date="2026-11-28" data-type="stracot" data-type-label="Stracòt" data-location="Cognola — Istituto Comenius" data-location-label="Cognola — Istituto Comenius">
     <a href="/events/2026-11-28-evento-stracot-pattodigitale-argentario.html">
         <span>28/11/2026 - </span>
         <span>Stracòt - Patto Digitale Argentario</span>
     </a>
 </li>
-<li>
+<li data-event="" data-date="2026-11-30" data-end-date="2026-11-30" data-type="ludoteca" data-type-label="Ludoteca" data-location="Trento — Locanda del Gatto Gordo" data-location-label="Trento — Locanda del Gatto Gordo">
     <a href="/events/2026-11-30-serata-gattogordo.html">
         <span>30/11/2026 - </span>
         <span>Serata Trento @ Gatto Gordo</span>
     </a>
 </li>
-<li>
+<li data-event="" data-date="2026-12-02" data-end-date="2026-12-02" data-type="ludoteca" data-type-label="Ludoteca" data-location="Baselga di Piné — Biblioteca di Baselga di Piné" data-location-label="Baselga di Piné — Biblioteca di Baselga di Piné">
     <a href="/events/2026-12-02-serata-bibliotecabaselgadipine.html">
         <span>02/12/2026 - </span>
         <span>Serata Piné @ Biblioteca di Baselga di Piné</span>
     </a>
 </li>
-<li>
+<li data-event="" data-date="2026-12-02" data-end-date="2026-12-02" data-type="ludoteca" data-type-label="Ludoteca" data-location="Riva del Garda — Luogo Comune" data-location-label="Riva del Garda — Luogo Comune">
     <a href="/events/2026-12-02-serata-luogo-comune-riva.html">
         <span>02/12/2026 - </span>
         <span>Serata Riva @ Luogo Comune</span>
     </a>
 </li>
-<li>
+<li data-event="" data-date="2026-12-03" data-end-date="2026-12-03" data-type="ludoteca" data-type-label="Ludoteca" data-location="Rovereto — Smart Lab" data-location-label="Rovereto — Smart Lab">
     <a href="/events/2026-12-03-serata-smartlab.html">
         <span>03/12/2026 - </span>
         <span>Serata Rovereto @ Smart Lab</span>
     </a>
 </li>
-<li>
+<li data-event="" data-date="2026-12-07" data-end-date="2026-12-07" data-type="ludoteca" data-type-label="Ludoteca" data-location="Trento — Locanda del Gatto Gordo" data-location-label="Trento — Locanda del Gatto Gordo">
     <a href="/events/2026-12-07-serata-gattogordo.html">
         <span>07/12/2026 - </span>
         <span>Serata Trento @ Gatto Gordo</span>
     </a>
 </li>
-<li>
+<li data-event="" data-date="2026-12-09" data-end-date="2026-12-09" data-type="ludoteca" data-type-label="Ludoteca" data-location="Baselga di Piné — Biblioteca di Baselga di Piné" data-location-label="Baselga di Piné — Biblioteca di Baselga di Piné">
     <a href="/events/2026-12-09-serata-bibliotecabaselgadipine.html">
         <span>09/12/2026 - </span>
         <span>Serata Piné @ Biblioteca di Baselga di Piné</span>
     </a>
 </li>
-<li>
+<li data-event="" data-date="2026-12-09" data-end-date="2026-12-09" data-type="ludoteca" data-type-label="Ludoteca" data-location="Arco — Cantiere26" data-location-label="Arco — Cantiere26">
     <a href="/events/2026-12-09-serata-cantiere26.html">
         <span>09/12/2026 - </span>
         <span>Serata Arco @ Cantiere26</span>
     </a>
 </li>
-<li>
+<li data-event="" data-date="2026-12-09" data-end-date="2026-12-09" data-type="ludoteca" data-type-label="Ludoteca" data-location="Ala — Bar SaVot" data-location-label="Ala — Bar SaVot">
     <a href="/events/2026-12-09-serata-savot-ala.html">
         <span>09/12/2026 - </span>
         <span>Serata Ala @ Bar SaVot</span>
     </a>
 </li>
-<li>
+<li data-event="" data-date="2026-12-10" data-end-date="2026-12-10" data-type="ludoteca" data-type-label="Ludoteca" data-location="Rovereto — Smart Lab" data-location-label="Rovereto — Smart Lab">
     <a href="/events/2026-12-10-serata-smartlab.html">
         <span>10/12/2026 - </span>
         <span>Serata Rovereto @ Smart Lab</span>
     </a>
 </li>
-<li>
+<li data-event="" data-date="2026-12-14" data-end-date="2026-12-14" data-type="ludoteca" data-type-label="Ludoteca" data-location="Trento — Locanda del Gatto Gordo" data-location-label="Trento — Locanda del Gatto Gordo">
     <a href="/events/2026-12-14-serata-gattogordo.html">
         <span>14/12/2026 - </span>
         <span>Serata Trento @ Gatto Gordo</span>
     </a>
 </li>
-<li>
+<li data-event="" data-date="2026-12-16" data-end-date="2026-12-16" data-type="ludoteca" data-type-label="Ludoteca" data-location="Baselga di Piné — Biblioteca di Baselga di Piné" data-location-label="Baselga di Piné — Biblioteca di Baselga di Piné">
     <a href="/events/2026-12-16-serata-bibliotecabaselgadipine.html">
         <span>16/12/2026 - </span>
         <span>Serata Piné @ Biblioteca di Baselga di Piné</span>
     </a>
 </li>
-<li>
+<li data-event="" data-date="2026-12-16" data-end-date="2026-12-16" data-type="ludoteca" data-type-label="Ludoteca" data-location="Riva del Garda — Luogo Comune" data-location-label="Riva del Garda — Luogo Comune">
     <a href="/events/2026-12-16-serata-luogo-comune-riva.html">
         <span>16/12/2026 - </span>
         <span>Serata Riva @ Luogo Comune</span>
     </a>
 </li>
-<li>
+<li data-event="" data-date="2026-12-17" data-end-date="2026-12-17" data-type="ludoteca" data-type-label="Ludoteca" data-location="Rovereto — Smart Lab" data-location-label="Rovereto — Smart Lab">
     <a href="/events/2026-12-17-serata-smartlab.html">
         <span>17/12/2026 - </span>
         <span>Serata Rovereto @ Smart Lab</span>
     </a>
 </li>
-<li>
+<li data-event="" data-date="2026-12-19" data-end-date="2026-12-19" data-type="ludoteca" data-type-label="Ludoteca" data-location="Trento — Sala Manzoni della Biblioteca Comunale" data-location-label="Trento — Sala Manzoni della Biblioteca Comunale">
     <a href="/events/2026-12-19-evento-biblioteca-trento.html">
         <span>19/12/2026 - </span>
         <span>Biblioteca comunale Trento</span>
     </a>
 </li>
-<li>
+<li data-event="" data-date="2026-12-21" data-end-date="2026-12-21" data-type="ludoteca" data-type-label="Ludoteca" data-location="Trento — Locanda del Gatto Gordo" data-location-label="Trento — Locanda del Gatto Gordo">
     <a href="/events/2026-12-21-serata-gattogordo.html">
         <span>21/12/2026 - </span>
         <span>Serata Trento @ Gatto Gordo</span>
     </a>
 </li>
-<li>
+<li data-event="" data-date="2026-12-23" data-end-date="2026-12-23" data-type="ludoteca" data-type-label="Ludoteca" data-location="Baselga di Piné — Biblioteca di Baselga di Piné" data-location-label="Baselga di Piné — Biblioteca di Baselga di Piné">
     <a href="/events/2026-12-23-serata-bibliotecabaselgadipine.html">
         <span>23/12/2026 - </span>
         <span>Serata Piné @ Biblioteca di Baselga di Piné</span>
     </a>
 </li>
-<li>
+<li data-event="" data-date="2026-12-23" data-end-date="2026-12-23" data-type="ludoteca" data-type-label="Ludoteca" data-location="Arco — Cantiere26" data-location-label="Arco — Cantiere26">
     <a href="/events/2026-12-23-serata-cantiere26.html">
         <span>23/12/2026 - </span>
         <span>Serata Arco @ Cantiere26</span>
     </a>
 </li>
-<li>
+<li data-event="" data-date="2026-12-23" data-end-date="2026-12-23" data-type="ludoteca" data-type-label="Ludoteca" data-location="Ala — Bar SaVot" data-location-label="Ala — Bar SaVot">
     <a href="/events/2026-12-23-serata-savot-ala.html">
         <span>23/12/2026 - </span>
         <span>Serata Ala @ Bar SaVot</span>
     </a>
 </li>
-<li>
+<li data-event="" data-date="2026-12-24" data-end-date="2026-12-24" data-type="ludoteca" data-type-label="Ludoteca" data-location="Rovereto — Smart Lab" data-location-label="Rovereto — Smart Lab">
     <a href="/events/2026-12-24-serata-smartlab.html">
         <span>24/12/2026 - </span>
         <span>Serata Rovereto @ Smart Lab</span>
     </a>
 </li>
 </ul>
+</div>
+		</div>
 
 		<br>
 		<a href="/archive">Archivio eventi ⇢</a>

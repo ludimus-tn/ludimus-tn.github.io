@@ -1,6 +1,17 @@
+---
 event_title: Serata Riva @ Luogo Comune
 event_description: Mercoledì 04 Novembre 2026 vi aspettiamo dalle 19:30 alle 23:00 presso Luogo Comune!
 event_og: https://ludimus.it/static/img/events/default.jpg
+event_type: ludoteca
+event_town: Riva del Garda
+event_location: Luogo Comune
+event_address: Via Italo Marchi, 38066 Riva del Garda TN, Italia
+event_date: '2026-11-04'
+event_start: '2026-11-04T19:30:00+01:00'
+event_end: '2026-11-04T23:00:00+01:00'
+event_all_day: false
+event_uid: 4ajboa5lqk7mn4jf364aulthsh@google.com
+---
 
 # Serata Riva @ Luogo Comune
 
