@@ -1,75 +1,23 @@
 # Calendar events
 
-## Setup
+## Creating events in the public calendar
 
-Default source URL:
+### Checklist
 
-```text
-https://calendar.google.com/calendar/ical/fut0ai14gqld6cpuuu8h7iu9dg%40group.calendar.google.com/public/basic.ics
-```
+1. Add:
+   1. A comprehensive title, e.g. `Serata giochi da tavolo @ Locanda del Gatto Gordo`, or `Escape Room @ CRV Ala`. Something that makes sense to a visitor.
+   2. The START and END date and time, and make sure they are correct. Use `Europe/Rome` even when editing abroad.
+   3. Set repeat for a series, if applicable.
+2. Fill the [description](#description) using the example below. Include a public image link for `Locandina` if you have one.
 
-Use Python 3.10+ and `pip install -r requirements.txt`. The script downloads the public calendar; no login or keys are needed.
-Other sources:
+If an event spans multiple days, repeat it, rather than having a full-day event. The script generates one page per day, and the website shows each day separately.
 
-- `--ics PATH` reads a local export instead
-- `--url URL` selects another feed
+### Description
 
-Google can take a few minutes to show edits in the feed. Retry later or use a fresh export.
+You MAY start an event with a sentence that MUST start with `Vi aspettiamo`.
+Essentially, a public invitation which will be used in Telegram and on the website. It should be short, clear and friendly.
 
-## Publish an event
-
-1. Add the public title, hours and full Location in Calendar. Set Repeat for a series. Use `Europe/Rome`, even when editing abroad.
-2. Fill the description using the example below.
-3. Preview and apply its week, then publish the website.
-4. Copy the rendered Telegram draft and post it manually after the website is published.
-
-## Generate next week
-
-```bash
-mkdir -p /tmp/ludimus-events
-python processors/calendar_events.py --output-dir /tmp/ludimus-events --brief
-```
-
-This selects the following Monday–Sunday. Check `calendar-preview.md` and `event-pages/index.html` in the output folder.
-Apply by repeating the same command with `--apply`:
-
-```bash
-python processors/calendar_events.py --output-dir /tmp/ludimus-events --brief --apply
-```
-
-Commit the changed files, including `processors/calendar-state.json`, and push yourself.
-Copy the message from `telegram-YYYY-MM-DD.html`. Its `.md` file is available for editing.
-
-## Other options
-
-```bash
-python processors/calendar_events.py --week 2026-10-19 --output-dir /tmp/ludimus-events --brief
-python processors/calendar_events.py --from 2026-10-19 --to 2026-12-31 --output-dir /tmp/ludimus-events --brief
-python processors/calendar_events.py --ics ~/Downloads/calendar.ics --week 2026-10-19 --output-dir /tmp/ludimus-events --brief
-```
-
-`--week` accepts any date in that week. A range includes both dates and gives one message per week. Keep the same options when applying.
-
-## Correct or cancel an event
-
-Edit Calendar, then run the affected week again. For a series-wide change, run the full affected date range.
-Edit/delete just one occurrence for an exception. Keep generated event files untouched.
-If the script stops, read the report, fix the issue and retry.
-The daily website build uses committed files; it does not fetch Calendar. You need to run the script again BEFORE rebuilding the website.
-
-## Website filters
-
-The event page filters by town, date range and activity. Filters work together; **Azzera filtri** restores the full list.
-The script writes YAML metadata at the top of generated event Markdown: type, town, short venue, address, date, local start/end, all-day status and Calendar UID.
-The website reads it automatically, no need to touch the YAML.
-Older pages without these details remain visible and use **Non specificato** for missing location/type. With JavaScript disabled, the full list stays visible.
-
-Keep dates/hours in their Calendar fields. Split lunch breaks and different daily hours into separate sessions, each at most 24 hours.
-
-## Description
-
-The optional first sentence starts with `Vi aspettiamo`. The script adds the hours, so leave them out.
-Other prose stays on the website. Finish with `Informazioni:` and one field per line.
+The rest of the description is a list of fields, one per line, in the format `X: y...`.
 Everything is public: keep internal notes and private contact information elsewhere.
 
 ```text
@@ -96,13 +44,80 @@ A chi è rivolto: Tutti
 | `Durata`            | Length of one game/turn (not opening hours!)                   | `8 minuti per partita`<br>`45 minuti per turno`<br>`Circa 2 ore`                                                                                                     |
 | `Dimensione gruppi` | People per team or turn.                                       | `4 persone per squadra`<br>`5–6 persone a turno`<br>`Da 3 a 5 persone`                                                                                               |
 | `Note`              | Extra public information.                                      | `Presentati 10 minuti prima del turno prenotato.`<br>`Ultimo appuntamento prima della pausa estiva.`<br>`Sito ufficiale: https://example.org/evento`                 |
-| `Locandina`         | Image link; otherwise the template supplies a generic image.   | `https://ludimus.it/static/img/stracot.png`<br>`https://example.org/locandina.jpg`                                                                                   |
+| `Locandina`         | Direct image link, downloaded automatically; otherwise the template supplies a generic image. | `https://ludimus.it/static/img/stracot.png`<br>`https://example.org/locandina.jpg`                                                                                   |
 
-Omit unused fields. Replace sample URLs with real links. Unknown or repeated fields stop the script.
-Escape Room and Altro need a description. Without an invitation, the script writes one from the venue and activity.
-Telegram gets only the invitation, event link and booking link. `In breve` is retired; old values appear only on the website.
+Some notes:
 
-## Event URLs
+- Omit unused fields. Only the first two are really required. If unneeded, just leave them out.
+- Replace sample URLs with real links!
+- Unknown/wrong/repeated fields stop the script. Check the Calendar description for typos.
+- Escape Room and Altro need an explicit initial. Without an invitation, the script manufactures one from the venue and activity.
+- On Telegram messages, we print the invitation, event link and booking link. Other fields are omitted.
+- `Locandina` must link directly to a valid JPEG, PNG, GIF or WebP image. A web page, non-image response or corrupt image blocks the import; it is not saved to the repo.
+
+## Generazione eventi sito
+
+### Checklist
+
+1. Complete the [setup](#setup), then run the [preview command](#generate-next-week) for the affected week or [date range](#other-options).
+2. Check `calendar-preview.md` and `event-pages/index.html`, including the [slug and short link](#event-urls). Set custom names before the first apply if needed.
+3. Check the downloaded `Locandina` in the preview and its filename under **Event images** in `calendar-preview.md`. No manual image upload is needed.
+4. Repeat the same command with `--apply` ([details](#generate-next-week)). NOTE: `python3 processors/generate.py` is automatically run, no need to run it twice.
+5. Commit the changed files, including downloaded images, and push.
+6. Copy the rendered Telegram draft and post it manually after the website is published ([details](#generate-next-week)).
+
+### Setup
+
+Default source URL:
+
+```text
+https://calendar.google.com/calendar/ical/fut0ai14gqld6cpuuu8h7iu9dg%40group.calendar.google.com/public/basic.ics
+```
+
+Use Python 3.10+ and `pip install -r requirements.txt`. The script downloads the public calendar; no login or keys are needed.
+Other sources:
+
+- `--ics PATH` reads a local export instead
+- `--url URL` selects another feed
+
+Google can take a few minutes to show edits in the feed. Retry later or use a fresh export.
+
+### Generate next week
+
+```bash
+mkdir -p /tmp/ludimus-events
+python processors/calendar_events.py --output-dir /tmp/ludimus-events --brief
+```
+
+This selects the following Monday–Sunday. Check `calendar-preview.md` and `event-pages/index.html` in the output folder.
+Images from `Locandina` are fetched and validated during preview, then saved by `--apply` as `static/img/events/YYYY-MM-DD-SLUG.ext`. The extension follows the actual image format, and the generated event page uses the local image's public URL. Keep the original image link in Calendar; events without `Locandina` keep the template image.
+Apply by repeating the same command with `--apply`:
+
+```bash
+python processors/calendar_events.py --output-dir /tmp/ludimus-events --brief --apply
+```
+
+Commit the changed files and push. Consider that the usual `python3 processors/generate.py` is automatically run, so you do not need to run it twice.
+Double-check the Telegram message `telegram-YYYY-MM-DD.md` (and its HTML generated version), then send it too.
+
+### Other options
+
+```bash
+python processors/calendar_events.py --week 2026-10-19 --output-dir /tmp/ludimus-events --brief
+python processors/calendar_events.py --from 2026-10-19 --to 2026-12-31 --output-dir /tmp/ludimus-events --brief
+python processors/calendar_events.py --ics ~/Downloads/calendar.ics --week 2026-10-19 --output-dir /tmp/ludimus-events --brief
+```
+
+`--week` accepts any date in that week. A range includes both dates and gives one message per week. Keep the same options when applying.
+
+### Correct or cancel an event
+
+Edit Calendar, then run the affected week again. For a series-wide change, run the full affected date range.
+Edit/delete just one occurrence for an exception. Keep generated event files untouched.
+If the script stops, read the report, fix the issue and retry.
+The daily website build uses committed files; it does not fetch Calendar. You need to run the script again BEFORE rebuilding the website.
+
+### Event URLs
 
 A **slug** is the URL name, such as `serata-gattogordo`. Dated pages use `YYYY-MM-DD-SLUG.html`.
 A short link such as `/events/gattogordo` points to the next upcoming event.
@@ -111,7 +126,7 @@ The script chooses a name automatically and remembers it in `processors/calendar
 For a new recurring series, add it in Calendar, preview and apply. No JSON edit is needed unless you want a custom URL.
 Editing the same series keeps its URL. Deleting and recreating it gives it a new Calendar ID (which you should then add to the existing JSON profile).
 
-### Custom names and matching
+#### Custom names and matching
 
 Edit `processors/event_profiles.json` before the first apply if you want a shorter URL:
 
@@ -136,7 +151,14 @@ One-off events need no profile; their dated URL names are assigned automatically
 UID matches take priority over title matches. For separately created dates, update `summaries` if you change their usual title.
 To recreate a series without changing its URL, add its new UID to the existing profile. Keep the profile key and alias.
 
-## Templates and event details
+### Website filters
+
+The event page filters by town, date range and activity. Filters work together; **Azzera filtri** restores the full list.
+The script writes YAML metadata at the top of generated event Markdown: type, town, short venue, address, date, local start/end, all-day status and Calendar UID.
+The website reads it automatically, no need to touch the YAML.
+Older pages without these details remain visible and use **Non specificato** for missing location/type. With JavaScript disabled, the full list stays visible.
+
+### Templates and event details
 
 `processors/event_templates/` contains templates: `ludoteca.md`, `stracot.md`, `escape-room.md`, `altro.md`.
 They supply page layout, shared wording and a default image. Calendar supplies event details, including membership rules, fees and booking.

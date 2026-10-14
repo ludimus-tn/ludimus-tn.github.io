@@ -17,10 +17,13 @@
 
 - git commit -am "do something cool" && git push
 
-
 ## How to publish events
 
-See [Calendar and Telegram instructions](docs/calendar-events.md).
+See [the Calendar and Telegram instructions](docs/calendar-events.md).
+
+## Managing the Stracòt page assets
+
+See [the Stracòt page assets instructions](docs/stracot.md).
 
 ## Environment variables
 

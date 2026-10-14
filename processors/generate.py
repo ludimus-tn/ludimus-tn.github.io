@@ -515,27 +515,59 @@ with open('./layouts/escaperooms.html') as base_escaperooms_tmpl, \
 
 stracot_photo_extensions = {'.jpg', '.jpeg', '.png', '.gif', '.webp'}
 stracot_photos = sorted(
-    p for p in glob.glob('./static/img/stracot/*')
-    if os.path.splitext(p)[1].lower() in stracot_photo_extensions
+    (p for p in glob.glob('./static/img/stracot/*')
+     if os.path.splitext(p)[1].lower() in stracot_photo_extensions),
+    key=lambda p: (os.path.basename(p).startswith('aosta-'), os.path.basename(p))
 )
 
-gallery_items = ''.join(
-    gallery_photo_tmpl.format(
-        image='./static/img/stracot/{}'.format(os.path.basename(p)))
-    for p in stracot_photos
-)
+with open('./static/img/stracot-guide/manifest.json', encoding='utf-8') as stracot_manifest:
+    stracot_assets = json.load(stracot_manifest)
 
-with open('./layouts/stracot.html') as base_stracot_tmpl, \
-        open('./stracot.html', 'w') as output_stracot:
-    for line in base_stracot_tmpl:
-        if '{{ footer }}' in line:
-            output_stracot.write(line.replace('{{ footer }}', footer))
-        elif '{{ gallery }}' in line:
-            output_stracot.write(gallery_items)
-        elif '{{ hash }}' in line:
-            output_stracot.write(line.replace('{{ hash }}', style_hash))
-        else:
-            output_stracot.write(line)
+
+def stracot_image(info, alt='', sizes=None, classes='stracot__illustration', eager=False):
+    attributes = {'src': info['src'], 'alt': alt, 'class': classes,
+                  'loading': 'eager' if eager else 'lazy', 'decoding': 'async'}
+    for key in ('width', 'height', 'srcset'):
+        if info.get(key):
+            attributes[key] = info[key]
+    if info.get('srcset') and sizes:
+        attributes['sizes'] = sizes
+    return '<img ' + ' '.join('{}="{}"'.format(key, html.escape(str(value), quote=True))
+                             for key, value in attributes.items()) + '>'
+
+
+gallery_items = []
+for photo in stracot_photos:
+    name = os.path.basename(photo)
+    original = './static/img/stracot/' + name
+    info = stracot_assets['gallery'].get(name, {'src': original})
+    alt = 'Rollup illustrativo di Stracòt' if name.startswith('intro') else 'Giocatori alle stazioni di lavoro di Stracòt'
+    gallery_items.append(gallery_photo_tmpl.format(
+        original=html.escape(original, quote=True),
+        image=stracot_image(info, alt, '(max-width: 480px) 95vw, (max-width: 768px) 46vw, 30vw',
+                            classes='img-fluid gallery-photo')))
+
+stracot_images = {
+    'mascot_lino': ('mascot-lino', '', None, 'stracot__chef stracot__chef--lino', True),
+    'mascot_lola': ('mascot-lola', '', None, 'stracot__chef stracot__chef--lola', True),
+    'overview_photo': ('overview', 'Squadre di giocatori alle diverse stazioni della cucina di Stracòt.', '(max-width: 1180px) 92vw, 1084px', 'stracot__photo', False),
+    'orders_photo': ('orders-photo', 'Schermo delle comande con i piatti richiesti dai clienti.', '(max-width: 800px) 90vw, 520px', 'stracot__photo', False),
+    'cutting_photo': ('cutting-photo', 'Una giocatrice incastra le formine di legno negli spazi del tagliere.', '(max-width: 800px) 90vw, 520px', 'stracot__photo', False),
+    'cooking_photo': ('cooking-photo', 'Una ciotola sul fornello di Stracòt, accanto alle tessere degli ingredienti.', '(max-width: 800px) 90vw, 520px', 'stracot__photo', False),
+    'serving_photo': ('serving-photo', 'Comande, ingredienti pronti e campanello sul banco della cucina.', '(max-width: 800px) 90vw, 520px', 'stracot__photo', False),
+    'washing_photo': ('washing-photo', 'Un giocatore aziona la manovella della lavastoviglie di Stracòt.', '(max-width: 800px) 90vw, 520px', 'stracot__photo', False),
+}
+for placeholder, name in {'orders_illustration': 'orders', 'piece_square': 'piece-square',
+                          'piece_round': 'piece-round', 'bowl_illustration': 'bowl',
+                          'ingredient_raw': 'ingredient-raw', 'ingredient_cooked': 'ingredient-cooked',
+                          'dish_illustration': 'dish-ready', 'plates_illustration': 'plates-clean'}.items():
+    stracot_images[placeholder] = (name, '', None, 'stracot__illustration', False)
+stracot_values = {'footer': footer, 'gallery': ''.join(gallery_items), 'hash': style_hash}
+for placeholder, (name, alt, sizes, classes, eager) in stracot_images.items():
+    stracot_values[placeholder] = stracot_image(stracot_assets['images'][name], alt, sizes, classes, eager)
+with open('./layouts/stracot.html', encoding='utf-8') as base_stracot_tmpl, \
+        open('./stracot.html', 'w', encoding='utf-8') as output_stracot:
+    output_stracot.write(re.sub(r'\{\{ (\w+) \}\}', lambda match: stracot_values[match.group(1)], base_stracot_tmpl.read()))
 
 
 # Older static-page loops only fill the footer; finish their shared CSS token too.

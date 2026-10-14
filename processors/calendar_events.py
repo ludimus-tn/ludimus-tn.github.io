@@ -1,10 +1,12 @@
 """Preview and apply public Calendar events. All local dates use Europe/Rome."""
 
 import argparse
+import base64
 import datetime as dt
 import difflib
 import hashlib
 import html
+import io
 import json
 import re
 import subprocess
@@ -21,6 +23,7 @@ import markdown2
 import recurring_ical_events
 import requests
 import yaml
+from PIL import Image, UnidentifiedImageError
 
 ROME = ZoneInfo("Europe/Rome")
 ROOT = Path(__file__).resolve().parents[1]
@@ -389,6 +392,34 @@ def fetch_calendar(url=DEFAULT_FEED):
     return icalendar.Calendar.from_ical(data)
 
 
+def fetch_event_image(url):
+    validate_url(url)
+    try:
+        response = requests.get(url, timeout=60, stream=True)
+        try:
+            if not response.ok:
+                raise CalendarError(f"Locandina returned HTTP {response.status_code}: {url}")
+            if not response.headers.get("Content-Type", "").lower().startswith("image/"):
+                raise CalendarError(f"Locandina is not an image (Content-Type): {url}")
+            data = b"".join(response.iter_content(chunk_size=65536))
+        finally:
+            response.close()
+    except requests.RequestException:
+        raise CalendarError(f"Locandina download failed: {url}") from None
+    extensions = {"JPEG": "jpg", "PNG": "png", "GIF": "gif", "WEBP": "webp"}
+    try:
+        with Image.open(io.BytesIO(data)) as image:
+            extension = extensions.get(image.format)
+            if not extension:
+                raise CalendarError(f"Locandina must be a JPEG, PNG, GIF or WebP image: {url}")
+            image.verify()
+        with Image.open(io.BytesIO(data)) as image:
+            image.load()
+    except (UnidentifiedImageError, OSError, ValueError, Image.DecompressionBombError):
+        raise CalendarError(f"Locandina is not a valid image: {url}") from None
+    return data, extension
+
+
 def validate_url(value):
     if urlparse(value).scheme not in ("http", "https"):
         raise CalendarError(f"Expected an http(s) URL: {value}")
@@ -453,6 +484,8 @@ def settings(event, profiles, previous_slug=None, root=ROOT):
     template_path, image, _ = read_activity_template(profile["kind"], root)
     profile["template"] = template_path
     profile.setdefault("image", image)
+    if fields.get("image"):
+        profile["image_source"] = fields["image"]
     profile.setdefault("map", "https://www.google.com/maps/search/?" + urlencode({"api": 1, "query": event.location}))
     for key in ("map", "image", "booking_url"):
         if profile.get(key):
@@ -626,6 +659,7 @@ def plan(calendar, start, end, root=ROOT, adopt=False):
                 new.pop(key, None)
 
     writes, claimed, templates = {}, {}, {}
+    images, fetched_images = {}, {}
     for key, event in sorted(candidates.items(), key=lambda pair: (pair[1].start, pair[1].summary)):
         label = f"{event.start:%Y-%m-%d %H:%M} | {event.summary}"
         try:
@@ -674,6 +708,16 @@ def plan(calendar, start, end, root=ROOT, adopt=False):
                     remove[previous["path"]] = f"moved to {path}"
             if profile.get("template"):
                 templates[profile["template"]] = digest(source_text(root / profile["template"]))
+            if profile.get("image_source"):
+                url = profile["image_source"]
+                if url not in fetched_images:
+                    fetched_images[url] = fetch_event_image(url)
+                data, extension = fetched_images[url]
+                image_path = f"static/img/events/{Path(filename).stem}.{extension}"
+                image_target = root / image_path
+                images[image_path] = {"data": data, "url": url,
+                                      "before": image_target.read_bytes() if image_target.exists() else None}
+                profile["image"] = "https://ludimus.it/" + image_path
             text = render_source(event, profile, body, root)
             before = source_text(target)
             action = "create" if not target.exists() else "update" if before != text else "unchanged"
@@ -721,6 +765,9 @@ def plan(calendar, start, end, root=ROOT, adopt=False):
                "state_before": source_text(root / STATE), "state_after": final_state,
                "config": source_text(root / CONFIG), "templates": templates,
                "messages": messages, "errors": errors}
+    payload["images"] = {path: {"url": image["url"], "hash": hashlib.sha256(image["data"]).hexdigest(),
+                               "before": hashlib.sha256(image["before"]).hexdigest() if image["before"] is not None else None}
+                         for path, image in images.items()}
     source_names = {path.name for path in (root / "layouts/events").glob("*.md")}
     for path, change in writes.items():
         if change["after"] is None:
@@ -745,7 +792,7 @@ def plan(calendar, start, end, root=ROOT, adopt=False):
               **templates, **payload["build_inputs"]}
     return {"_fingerprint": fingerprint, "_inputs": inputs, "writes": writes, "state": final_state, "entries": entries,
             "errors": errors, "messages": messages, "start": start, "end": end,
-            "total": len(selected), "redirects": redirects}
+            "total": len(selected), "redirects": redirects, "images": images}
 
 
 def report(proposal):
@@ -762,6 +809,9 @@ def report(proposal):
         lines.append(f"| {event.start:%Y-%m-%d %H:%M}–{end} | {title} | {item['action']} | `{item['path']}` | {item['link']} |")
     if proposal["errors"]:
         lines += ["", "## Blockers", ""] + ["- " + error for error in proposal["errors"]]
+    if proposal["images"]:
+        lines += ["", "## Event images", ""]
+        lines += [f"- {image['url']} → `{path}` (saved on apply)" for path, image in sorted(proposal["images"].items())]
     lines += ["", "## Venue redirects after rebuilding today", ""]
     lines += [f"- `/events/{alias}` → `{target}`" for alias, target in sorted(proposal["redirects"].items())]
     lines += ["", "Daily rebuilds advance these links to the next upcoming occurrence.", "",
@@ -808,6 +858,10 @@ def output_artifacts(proposal, directory):
             continue
         metadata, body = read_event_source(change["after"])
         rendered = render_event_page(metadata, body)
+        for image_path, image in proposal["images"].items():
+            content_type = "image/jpeg" if image_path.endswith(".jpg") else "image/" + Path(image_path).suffix[1:]
+            embedded = f"data:{content_type};base64," + base64.b64encode(image["data"]).decode("ascii")
+            rendered = rendered.replace("https://ludimus.it/" + image_path, embedded)
         rendered = rendered.replace('href="../', 'href="https://ludimus.it/').replace('src="../', 'src="https://ludimus.it/')
         name = Path(path).with_suffix(".html").name
         (preview / name).write_text(rendered, encoding="utf-8")
@@ -827,6 +881,15 @@ def apply_plan(proposal, root=ROOT, build=True, recheck=None):
     for path, change in proposal["writes"].items():
         if source_text(root / path) != change["before"]:
             raise CalendarError(f"File changed since preview: {path}")
+    for path, image in proposal["images"].items():
+        target = root / path
+        if (target.read_bytes() if target.exists() else None) != image["before"]:
+            raise CalendarError(f"Image changed since preview: {path}")
+    for path, image in proposal["images"].items():
+        target = root / path
+        if image["before"] != image["data"]:
+            target.parent.mkdir(parents=True, exist_ok=True)
+            target.write_bytes(image["data"])
     for path, change in proposal["writes"].items():
         target = root / path
         if change["after"] is None:
