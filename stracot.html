@@ -1,4 +1,5 @@
-<html>
+<!doctype html>
+<html lang="it">
 
 <head>
 
@@ -7,7 +8,8 @@
 
   <title>Stracòt - Ludimus</title>
   <meta property="og:title" content="Stracòt - Ludimus" />
-  <meta property="og:description" content="Stracòt: la versione dal vivo di Overcooked ambientata nella cucina trentina, con squadre di 4 persone che collaborano per ottenere il punteggio più alto!" />
+  <meta name="description" content="Quattro persone, otto minuti e una cucina trentina da gestire insieme: scopri come preparare e servire più piatti possibile con Stracòt." />
+  <meta property="og:description" content="Quattro persone, otto minuti e una cucina trentina da gestire insieme: preparate, cuocete e servite più piatti possibile!" />
   <meta property="og:image" content="https://ludimus.it/static/img/stracot.png" />
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
@@ -15,7 +17,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     crossorigin="anonymous">
 
-  <link rel="stylesheet" href="./style.css?t=3d3124ec8e5a601085970f7210254ea9">
+  <link rel="stylesheet" href="./style.css?t=b1ac0eef7c54f3843259a2c6b61b5d8f">
 
   <link rel="icon" type="image/png" href="./static/img/favicon/favicon-32x32.png" sizes="32x32" />
   <link rel="icon" type="image/png" href="./static/img/favicon/favicon-16x16.png" sizes="16x16" />
@@ -26,77 +28,265 @@
 
   <a href="/"><img class="go-back" src="./static/img/logo.svg" alt="ludimus"></a>
 
-  <div id="stracot">
-
-    <section class="stracot__header">
-      <div>
-        <h2>STRACÒT</h2>
-      </div>
-      <p class="centered-text">
-        <strong>Stracòt</strong> è la versione dal vivo di <em>Overcooked</em>: un gioco di cooperazione frenetica in
-        cui squadre di <strong>4 persone</strong> devono coordinarsi alla perfezione per realizzare ricette e ottenere
-        il punteggio più alto possibile… prima che scada il tempo!
-      </p>
-      <p class="centered-text">
-        La nostra variante trentina ti mette ai fornelli con gli ingredienti del territorio: <strong>carne
-          salada</strong>, <strong>polenta</strong>, <strong>formaggio</strong>, <strong>canederli</strong> e
-        molto altro. Ogni squadra riceve di continuo ordini da evadere entro 8 (o 10) minuti, gestendo
-        contemporaneamente gli spazi della cucina, la divisione dei compiti e la comunicazione tra i giocatori.
-      </p>
-      <br>
-      <div class="stracot__mascots">
-        <img src="./static/img/Lino_Stracot.png" alt="Lino" class="stracot__mascot">
-        <img src="./static/img/Lola_Stracot.png" alt="Lola" class="stracot__mascot">
-      </div>
-    </section>
-
-    <section class="stracot__gallery">
-      <div class="cards-container">
-        <div class="card-columns">
-<div class="card gallery-card">
-    <img src="./static/img/stracot/intro1.jpg" class="img-fluid gallery-photo" alt="">
-</div>
-<div class="card gallery-card">
-    <img src="./static/img/stracot/intro2.jpg" class="img-fluid gallery-photo" alt="">
-</div>
-<div class="card gallery-card">
-    <img src="./static/img/stracot/mfranzil_17705_DSC04236_2048.jpg" class="img-fluid gallery-photo" alt="">
-</div>
-<div class="card gallery-card">
-    <img src="./static/img/stracot/mfranzil_17708_DSC04240_2048.jpg" class="img-fluid gallery-photo" alt="">
-</div>
-<div class="card gallery-card">
-    <img src="./static/img/stracot/mfranzil_17710_DSC04242_2048.jpg" class="img-fluid gallery-photo" alt="">
-</div>
-<div class="card gallery-card">
-    <img src="./static/img/stracot/mfranzil_17711_DSC04243_2048.jpg" class="img-fluid gallery-photo" alt="">
-</div>
-<div class="card gallery-card">
-    <img src="./static/img/stracot/mfranzil_17716_DSC04251_2048.jpg" class="img-fluid gallery-photo" alt="">
-</div>
-<div class="card gallery-card">
-    <img src="./static/img/stracot/mfranzil_17721_DSC04260_2048.jpg" class="img-fluid gallery-photo" alt="">
-</div>
-<div class="card gallery-card">
-    <img src="./static/img/stracot/mfranzil_17731_DSC04277_2048.jpg" class="img-fluid gallery-photo" alt="">
-</div>
-<div class="card gallery-card">
-    <img src="./static/img/stracot/mfranzil_17940_DSC5460_2048.jpg" class="img-fluid gallery-photo" alt="">
-</div>
-<div class="card gallery-card">
-    <img src="./static/img/stracot/mfranzil_17943_DSC5463_2048.jpg" class="img-fluid gallery-photo" alt="">
-</div>
-<div class="card gallery-card">
-    <img src="./static/img/stracot/mfranzil_18009_DSC04813_2048.jpg" class="img-fluid gallery-photo" alt="">
-</div>
-<div class="card gallery-card">
-    <img src="./static/img/stracot/mfranzil_18012_DSC04817_2048.jpg" class="img-fluid gallery-photo" alt="">
-</div>
+  <main id="stracot">
+    <section class="stracot__hero" aria-labelledby="stracot-title">
+      <div class="stracot__hero-inner">
+        <div class="stracot__hero-copy">
+          <h1 id="stracot-title" class="stracot__wordmark"><img src="./static/img/stracot-guide/official-logo.webp" alt="Stracòt! La sfida di cucina trentina" width="1600" height="839"></h1>
+          <p class="stracot__lead">Un minigioco a squadre che vi catapulterà in una cucina a dir poco frenetica!</strong></p>
+          <ul class="stracot__facts" aria-label="La partita in breve">
+            <li><span aria-hidden="true">⏱</span> <strong>8 minuti</strong></li>
+            <li><span aria-hidden="true">👥</span> <strong>4 persone per squadra</strong></li>
+          </ul>
+          <p>Stracòt porta dal vivo la collaborazione di <em>Overcooked</em>, fra carne salada, polenta, formaggio e canederli. Ingredienti da tagliare, padelle che bruciano, piatti da lavare e clienti affamati che non hanno nessuna intenzione di aspettare... </p><br><strong>Avrete i nervi abbastanza saldi?</strong>
+          <nav class="stracot__hero-links" aria-label="Esplora Stracòt">
+            <a class="stracot__button" href="#come-si-gioca">Come si gioca <span aria-hidden="true">↓</span></a>
+            <a class="stracot__button stracot__button--light" href="#galleria-stracot">Guarda le foto</a>
+          </nav>
+        </div>
+        <div class="stracot__hero-art" aria-hidden="true">
+          <img src="./static/img/stracot-guide/mascot-lino.webp" alt="" class="stracot__chef stracot__chef--lino" loading="eager" decoding="async" width="587" height="600">
+          <img src="./static/img/stracot-guide/mascot-lola.webp" alt="" class="stracot__chef stracot__chef--lola" loading="eager" decoding="async" width="600" height="570">
         </div>
       </div>
     </section>
 
-  </section>
+    <section class="stracot__intro stracot__container" aria-labelledby="stracot-intro-title">
+      <div class="stracot__section-heading">
+        <!--<p class="stracot__eyebrow">Una cucina tutta da giocare</p>-->
+        <h2 id="stracot-intro-title">La cucina di Stracòt</h2>
+        <p>Squadre da quattro persone, divise nelle due parti della cucina. Da un lato ci sono le due casse degli ingredienti, i fornelli per alcune preparazioni e la lavastoviglie; dall’altro, i taglieri, gli altri fornelli e il punto di servizio. <strong>8 minuti per far uscire più portate che potete!</strong>.</p>
+      </div>
+      <figure class="stracot__overview">
+        <img src="./static/img/stracot-guide/overview-1600.webp" alt="Squadre di giocatori alle diverse stazioni della cucina di Stracòt." class="stracot__photo" loading="lazy" decoding="async" width="1600" height="1067" srcset="./static/img/stracot-guide/overview-640.webp 640w, ./static/img/stracot-guide/overview-1000.webp 1000w, ./static/img/stracot-guide/overview-1600.webp 1600w" sizes="(max-width: 1180px) 92vw, 1084px">
+        <figcaption>Stracòt in azione al Giocaosta 2026.</figcaption>
+      </figure>
+    </section>
+
+    <section id="come-si-gioca" class="stracot__guide stracot__container" aria-labelledby="stracot-guide-title">
+      <div class="stracot__section-heading">
+        <h2 id="stracot-guide-title">Come si gioca</h2>
+        <p>Le comande non si fermano, il tempo corre. Ma come si servono i piatti?</p>
+      </div>
+      <ol class="stracot__steps" role="list">
+        <li class="stracot__step">
+          <div class="stracot__step-copy">
+            <span class="stracot__step-number" aria-hidden="true">1</span>
+            <h3>Leggete le comande</h3>
+            <p>Un lato della cucina si occupa di guardare gli ordini dei clienti.
+              Quali ingredienti servono? Chi prepara cosa? <strong>Coordinarsi è la prima ricetta!</strong></p>
+            <div class="stracot__orders-art" aria-hidden="true"><img src="./static/img/stracot-guide/orders.webp" alt="" class="stracot__illustration" loading="lazy" decoding="async" width="960" height="344"></div>
+          </div>
+          <figure class="stracot__step-media">
+            <img src="./static/img/stracot-guide/orders-photo-1120.webp" alt="Schermo delle comande con i piatti richiesti dai clienti." class="stracot__photo" loading="lazy" decoding="async" width="1120" height="747" srcset="./static/img/stracot-guide/orders-photo-640.webp 640w, ./static/img/stracot-guide/orders-photo-1120.webp 1120w" sizes="(max-width: 800px) 90vw, 520px">
+            <figcaption>I piatti più semplici valgono meno, ma sono più veloci da preparare. Non dimenticatevi di controllare le comande: i clienti non aspettano!</figcaption>
+          </figure>
+        </li>
+
+        <li class="stracot__step">
+          <div class="stracot__step-copy">
+            <span class="stracot__step-number" aria-hidden="true">2</span>
+            <h3>Preparate e tagliate gli ingredienti</h3>
+            <p>Prendete <strong>10 pezzetti di legno</strong> della forma dell’ingrediente scelto e metteteli nella ciotola. Passateli al tagliere: tutte e 10 le formine devono entrare negli spazi giusti.</p>
+            <div class="stracot__prep-art" aria-hidden="true">
+              <img src="./static/img/stracot-guide/piece-square.webp" alt="" class="stracot__illustration" loading="lazy" decoding="async" width="240" height="240">
+              <img src="./static/img/stracot-guide/piece-round.webp" alt="" class="stracot__illustration" loading="lazy" decoding="async" width="240" height="240">
+              <span class="stracot__art-arrow">→</span>
+              <img src="./static/img/stracot-guide/bowl.webp" alt="" class="stracot__illustration" loading="lazy" decoding="async" width="360" height="232">
+            </div>
+            <p class="stracot__tip"><strong>Un ingrediente per ciotola.</strong> Gli ingredienti viaggiano sempre in una ciotola o in un piatto.</p>
+          </div>
+          <figure class="stracot__step-media">
+            <img src="./static/img/stracot-guide/cutting-photo-1120.webp" alt="Una giocatrice incastra le formine di legno negli spazi del tagliere." class="stracot__photo" loading="lazy" decoding="async" width="1120" height="747" srcset="./static/img/stracot-guide/cutting-photo-640.webp 640w, ./static/img/stracot-guide/cutting-photo-1120.webp 1120w" sizes="(max-width: 800px) 90vw, 520px">
+            <figcaption>Le formine vanno incastrate nel tagliere: una volta finito, l’ingrediente è pronto per essere cucinato o servito.</figcaption>
+          </figure>
+        </li>
+
+        <li class="stracot__step">
+          <div class="stracot__step-copy">
+            <span class="stracot__step-number" aria-hidden="true">3</span>
+            <h3>Cuocete, ma occhio a non bruciare tutto!</h3>
+            <p>Se l’ingrediente va cotto, prendete la sua ciotola e usate il fornello giusto. Premete il pulsante per avviare il timer. Quando suona, <strong>spegnete il fuoco prima che bruci tutto!</strong></p>
+            <div class="stracot__states">
+              <figure><img src="./static/img/stracot-guide/ingredient-raw.webp" alt="" class="stracot__illustration" loading="lazy" decoding="async" width="320" height="295"><figcaption><strong>Grigio</strong> = crudo</figcaption></figure>
+              <figure><img src="./static/img/stracot-guide/ingredient-cooked.webp" alt="" class="stracot__illustration" loading="lazy" decoding="async" width="320" height="296"><figcaption><strong>Colorato</strong> = cotto</figcaption></figure>
+            </div>
+          </div>
+          <figure class="stracot__step-media">
+            <img src="./static/img/stracot-guide/cooking-photo-1120.webp" alt="Una ciotola sul fornello di Stracòt, accanto alle tessere degli ingredienti." class="stracot__photo" loading="lazy" decoding="async" width="1120" height="747" srcset="./static/img/stracot-guide/cooking-photo-640.webp 640w, ./static/img/stracot-guide/cooking-photo-1120.webp 1120w" sizes="(max-width: 800px) 90vw, 520px">
+            <figcaption>Noi viaggiamo sempre con un estintore. Non si sa mai...</figcaption> 
+          </figure>
+        </li>
+
+        <li class="stracot__step">
+          <div class="stracot__step-copy">
+            <span class="stracot__step-number" aria-hidden="true">4</span>
+            <h3>Impiattate, servite e suonate!</h3>
+            <p>Riunite gli ingredienti pronti nel piatto, proprio come richiede la comanda. Quando la portata è completa, <strong>suonate il campanello</strong>: avete servito un piatto!</p>
+            <div class="stracot__dish-art" aria-hidden="true"><img src="./static/img/stracot-guide/dish-ready.webp" alt="" class="stracot__illustration" loading="lazy" decoding="async" width="440" height="287"></div>
+          </div>
+          <figure class="stracot__step-media">
+            <img src="./static/img/stracot-guide/serving-photo-1120.webp" alt="Comande, ingredienti pronti e campanello sul banco della cucina." class="stracot__photo" loading="lazy" decoding="async" width="1120" height="747" srcset="./static/img/stracot-guide/serving-photo-640.webp 640w, ./static/img/stracot-guide/serving-photo-1120.webp 1120w" sizes="(max-width: 800px) 90vw, 520px">
+            <figcaption>Ci sono sempre al massimo 4 ordini in contemporaneo. Se un ordine scade (nella versione con schermo) o viene servito, viene subito sostituito da uno nuovo.</figcaption>
+          </figure>
+        </li>
+
+        <li class="stracot__step">
+          <div class="stracot__step-copy">
+            <span class="stracot__step-number" aria-hidden="true">5</span>
+            <h3>Lavate e ricominciate</h3>
+            <p>Purtroppo i piatti non si puliscono magicamente da soli. Dopo aver servito un piatto, <strong>riportate i piatti sporchi</strong> al lato della cucina con la lavastoviglie. Girate la manovella della lavastoviglie fino a completare il ciclo, poi riportate i piatti ai colleghi e ripartite con la prossima comanda!</p>
+            <div class="stracot__plates-art" aria-hidden="true"><img src="./static/img/stracot-guide/plates-clean.webp" alt="" class="stracot__illustration" loading="lazy" decoding="async" width="360" height="219"></div>
+          </div>
+          <figure class="stracot__step-media">
+            <img src="./static/img/stracot-guide/washing-photo-1120.webp" alt="Un giocatore aziona la manovella della lavastoviglie di Stracòt." class="stracot__photo" loading="lazy" decoding="async" width="1120" height="747" srcset="./static/img/stracot-guide/washing-photo-640.webp 640w, ./static/img/stracot-guide/washing-photo-1120.webp 1120w" sizes="(max-width: 800px) 90vw, 520px">
+            <figcaption>La lavastoviglie ha un timer: girate la manovella fino a completare il ciclo e riportate i piatti puliti ai colleghi.</figcaption>
+          </figure>
+        </li>
+      </ol>
+      <aside class="stracot__team-note">
+        <h3>Il vero ingrediente? La squadra.</h3>
+        <p>Gli ordini non aspettano. Aiutatevi e coordinatevi tra i due lati: la cucina è un lavoro di squadra, e solo chi collabora riesce a servire più piatti. <strong>Quanti piatti riuscirete a servire?</strong></p>
+      </aside>
+    </section>
+
+    <section id="galleria-stracot" class="stracot__gallery" aria-labelledby="stracot-gallery-title">
+      <div class="stracot__section-heading stracot__container">
+        <h2 id="stracot-gallery-title">Stracòt in azione</h2>
+      </div>
+      <div class="cards-container">
+        <div class="card-columns">
+          <figure class="card gallery-card">
+    <a href="./static/img/stracot/intro1.jpg" aria-label="Apri la fotografia a dimensione originale">
+        <img src="./static/img/stracot-guide/gallery/intro1-960.webp" alt="Rollup illustrativo di Stracòt" class="img-fluid gallery-photo" loading="lazy" decoding="async" width="960" height="1440" srcset="./static/img/stracot-guide/gallery/intro1-480.webp 480w, ./static/img/stracot-guide/gallery/intro1-960.webp 960w" sizes="(max-width: 480px) 95vw, (max-width: 768px) 46vw, 30vw">
+    </a>
+</figure>
+<figure class="card gallery-card">
+    <a href="./static/img/stracot/intro2.jpg" aria-label="Apri la fotografia a dimensione originale">
+        <img src="./static/img/stracot-guide/gallery/intro2-960.webp" alt="Rollup illustrativo di Stracòt" class="img-fluid gallery-photo" loading="lazy" decoding="async" width="960" height="1440" srcset="./static/img/stracot-guide/gallery/intro2-480.webp 480w, ./static/img/stracot-guide/gallery/intro2-960.webp 960w" sizes="(max-width: 480px) 95vw, (max-width: 768px) 46vw, 30vw">
+    </a>
+</figure>
+<figure class="card gallery-card">
+    <a href="./static/img/stracot/mfranzil_17705_DSC04236_2048.jpg" aria-label="Apri la fotografia a dimensione originale">
+        <img src="./static/img/stracot-guide/gallery/mfranzil_17705_DSC04236_2048-960.webp" alt="Giocatori alle stazioni di lavoro di Stracòt" class="img-fluid gallery-photo" loading="lazy" decoding="async" width="960" height="640" srcset="./static/img/stracot-guide/gallery/mfranzil_17705_DSC04236_2048-480.webp 480w, ./static/img/stracot-guide/gallery/mfranzil_17705_DSC04236_2048-960.webp 960w" sizes="(max-width: 480px) 95vw, (max-width: 768px) 46vw, 30vw">
+    </a>
+</figure>
+<figure class="card gallery-card">
+    <a href="./static/img/stracot/mfranzil_17708_DSC04240_2048.jpg" aria-label="Apri la fotografia a dimensione originale">
+        <img src="./static/img/stracot-guide/gallery/mfranzil_17708_DSC04240_2048-960.webp" alt="Giocatori alle stazioni di lavoro di Stracòt" class="img-fluid gallery-photo" loading="lazy" decoding="async" width="960" height="640" srcset="./static/img/stracot-guide/gallery/mfranzil_17708_DSC04240_2048-480.webp 480w, ./static/img/stracot-guide/gallery/mfranzil_17708_DSC04240_2048-960.webp 960w" sizes="(max-width: 480px) 95vw, (max-width: 768px) 46vw, 30vw">
+    </a>
+</figure>
+<figure class="card gallery-card">
+    <a href="./static/img/stracot/mfranzil_17710_DSC04242_2048.jpg" aria-label="Apri la fotografia a dimensione originale">
+        <img src="./static/img/stracot-guide/gallery/mfranzil_17710_DSC04242_2048-960.webp" alt="Giocatori alle stazioni di lavoro di Stracòt" class="img-fluid gallery-photo" loading="lazy" decoding="async" width="960" height="1440" srcset="./static/img/stracot-guide/gallery/mfranzil_17710_DSC04242_2048-480.webp 480w, ./static/img/stracot-guide/gallery/mfranzil_17710_DSC04242_2048-960.webp 960w" sizes="(max-width: 480px) 95vw, (max-width: 768px) 46vw, 30vw">
+    </a>
+</figure>
+<figure class="card gallery-card">
+    <a href="./static/img/stracot/mfranzil_17711_DSC04243_2048.jpg" aria-label="Apri la fotografia a dimensione originale">
+        <img src="./static/img/stracot-guide/gallery/mfranzil_17711_DSC04243_2048-960.webp" alt="Giocatori alle stazioni di lavoro di Stracòt" class="img-fluid gallery-photo" loading="lazy" decoding="async" width="960" height="1440" srcset="./static/img/stracot-guide/gallery/mfranzil_17711_DSC04243_2048-480.webp 480w, ./static/img/stracot-guide/gallery/mfranzil_17711_DSC04243_2048-960.webp 960w" sizes="(max-width: 480px) 95vw, (max-width: 768px) 46vw, 30vw">
+    </a>
+</figure>
+<figure class="card gallery-card">
+    <a href="./static/img/stracot/mfranzil_17716_DSC04251_2048.jpg" aria-label="Apri la fotografia a dimensione originale">
+        <img src="./static/img/stracot-guide/gallery/mfranzil_17716_DSC04251_2048-960.webp" alt="Giocatori alle stazioni di lavoro di Stracòt" class="img-fluid gallery-photo" loading="lazy" decoding="async" width="960" height="1440" srcset="./static/img/stracot-guide/gallery/mfranzil_17716_DSC04251_2048-480.webp 480w, ./static/img/stracot-guide/gallery/mfranzil_17716_DSC04251_2048-960.webp 960w" sizes="(max-width: 480px) 95vw, (max-width: 768px) 46vw, 30vw">
+    </a>
+</figure>
+<figure class="card gallery-card">
+    <a href="./static/img/stracot/mfranzil_17721_DSC04260_2048.jpg" aria-label="Apri la fotografia a dimensione originale">
+        <img src="./static/img/stracot-guide/gallery/mfranzil_17721_DSC04260_2048-960.webp" alt="Giocatori alle stazioni di lavoro di Stracòt" class="img-fluid gallery-photo" loading="lazy" decoding="async" width="960" height="1440" srcset="./static/img/stracot-guide/gallery/mfranzil_17721_DSC04260_2048-480.webp 480w, ./static/img/stracot-guide/gallery/mfranzil_17721_DSC04260_2048-960.webp 960w" sizes="(max-width: 480px) 95vw, (max-width: 768px) 46vw, 30vw">
+    </a>
+</figure>
+<figure class="card gallery-card">
+    <a href="./static/img/stracot/mfranzil_17731_DSC04277_2048.jpg" aria-label="Apri la fotografia a dimensione originale">
+        <img src="./static/img/stracot-guide/gallery/mfranzil_17731_DSC04277_2048-960.webp" alt="Giocatori alle stazioni di lavoro di Stracòt" class="img-fluid gallery-photo" loading="lazy" decoding="async" width="960" height="640" srcset="./static/img/stracot-guide/gallery/mfranzil_17731_DSC04277_2048-480.webp 480w, ./static/img/stracot-guide/gallery/mfranzil_17731_DSC04277_2048-960.webp 960w" sizes="(max-width: 480px) 95vw, (max-width: 768px) 46vw, 30vw">
+    </a>
+</figure>
+<figure class="card gallery-card">
+    <a href="./static/img/stracot/mfranzil_17940_DSC5460_2048.jpg" aria-label="Apri la fotografia a dimensione originale">
+        <img src="./static/img/stracot-guide/gallery/mfranzil_17940_DSC5460_2048-960.webp" alt="Giocatori alle stazioni di lavoro di Stracòt" class="img-fluid gallery-photo" loading="lazy" decoding="async" width="960" height="640" srcset="./static/img/stracot-guide/gallery/mfranzil_17940_DSC5460_2048-480.webp 480w, ./static/img/stracot-guide/gallery/mfranzil_17940_DSC5460_2048-960.webp 960w" sizes="(max-width: 480px) 95vw, (max-width: 768px) 46vw, 30vw">
+    </a>
+</figure>
+<figure class="card gallery-card">
+    <a href="./static/img/stracot/mfranzil_17943_DSC5463_2048.jpg" aria-label="Apri la fotografia a dimensione originale">
+        <img src="./static/img/stracot-guide/gallery/mfranzil_17943_DSC5463_2048-960.webp" alt="Giocatori alle stazioni di lavoro di Stracòt" class="img-fluid gallery-photo" loading="lazy" decoding="async" width="960" height="1440" srcset="./static/img/stracot-guide/gallery/mfranzil_17943_DSC5463_2048-480.webp 480w, ./static/img/stracot-guide/gallery/mfranzil_17943_DSC5463_2048-960.webp 960w" sizes="(max-width: 480px) 95vw, (max-width: 768px) 46vw, 30vw">
+    </a>
+</figure>
+<figure class="card gallery-card">
+    <a href="./static/img/stracot/mfranzil_18009_DSC04813_2048.jpg" aria-label="Apri la fotografia a dimensione originale">
+        <img src="./static/img/stracot-guide/gallery/mfranzil_18009_DSC04813_2048-960.webp" alt="Giocatori alle stazioni di lavoro di Stracòt" class="img-fluid gallery-photo" loading="lazy" decoding="async" width="960" height="640" srcset="./static/img/stracot-guide/gallery/mfranzil_18009_DSC04813_2048-480.webp 480w, ./static/img/stracot-guide/gallery/mfranzil_18009_DSC04813_2048-960.webp 960w" sizes="(max-width: 480px) 95vw, (max-width: 768px) 46vw, 30vw">
+    </a>
+</figure>
+<figure class="card gallery-card">
+    <a href="./static/img/stracot/mfranzil_18012_DSC04817_2048.jpg" aria-label="Apri la fotografia a dimensione originale">
+        <img src="./static/img/stracot-guide/gallery/mfranzil_18012_DSC04817_2048-960.webp" alt="Giocatori alle stazioni di lavoro di Stracòt" class="img-fluid gallery-photo" loading="lazy" decoding="async" width="960" height="640" srcset="./static/img/stracot-guide/gallery/mfranzil_18012_DSC04817_2048-480.webp 480w, ./static/img/stracot-guide/gallery/mfranzil_18012_DSC04817_2048-960.webp 960w" sizes="(max-width: 480px) 95vw, (max-width: 768px) 46vw, 30vw">
+    </a>
+</figure>
+<figure class="card gallery-card">
+    <a href="./static/img/stracot/aosta-20260807-00b-generale.jpg" aria-label="Apri la fotografia a dimensione originale">
+        <img src="./static/img/stracot-guide/gallery/aosta-20260807-00b-generale-960.webp" alt="Giocatori alle stazioni di lavoro di Stracòt" class="img-fluid gallery-photo" loading="lazy" decoding="async" width="960" height="640" srcset="./static/img/stracot-guide/gallery/aosta-20260807-00b-generale-480.webp 480w, ./static/img/stracot-guide/gallery/aosta-20260807-00b-generale-960.webp 960w" sizes="(max-width: 480px) 95vw, (max-width: 768px) 46vw, 30vw">
+    </a>
+</figure>
+<figure class="card gallery-card">
+    <a href="./static/img/stracot/aosta-20260807-00c-istruzioni.jpg" aria-label="Apri la fotografia a dimensione originale">
+        <img src="./static/img/stracot-guide/gallery/aosta-20260807-00c-istruzioni-960.webp" alt="Giocatori alle stazioni di lavoro di Stracòt" class="img-fluid gallery-photo" loading="lazy" decoding="async" width="960" height="640" srcset="./static/img/stracot-guide/gallery/aosta-20260807-00c-istruzioni-480.webp 480w, ./static/img/stracot-guide/gallery/aosta-20260807-00c-istruzioni-960.webp 960w" sizes="(max-width: 480px) 95vw, (max-width: 768px) 46vw, 30vw">
+    </a>
+</figure>
+<figure class="card gallery-card">
+    <a href="./static/img/stracot/aosta-20260807-01-ciotole.jpg" aria-label="Apri la fotografia a dimensione originale">
+        <img src="./static/img/stracot-guide/gallery/aosta-20260807-01-ciotole-960.webp" alt="Giocatori alle stazioni di lavoro di Stracòt" class="img-fluid gallery-photo" loading="lazy" decoding="async" width="960" height="1440" srcset="./static/img/stracot-guide/gallery/aosta-20260807-01-ciotole-480.webp 480w, ./static/img/stracot-guide/gallery/aosta-20260807-01-ciotole-960.webp 960w" sizes="(max-width: 480px) 95vw, (max-width: 768px) 46vw, 30vw">
+    </a>
+</figure>
+<figure class="card gallery-card">
+    <a href="./static/img/stracot/aosta-20260807-02-fuochi.jpg" aria-label="Apri la fotografia a dimensione originale">
+        <img src="./static/img/stracot-guide/gallery/aosta-20260807-02-fuochi-960.webp" alt="Giocatori alle stazioni di lavoro di Stracòt" class="img-fluid gallery-photo" loading="lazy" decoding="async" width="960" height="1440" srcset="./static/img/stracot-guide/gallery/aosta-20260807-02-fuochi-480.webp 480w, ./static/img/stracot-guide/gallery/aosta-20260807-02-fuochi-960.webp 960w" sizes="(max-width: 480px) 95vw, (max-width: 768px) 46vw, 30vw">
+    </a>
+</figure>
+<figure class="card gallery-card">
+    <a href="./static/img/stracot/aosta-20260807-02b-fuochi.jpg" aria-label="Apri la fotografia a dimensione originale">
+        <img src="./static/img/stracot-guide/gallery/aosta-20260807-02b-fuochi-960.webp" alt="Giocatori alle stazioni di lavoro di Stracòt" class="img-fluid gallery-photo" loading="lazy" decoding="async" width="960" height="1440" srcset="./static/img/stracot-guide/gallery/aosta-20260807-02b-fuochi-480.webp 480w, ./static/img/stracot-guide/gallery/aosta-20260807-02b-fuochi-960.webp 960w" sizes="(max-width: 480px) 95vw, (max-width: 768px) 46vw, 30vw">
+    </a>
+</figure>
+<figure class="card gallery-card">
+    <a href="./static/img/stracot/aosta-20260807-10a-pezzi.jpg" aria-label="Apri la fotografia a dimensione originale">
+        <img src="./static/img/stracot-guide/gallery/aosta-20260807-10a-pezzi-960.webp" alt="Giocatori alle stazioni di lavoro di Stracòt" class="img-fluid gallery-photo" loading="lazy" decoding="async" width="960" height="640" srcset="./static/img/stracot-guide/gallery/aosta-20260807-10a-pezzi-480.webp 480w, ./static/img/stracot-guide/gallery/aosta-20260807-10a-pezzi-960.webp 960w" sizes="(max-width: 480px) 95vw, (max-width: 768px) 46vw, 30vw">
+    </a>
+</figure>
+<figure class="card gallery-card">
+    <a href="./static/img/stracot/aosta-20260807-10b-pezzi.jpg" aria-label="Apri la fotografia a dimensione originale">
+        <img src="./static/img/stracot-guide/gallery/aosta-20260807-10b-pezzi-960.webp" alt="Giocatori alle stazioni di lavoro di Stracòt" class="img-fluid gallery-photo" loading="lazy" decoding="async" width="960" height="640" srcset="./static/img/stracot-guide/gallery/aosta-20260807-10b-pezzi-480.webp 480w, ./static/img/stracot-guide/gallery/aosta-20260807-10b-pezzi-960.webp 960w" sizes="(max-width: 480px) 95vw, (max-width: 768px) 46vw, 30vw">
+    </a>
+</figure>
+<figure class="card gallery-card">
+    <a href="./static/img/stracot/aosta-20260807-10c-pezzi.jpg" aria-label="Apri la fotografia a dimensione originale">
+        <img src="./static/img/stracot-guide/gallery/aosta-20260807-10c-pezzi-960.webp" alt="Giocatori alle stazioni di lavoro di Stracòt" class="img-fluid gallery-photo" loading="lazy" decoding="async" width="960" height="640" srcset="./static/img/stracot-guide/gallery/aosta-20260807-10c-pezzi-480.webp 480w, ./static/img/stracot-guide/gallery/aosta-20260807-10c-pezzi-960.webp 960w" sizes="(max-width: 480px) 95vw, (max-width: 768px) 46vw, 30vw">
+    </a>
+</figure>
+<figure class="card gallery-card">
+    <a href="./static/img/stracot/aosta-20260807-12-ciotola-in-mano.jpg" aria-label="Apri la fotografia a dimensione originale">
+        <img src="./static/img/stracot-guide/gallery/aosta-20260807-12-ciotola-in-mano-960.webp" alt="Giocatori alle stazioni di lavoro di Stracòt" class="img-fluid gallery-photo" loading="lazy" decoding="async" width="960" height="640" srcset="./static/img/stracot-guide/gallery/aosta-20260807-12-ciotola-in-mano-480.webp 480w, ./static/img/stracot-guide/gallery/aosta-20260807-12-ciotola-in-mano-960.webp 960w" sizes="(max-width: 480px) 95vw, (max-width: 768px) 46vw, 30vw">
+    </a>
+</figure>
+<figure class="card gallery-card">
+    <a href="./static/img/stracot/aosta-20260807-13-cottura.jpg" aria-label="Apri la fotografia a dimensione originale">
+        <img src="./static/img/stracot-guide/gallery/aosta-20260807-13-cottura-960.webp" alt="Giocatori alle stazioni di lavoro di Stracòt" class="img-fluid gallery-photo" loading="lazy" decoding="async" width="960" height="640" srcset="./static/img/stracot-guide/gallery/aosta-20260807-13-cottura-480.webp 480w, ./static/img/stracot-guide/gallery/aosta-20260807-13-cottura-960.webp 960w" sizes="(max-width: 480px) 95vw, (max-width: 768px) 46vw, 30vw">
+    </a>
+</figure>
+<figure class="card gallery-card">
+    <a href="./static/img/stracot/aosta-20260807-13b-cottura.jpg" aria-label="Apri la fotografia a dimensione originale">
+        <img src="./static/img/stracot-guide/gallery/aosta-20260807-13b-cottura-960.webp" alt="Giocatori alle stazioni di lavoro di Stracòt" class="img-fluid gallery-photo" loading="lazy" decoding="async" width="960" height="640" srcset="./static/img/stracot-guide/gallery/aosta-20260807-13b-cottura-480.webp 480w, ./static/img/stracot-guide/gallery/aosta-20260807-13b-cottura-960.webp 960w" sizes="(max-width: 480px) 95vw, (max-width: 768px) 46vw, 30vw">
+    </a>
+</figure>
+<figure class="card gallery-card">
+    <a href="./static/img/stracot/aosta-20260807-14b-lavaggio.jpg" aria-label="Apri la fotografia a dimensione originale">
+        <img src="./static/img/stracot-guide/gallery/aosta-20260807-14b-lavaggio-960.webp" alt="Giocatori alle stazioni di lavoro di Stracòt" class="img-fluid gallery-photo" loading="lazy" decoding="async" width="960" height="640" srcset="./static/img/stracot-guide/gallery/aosta-20260807-14b-lavaggio-480.webp 480w, ./static/img/stracot-guide/gallery/aosta-20260807-14b-lavaggio-960.webp 960w" sizes="(max-width: 480px) 95vw, (max-width: 768px) 46vw, 30vw">
+    </a>
+</figure>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
 
   <footer>
   <div class="footer-links">
