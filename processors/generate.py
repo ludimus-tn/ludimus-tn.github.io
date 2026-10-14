@@ -555,9 +555,9 @@ stracot_images = {
     'mascot_lola': ('mascot-lola', '', None, 'stracot__chef stracot__chef--lola', True),
     'overview_photo': ('overview', 'Squadre di giocatori alle diverse stazioni della cucina di Stracòt.', '(max-width: 1180px) 92vw, 1084px', 'stracot__photo', False),
     'orders_photo': ('orders-photo', 'Schermo delle comande con i piatti richiesti dai clienti.', '(max-width: 800px) 90vw, 520px', 'stracot__photo', False),
-    'cutting_photo': ('cutting-photo', 'Una giocatrice incastra le formine di legno negli spazi del tagliere.', '(max-width: 800px) 90vw, 520px', 'stracot__photo', False),
-    'cooking_photo': ('cooking-photo', 'Una ciotola sul fornello di Stracòt, accanto alle tessere degli ingredienti.', '(max-width: 800px) 90vw, 520px', 'stracot__photo', False),
-    'serving_photo': ('serving-photo', 'Comande, ingredienti pronti e campanello sul banco della cucina.', '(max-width: 800px) 90vw, 520px', 'stracot__photo', False),
+    'cutting_photo': ('cutting-photo', 'Una giocatrice incastra le formine di legno negli spazi del tagliere', '(max-width: 800px) 90vw, 520px', 'stracot__photo', False),
+    'cooking_photo': ('cooking-photo', 'Una ciotola/padella sul fornello di Stracòt, accanto alle tessere degli ingredienti', '(max-width: 800px) 90vw, 520px', 'stracot__photo', False),
+    'serving_photo': ('serving-photo', 'Comande, tessere ingredienti e campanello sul banco della cucina', '(max-width: 800px) 90vw, 520px', 'stracot__photo', False),
     'washing_photo': ('washing-photo', 'Un giocatore aziona la manovella della lavastoviglie di Stracòt.', '(max-width: 800px) 90vw, 520px', 'stracot__photo', False),
 }
 for placeholder, name in {'orders_illustration': 'orders', 'piece_square': 'piece-square',
