@@ -11,12 +11,30 @@
     },
     {
       "idBGG": -1,
+      "nomeGioco": "After Us",
+      "pesoMedio": 2.03,
+      "proprietari": "Trento",
+      "numGiocatori": "Min:1 - Max:6",
+      "durata": 50,
+      "thumbnail": ""
+    },
+    {
+      "idBGG": -1,
       "nomeGioco": "On Stage!",
       "pesoMedio": null,
       "proprietari": "Magazzino",
       "numGiocatori": "",
       "durata": null,
       "thumbnail": "undefined"
+    },
+    {
+      "idBGG": -1,
+      "nomeGioco": "Deckscalation",
+      "pesoMedio": null,
+      "proprietari": "Trento",
+      "numGiocatori": "Min:3 - Max:6",
+      "durata": 15,
+      "thumbnail": ""
     },
     {
       "idBGG": 13,
@@ -331,7 +349,25 @@
       "proprietari": "Trento",
       "numGiocatori": "Min:2 - Max:4",
       "durata": 20,
-      "thumbnail": "https://cf.geekdo-images.com/5k9eYdxaLEoVSz-YGjNHnw__thumb/img/3kTiBn6SFnvm9JEGgG3rlYwbmFU=/fit-in/200x150/filters:strip_icc()/pic3211830.jpg"
+      "thumbnail": "https://cf.geekdo-images.com/5k9eYdxaLEoVSz-YGjNHnw__small/img/3kTiBn6SFnvm9JEGgG3rlYwbmFU=/fit-in/200x150/filters:strip_icc()/pic3211830.jpg"
+    },
+    {
+      "idBGG": 63268,
+      "nomeGioco": "Dobble",
+      "pesoMedio": 1.0371,
+      "proprietari": "Trento",
+      "numGiocatori": "Min:2 - Max:8",
+      "durata": 15,
+      "thumbnail": "https://cf.geekdo-images.com/hqDT4HbEb2eNCyMOeiGj-g__small/img/ZNgW2QhLjYpVltWHy3LyJqstnow=/fit-in/200x150/filters:strip_icc()/pic6477003.png"
+    },
+    {
+      "idBGG": 63268,
+      "nomeGioco": "Spot it! Pixar",
+      "pesoMedio": 1.0371,
+      "proprietari": "Trento",
+      "numGiocatori": "Min:2 - Max:8",
+      "durata": 15,
+      "thumbnail": "https://cf.geekdo-images.com/hqDT4HbEb2eNCyMOeiGj-g__small/img/ZNgW2QhLjYpVltWHy3LyJqstnow=/fit-in/200x150/filters:strip_icc()/pic6477003.png"
     },
     {
       "idBGG": 68448,
@@ -502,7 +538,16 @@
       "proprietari": "Avio",
       "numGiocatori": "Min:5 - Max:10",
       "durata": 30,
-      "thumbnail": "https://cf.geekdo-images.com/LPa6rsGcv8S0-OeNjCOAEQ__thumb/img/RKui79VjUbQAzTWaPu44ytupzDs=/fit-in/200x150/filters:strip_icc()/pic1398895.jpg"
+      "thumbnail": "https://cf.geekdo-images.com/LPa6rsGcv8S0-OeNjCOAEQ__small/img/RKui79VjUbQAzTWaPu44ytupzDs=/fit-in/200x150/filters:strip_icc()/pic1398895.jpg"
+    },
+    {
+      "idBGG": 128882,
+      "nomeGioco": "The Resistance: Avalon",
+      "pesoMedio": 1.7382,
+      "proprietari": "Trento",
+      "numGiocatori": "Min:5 - Max:10",
+      "durata": 30,
+      "thumbnail": "https://cf.geekdo-images.com/LPa6rsGcv8S0-OeNjCOAEQ__small/img/RKui79VjUbQAzTWaPu44ytupzDs=/fit-in/200x150/filters:strip_icc()/pic1398895.jpg"
     },
     {
       "idBGG": 128882,
@@ -511,7 +556,7 @@
       "proprietari": "Trento",
       "numGiocatori": "Min:5 - Max:10",
       "durata": 30,
-      "thumbnail": "https://cf.geekdo-images.com/LPa6rsGcv8S0-OeNjCOAEQ__thumb/img/RKui79VjUbQAzTWaPu44ytupzDs=/fit-in/200x150/filters:strip_icc()/pic1398895.jpg"
+      "thumbnail": "https://cf.geekdo-images.com/LPa6rsGcv8S0-OeNjCOAEQ__small/img/RKui79VjUbQAzTWaPu44ytupzDs=/fit-in/200x150/filters:strip_icc()/pic1398895.jpg"
     },
     {
       "idBGG": 130176,
@@ -751,7 +796,7 @@
       "idBGG": 172287,
       "nomeGioco": "Campioni di Midgard",
       "pesoMedio": 2.6226,
-      "proprietari": "Trento",
+      "proprietari": "Magazzino",
       "numGiocatori": "Min:2 - Max:4",
       "durata": 90,
       "thumbnail": "https://cf.geekdo-images.com/VJwOnMF5vwJg2Yaq6ozn3Q__thumb/img/Ms3h8cBxGzfcKB16q1KPOsmnoG8=/fit-in/200x150/filters:strip_icc()/pic2869714.jpg"
@@ -961,7 +1006,7 @@
       "proprietari": "Avio",
       "numGiocatori": "Min:2 - Max:8",
       "durata": 20,
-      "thumbnail": "https://cf.geekdo-images.com/2f9uTicUSXkdPp2Yks6zFw__thumb/img/_mXR9Tlo0f-i80h6pfhDEOBgvpY=/fit-in/200x150/filters:strip_icc()/pic5885689.jpg"
+      "thumbnail": "https://cf.geekdo-images.com/2f9uTicUSXkdPp2Yks6zFw__small/img/_mXR9Tlo0f-i80h6pfhDEOBgvpY=/fit-in/200x150/filters:strip_icc()/pic5885689.jpg"
     },
     {
       "idBGG": 192291,
@@ -970,7 +1015,7 @@
       "proprietari": "Trento",
       "numGiocatori": "Min:2 - Max:8",
       "durata": 20,
-      "thumbnail": "https://cf.geekdo-images.com/2f9uTicUSXkdPp2Yks6zFw__thumb/img/_mXR9Tlo0f-i80h6pfhDEOBgvpY=/fit-in/200x150/filters:strip_icc()/pic5885689.jpg"
+      "thumbnail": "https://cf.geekdo-images.com/2f9uTicUSXkdPp2Yks6zFw__small/img/_mXR9Tlo0f-i80h6pfhDEOBgvpY=/fit-in/200x150/filters:strip_icc()/pic5885689.jpg"
     },
     {
       "idBGG": 192455,
@@ -1264,7 +1309,7 @@
       "idBGG": 230802,
       "nomeGioco": "Azul",
       "pesoMedio": 1.7739,
-      "proprietari": "Avio",
+      "proprietari": "Busa",
       "numGiocatori": "Min:2 - Max:4",
       "durata": 45,
       "thumbnail": "https://cf.geekdo-images.com/aPSHJO0d0XOpQR5X-wJonw__small/img/ccsXKrdGJw-YSClWwzVUwk5Nh9Y=/fit-in/200x150/filters:strip_icc()/pic6973671.png"
@@ -1363,7 +1408,7 @@
       "idBGG": 238799,
       "nomeGioco": "Messina 1347",
       "pesoMedio": 3.599,
-      "proprietari": "Trento",
+      "proprietari": "Magazzino",
       "numGiocatori": "Min:1 - Max:4",
       "durata": 140,
       "thumbnail": "https://cf.geekdo-images.com/Pw9TGohEb7PITFJnuq48bQ__thumb/img/bWVi55qMYTv6VrQNHFllltHLlZI=/fit-in/200x150/filters:strip_icc()/pic6397342.jpg"
@@ -1525,7 +1570,7 @@
       "idBGG": 256382,
       "nomeGioco": "Disney Villainous",
       "pesoMedio": 2.4906,
-      "proprietari": "Trento",
+      "proprietari": "Magazzino",
       "numGiocatori": "Min:2 - Max:6",
       "durata": 120,
       "thumbnail": "https://cf.geekdo-images.com/7Ej5V5Dq92QdvVFvISfl_A__thumb/img/8tU6KCVSI5dlcibYTT6mq3K9ljk=/fit-in/200x150/filters:strip_icc()/pic4216110.jpg"
@@ -1693,6 +1738,15 @@
       "thumbnail": "https://cf.geekdo-images.com/fm2SAoNjPi34jLFEJ9BXfA__thumb/img/wpTkSUdq1h96at87h5P5CJ_sC7E=/fit-in/200x150/filters:strip_icc()/pic4560166.png"
     },
     {
+      "idBGG": 272711,
+      "nomeGioco": "Mostri vs Eroi: I racconti di Cthulhu",
+      "pesoMedio": 2,
+      "proprietari": "Rovereto",
+      "numGiocatori": "Min:2 - Max:8",
+      "durata": 30,
+      "thumbnail": "https://cf.geekdo-images.com/92MH43oNnY25Xh_jh39zfw__small/img/eceScfWObH5erNt3IsjvAFF3hS0=/fit-in/200x150/filters:strip_icc()/pic4734879.png"
+    },
+    {
       "idBGG": 275467,
       "nomeGioco": "Letter Jam",
       "pesoMedio": 1.9495,
@@ -1750,7 +1804,7 @@
       "idBGG": 283863,
       "nomeGioco": "The Magnificent",
       "pesoMedio": 3.1223,
-      "proprietari": "Trento",
+      "proprietari": "Magazzino",
       "numGiocatori": "Min:1 - Max:4",
       "durata": 90,
       "thumbnail": "https://cf.geekdo-images.com/6pci74DWc7U7XuwkfpEu2Q__thumb/img/K-X_5jjTMmesaFzFUoFOZu5p_AU=/fit-in/200x150/filters:strip_icc()/pic4871117.jpg"
@@ -1804,7 +1858,7 @@
       "idBGG": 285774,
       "nomeGioco": "Marvel Champions ",
       "pesoMedio": 2.9487,
-      "proprietari": "Trento",
+      "proprietari": "Magazzino",
       "numGiocatori": "Min:1 - Max:4",
       "durata": 90,
       "thumbnail": "https://cf.geekdo-images.com/kRvUgYiaOq07kC67ZK5UoQ__thumb/img/SDNWntiB06KhAINl06CDPkoipDc=/fit-in/200x150/filters:strip_icc()/pic4900321.jpg"
@@ -1871,6 +1925,15 @@
       "numGiocatori": "Min:2 - Max:5",
       "durata": 20,
       "thumbnail": "https://cf.geekdo-images.com/cf0xxkevbwTGF3VUZymKjg__thumb/img/NUcMdmZ3_eA1YfIwL8iRgkZKaHw=/fit-in/200x150/filters:strip_icc()/pic6398727.png"
+    },
+    {
+      "idBGG": 292507,
+      "nomeGioco": "Ramen Ink",
+      "pesoMedio": 1.6667,
+      "proprietari": "Rovereto",
+      "numGiocatori": "Min:2 - Max:5",
+      "durata": 20,
+      "thumbnail": "https://cf.geekdo-images.com/dsfxNtvt4NNlrt3mB-JWhQ__small/img/P-XrP-MYzO6XO9Eu-M5Czxu2flA=/fit-in/200x150/filters:strip_icc()/pic5180073.png"
     },
     {
       "idBGG": 293665,
@@ -1966,7 +2029,7 @@
       "idBGG": 308762,
       "nomeGioco": "Mystic Vale: Essential Edition",
       "pesoMedio": 2.3529,
-      "proprietari": "Trento",
+      "proprietari": "Magazzino",
       "numGiocatori": "Min:2 - Max:4",
       "durata": 60,
       "thumbnail": "https://cf.geekdo-images.com/LWBDMlof3I2Gc86_u3_4_A__thumb/img/SkROWV3t7l4SqojZkyDZ-shH6_A=/fit-in/200x150/filters:strip_icc()/pic6771199.png"
@@ -2068,7 +2131,7 @@
       "proprietari": "Rovereto",
       "numGiocatori": "Min:2 - Max:4",
       "durata": 15,
-      "thumbnail": "https://cf.geekdo-images.com/fG4GxTHRYGasb0WYE-udJQ__thumb/img/VxiuAUI5idseMgx-yLPKgnsnlsY=/fit-in/200x150/filters:strip_icc()/pic6256515.jpg"
+      "thumbnail": "https://cf.geekdo-images.com/fG4GxTHRYGasb0WYE-udJQ__small/img/VxiuAUI5idseMgx-yLPKgnsnlsY=/fit-in/200x150/filters:strip_icc()/pic6256515.jpg"
     },
     {
       "idBGG": 322562,
@@ -2146,7 +2209,7 @@
       "idBGG": 334986,
       "nomeGioco": "E-Mission",
       "pesoMedio": 2.869,
-      "proprietari": "Avio",
+      "proprietari": "Busa",
       "numGiocatori": "Min:1 - Max:4",
       "durata": 120,
       "thumbnail": "https://cf.geekdo-images.com/YU8rm_FMnKHS2GPDFvLb6g__thumb/img/7Y2W9IVJ3_YmOQfaoZz8XVPoUM0=/fit-in/200x150/filters:strip_icc()/pic7068528.png"
@@ -2177,6 +2240,15 @@
       "numGiocatori": "Min:2 - Max:4",
       "durata": 60,
       "thumbnail": "https://cf.geekdo-images.com/mkZuD37KjMAMWLTWTR8cvA__small/img/SB0A22etApVhJtaOyjFgZlb4Kl8=/fit-in/200x150/filters:strip_icc()/pic6233874.jpg"
+    },
+    {
+      "idBGG": 341402,
+      "nomeGioco": "Zefiria",
+      "pesoMedio": 2,
+      "proprietari": "Trento",
+      "numGiocatori": "Min:1 - Max:4",
+      "durata": 30,
+      "thumbnail": "https://cf.geekdo-images.com/-INc6pRwKjMPqPxiohNQVQ__small/img/0jWXXsOGSuphgr4BgQgzMY0zPa0=/fit-in/200x150/filters:strip_icc()/pic6527694.png"
     },
     {
       "idBGG": 342900,
@@ -2353,7 +2425,7 @@
       "idBGG": 360956,
       "nomeGioco": "In Giallo: Delitti di una vita",
       "pesoMedio": 1.8333,
-      "proprietari": "Busa",
+      "proprietari": "Avio",
       "numGiocatori": "Min:1 - Max:6",
       "durata": 90,
       "thumbnail": "https://cf.geekdo-images.com/APSq50IuZEkZRldX20VrlQ__thumb/img/B6CfePHdEJIj6DNFgBaGPHYaZ9M=/fit-in/200x150/filters:strip_icc()/pic7491553.png"
@@ -2524,7 +2596,7 @@
       "idBGG": 393325,
       "nomeGioco": "Captain Flip",
       "pesoMedio": 1.1893,
-      "proprietari": "Busa",
+      "proprietari": "Avio",
       "numGiocatori": "Min:2 - Max:5",
       "durata": 20,
       "thumbnail": "https://cf.geekdo-images.com/7vSkMR7exNsU7ZfRgJKodQ__small/img/SzzzJKDO1wvj9YWfCg-mOnjC_lQ=/fit-in/200x150/filters:strip_icc()/pic7784394.png"
@@ -2623,7 +2695,7 @@
       "idBGG": 416851,
       "nomeGioco": "Castle Combo",
       "pesoMedio": 1.7354,
-      "proprietari": "Avio",
+      "proprietari": "Busa",
       "numGiocatori": "Min:2 - Max:5",
       "durata": 25,
       "thumbnail": "https://cf.geekdo-images.com/rGomBfj0FGrZM-w3h5HFWQ__small/img/DnptKBxT6l_W2B3jGXdnEDEkDM0=/fit-in/200x150/filters:strip_icc()/pic8250341.png"
@@ -2638,6 +2710,15 @@
       "thumbnail": "https://cf.geekdo-images.com/tyv6lPMlyU7YIUztlILQYQ__small/img/_CXQQbXsewUlde4R22XCRApxZ5k=/fit-in/200x150/filters:strip_icc()/pic8587890.png"
     },
     {
+      "idBGG": 419421,
+      "nomeGioco": "Quick Stop",
+      "pesoMedio": 1,
+      "proprietari": "Trento",
+      "numGiocatori": "Min:2 - Max:7",
+      "durata": 15,
+      "thumbnail": "https://cf.geekdo-images.com/4zIkoE-cALEcZK_aYBw0xg__small/img/u61nd2vpEXGmRtCwnaA9I-BTW6Q=/fit-in/200x150/filters:strip_icc()/pic8308472.png"
+    },
+    {
       "idBGG": 420087,
       "nomeGioco": "Flip 7",
       "pesoMedio": 1.0385,
@@ -2645,6 +2726,15 @@
       "numGiocatori": "Min:3 - Max:18",
       "durata": 20,
       "thumbnail": "https://cf.geekdo-images.com/YrQxEB9Ef0kQorRApzG5vQ__small/img/_dNNsSelyw9qUEOIXBRt6PE_1us=/fit-in/200x150/filters:strip_icc()/pic8780246.jpg"
+    },
+    {
+      "idBGG": 421006,
+      "nomeGioco": "Duel for Middle-Earth",
+      "pesoMedio": 2.0713,
+      "proprietari": "Trento",
+      "numGiocatori": "Min:2 - Max:2",
+      "durata": 30,
+      "thumbnail": "https://cf.geekdo-images.com/EybxJlUc9rz7F7HVFLqsdw__small/img/rojFW0-h-bteedVG4aJXG1x7V0o=/fit-in/200x150/filters:strip_icc()/pic8378939.jpg"
     },
     {
       "idBGG": 421374,
@@ -2668,7 +2758,7 @@
       "idBGG": 422732,
       "nomeGioco": "La via delle Spie",
       "pesoMedio": 1.2327,
-      "proprietari": "Busa",
+      "proprietari": "Avio",
       "numGiocatori": "Min:2 - Max:4",
       "durata": 20,
       "thumbnail": "https://cf.geekdo-images.com/qC5YwZANir1Cmg6d-1UUpQ__small/img/QFSJbQfLQNrItkY_bQEzn71qYZ4=/fit-in/200x150/filters:strip_icc()/pic8427963.png"
@@ -2681,6 +2771,15 @@
       "numGiocatori": "Min:2 - Max:6",
       "durata": 30,
       "thumbnail": "https://cf.geekdo-images.com/es3F2drfUOIVnqsTds3BDQ__small/img/bCpN5Ool_-QFKQbPlAfmIfFUdRI=/fit-in/200x150/filters:strip_icc()/pic8940639.png"
+    },
+    {
+      "idBGG": 426476,
+      "nomeGioco": "Happy Camper",
+      "pesoMedio": 2,
+      "proprietari": "Trento",
+      "numGiocatori": "Min:2 - Max:4",
+      "durata": 45,
+      "thumbnail": "https://cf.geekdo-images.com/fJ4pFyPrSl3wXAZ82C2FYg__small/img/dthA_hQFtFgetvg9PMUTtOc2p_c=/fit-in/200x150/filters:strip_icc()/pic8356877.png"
     },
     {
       "idBGG": 429293,
@@ -2710,6 +2809,15 @@
       "thumbnail": "https://cf.geekdo-images.com/40mg6G5BrTu0n99F9SFlow__small/img/unWKT8QEn0JG012qJmyS1qcM6tI=/fit-in/200x150/filters:strip_icc()/pic8559777.png"
     },
     {
+      "idBGG": 434654,
+      "nomeGioco": "Toy Battle",
+      "pesoMedio": 1.4974,
+      "proprietari": "Trento",
+      "numGiocatori": "Min:2 - Max:2",
+      "durata": 15,
+      "thumbnail": "https://cf.geekdo-images.com/GuhpuTKFteZEIhPTFvEpJw__small/img/2Gft8rEmdaQW1YJX5DyPX0uWyoM=/fit-in/200x150/filters:strip_icc()/pic8589750.jpg"
+    },
+    {
       "idBGG": 434906,
       "nomeGioco": "Tag Team",
       "pesoMedio": 2.0476,
@@ -2735,6 +2843,24 @@
       "numGiocatori": "Min:1 - Max:4",
       "durata": 45,
       "thumbnail": "https://cf.geekdo-images.com/b3_IZN2s5bSpFQh29I-Jww__small/img/pP_Oz15MRmBfwFuFl6rtKx8alZI=/fit-in/200x150/filters:strip_icc()/pic8921884.png"
+    },
+    {
+      "idBGG": 439742,
+      "nomeGioco": "Dewan",
+      "pesoMedio": 2.1014,
+      "proprietari": "Trento",
+      "numGiocatori": "Min:2 - Max:4",
+      "durata": 40,
+      "thumbnail": "https://cf.geekdo-images.com/sTyIZTri7fO2Mt33udtjrA__small/img/qDHpVB8DR1DOy_TuwvpdO3DdYNE=/fit-in/200x150/filters:strip_icc()/pic8955937.jpg"
+    },
+    {
+      "idBGG": 439807,
+      "nomeGioco": "Masterland",
+      "pesoMedio": 1.5,
+      "proprietari": "Trento",
+      "numGiocatori": "Min:2 - Max:4",
+      "durata": 40,
+      "thumbnail": "https://cf.geekdo-images.com/bpMqL3cB2XvXpSFHWHbxgQ__small/img/BOCx7-D5DpDb714jejs-fmctD7M=/fit-in/200x150/filters:strip_icc()/pic8727225.png"
     },
     {
       "idBGG": 440540,
@@ -2771,6 +2897,15 @@
       "numGiocatori": "Min:2 - Max:5",
       "durata": 30,
       "thumbnail": "https://cf.geekdo-images.com/GSKRVWnk0rkwVWOUkS_wVQ__small/img/jpjEOh96txlaLtrRyewJ46_asJI=/fit-in/200x150/filters:strip_icc()/pic9249977.png"
+    },
+    {
+      "idBGG": 462464,
+      "nomeGioco": "First Giants",
+      "pesoMedio": 2.1111,
+      "proprietari": "Trento",
+      "numGiocatori": "Min:2 - Max:5",
+      "durata": 30,
+      "thumbnail": "https://cf.geekdo-images.com/XQI7yrtamaXN2qHJBD_JKg__small/img/nGoVE6ocwVXq5MyR6gmF6YaiFe8=/fit-in/200x150/filters:strip_icc()/pic9349843.png"
     }
   ]
 }

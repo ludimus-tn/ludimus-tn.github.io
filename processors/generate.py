@@ -117,6 +117,9 @@ with open('./layouts/index.html') as base_index_tmpl, \
         if '{{ number_of_games }}' in line:
             output_index.write(line.replace(
                 '{{ number_of_games }}', str(len(board_games))))
+        elif '{{ number_of_games_rounded }}' in line:
+            output_index.write(line.replace(
+                '{{ number_of_games_rounded }}', str((len(board_games) // 5) * 5)))
         elif '{{ hash }}' in line:
             output_index.write(line.replace('{{ hash }}', style_hash))
         elif '{{ footer }}' in line:
