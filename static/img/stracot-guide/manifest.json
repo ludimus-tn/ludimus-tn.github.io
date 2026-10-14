@@ -1,0 +1,723 @@
+{
+  "images": {
+    "mascot-lola": {
+      "src": "./static/img/stracot-guide/mascot-lola.webp",
+      "width": 600,
+      "height": 570,
+      "bytes": 35752
+    },
+    "mascot-lino": {
+      "src": "./static/img/stracot-guide/mascot-lino.webp",
+      "width": 587,
+      "height": 600,
+      "bytes": 43432
+    },
+    "orders": {
+      "src": "./static/img/stracot-guide/orders.webp",
+      "width": 960,
+      "height": 344,
+      "bytes": 38558
+    },
+    "piece-square": {
+      "src": "./static/img/stracot-guide/piece-square.webp",
+      "width": 240,
+      "height": 240,
+      "bytes": 7022
+    },
+    "piece-round": {
+      "src": "./static/img/stracot-guide/piece-round.webp",
+      "width": 240,
+      "height": 240,
+      "bytes": 10720
+    },
+    "bowl": {
+      "src": "./static/img/stracot-guide/bowl.webp",
+      "width": 360,
+      "height": 232,
+      "bytes": 8918
+    },
+    "ingredient-raw": {
+      "src": "./static/img/stracot-guide/ingredient-raw.webp",
+      "width": 320,
+      "height": 295,
+      "bytes": 14428
+    },
+    "ingredient-cooked": {
+      "src": "./static/img/stracot-guide/ingredient-cooked.webp",
+      "width": 320,
+      "height": 296,
+      "bytes": 19198
+    },
+    "dish-ready": {
+      "src": "./static/img/stracot-guide/dish-ready.webp",
+      "width": 440,
+      "height": 287,
+      "bytes": 26186
+    },
+    "plates-clean": {
+      "src": "./static/img/stracot-guide/plates-clean.webp",
+      "width": 360,
+      "height": 219,
+      "bytes": 13984
+    },
+    "overview": {
+      "src": "./static/img/stracot-guide/overview-1600.webp",
+      "width": 1600,
+      "height": 1067,
+      "bytes": 186350,
+      "srcset": "./static/img/stracot-guide/overview-640.webp 640w, ./static/img/stracot-guide/overview-1000.webp 1000w, ./static/img/stracot-guide/overview-1600.webp 1600w",
+      "variants": [
+        {
+          "src": "./static/img/stracot-guide/overview-640.webp",
+          "width": 640,
+          "height": 427,
+          "bytes": 44960
+        },
+        {
+          "src": "./static/img/stracot-guide/overview-1000.webp",
+          "width": 1000,
+          "height": 667,
+          "bytes": 90408
+        },
+        {
+          "src": "./static/img/stracot-guide/overview-1600.webp",
+          "width": 1600,
+          "height": 1067,
+          "bytes": 186350
+        }
+      ]
+    },
+    "orders-photo": {
+      "src": "./static/img/stracot-guide/orders-photo-1120.webp",
+      "width": 1120,
+      "height": 747,
+      "bytes": 34250,
+      "srcset": "./static/img/stracot-guide/orders-photo-640.webp 640w, ./static/img/stracot-guide/orders-photo-1120.webp 1120w",
+      "variants": [
+        {
+          "src": "./static/img/stracot-guide/orders-photo-640.webp",
+          "width": 640,
+          "height": 427,
+          "bytes": 17436
+        },
+        {
+          "src": "./static/img/stracot-guide/orders-photo-1120.webp",
+          "width": 1120,
+          "height": 747,
+          "bytes": 34250
+        }
+      ]
+    },
+    "cutting-photo": {
+      "src": "./static/img/stracot-guide/cutting-photo-1120.webp",
+      "width": 1120,
+      "height": 747,
+      "bytes": 29262,
+      "srcset": "./static/img/stracot-guide/cutting-photo-640.webp 640w, ./static/img/stracot-guide/cutting-photo-1120.webp 1120w",
+      "variants": [
+        {
+          "src": "./static/img/stracot-guide/cutting-photo-640.webp",
+          "width": 640,
+          "height": 427,
+          "bytes": 13418
+        },
+        {
+          "src": "./static/img/stracot-guide/cutting-photo-1120.webp",
+          "width": 1120,
+          "height": 747,
+          "bytes": 29262
+        }
+      ]
+    },
+    "cooking-photo": {
+      "src": "./static/img/stracot-guide/cooking-photo-1120.webp",
+      "width": 1120,
+      "height": 747,
+      "bytes": 38212,
+      "srcset": "./static/img/stracot-guide/cooking-photo-640.webp 640w, ./static/img/stracot-guide/cooking-photo-1120.webp 1120w",
+      "variants": [
+        {
+          "src": "./static/img/stracot-guide/cooking-photo-640.webp",
+          "width": 640,
+          "height": 427,
+          "bytes": 18872
+        },
+        {
+          "src": "./static/img/stracot-guide/cooking-photo-1120.webp",
+          "width": 1120,
+          "height": 747,
+          "bytes": 38212
+        }
+      ]
+    },
+    "serving-photo": {
+      "src": "./static/img/stracot-guide/serving-photo-1120.webp",
+      "width": 1120,
+      "height": 747,
+      "bytes": 30304,
+      "srcset": "./static/img/stracot-guide/serving-photo-640.webp 640w, ./static/img/stracot-guide/serving-photo-1120.webp 1120w",
+      "variants": [
+        {
+          "src": "./static/img/stracot-guide/serving-photo-640.webp",
+          "width": 640,
+          "height": 427,
+          "bytes": 15320
+        },
+        {
+          "src": "./static/img/stracot-guide/serving-photo-1120.webp",
+          "width": 1120,
+          "height": 747,
+          "bytes": 30304
+        }
+      ]
+    },
+    "washing-photo": {
+      "src": "./static/img/stracot-guide/washing-photo-1120.webp",
+      "width": 1120,
+      "height": 747,
+      "bytes": 28938,
+      "srcset": "./static/img/stracot-guide/washing-photo-640.webp 640w, ./static/img/stracot-guide/washing-photo-1120.webp 1120w",
+      "variants": [
+        {
+          "src": "./static/img/stracot-guide/washing-photo-640.webp",
+          "width": 640,
+          "height": 427,
+          "bytes": 14244
+        },
+        {
+          "src": "./static/img/stracot-guide/washing-photo-1120.webp",
+          "width": 1120,
+          "height": 747,
+          "bytes": 28938
+        }
+      ]
+    }
+  },
+  "gallery": {
+    "aosta-20260807-00b-generale.jpg": {
+      "src": "./static/img/stracot-guide/gallery/aosta-20260807-00b-generale-960.webp",
+      "width": 960,
+      "height": 640,
+      "bytes": 63260,
+      "srcset": "./static/img/stracot-guide/gallery/aosta-20260807-00b-generale-480.webp 480w, ./static/img/stracot-guide/gallery/aosta-20260807-00b-generale-960.webp 960w",
+      "variants": [
+        {
+          "src": "./static/img/stracot-guide/gallery/aosta-20260807-00b-generale-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 22444
+        },
+        {
+          "src": "./static/img/stracot-guide/gallery/aosta-20260807-00b-generale-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 63260
+        }
+      ]
+    },
+    "aosta-20260807-00c-istruzioni.jpg": {
+      "src": "./static/img/stracot-guide/gallery/aosta-20260807-00c-istruzioni-960.webp",
+      "width": 960,
+      "height": 640,
+      "bytes": 38574,
+      "srcset": "./static/img/stracot-guide/gallery/aosta-20260807-00c-istruzioni-480.webp 480w, ./static/img/stracot-guide/gallery/aosta-20260807-00c-istruzioni-960.webp 960w",
+      "variants": [
+        {
+          "src": "./static/img/stracot-guide/gallery/aosta-20260807-00c-istruzioni-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 15658
+        },
+        {
+          "src": "./static/img/stracot-guide/gallery/aosta-20260807-00c-istruzioni-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 38574
+        }
+      ]
+    },
+    "aosta-20260807-01-ciotole.jpg": {
+      "src": "./static/img/stracot-guide/gallery/aosta-20260807-01-ciotole-960.webp",
+      "width": 960,
+      "height": 1440,
+      "bytes": 70906,
+      "srcset": "./static/img/stracot-guide/gallery/aosta-20260807-01-ciotole-480.webp 480w, ./static/img/stracot-guide/gallery/aosta-20260807-01-ciotole-960.webp 960w",
+      "variants": [
+        {
+          "src": "./static/img/stracot-guide/gallery/aosta-20260807-01-ciotole-480.webp",
+          "width": 480,
+          "height": 720,
+          "bytes": 29348
+        },
+        {
+          "src": "./static/img/stracot-guide/gallery/aosta-20260807-01-ciotole-960.webp",
+          "width": 960,
+          "height": 1440,
+          "bytes": 70906
+        }
+      ]
+    },
+    "aosta-20260807-02-fuochi.jpg": {
+      "src": "./static/img/stracot-guide/gallery/aosta-20260807-02-fuochi-960.webp",
+      "width": 960,
+      "height": 1440,
+      "bytes": 116978,
+      "srcset": "./static/img/stracot-guide/gallery/aosta-20260807-02-fuochi-480.webp 480w, ./static/img/stracot-guide/gallery/aosta-20260807-02-fuochi-960.webp 960w",
+      "variants": [
+        {
+          "src": "./static/img/stracot-guide/gallery/aosta-20260807-02-fuochi-480.webp",
+          "width": 480,
+          "height": 720,
+          "bytes": 41130
+        },
+        {
+          "src": "./static/img/stracot-guide/gallery/aosta-20260807-02-fuochi-960.webp",
+          "width": 960,
+          "height": 1440,
+          "bytes": 116978
+        }
+      ]
+    },
+    "aosta-20260807-02b-fuochi.jpg": {
+      "src": "./static/img/stracot-guide/gallery/aosta-20260807-02b-fuochi-960.webp",
+      "width": 960,
+      "height": 1440,
+      "bytes": 61824,
+      "srcset": "./static/img/stracot-guide/gallery/aosta-20260807-02b-fuochi-480.webp 480w, ./static/img/stracot-guide/gallery/aosta-20260807-02b-fuochi-960.webp 960w",
+      "variants": [
+        {
+          "src": "./static/img/stracot-guide/gallery/aosta-20260807-02b-fuochi-480.webp",
+          "width": 480,
+          "height": 720,
+          "bytes": 27290
+        },
+        {
+          "src": "./static/img/stracot-guide/gallery/aosta-20260807-02b-fuochi-960.webp",
+          "width": 960,
+          "height": 1440,
+          "bytes": 61824
+        }
+      ]
+    },
+    "aosta-20260807-10a-pezzi.jpg": {
+      "src": "./static/img/stracot-guide/gallery/aosta-20260807-10a-pezzi-960.webp",
+      "width": 960,
+      "height": 640,
+      "bytes": 30062,
+      "srcset": "./static/img/stracot-guide/gallery/aosta-20260807-10a-pezzi-480.webp 480w, ./static/img/stracot-guide/gallery/aosta-20260807-10a-pezzi-960.webp 960w",
+      "variants": [
+        {
+          "src": "./static/img/stracot-guide/gallery/aosta-20260807-10a-pezzi-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 11926
+        },
+        {
+          "src": "./static/img/stracot-guide/gallery/aosta-20260807-10a-pezzi-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 30062
+        }
+      ]
+    },
+    "aosta-20260807-10b-pezzi.jpg": {
+      "src": "./static/img/stracot-guide/gallery/aosta-20260807-10b-pezzi-960.webp",
+      "width": 960,
+      "height": 640,
+      "bytes": 22352,
+      "srcset": "./static/img/stracot-guide/gallery/aosta-20260807-10b-pezzi-480.webp 480w, ./static/img/stracot-guide/gallery/aosta-20260807-10b-pezzi-960.webp 960w",
+      "variants": [
+        {
+          "src": "./static/img/stracot-guide/gallery/aosta-20260807-10b-pezzi-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 9408
+        },
+        {
+          "src": "./static/img/stracot-guide/gallery/aosta-20260807-10b-pezzi-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 22352
+        }
+      ]
+    },
+    "aosta-20260807-10c-pezzi.jpg": {
+      "src": "./static/img/stracot-guide/gallery/aosta-20260807-10c-pezzi-960.webp",
+      "width": 960,
+      "height": 640,
+      "bytes": 23190,
+      "srcset": "./static/img/stracot-guide/gallery/aosta-20260807-10c-pezzi-480.webp 480w, ./static/img/stracot-guide/gallery/aosta-20260807-10c-pezzi-960.webp 960w",
+      "variants": [
+        {
+          "src": "./static/img/stracot-guide/gallery/aosta-20260807-10c-pezzi-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 9978
+        },
+        {
+          "src": "./static/img/stracot-guide/gallery/aosta-20260807-10c-pezzi-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 23190
+        }
+      ]
+    },
+    "aosta-20260807-12-ciotola-in-mano.jpg": {
+      "src": "./static/img/stracot-guide/gallery/aosta-20260807-12-ciotola-in-mano-960.webp",
+      "width": 960,
+      "height": 640,
+      "bytes": 24782,
+      "srcset": "./static/img/stracot-guide/gallery/aosta-20260807-12-ciotola-in-mano-480.webp 480w, ./static/img/stracot-guide/gallery/aosta-20260807-12-ciotola-in-mano-960.webp 960w",
+      "variants": [
+        {
+          "src": "./static/img/stracot-guide/gallery/aosta-20260807-12-ciotola-in-mano-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 9918
+        },
+        {
+          "src": "./static/img/stracot-guide/gallery/aosta-20260807-12-ciotola-in-mano-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 24782
+        }
+      ]
+    },
+    "aosta-20260807-13-cottura.jpg": {
+      "src": "./static/img/stracot-guide/gallery/aosta-20260807-13-cottura-960.webp",
+      "width": 960,
+      "height": 640,
+      "bytes": 18370,
+      "srcset": "./static/img/stracot-guide/gallery/aosta-20260807-13-cottura-480.webp 480w, ./static/img/stracot-guide/gallery/aosta-20260807-13-cottura-960.webp 960w",
+      "variants": [
+        {
+          "src": "./static/img/stracot-guide/gallery/aosta-20260807-13-cottura-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 7946
+        },
+        {
+          "src": "./static/img/stracot-guide/gallery/aosta-20260807-13-cottura-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 18370
+        }
+      ]
+    },
+    "aosta-20260807-13b-cottura.jpg": {
+      "src": "./static/img/stracot-guide/gallery/aosta-20260807-13b-cottura-960.webp",
+      "width": 960,
+      "height": 640,
+      "bytes": 33008,
+      "srcset": "./static/img/stracot-guide/gallery/aosta-20260807-13b-cottura-480.webp 480w, ./static/img/stracot-guide/gallery/aosta-20260807-13b-cottura-960.webp 960w",
+      "variants": [
+        {
+          "src": "./static/img/stracot-guide/gallery/aosta-20260807-13b-cottura-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 14048
+        },
+        {
+          "src": "./static/img/stracot-guide/gallery/aosta-20260807-13b-cottura-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 33008
+        }
+      ]
+    },
+    "aosta-20260807-14b-lavaggio.jpg": {
+      "src": "./static/img/stracot-guide/gallery/aosta-20260807-14b-lavaggio-960.webp",
+      "width": 960,
+      "height": 640,
+      "bytes": 46154,
+      "srcset": "./static/img/stracot-guide/gallery/aosta-20260807-14b-lavaggio-480.webp 480w, ./static/img/stracot-guide/gallery/aosta-20260807-14b-lavaggio-960.webp 960w",
+      "variants": [
+        {
+          "src": "./static/img/stracot-guide/gallery/aosta-20260807-14b-lavaggio-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 19454
+        },
+        {
+          "src": "./static/img/stracot-guide/gallery/aosta-20260807-14b-lavaggio-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 46154
+        }
+      ]
+    },
+    "intro1.jpg": {
+      "src": "./static/img/stracot-guide/gallery/intro1-960.webp",
+      "width": 960,
+      "height": 1440,
+      "bytes": 34832,
+      "srcset": "./static/img/stracot-guide/gallery/intro1-480.webp 480w, ./static/img/stracot-guide/gallery/intro1-960.webp 960w",
+      "variants": [
+        {
+          "src": "./static/img/stracot-guide/gallery/intro1-480.webp",
+          "width": 480,
+          "height": 720,
+          "bytes": 14604
+        },
+        {
+          "src": "./static/img/stracot-guide/gallery/intro1-960.webp",
+          "width": 960,
+          "height": 1440,
+          "bytes": 34832
+        }
+      ]
+    },
+    "intro2.jpg": {
+      "src": "./static/img/stracot-guide/gallery/intro2-960.webp",
+      "width": 960,
+      "height": 1440,
+      "bytes": 38050,
+      "srcset": "./static/img/stracot-guide/gallery/intro2-480.webp 480w, ./static/img/stracot-guide/gallery/intro2-960.webp 960w",
+      "variants": [
+        {
+          "src": "./static/img/stracot-guide/gallery/intro2-480.webp",
+          "width": 480,
+          "height": 720,
+          "bytes": 16792
+        },
+        {
+          "src": "./static/img/stracot-guide/gallery/intro2-960.webp",
+          "width": 960,
+          "height": 1440,
+          "bytes": 38050
+        }
+      ]
+    },
+    "mfranzil_17705_DSC04236_2048.jpg": {
+      "src": "./static/img/stracot-guide/gallery/mfranzil_17705_DSC04236_2048-960.webp",
+      "width": 960,
+      "height": 640,
+      "bytes": 38734,
+      "srcset": "./static/img/stracot-guide/gallery/mfranzil_17705_DSC04236_2048-480.webp 480w, ./static/img/stracot-guide/gallery/mfranzil_17705_DSC04236_2048-960.webp 960w",
+      "variants": [
+        {
+          "src": "./static/img/stracot-guide/gallery/mfranzil_17705_DSC04236_2048-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 15292
+        },
+        {
+          "src": "./static/img/stracot-guide/gallery/mfranzil_17705_DSC04236_2048-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 38734
+        }
+      ]
+    },
+    "mfranzil_17708_DSC04240_2048.jpg": {
+      "src": "./static/img/stracot-guide/gallery/mfranzil_17708_DSC04240_2048-960.webp",
+      "width": 960,
+      "height": 640,
+      "bytes": 22496,
+      "srcset": "./static/img/stracot-guide/gallery/mfranzil_17708_DSC04240_2048-480.webp 480w, ./static/img/stracot-guide/gallery/mfranzil_17708_DSC04240_2048-960.webp 960w",
+      "variants": [
+        {
+          "src": "./static/img/stracot-guide/gallery/mfranzil_17708_DSC04240_2048-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 9538
+        },
+        {
+          "src": "./static/img/stracot-guide/gallery/mfranzil_17708_DSC04240_2048-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 22496
+        }
+      ]
+    },
+    "mfranzil_17710_DSC04242_2048.jpg": {
+      "src": "./static/img/stracot-guide/gallery/mfranzil_17710_DSC04242_2048-960.webp",
+      "width": 960,
+      "height": 1440,
+      "bytes": 40916,
+      "srcset": "./static/img/stracot-guide/gallery/mfranzil_17710_DSC04242_2048-480.webp 480w, ./static/img/stracot-guide/gallery/mfranzil_17710_DSC04242_2048-960.webp 960w",
+      "variants": [
+        {
+          "src": "./static/img/stracot-guide/gallery/mfranzil_17710_DSC04242_2048-480.webp",
+          "width": 480,
+          "height": 720,
+          "bytes": 17790
+        },
+        {
+          "src": "./static/img/stracot-guide/gallery/mfranzil_17710_DSC04242_2048-960.webp",
+          "width": 960,
+          "height": 1440,
+          "bytes": 40916
+        }
+      ]
+    },
+    "mfranzil_17711_DSC04243_2048.jpg": {
+      "src": "./static/img/stracot-guide/gallery/mfranzil_17711_DSC04243_2048-960.webp",
+      "width": 960,
+      "height": 1440,
+      "bytes": 49868,
+      "srcset": "./static/img/stracot-guide/gallery/mfranzil_17711_DSC04243_2048-480.webp 480w, ./static/img/stracot-guide/gallery/mfranzil_17711_DSC04243_2048-960.webp 960w",
+      "variants": [
+        {
+          "src": "./static/img/stracot-guide/gallery/mfranzil_17711_DSC04243_2048-480.webp",
+          "width": 480,
+          "height": 720,
+          "bytes": 21516
+        },
+        {
+          "src": "./static/img/stracot-guide/gallery/mfranzil_17711_DSC04243_2048-960.webp",
+          "width": 960,
+          "height": 1440,
+          "bytes": 49868
+        }
+      ]
+    },
+    "mfranzil_17716_DSC04251_2048.jpg": {
+      "src": "./static/img/stracot-guide/gallery/mfranzil_17716_DSC04251_2048-960.webp",
+      "width": 960,
+      "height": 1440,
+      "bytes": 52996,
+      "srcset": "./static/img/stracot-guide/gallery/mfranzil_17716_DSC04251_2048-480.webp 480w, ./static/img/stracot-guide/gallery/mfranzil_17716_DSC04251_2048-960.webp 960w",
+      "variants": [
+        {
+          "src": "./static/img/stracot-guide/gallery/mfranzil_17716_DSC04251_2048-480.webp",
+          "width": 480,
+          "height": 720,
+          "bytes": 22228
+        },
+        {
+          "src": "./static/img/stracot-guide/gallery/mfranzil_17716_DSC04251_2048-960.webp",
+          "width": 960,
+          "height": 1440,
+          "bytes": 52996
+        }
+      ]
+    },
+    "mfranzil_17721_DSC04260_2048.jpg": {
+      "src": "./static/img/stracot-guide/gallery/mfranzil_17721_DSC04260_2048-960.webp",
+      "width": 960,
+      "height": 1440,
+      "bytes": 38348,
+      "srcset": "./static/img/stracot-guide/gallery/mfranzil_17721_DSC04260_2048-480.webp 480w, ./static/img/stracot-guide/gallery/mfranzil_17721_DSC04260_2048-960.webp 960w",
+      "variants": [
+        {
+          "src": "./static/img/stracot-guide/gallery/mfranzil_17721_DSC04260_2048-480.webp",
+          "width": 480,
+          "height": 720,
+          "bytes": 14552
+        },
+        {
+          "src": "./static/img/stracot-guide/gallery/mfranzil_17721_DSC04260_2048-960.webp",
+          "width": 960,
+          "height": 1440,
+          "bytes": 38348
+        }
+      ]
+    },
+    "mfranzil_17731_DSC04277_2048.jpg": {
+      "src": "./static/img/stracot-guide/gallery/mfranzil_17731_DSC04277_2048-960.webp",
+      "width": 960,
+      "height": 640,
+      "bytes": 18836,
+      "srcset": "./static/img/stracot-guide/gallery/mfranzil_17731_DSC04277_2048-480.webp 480w, ./static/img/stracot-guide/gallery/mfranzil_17731_DSC04277_2048-960.webp 960w",
+      "variants": [
+        {
+          "src": "./static/img/stracot-guide/gallery/mfranzil_17731_DSC04277_2048-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 8076
+        },
+        {
+          "src": "./static/img/stracot-guide/gallery/mfranzil_17731_DSC04277_2048-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 18836
+        }
+      ]
+    },
+    "mfranzil_17940_DSC5460_2048.jpg": {
+      "src": "./static/img/stracot-guide/gallery/mfranzil_17940_DSC5460_2048-960.webp",
+      "width": 960,
+      "height": 640,
+      "bytes": 44066,
+      "srcset": "./static/img/stracot-guide/gallery/mfranzil_17940_DSC5460_2048-480.webp 480w, ./static/img/stracot-guide/gallery/mfranzil_17940_DSC5460_2048-960.webp 960w",
+      "variants": [
+        {
+          "src": "./static/img/stracot-guide/gallery/mfranzil_17940_DSC5460_2048-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 18602
+        },
+        {
+          "src": "./static/img/stracot-guide/gallery/mfranzil_17940_DSC5460_2048-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 44066
+        }
+      ]
+    },
+    "mfranzil_17943_DSC5463_2048.jpg": {
+      "src": "./static/img/stracot-guide/gallery/mfranzil_17943_DSC5463_2048-960.webp",
+      "width": 960,
+      "height": 1440,
+      "bytes": 31606,
+      "srcset": "./static/img/stracot-guide/gallery/mfranzil_17943_DSC5463_2048-480.webp 480w, ./static/img/stracot-guide/gallery/mfranzil_17943_DSC5463_2048-960.webp 960w",
+      "variants": [
+        {
+          "src": "./static/img/stracot-guide/gallery/mfranzil_17943_DSC5463_2048-480.webp",
+          "width": 480,
+          "height": 720,
+          "bytes": 13404
+        },
+        {
+          "src": "./static/img/stracot-guide/gallery/mfranzil_17943_DSC5463_2048-960.webp",
+          "width": 960,
+          "height": 1440,
+          "bytes": 31606
+        }
+      ]
+    },
+    "mfranzil_18009_DSC04813_2048.jpg": {
+      "src": "./static/img/stracot-guide/gallery/mfranzil_18009_DSC04813_2048-960.webp",
+      "width": 960,
+      "height": 640,
+      "bytes": 22580,
+      "srcset": "./static/img/stracot-guide/gallery/mfranzil_18009_DSC04813_2048-480.webp 480w, ./static/img/stracot-guide/gallery/mfranzil_18009_DSC04813_2048-960.webp 960w",
+      "variants": [
+        {
+          "src": "./static/img/stracot-guide/gallery/mfranzil_18009_DSC04813_2048-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 10020
+        },
+        {
+          "src": "./static/img/stracot-guide/gallery/mfranzil_18009_DSC04813_2048-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 22580
+        }
+      ]
+    },
+    "mfranzil_18012_DSC04817_2048.jpg": {
+      "src": "./static/img/stracot-guide/gallery/mfranzil_18012_DSC04817_2048-960.webp",
+      "width": 960,
+      "height": 640,
+      "bytes": 18816,
+      "srcset": "./static/img/stracot-guide/gallery/mfranzil_18012_DSC04817_2048-480.webp 480w, ./static/img/stracot-guide/gallery/mfranzil_18012_DSC04817_2048-960.webp 960w",
+      "variants": [
+        {
+          "src": "./static/img/stracot-guide/gallery/mfranzil_18012_DSC04817_2048-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 8254
+        },
+        {
+          "src": "./static/img/stracot-guide/gallery/mfranzil_18012_DSC04817_2048-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 18816
+        }
+      ]
+    }
+  }
+}
