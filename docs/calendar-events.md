@@ -86,19 +86,26 @@ Google can take a few minutes to show edits in the feed. Retry later or use a fr
 
 ```bash
 mkdir -p /tmp/ludimus-events
+python processors/calendar_events.py
+```
+
+Alternatively, to avoid printing all the junk on the terminal, provide `--brief` and an output folder:
+
+```bash
 python processors/calendar_events.py --output-dir /tmp/ludimus-events --brief
 ```
 
-This selects the following Monday–Sunday. Check `calendar-preview.md` and `event-pages/index.html` in the output folder.
-Images from `Locandina` are fetched and validated during preview, then saved by `--apply` as `static/img/events/YYYY-MM-DD-SLUG.ext`. The extension follows the actual image format, and the generated event page uses the local image's public URL. Keep the original image link in Calendar; events without `Locandina` keep the template image.
+This selects the following Monday–Sunday. Check the terminal, or `calendar-preview.md` and `event-pages/index.html` in the output folder.
+Images from `Locandina` are fetched and validated during preview, then saved by `--apply` as `static/img/events/YYYY-MM-DD-SLUG.ext`. The extension follows the actual image format, and the generated event page uses the local image's public URL.
+
 Apply by repeating the same command with `--apply`:
 
 ```bash
-python processors/calendar_events.py --output-dir /tmp/ludimus-events --brief --apply
+python processors/calendar_events.py --apply
 ```
 
 Commit the changed files and push. Consider that the usual `python3 processors/generate.py` is automatically run, so you do not need to run it twice.
-Double-check the Telegram message `telegram-YYYY-MM-DD.md` (and its HTML generated version), then send it too.
+Double-check the Telegram message (if output folder: `telegram-YYYY-MM-DD.md`, and if necessary its HTML generated version), then send it too.
 
 ### Other options
 
@@ -108,14 +115,13 @@ python processors/calendar_events.py --from 2026-10-19 --to 2026-12-31 --output-
 python processors/calendar_events.py --ics ~/Downloads/calendar.ics --week 2026-10-19 --output-dir /tmp/ludimus-events --brief
 ```
 
-`--week` accepts any date in that week. A range includes both dates and gives one message per week. Keep the same options when applying.
+`--week` accepts any date in that week. A range includes both dates and gives one message per week. 
 
 ### Correct or cancel an event
 
 Edit Calendar, then run the affected week again. For a series-wide change, run the full affected date range.
 Edit/delete just one occurrence for an exception. Keep generated event files untouched.
 If the script stops, read the report, fix the issue and retry.
-The daily website build uses committed files; it does not fetch Calendar. You need to run the script again BEFORE rebuilding the website.
 
 ### Event URLs
 
