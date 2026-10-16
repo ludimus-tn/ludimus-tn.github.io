@@ -5,4 +5,4 @@ requests==2.33.0
 icalendar==6.3.2
 recurring-ical-events==3.8.2
 PyYAML==6.0.3
-Pillow==11.3.0
+Pillow==12.3.0
