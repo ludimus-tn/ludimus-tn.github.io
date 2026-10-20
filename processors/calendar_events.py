@@ -540,10 +540,7 @@ def render_source(event, profile, body, root):
               "description": "\n".join(introduction), "details": "\n".join(information)}
     if not introduction:
         template = template.replace("\n{{ description }}", "")
-    # Separate descriptive prose from fields without spacing every field as a paragraph.
-    if information and (introduction or profile["kind"] in ("stracot", "escape-room")):
-        template = template.replace("\n\n{{ details }}", "<br />\n{{ details }}")
-    elif not information:
+    if not information:
         template = template.replace("\n\n{{ details }}", "")
     content = re.sub(r"\{\{ (\w+) \}\}", lambda match: escape_text(values[match.group(1)]), template).strip()
     metadata = {"event_title": title, "event_description": date + " " + invitation,
