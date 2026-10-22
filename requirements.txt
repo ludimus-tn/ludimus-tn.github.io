@@ -1,8 +1,8 @@
-markdown2==2.4.0
-progressbar2==3.39.2
-diskcache==3.1.1
-requests==2.33.0
-icalendar==6.3.2
-recurring-ical-events==3.8.2
-PyYAML==6.0.3
-Pillow==11.3.0
+# Python 3.12
+certifi>=2026.10.19
+markdown2>=2.5.5,<3
+requests>=2.34.2,<3
+icalendar>=6.3.2,<8
+recurring-ical-events>=3.8.2,<4
+PyYAML>=6.0.3,<7
+Pillow>=13.0.0,<14
