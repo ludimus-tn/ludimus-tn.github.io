@@ -21,8 +21,9 @@ event_uid: 70s3aob2c8q68bb3ccqjib9kc4r62b9o6cp6cb9k70r34phm71i38cr26k@google.com
 
 Vi aspettiamo alla Fondazione Demarchi per una serata di giochi da tavolo a tema storico con gli Alchimisti Anonimi!
 
-**Come partecipare:** Prenotazioni obbligatorie, link ancora non disponibile.
+**Come partecipare:** Prenotazioni obbligatoria sulle storie di Instagram di Alchimisti Anonimi.
 ❗ **Note:** Evento in collaborazione con Amalgama APS.
+🎟️ [**Prenotazioni**](https://www.instagram.com/alchimistianonimii/)
 
 ---
 
