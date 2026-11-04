@@ -1,6 +1,6 @@
 ---
 event_title: Altopiano in gioco
-event_description: Venerdì 13 Novembre 2026 vi aspettiamo dalle 19:00 alle 00:00 presso Centro Giovani Rombo!
+event_description: Venerdì 13 Novembre 2026 vi aspettiamo dalle 19:00 alle 00:00 al Centro Giovani Rombo con Altopiano in Gioco, organizzato insieme a PGZ Vigolana!
 event_og: https://ludimus.it/static/img/events/default.jpg
 event_type: ludoteca
 event_town: Vigolo Vattaro
@@ -19,7 +19,11 @@ event_uid: 0fhbjlqsc0bjuepk1f1c3q64rm@google.com
 🕰 dalle 19:00 alle 00:00
 📍 [Centro Giovani Rombo](https://www.google.com/maps/search/?api=1&query=Centro+Giovani+Rombo%2C+Via+F.+Filzi%2C+2%2C+38049+Vigolo+Vattaro+TN%2C+Italy)
 
+Vi aspettiamo al Centro Giovani Rombo con Altopiano in Gioco, organizzato insieme a PGZ Vigolana!
 Una serata di giochi da tavolo sull'Altopiano della Vigolana.
+
+**Come partecipare:** Accesso libero, non serve prenotare
+❗ **Note:** Evento in collaborazione con PGZ Vigolana.
 
 ---
 
