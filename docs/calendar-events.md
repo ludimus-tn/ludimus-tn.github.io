@@ -55,14 +55,14 @@ Some notes:
 - On Telegram messages, we print the invitation, event link and booking link. Other fields are omitted.
 - `Locandina` must link directly to a valid JPEG, PNG, GIF or WebP image. A web page, non-image response or corrupt image blocks the import; it is not saved to the repo.
 
-## Generazione eventi sito
+## Site event generation
 
 ### Checklist
 
 1. Complete the [setup](#setup), then run the [preview command](#generate-next-week) for the affected week or [date range](#other-options).
 2. Check `calendar-preview.md` and `event-pages/index.html`, including the [slug and short link](#event-urls). Set custom names before the first apply if needed.
 3. Check the downloaded `Locandina` in the preview and its filename under **Event images** in `calendar-preview.md`. No manual image upload is needed.
-4. Repeat the same command with `--apply` ([details](#generate-next-week)). NOTE: `python3 processors/generate.py` is automatically run, no need to run it twice.
+4. Repeat the same command with `--apply` ([details](#generate-next-week)), then run `python3 processors/generate.py` to rebuild the website.
 5. Commit the changed files, including downloaded images, and push.
 6. Copy the rendered Telegram draft and post it manually after the website is published ([details](#generate-next-week)).
 
@@ -104,7 +104,7 @@ Apply by repeating the same command with `--apply`:
 python processors/calendar_events.py --apply
 ```
 
-Commit the changed files and push. Consider that the usual `python3 processors/generate.py` is automatically run, so you do not need to run it twice.
+Run `python3 processors/generate.py`, then commit the changed files and push. `--apply` updates event sources and state but does not rebuild the website.
 Double-check the Telegram message (if output folder: `telegram-YYYY-MM-DD.md`, and if necessary its HTML generated version), then send it too.
 
 ### Other options
@@ -113,9 +113,10 @@ Double-check the Telegram message (if output folder: `telegram-YYYY-MM-DD.md`, a
 python processors/calendar_events.py --week 2026-10-19 --output-dir /tmp/ludimus-events --brief
 python processors/calendar_events.py --from 2026-10-19 --to 2026-12-31 --output-dir /tmp/ludimus-events --brief
 python processors/calendar_events.py --ics ~/Downloads/calendar.ics --week 2026-10-19 --output-dir /tmp/ludimus-events --brief
+python processors/calendar_events.py --future-months 6 --output-dir /tmp/ludimus-events --brief
 ```
 
-`--week` accepts any date in that week. A range includes both dates and gives one message per week. 
+`--week` accepts any date in that week. A range includes both dates and gives one message per week. `--future-months` starts today and excludes the same date six months later (clamping to the last day of the month when needed). Keep the same options when applying.
 
 ### Correct or cancel an event
 
@@ -169,4 +170,22 @@ Older pages without these details remain visible and use **Non specificato** for
 `processors/event_templates/` contains templates: `ludoteca.md`, `stracot.md`, `escape-room.md`, `altro.md`.
 They supply page layout, shared wording and a default image. Calendar supplies event details, including membership rules, fees and booking.
 
-Imports start on 19 October 2026. Earlier events are handled manually.
+### Daily automatic refresh
+
+The GitHub Actions workflow `.github/workflows/daily-generate.yml` refreshes
+Calendar every day at 23:00 UTC, covering today through the next six calendar
+months (in `Europe/Rome`), then runs `processors/generate.py` and commits and
+pushes any changes to `master`. It updates or removes previously imported
+events within that window as needed. Events further ahead are picked up when
+they enter the window.
+
+If the Calendar refresh fails, the workflow fails before rebuilding or
+publishing. Check the Actions run log for the blockers; if a preview report was
+produced, it is attached to the failed run as `calendar-failure-report` for
+seven days. GitHub sends workflow notifications according to the scheduled
+workflow actor's settings: enable Actions notifications in [GitHub notification
+settings](https://github.com/settings/notifications), optionally for failed
+workflows only. Scheduled notifications go to the workflow creator, the last
+person to change its cron, or the person who last re-enabled it; check the
+actor on the scheduled run and re-enable the workflow yourself if necessary. 
+

@@ -2,6 +2,7 @@
 
 import argparse
 import base64
+import calendar as calendar_module
 import datetime as dt
 import difflib
 import hashlib
@@ -9,7 +10,6 @@ import html
 import io
 import json
 import re
-import subprocess
 import sys
 import unicodedata
 from dataclasses import dataclass
@@ -699,10 +699,6 @@ def plan(calendar, start, end, root=ROOT, adopt=False):
                     raise CalendarError(f"Existing unmanaged source: {path}; review with --adopt")
             if previous:
                 old_text = source_text(root / previous["path"])
-                if digest(old_text) != previous["hash"]:
-                    raise CalendarError(f"Managed source changed manually: {previous['path']}; put edits in Calendar or restore the source")
-                if previous["path"] != path:
-                    remove[previous["path"]] = f"moved to {path}"
             if profile.get("template"):
                 templates[profile["template"]] = digest(source_text(root / profile["template"]))
             if profile.get("image_source"):
@@ -716,6 +712,11 @@ def plan(calendar, start, end, root=ROOT, adopt=False):
                                       "before": image_target.read_bytes() if image_target.exists() else None}
                 profile["image"] = "https://ludimus.it/" + image_path
             text = render_source(event, profile, body, root)
+            if previous:
+                if digest(old_text) != previous["hash"] and not (previous["path"] == path and old_text == text):
+                    raise CalendarError(f"Managed source changed manually: {previous['path']}; put edits in Calendar or restore the source")
+                if previous["path"] != path:
+                    remove[previous["path"]] = f"moved to {path}"
             before = source_text(target)
             action = "create" if not target.exists() else "update" if before != text else "unchanged"
             if target.exists() and not previous and not managed_target:
@@ -743,7 +744,8 @@ def plan(calendar, start, end, root=ROOT, adopt=False):
         if path not in writes:
             writes[path] = {"before": source_text(root / path), "after": None, "action": "remove: " + reason}
     for record in old.values():
-        if record["path"] in remove and digest(source_text(root / record["path"])) != record["hash"]:
+        path = root / record["path"]
+        if record["path"] in remove and path.exists() and digest(source_text(path)) != record["hash"]:
             errors.append(f"Managed source changed manually: {record['path']}")
 
     weeks = {}
@@ -867,7 +869,7 @@ def output_artifacts(proposal, directory):
     (preview / "index.html").write_text("\n".join(index), encoding="utf-8")
 
 
-def apply_plan(proposal, root=ROOT, build=True, recheck=None):
+def apply_plan(proposal, root=ROOT, recheck=None):
     if proposal["errors"]:
         raise CalendarError("Resolve every blocker before applying")
     if recheck is not None and recheck()["_fingerprint"] != proposal["_fingerprint"]:
@@ -895,8 +897,6 @@ def apply_plan(proposal, root=ROOT, build=True, recheck=None):
         elif change["before"] != change["after"]:
             target.write_text(change["after"], encoding="utf-8")
     (root / STATE).write_text(json.dumps(proposal["state"], ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    if build:
-        subprocess.run([sys.executable, str(root / "processors/generate.py")], cwd=root, check=True)
 
 
 def date_arg(value):
@@ -906,26 +906,46 @@ def date_arg(value):
         raise argparse.ArgumentTypeError("Use YYYY-MM-DD") from None
 
 
+def future_end(day, months):
+    """Return the exclusive end of a rolling calendar-month window."""
+    year, month = divmod(day.year * 12 + day.month - 1 + months, 12)
+    return dt.date(year, month + 1, min(day.day, calendar_module.monthrange(year, month + 1)[1]))
+
+
+def positive_int(value):
+    try:
+        number = int(value)
+        if number > 0:
+            return number
+    except ValueError:
+        pass
+    raise argparse.ArgumentTypeError("Use a positive number of months")
+
+
 def main(argv=None):
     parser = argparse.ArgumentParser(description=__doc__)
     sources = parser.add_mutually_exclusive_group()
     sources.add_argument("--ics", type=Path, help="Offline Calendar export")
     sources.add_argument("--url", default=DEFAULT_FEED, help="Public ICS feed; default is the Ludimus Calendar")
     parser.add_argument("--week", type=date_arg, help="Any date in the selected Monday–Sunday week")
+    parser.add_argument("--future-months", type=positive_int, help="Refresh from today up to this many calendar months ahead")
     parser.add_argument("--from", dest="first", type=date_arg, help="First included date")
     parser.add_argument("--to", dest="last", type=date_arg, help="Last included date")
     parser.add_argument("--adopt", action="store_true", help="Preview/adopt existing unmanaged event sources")
-    parser.add_argument("--apply", action="store_true", help="Apply a reviewed plan, then rebuild the website")
+    parser.add_argument("--apply", action="store_true", help="Apply the plan")
     parser.add_argument("--output-dir", type=Path, help="Existing external directory for report and Markdown/HTML drafts")
     parser.add_argument("--brief", action="store_true", help="Print a summary; use --output-dir for the full report")
     args = parser.parse_args(argv)
-    if args.week and (args.first or args.last):
-        parser.error("Use --week or --from/--to")
+    if sum(bool(value) for value in (args.week, args.future_months, args.first or args.last)) > 1:
+        parser.error("Use only one of --week, --future-months or --from/--to")
     if bool(args.first) != bool(args.last):
         parser.error("Use --from and --to together")
     if args.brief and not args.output_dir:
         parser.error("--brief requires --output-dir so the full preview remains available")
-    if args.first:
+    if args.future_months:
+        first = dt.datetime.now(ROME).date()
+        last = future_end(first, args.future_months) - dt.timedelta(days=1)
+    elif args.first:
         first, last = args.first, args.last
     else:
         day = args.week or (dt.datetime.now(ROME).date() + dt.timedelta(days=7))
@@ -952,9 +972,9 @@ def main(argv=None):
             output_artifacts(proposal, args.output_dir)
         if args.apply:
             apply_plan(proposal, recheck=lambda: plan(read_calendar(), start, end, adopt=args.adopt))
-            print("Applied and rebuilt. Review git diff, then publish the site and paste the draft.")
+            print("Applied Calendar changes. Run python processors/generate.py to rebuild the website.")
         return 2 if proposal["errors"] else 0
-    except (CalendarError, OSError, ValueError, subprocess.CalledProcessError) as error:
+    except (CalendarError, OSError, ValueError) as error:
         print(f"Error: {error}", file=sys.stderr)
         return 2
 

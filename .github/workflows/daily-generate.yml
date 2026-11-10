@@ -2,8 +2,15 @@ name: Daily Site Generator
 
 on:
   schedule:
-    - cron: '0 23 * * *'   # Everyday at 23:00 UTC (~01:00 in Italy)
+    - cron: '0 23 * * *'   # 23:00 UTC daily (midnight/01:00 in Italy)
   workflow_dispatch:       # Allows manual trigger from GitHub UI
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-site-generator
+  cancel-in-progress: false
 
 jobs:
   build-and-deploy:
@@ -22,6 +29,20 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
+
+      - name: Run calendar refresh
+        run: |
+          mkdir -p "$RUNNER_TEMP/calendar-preview"
+          python processors/calendar_events.py --future-months 6 --output-dir "$RUNNER_TEMP/calendar-preview" --brief --apply
+
+      - name: Save calendar report on failure
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: calendar-failure-report
+          path: ${{ runner.temp }}/calendar-preview/calendar-preview.md
+          if-no-files-found: ignore
+          retention-days: 7
 
       - name: Run generator script
         run: python processors/generate.py
