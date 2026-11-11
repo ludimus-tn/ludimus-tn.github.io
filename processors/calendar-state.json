@@ -7,7 +7,7 @@
       "date": "2026-11-13",
       "slug": "evento-altopianoingioco",
       "path": "layouts/events/2026-11-13-evento-altopianoingioco.md",
-      "hash": "0c6fb8f02474c47e22cc2aea9af5dbbc024091229d6697e3da7f4021c73eb201"
+      "hash": "f2312e178a0efbfd2b7f94486cfeae2639f0a70bbf09ffa411d16bc4a37fec7e"
     },
     "0oucc7hf5qu5pfjatpg86ph8r4@google.com": {
       "uid": "0oucc7hf5qu5pfjatpg86ph8r4@google.com",
@@ -56,14 +56,6 @@
       "slug": "serata-cantiere26",
       "path": "layouts/events/2026-12-09-serata-cantiere26.md",
       "hash": "41970b4b6a039f6c07cfb7dd702e66f64cae4bb5a07e53345ee932182a180a61"
-    },
-    "22jja4hte3b44u4ora1m3ch3fi@google.com/2026-12-23T19:30:00+01:00": {
-      "uid": "22jja4hte3b44u4ora1m3ch3fi@google.com",
-      "original": "2026-12-23T19:30:00+01:00",
-      "date": "2026-12-23",
-      "slug": "serata-cantiere26",
-      "path": "layouts/events/2026-12-23-serata-cantiere26.md",
-      "hash": "383775026bc2cffd7a060bd3041c48aa3a213a55a8fad5951053b720ca3b9f62"
     },
     "2iu51qsntjk8tod6c7e7sgv5a3@google.com/2026-10-22T20:00:00+02:00": {
       "uid": "2iu51qsntjk8tod6c7e7sgv5a3@google.com",
@@ -144,6 +136,14 @@
       "slug": "serata-smartlab",
       "path": "layouts/events/2026-12-24-serata-smartlab.md",
       "hash": "6e80544f31a69a6b17a30d54fbd97c28c181d10e2bf3d73c06d6bac19e3208ea"
+    },
+    "2m99i0ame69qvbpopmnmbeaqmo@google.com": {
+      "uid": "2m99i0ame69qvbpopmnmbeaqmo@google.com",
+      "original": "2026-11-21T14:00:00+01:00",
+      "date": "2026-11-21",
+      "slug": "evento-festivalmeteorologia-2026",
+      "path": "layouts/events/2026-11-21-evento-festivalmeteorologia-2026.md",
+      "hash": "809ec8f4c3fbbab69f4f14f43a4999cf316233bf888d679c190622319c19a76e"
     },
     "47pg9l2qtoe6ldedrjpai5acnu@google.com/2026-10-21T19:30:00+02:00": {
       "uid": "47pg9l2qtoe6ldedrjpai5acnu@google.com",
@@ -264,6 +264,14 @@
       "slug": "serata-luogo-comune-riva",
       "path": "layouts/events/2026-12-16-serata-luogo-comune-riva.md",
       "hash": "5f27620942f941dedf51eef6fbe3f81ac7c73666685d66582309299b7025860b"
+    },
+    "4c9oopa6d82bjdcov571aq1mdl@google.com": {
+      "uid": "4c9oopa6d82bjdcov571aq1mdl@google.com",
+      "original": "2026-11-17T18:00:00+01:00",
+      "date": "2026-11-17",
+      "slug": "evento-serata-giochi-rovereto-la-ciacera",
+      "path": "layouts/events/2026-11-17-evento-serata-giochi-rovereto-la-ciacera.md",
+      "hash": "51dec99d1fe056f5e9af02cc458a053947f5a25d5ece6d9edcd83d91af757694"
     },
     "4k7uu5r937vsum2rt337hu5og6@google.com": {
       "uid": "4k7uu5r937vsum2rt337hu5og6@google.com",
@@ -391,7 +399,7 @@
       "date": "2026-11-28",
       "slug": "evento-stracot-pattodigitale-argentario",
       "path": "layouts/events/2026-11-28-evento-stracot-pattodigitale-argentario.md",
-      "hash": "411e636878d4941e253e6fe3d0c0487daeae9975c48788e5d332d6c51412376d"
+      "hash": "7d54bfbd81ff25621a19049ce2448e208a5f211c4d0b33d85a78a2e9c5cb4edf"
     },
     "7pcr37j1g5b5oatdsi43up3n99@google.com": {
       "uid": "7pcr37j1g5b5oatdsi43up3n99@google.com",
@@ -460,6 +468,9 @@
       "slug": "serata-smartlab",
       "alias": "smartlab"
     },
+    "2m99i0ame69qvbpopmnmbeaqmo@google.com": {
+      "slug": "evento-festivalmeteorologia-2026"
+    },
     "47pg9l2qtoe6ldedrjpai5acnu@google.com": {
       "slug": "serata-bibliotecabaselgadipine",
       "alias": "bibliotecabaselgadipine"
@@ -467,6 +478,9 @@
     "4ajboa5lqk7mn4jf364aulthsh@google.com": {
       "slug": "serata-luogo-comune-riva",
       "alias": "luogo-comune-riva"
+    },
+    "4c9oopa6d82bjdcov571aq1mdl@google.com": {
+      "slug": "evento-serata-giochi-rovereto-la-ciacera"
     },
     "4k7uu5r937vsum2rt337hu5og6@google.com": {
       "slug": "evento-biblioteca-trento"
