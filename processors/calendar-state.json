@@ -297,6 +297,14 @@
       "path": "layouts/events/2026-11-06-serata-doppiomalto.md",
       "hash": "2811e61ad5616feb479c30d4a9927a01d0fe00773e9f35d417c725f88600e16e"
     },
+    "60phh8sptirnlhpkf6r8kf29u9@google.com": {
+      "uid": "60phh8sptirnlhpkf6r8kf29u9@google.com",
+      "original": "2026-12-18T19:00:00+01:00",
+      "date": "2026-12-18",
+      "slug": "serata-doppiomalto",
+      "path": "layouts/events/2026-12-18-serata-doppiomalto.md",
+      "hash": "d2265e71f6fbf63cc75eb05f3f432a3dc3c3d0d4ee7aa2f7cf377c4bc1d6a13d"
+    },
     "65gikkhnmqbqmbhnd1bs812lin@google.com/2026-10-19T19:00:00+02:00": {
       "uid": "65gikkhnmqbqmbhnd1bs812lin@google.com",
       "original": "2026-10-19T19:00:00+02:00",
@@ -401,6 +409,14 @@
       "path": "layouts/events/2026-11-28-evento-stracot-pattodigitale-argentario.md",
       "hash": "7d54bfbd81ff25621a19049ce2448e208a5f211c4d0b33d85a78a2e9c5cb4edf"
     },
+    "74nau0q3bbdutnsc5rbk8sl1s8@google.com": {
+      "uid": "74nau0q3bbdutnsc5rbk8sl1s8@google.com",
+      "original": "2026-12-04T19:00:00+01:00",
+      "date": "2026-12-04",
+      "slug": "serata-doppiomalto",
+      "path": "layouts/events/2026-12-04-serata-doppiomalto.md",
+      "hash": "ca5c24d9d2c3833b159c43d1fa2e8e5d3c409954e90d7c36ec9a9ff87fe23ecf"
+    },
     "7pcr37j1g5b5oatdsi43up3n99@google.com": {
       "uid": "7pcr37j1g5b5oatdsi43up3n99@google.com",
       "original": "2026-11-20T19:00:00+01:00",
@@ -493,6 +509,10 @@
       "slug": "serata-doppiomalto",
       "alias": "doppiomalto"
     },
+    "60phh8sptirnlhpkf6r8kf29u9@google.com": {
+      "slug": "serata-doppiomalto",
+      "alias": "doppiomalto"
+    },
     "65gikkhnmqbqmbhnd1bs812lin@google.com": {
       "slug": "serata-gattogordo",
       "alias": "gattogordo"
@@ -505,6 +525,10 @@
     },
     "71t723u24j3nq68rh334j8m41l@google.com": {
       "slug": "evento-stracot-pattodigitale-argentario"
+    },
+    "74nau0q3bbdutnsc5rbk8sl1s8@google.com": {
+      "slug": "serata-doppiomalto",
+      "alias": "doppiomalto"
     },
     "7pcr37j1g5b5oatdsi43up3n99@google.com": {
       "slug": "serata-doppiomalto",
