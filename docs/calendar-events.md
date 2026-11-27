@@ -34,7 +34,7 @@ A chi è rivolto: Tutti
 
 | Field               | What to write                                                  | Examples of values                                                                                                                                                   |
 | ------------------- | -------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `Attività`          | **Required.** Pick a template.                                 | `Ludoteca` / `Giochi da tavolo`; `Stracòt`; `Escape room`; `Altro`                                                                                                   |
+| `Attività`          | **Required.** Pick a template.                                 | `Ludoteca` / `Giochi da tavolo`; `Stracòt`; `Escape room`; anything else                                                                                                   |
 | `Dove`              | **Required.** Town, then short venue name.                     | `Trento, Locanda del Gatto Gordo`<br>`Rovereto, Smart Lab`<br>`Cognola, Istituto Comenius`                                                                           |
 | `Come arrivare`     | Maps link; otherwise the script searches the Calendar address. | `https://maps.app.goo.gl/SkH39dic7ntw4NcG7`<br>`http://bit.ly/SmartLabMaps`                                                                                          |
 | `Come partecipare`  | What someone must do to attend.                                | `Accesso libero, non serve prenotare.`<br>`Prenotazione obbligatoria; presenta la conferma all'arrivo.`<br>`È richiesta la tessera Glow; puoi associarti sul posto.` |
@@ -51,7 +51,8 @@ Some notes:
 - Omit unused fields. Only the first two are really required. If unneeded, just leave them out.
 - Replace sample URLs with real links!
 - Unknown/wrong/repeated fields stop the script. Check the Calendar description for typos.
-- Escape Room and Altro need an explicit initial. Without an invitation, the script manufactures one from the venue and activity.
+- Escape Room needs an explicit initial field. Without an invitation, the script manufactures one from the venue and activity.
+- You can put anything in Attività, but it requires an initial field too.
 - On Telegram messages, we print the invitation, event link and booking link. Other fields are omitted.
 - `Locandina` must link directly to a valid JPEG, PNG, GIF or WebP image. A web page, non-image response or corrupt image blocks the import; it is not saved to the repo.
 

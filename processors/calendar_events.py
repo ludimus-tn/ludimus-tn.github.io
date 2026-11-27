@@ -476,8 +476,9 @@ def settings(event, profiles, previous_slug=None, root=ROOT):
     if not fields.get("kind"):
         raise CalendarError("Missing Attività under Informazioni:")
     if fields["kind"].casefold() not in KINDS:
-        raise CalendarError("Attività must be Ludoteca/Giochi da tavolo, Escape room, Stracòt or Altro")
-    profile["kind"] = KINDS[fields["kind"].casefold()]
+        profile["kind"] = KINDS["altro"]
+    else:
+        profile["kind"] = KINDS[fields["kind"].casefold()]
     if profile["kind"] in ("custom", "escape-room") and not body and not profile.get("legacy_description"):
         raise CalendarError("Custom events need a public description")
     profile["title"] = event.summary
