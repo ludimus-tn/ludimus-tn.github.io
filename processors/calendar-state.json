@@ -145,6 +145,14 @@
       "path": "layouts/events/2026-11-21-evento-festivalmeteorologia-2026.md",
       "hash": "809ec8f4c3fbbab69f4f14f43a4999cf316233bf888d679c190622319c19a76e"
     },
+    "435844qjr7c0t37rs2n0i5bis4@google.com": {
+      "uid": "435844qjr7c0t37rs2n0i5bis4@google.com",
+      "original": "2026-12-05T13:00:00+01:00",
+      "date": "2026-12-05",
+      "slug": "evento-evento-giochi-contentissimo",
+      "path": "layouts/events/2026-12-05-evento-evento-giochi-contentissimo.md",
+      "hash": "e59ed80a8f7443f3b21d5d09523bc872a740d63c2d4bbc557120bc24c5e46150"
+    },
     "47pg9l2qtoe6ldedrjpai5acnu@google.com/2026-10-21T19:30:00+02:00": {
       "uid": "47pg9l2qtoe6ldedrjpai5acnu@google.com",
       "original": "2026-10-21T19:30:00+02:00",
@@ -289,6 +297,14 @@
       "path": "layouts/events/2026-10-23-serata-doppiomalto.md",
       "hash": "7e18c9addee99e5e0b15f7947131524cb630dc4bb5b1ac1da130bc02b2954d44"
     },
+    "5qo18orkue8p7n2br2rehamq6t@google.com": {
+      "uid": "5qo18orkue8p7n2br2rehamq6t@google.com",
+      "original": "2026-12-02T18:30:00+01:00",
+      "date": "2026-12-02",
+      "slug": "evento-contromossa-glow-spazio-zero",
+      "path": "layouts/events/2026-12-02-evento-contromossa-glow-spazio-zero.md",
+      "hash": "61e9498a51f5e0da6d062f884ba4470f7f2a2e56385ff0b9b8ce14bf7e4a2636"
+    },
     "5ueupagp0jtpuvgqm6l3bs2acq@google.com": {
       "uid": "5ueupagp0jtpuvgqm6l3bs2acq@google.com",
       "original": "2026-11-06T19:00:00+01:00",
@@ -304,6 +320,158 @@
       "slug": "serata-doppiomalto",
       "path": "layouts/events/2026-12-18-serata-doppiomalto.md",
       "hash": "d2265e71f6fbf63cc75eb05f3f432a3dc3c3d0d4ee7aa2f7cf377c4bc1d6a13d"
+    },
+    "60qjao9j6gs3ib9kc5i34b9k6crj6b9p74pm2bb26sr3id9o74pm4ob1c4@google.com/2027-01-11T19:00:00+01:00": {
+      "uid": "60qjao9j6gs3ib9kc5i34b9k6crj6b9p74pm2bb26sr3id9o74pm4ob1c4@google.com",
+      "original": "2027-01-11T19:00:00+01:00",
+      "date": "2027-01-11",
+      "slug": "serata-gattogordo",
+      "path": "layouts/events/2027-01-11-serata-gattogordo.md",
+      "hash": "13ffe42cd5ace3d09a12f10be972be6de7a590bb2587d2ff3f5dbfff2af934cc"
+    },
+    "60qjao9j6gs3ib9kc5i34b9k6crj6b9p74pm2bb26sr3id9o74pm4ob1c4@google.com/2027-01-18T19:00:00+01:00": {
+      "uid": "60qjao9j6gs3ib9kc5i34b9k6crj6b9p74pm2bb26sr3id9o74pm4ob1c4@google.com",
+      "original": "2027-01-18T19:00:00+01:00",
+      "date": "2027-01-18",
+      "slug": "serata-gattogordo",
+      "path": "layouts/events/2027-01-18-serata-gattogordo.md",
+      "hash": "3fc635ecf8bc740887a8c407ed91f370ef6d2f481b8e682f61af3a469f9cf16e"
+    },
+    "60qjao9j6gs3ib9kc5i34b9k6crj6b9p74pm2bb26sr3id9o74pm4ob1c4@google.com/2027-01-25T19:00:00+01:00": {
+      "uid": "60qjao9j6gs3ib9kc5i34b9k6crj6b9p74pm2bb26sr3id9o74pm4ob1c4@google.com",
+      "original": "2027-01-25T19:00:00+01:00",
+      "date": "2027-01-25",
+      "slug": "serata-gattogordo",
+      "path": "layouts/events/2027-01-25-serata-gattogordo.md",
+      "hash": "c4e9d0d4acd74a1572d2f9b1041fa874b9c8aaa331747f81c6911d3aaca26d65"
+    },
+    "60qjao9j6gs3ib9kc5i34b9k6crj6b9p74pm2bb26sr3id9o74pm4ob1c4@google.com/2027-02-01T19:00:00+01:00": {
+      "uid": "60qjao9j6gs3ib9kc5i34b9k6crj6b9p74pm2bb26sr3id9o74pm4ob1c4@google.com",
+      "original": "2027-02-01T19:00:00+01:00",
+      "date": "2027-02-01",
+      "slug": "serata-gattogordo",
+      "path": "layouts/events/2027-02-01-serata-gattogordo.md",
+      "hash": "7bcec4a5e682491224c13f5fc19df97d9fb1681433164845480ec98d55a9c3ae"
+    },
+    "60qjao9j6gs3ib9kc5i34b9k6crj6b9p74pm2bb26sr3id9o74pm4ob1c4@google.com/2027-02-08T19:00:00+01:00": {
+      "uid": "60qjao9j6gs3ib9kc5i34b9k6crj6b9p74pm2bb26sr3id9o74pm4ob1c4@google.com",
+      "original": "2027-02-08T19:00:00+01:00",
+      "date": "2027-02-08",
+      "slug": "serata-gattogordo",
+      "path": "layouts/events/2027-02-08-serata-gattogordo.md",
+      "hash": "f86b1528d94a0da03305d6bdd4f0bd68c6c6470dc1e38810b0728f4dffeb0fb9"
+    },
+    "60qjao9j6gs3ib9kc5i34b9k6crj6b9p74pm2bb26sr3id9o74pm4ob1c4@google.com/2027-02-15T19:00:00+01:00": {
+      "uid": "60qjao9j6gs3ib9kc5i34b9k6crj6b9p74pm2bb26sr3id9o74pm4ob1c4@google.com",
+      "original": "2027-02-15T19:00:00+01:00",
+      "date": "2027-02-15",
+      "slug": "serata-gattogordo",
+      "path": "layouts/events/2027-02-15-serata-gattogordo.md",
+      "hash": "61671ead71a3e7a555cc497b2ed879c9ae0d4014bb25723482ac10643f35cc0c"
+    },
+    "60qjao9j6gs3ib9kc5i34b9k6crj6b9p74pm2bb26sr3id9o74pm4ob1c4@google.com/2027-02-22T19:00:00+01:00": {
+      "uid": "60qjao9j6gs3ib9kc5i34b9k6crj6b9p74pm2bb26sr3id9o74pm4ob1c4@google.com",
+      "original": "2027-02-22T19:00:00+01:00",
+      "date": "2027-02-22",
+      "slug": "serata-gattogordo",
+      "path": "layouts/events/2027-02-22-serata-gattogordo.md",
+      "hash": "207c4459411bfecadd8b69763ae5a2a599ab6dfa042987c11259cf2e6642f144"
+    },
+    "60qjao9j6gs3ib9kc5i34b9k6crj6b9p74pm2bb26sr3id9o74pm4ob1c4@google.com/2027-03-01T19:00:00+01:00": {
+      "uid": "60qjao9j6gs3ib9kc5i34b9k6crj6b9p74pm2bb26sr3id9o74pm4ob1c4@google.com",
+      "original": "2027-03-01T19:00:00+01:00",
+      "date": "2027-03-01",
+      "slug": "serata-gattogordo",
+      "path": "layouts/events/2027-03-01-serata-gattogordo.md",
+      "hash": "93fcf8fd0ee18abd7f0262ae938693a7f6b96b410971bd864bd5c05dc8234d00"
+    },
+    "60qjao9j6gs3ib9kc5i34b9k6crj6b9p74pm2bb26sr3id9o74pm4ob1c4@google.com/2027-03-08T19:00:00+01:00": {
+      "uid": "60qjao9j6gs3ib9kc5i34b9k6crj6b9p74pm2bb26sr3id9o74pm4ob1c4@google.com",
+      "original": "2027-03-08T19:00:00+01:00",
+      "date": "2027-03-08",
+      "slug": "serata-gattogordo",
+      "path": "layouts/events/2027-03-08-serata-gattogordo.md",
+      "hash": "256bdb846fe8e9eb853c6aa304c1626d753ef5aabec9c9c5aae2ede43d382aae"
+    },
+    "60qjao9j6gs3ib9kc5i34b9k6crj6b9p74pm2bb26sr3id9o74pm4ob1c4@google.com/2027-03-15T19:00:00+01:00": {
+      "uid": "60qjao9j6gs3ib9kc5i34b9k6crj6b9p74pm2bb26sr3id9o74pm4ob1c4@google.com",
+      "original": "2027-03-15T19:00:00+01:00",
+      "date": "2027-03-15",
+      "slug": "serata-gattogordo",
+      "path": "layouts/events/2027-03-15-serata-gattogordo.md",
+      "hash": "da4d25b5fe72850e21387c50f6ba36eaeb8e011d11d52cafdfc5e7944171249f"
+    },
+    "60qjao9j6gs3ib9kc5i34b9k6crj6b9p74pm2bb26sr3id9o74pm4ob1c4@google.com/2027-03-22T19:00:00+01:00": {
+      "uid": "60qjao9j6gs3ib9kc5i34b9k6crj6b9p74pm2bb26sr3id9o74pm4ob1c4@google.com",
+      "original": "2027-03-22T19:00:00+01:00",
+      "date": "2027-03-22",
+      "slug": "serata-gattogordo",
+      "path": "layouts/events/2027-03-22-serata-gattogordo.md",
+      "hash": "6baf6b664f1a299c7976174a989d087589878c1b79b47d658ffad55c83cc5a78"
+    },
+    "60qjao9j6gs3ib9kc5i34b9k6crj6b9p74pm2bb26sr3id9o74pm4ob1c4@google.com/2027-04-05T19:00:00+02:00": {
+      "uid": "60qjao9j6gs3ib9kc5i34b9k6crj6b9p74pm2bb26sr3id9o74pm4ob1c4@google.com",
+      "original": "2027-04-05T19:00:00+02:00",
+      "date": "2027-04-05",
+      "slug": "serata-gattogordo",
+      "path": "layouts/events/2027-04-05-serata-gattogordo.md",
+      "hash": "ef06d3ce0d221b5cd4312bc8aede9606a958bb5b4af9de0637971829fef73cd7"
+    },
+    "60qjao9j6gs3ib9kc5i34b9k6crj6b9p74pm2bb26sr3id9o74pm4ob1c4@google.com/2027-04-12T19:00:00+02:00": {
+      "uid": "60qjao9j6gs3ib9kc5i34b9k6crj6b9p74pm2bb26sr3id9o74pm4ob1c4@google.com",
+      "original": "2027-04-12T19:00:00+02:00",
+      "date": "2027-04-12",
+      "slug": "serata-gattogordo",
+      "path": "layouts/events/2027-04-12-serata-gattogordo.md",
+      "hash": "099ced53fe0021df2fc82ecede3a377a6ff6fdbcee2e1431ae49c74452348070"
+    },
+    "60qjao9j6gs3ib9kc5i34b9k6crj6b9p74pm2bb26sr3id9o74pm4ob1c4@google.com/2027-04-19T19:00:00+02:00": {
+      "uid": "60qjao9j6gs3ib9kc5i34b9k6crj6b9p74pm2bb26sr3id9o74pm4ob1c4@google.com",
+      "original": "2027-04-19T19:00:00+02:00",
+      "date": "2027-04-19",
+      "slug": "serata-gattogordo",
+      "path": "layouts/events/2027-04-19-serata-gattogordo.md",
+      "hash": "6ba82b19f08ddeb85186cb5ab25f039cbfe1a8969dfbb679877403ee83501ec1"
+    },
+    "60qjao9j6gs3ib9kc5i34b9k6crj6b9p74pm2bb26sr3id9o74pm4ob1c4@google.com/2027-04-26T19:00:00+02:00": {
+      "uid": "60qjao9j6gs3ib9kc5i34b9k6crj6b9p74pm2bb26sr3id9o74pm4ob1c4@google.com",
+      "original": "2027-04-26T19:00:00+02:00",
+      "date": "2027-04-26",
+      "slug": "serata-gattogordo",
+      "path": "layouts/events/2027-04-26-serata-gattogordo.md",
+      "hash": "67fbaf86bdea7591550214b4452292abddef5b9fde791ca97b423449fdbe074a"
+    },
+    "60qjao9j6gs3ib9kc5i34b9k6crj6b9p74pm2bb26sr3id9o74pm4ob1c4@google.com/2027-05-03T19:00:00+02:00": {
+      "uid": "60qjao9j6gs3ib9kc5i34b9k6crj6b9p74pm2bb26sr3id9o74pm4ob1c4@google.com",
+      "original": "2027-05-03T19:00:00+02:00",
+      "date": "2027-05-03",
+      "slug": "serata-gattogordo",
+      "path": "layouts/events/2027-05-03-serata-gattogordo.md",
+      "hash": "f4c39c3abe4527e3e51c39ee54724a8eb61887ae57f85bc7d052ccdfe9623d58"
+    },
+    "60qjao9j6gs3ib9kc5i34b9k6crj6b9p74pm2bb26sr3id9o74pm4ob1c4@google.com/2027-05-10T19:00:00+02:00": {
+      "uid": "60qjao9j6gs3ib9kc5i34b9k6crj6b9p74pm2bb26sr3id9o74pm4ob1c4@google.com",
+      "original": "2027-05-10T19:00:00+02:00",
+      "date": "2027-05-10",
+      "slug": "serata-gattogordo",
+      "path": "layouts/events/2027-05-10-serata-gattogordo.md",
+      "hash": "7d30e5d2ad941594e6977c63521346c37ca0da05362f537167c146872b18c870"
+    },
+    "60qjao9j6gs3ib9kc5i34b9k6crj6b9p74pm2bb26sr3id9o74pm4ob1c4@google.com/2027-05-17T19:00:00+02:00": {
+      "uid": "60qjao9j6gs3ib9kc5i34b9k6crj6b9p74pm2bb26sr3id9o74pm4ob1c4@google.com",
+      "original": "2027-05-17T19:00:00+02:00",
+      "date": "2027-05-17",
+      "slug": "serata-gattogordo",
+      "path": "layouts/events/2027-05-17-serata-gattogordo.md",
+      "hash": "9e189f3e32a17d09c8f873392d9c1206adf981646ca7ad7d0cf624ab8d44dad3"
+    },
+    "60qjao9j6gs3ib9kc5i34b9k6crj6b9p74pm2bb26sr3id9o74pm4ob1c4@google.com/2027-05-24T19:00:00+02:00": {
+      "uid": "60qjao9j6gs3ib9kc5i34b9k6crj6b9p74pm2bb26sr3id9o74pm4ob1c4@google.com",
+      "original": "2027-05-24T19:00:00+02:00",
+      "date": "2027-05-24",
+      "slug": "serata-gattogordo",
+      "path": "layouts/events/2027-05-24-serata-gattogordo.md",
+      "hash": "9ee7b5f3c74ebdf126c06704737f89887f297fc74d0e117902e87199f2a2a25c"
     },
     "65gikkhnmqbqmbhnd1bs812lin@google.com/2026-10-19T19:00:00+02:00": {
       "uid": "65gikkhnmqbqmbhnd1bs812lin@google.com",
@@ -407,7 +575,7 @@
       "date": "2026-11-28",
       "slug": "evento-stracot-pattodigitale-argentario",
       "path": "layouts/events/2026-11-28-evento-stracot-pattodigitale-argentario.md",
-      "hash": "7d54bfbd81ff25621a19049ce2448e208a5f211c4d0b33d85a78a2e9c5cb4edf"
+      "hash": "278c19505fbe20293ed4eabcbd09a71d4a6c523e1ac069e255877b20fc8205e0"
     },
     "74nau0q3bbdutnsc5rbk8sl1s8@google.com": {
       "uid": "74nau0q3bbdutnsc5rbk8sl1s8@google.com",
@@ -456,14 +624,6 @@
       "slug": "serata-savot-ala",
       "path": "layouts/events/2026-12-09-serata-savot-ala.md",
       "hash": "73205ed9c4008f73284555e721308980c49f646982b38582aa65061ab0a54544"
-    },
-    "d7e9oj8pv8jk7ejv298riflcne@google.com/2026-12-23T20:00:00+01:00": {
-      "uid": "d7e9oj8pv8jk7ejv298riflcne@google.com",
-      "original": "2026-12-23T20:00:00+01:00",
-      "date": "2026-12-23",
-      "slug": "serata-savot-ala",
-      "path": "layouts/events/2026-12-23-serata-savot-ala.md",
-      "hash": "93f55e439c423ee49e6eb9b4b8de4c38b41d320ee28c7a449b017eb7fd2f7d4e"
     }
   },
   "routes": {
@@ -487,6 +647,9 @@
     "2m99i0ame69qvbpopmnmbeaqmo@google.com": {
       "slug": "evento-festivalmeteorologia-2026"
     },
+    "435844qjr7c0t37rs2n0i5bis4@google.com": {
+      "slug": "evento-evento-giochi-contentissimo"
+    },
     "47pg9l2qtoe6ldedrjpai5acnu@google.com": {
       "slug": "serata-bibliotecabaselgadipine",
       "alias": "bibliotecabaselgadipine"
@@ -505,6 +668,9 @@
       "slug": "serata-doppiomalto",
       "alias": "doppiomalto"
     },
+    "5qo18orkue8p7n2br2rehamq6t@google.com": {
+      "slug": "evento-contromossa-glow-spazio-zero"
+    },
     "5ueupagp0jtpuvgqm6l3bs2acq@google.com": {
       "slug": "serata-doppiomalto",
       "alias": "doppiomalto"
@@ -512,6 +678,10 @@
     "60phh8sptirnlhpkf6r8kf29u9@google.com": {
       "slug": "serata-doppiomalto",
       "alias": "doppiomalto"
+    },
+    "60qjao9j6gs3ib9kc5i34b9k6crj6b9p74pm2bb26sr3id9o74pm4ob1c4@google.com": {
+      "slug": "serata-gattogordo",
+      "alias": "gattogordo"
     },
     "65gikkhnmqbqmbhnd1bs812lin@google.com": {
       "slug": "serata-gattogordo",
